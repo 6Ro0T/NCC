@@ -1,7 +1,6 @@
 
 <?php
    include('session.php');
-    $login_role;
 ?><!doctype html>
 <html lang="en" dir="ltr">
 <head>
@@ -780,7 +779,7 @@
             <div class="tab-pane fade show active" id="menu-uni" role="tabpanel">
                 <nav class="sidebar-nav">
                     <ul class="metismenu">
-                        <li class="active"><a href="index.html"><i class="fa fa-dashboard"></i><span>Dashboard <?php echo $login_role ?></span></a></li>
+                        <li class="active"><a href="index.html"><i class="fa fa-dashboard"></i><span>Dashboard</span></a></li>
                         <li><a href="professors.html"><i class="fa fa-black-tie"></i><span>Professors</span></a></li>
                         <li><a href="staff.html"><i class="fa fa-user-circle-o"></i><span>Staff</span></a></li>
                         <li><a href="students.html"><i class="fa fa-users"></i><span>Students</span></a></li>
