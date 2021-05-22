@@ -1,4 +1,7 @@
-<!doctype html>
+
+<?php
+   include('session.php');
+?><!doctype html>
 <html lang="en" dir="ltr">
 <head>
 <meta charset="UTF-8">
