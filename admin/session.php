@@ -13,7 +13,7 @@
    $login_role=$row['division'];
    echo $login_session;
    
-   if(!isset($_SESSION['login_user']) || !isset($_SESSION['role'])){
+   if(!isset($_SESSION['email']) || !isset($_SESSION['role'])){
       header("location:index.php");
       die();
    }
