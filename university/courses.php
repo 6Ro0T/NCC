@@ -1,4 +1,3 @@
-
 <?php
    include('session.php');
 ?>
@@ -9,20 +8,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <link rel="icon" href="favicon.ico" type="image/x-icon"/>
-<title>:: Ericsson :: Home</title>
+<title>:: Ericsson :: Courses</title>
 
 <!-- Bootstrap Core and vandor -->
 <link rel="stylesheet" href="../assets/plugins/bootstrap/css/bootstrap.min.css" />
-
-<!-- Plugins css -->
-<link rel="stylesheet" href="../assets/plugins/summernote/dist/summernote.css"/>
-
+<link rel="stylesheet" href="../assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css">
+<link rel="stylesheet" href="../assets/plugins/sweetalert/sweetalert.css">
 
 <!-- Core css -->
 <link rel="stylesheet" href="../assets/css/style.min.css"/>
 </head>
 
 <body class="font-muli theme-cyan gradient">
+
 <!-- Page Loader -->
 <div class="page-loader-wrapper">
     <div class="loader">
@@ -773,21 +771,21 @@
     <div id="left-sidebar" class="sidebar">
         <h5 class="brand-name">Ericsson<a href="javascript:void(0)" class="menu_option float-right"><i class="icon-grid font-16" data-toggle="tooltip" data-placement="left" title="Grid & List Toggle"></i></a></h5>
         <ul class="nav nav-tabs">
-            <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#">University</a></li>
+            <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#menu-uni">University</a></li>
         </ul>
         <div class="tab-content mt-3">
             <div class="tab-pane fade show active" id="menu-uni" role="tabpanel">
                 <nav class="sidebar-nav">
                     <ul class="metismenu">
-                        <li class="active"><a href="army.php"><i class="fa fa-dashboard"></i><span>Dashboard</span></a></li>
+                        <li><a href="army.php"><i class="fa fa-dashboard"></i><span>Dashboard</span></a></li>
                         <li><a href="professors.php"><i class="fa fa-black-tie"></i><span>Professors</span></a></li>
                         <li><a href="staff.php"><i class="fa fa-user-circle-o"></i><span>Staff</span></a></li>
-                        <li><a href="students.php"><i class="fa fa-users"></i><span>Students</span></a></li>
+                        
                         <li><a href="departments.php"><i class="fa fa-users"></i><span>Departments</span></a></li>
-                        <li><a href="courses.php"><i class="fa fa-graduation-cap"></i><span>Courses</span></a></li>                        
+                        <li class="active"><a href="courses.php"><i class="fa fa-graduation-cap"></i><span>Courses</span></a></li>                        
                         <li><a href="library.php"><i class="fa fa-book"></i><span>Library</span></a></li>
                         <li><a href="holiday.php"><i class="fa fa-bullhorn"></i><span>Holiday</span></a></li>
-                        <li><a href="events.php"><i class="fa fa-calendar"></i><span>Calender</span></a></li>
+        
                     </ul>
                 </nav>
             </div>
@@ -797,26 +795,27 @@
     <!-- Start project content area -->
     <div class="page">
         <!-- Start Page header -->
-        <div class="section-body" id="page_top">
+        <div class="section-body" id="page_top" >
             <div class="container-fluid">
                 <div class="page-header">
                     <div class="left">                        
-                        
+                        <div class="input-group">
+                    
+                        </div>
                     </div>
                     <div class="right">
-                        
+                        <ul class="nav nav-pills">
+                            
+                            
+                        </ul>
                         <div class="notification d-flex">
+                            
                             
                             <div class="dropdown d-flex">
                                 <a href="javascript:void(0)" class="chip ml-3" data-toggle="dropdown">
                                     <span class="avatar" style="background-image: url(../assets/images/xs/avatar5.jpg)"></span> George</a>
-                                <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
                                     <a class="dropdown-item" href="page-profile.php"><i class="dropdown-icon fe fe-user"></i> Profile</a>
-                                    
-                                    
-                                    
-                                    <div class="dropdown-divider"></div>
-                                    
                                     <a class="dropdown-item" href="logout.php"><i class="dropdown-icon fe fe-log-out"></i> Sign out</a>
                                 </div>
                             </div>
@@ -828,687 +827,401 @@
         <!-- Start Page title and tab -->
         <div class="section-body">
             <div class="container-fluid">
-                <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex justify-content-between align-items-center ">
                     <div class="header-action">
-                        <h1 class="page-title">Dashboard</h1>
+                        <h1 class="page-title">Courses</h1>
                         <ol class="breadcrumb page-breadcrumb">
                             <li class="breadcrumb-item"><a href="#">Ericsson</a></li>
-                            <li class="breadcrumb-item"><a href="#">University</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+                            <li class="breadcrumb-item active" aria-current="page">Courses</li>
                         </ol>
                     </div>
                     <ul class="nav nav-tabs page-header-tab">
-                        <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#admin-Dashboard">Dashboard</a></li>
-                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#admin-Activity">Activity</a></li>
+                        <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#Courses-all">List View</a></li>
+                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#Courses-add">Add</a></li>
+                        <li class="nav-item"><a class="nav-link" id="Courses-tab-Boot" data-toggle="tab" href="#Courses-add-Boot">Add Bootstrap Style</a></li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="section-body mt-4">
             <div class="container-fluid">
-                <div class="row clearfix row-deck">
-                    <div class="col-6 col-md-4 col-xl-2">
-                        <div class="card">
-                            <div class="card-body ribbon">
-                                <div class="ribbon-box green" data-toggle="tooltip" title="New Professors">5</div>
-                                <a href="professors.php" class="my_sort_cut text-muted">
-                                    <i class="fa fa-black-tie"></i>
-                                    <span>Professors</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-xl-2">
-                        <div class="card">
-                            <div class="card-body">
-                                <a href="app-contact.php" class="my_sort_cut text-muted">
-                                    <i class="fa fa-address-book"></i>
-                                    <span>Contact</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-xl-2">
-                        <div class="card">
-                            <div class="card-body ribbon">
-                                <div class="ribbon-box orange" data-toggle="tooltip" title="New Staff">8</div>
-                                <a href="staff.php" class="my_sort_cut text-muted">
-                                    <i class="fa fa-user-circle-o"></i>
-                                    <span>Staff</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-xl-2">
-                        <div class="card">
-                            <div class="card-body">
-                                <a href="app-filemanager.php" class="my_sort_cut text-muted">
-                                    <i class="fa fa-folder"></i>
-                                    <span>FileManager</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-xl-2">
-                        <div class="card">
-                            <div class="card-body">
-                                <a href="library.php" class="my_sort_cut text-muted">
-                                    <i class="fa fa-book"></i>
-                                    <span>Library</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-xl-2">
-                        <div class="card">
-                            <div class="card-body">
-                                <a href="holiday.php" class="my_sort_cut text-muted">
-                                    <i class="fa fa-bullhorn"></i>
-                                    <span>Holiday</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="tab-content">
-                    <div class="tab-pane fade show active" id="admin-Dashboard" role="tabpanel">
-                        <div class="row clearfix">
-                            <div class="col-xl-12">
+                    <div class="tab-pane active" id="Courses-all">
+                        <div class="row row-deck">
+                            <div class="col-xl-4 col-lg-4 col-md-6">
                                 <div class="card">
-                                    <div class="card-header">
-                                        <h3 class="card-title">University Report</h3>
-                                        <div class="card-options">
-                                            <a href="#" class="card-options-collapse" data-toggle="card-collapse"><i class="fe fe-chevron-up"></i></a>
-                                            <a href="#" class="card-options-fullscreen" data-toggle="card-fullscreen"><i class="fe fe-maximize"></i></a>
-                                            <a href="#" class="card-options-remove" data-toggle="card-remove"><i class="fe fe-x"></i></a>
-                                        </div>
+                                    <a href="#"><img class="card-img-top" src="../assets/images/gallery/1.jpg" alt=""></a>
+                                    <div class="card-body d-flex flex-column">
+                                        <h5><a href="courses-details.php">PHP Development Course</a></h5>
+                                        <div class="text-muted">Look, my liege! The Knights Who Say Ni demand a sacrifice!</div>
                                     </div>
-                                    <div class="card-body">
-                                        <div class="d-sm-flex justify-content-between">
-                                            <div class="font-12 mb-2"><span>Measure How Fast You’re Growing Monthly Recurring Revenue. <a href="#">Learn More</a></span></div>
-                                            <div class="selectgroup w250">
-                                                <label class="selectgroup-item">
-                                                    <input type="radio" name="intensity" value="low" class="selectgroup-input" checked="">
-                                                    <span class="selectgroup-button">1D</span>
-                                                </label>
-                                                <label class="selectgroup-item">
-                                                    <input type="radio" name="intensity" value="medium" class="selectgroup-input">
-                                                    <span class="selectgroup-button">1W</span>
-                                                </label>
-                                                <label class="selectgroup-item">
-                                                    <input type="radio" name="intensity" value="high" class="selectgroup-input">
-                                                    <span class="selectgroup-button">1M</span>
-                                                </label>
-                                                <label class="selectgroup-item">
-                                                    <input type="radio" name="intensity" value="veryhigh" class="selectgroup-input">
-                                                    <span class="selectgroup-button">1Y</span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div id="apex-chart-line-column"></div>
-                                    </div>
-                                    <div class="card-footer">
-                                        <div class="row">
-                                            <div class="col-xl-3 col-md-6 mb-2">
-                                                <div class="clearfix">
-                                                    <div class="float-left"><strong>Fees</strong></div>
-                                                    <div class="float-right"><small class="text-muted">35%</small></div>
-                                                </div>
-                                                <div class="progress progress-xs">
-                                                    <div class="progress-bar bg-indigo" role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
-                                                </div>
-                                                <span class="text-uppercase font-10">Compared to last year</span>
-                                            </div>
-                                            <div class="col-xl-3 col-md-6 mb-2">
-                                                <div class="clearfix">
-                                                    <div class="float-left"><strong>Donation</strong></div>
-                                                    <div class="float-right"><small class="text-muted">61%</small></div>
-                                                </div>
-                                                <div class="progress progress-xs">
-                                                    <div class="progress-bar bg-yellow" role="progressbar" style="width: 61%" aria-valuenow="61" aria-valuemin="0" aria-valuemax="100"></div>
-                                                </div>
-                                                <span class="text-uppercase font-10">Compared to last year</span>
-                                            </div> 
-                                            <div class="col-xl-3 col-md-6 mb-2">
-                                                <div class="clearfix">
-                                                    <div class="float-left"><strong>Income</strong></div>
-                                                    <div class="float-right"><small class="text-muted">87%</small></div>
-                                                </div>
-                                                <div class="progress progress-xs">
-                                                    <div class="progress-bar bg-green" role="progressbar" style="width: 87%" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100"></div>
-                                                </div>
-                                                <span class="text-uppercase font-10">Compared to last year</span>
-                                            </div>
-                                            <div class="col-xl-3 col-md-6 mb-2">
-                                                <div class="clearfix">
-                                                    <div class="float-left"><strong>Expense</strong></div>
-                                                    <div class="float-right"><small class="text-muted">42%</small></div>
-                                                </div>
-                                                <div class="progress progress-xs">
-                                                    <div class="progress-bar bg-pink" role="progressbar" style="width: 42%" aria-valuenow="42" aria-valuemin="0" aria-valuemax="100"></div>
-                                                </div>
-                                                <span class="text-uppercase font-10">Compared to last year</span>
-                                            </div>                                                                       
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>                
-                        <div class="row clearfix row-deck">
-                            <div class="col-xl-6 col-lg-6 col-md-12">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h3 class="card-title">Exam Toppers</h3>
-                                        <div class="card-options">
-                                            <a href="#" class="card-options-collapse" data-toggle="card-collapse"><i class="fe fe-chevron-up"></i></a>
-                                            <div class="item-action dropdown ml-2">
-                                                <a href="javascript:void(0)" data-toggle="dropdown"><i class="fe fe-more-vertical"></i></a>
-                                                <div class="dropdown-menu dropdown-menu-right">
-                                                    <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-eye"></i> View Details </a>
-                                                    <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-share-alt"></i> Share </a>
-                                                    <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-cloud-download"></i> Download</a>                                            
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-copy"></i> Copy to</a>
-                                                    <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-folder"></i> Move to</a>
-                                                    <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-edit"></i> Rename</a>
-                                                    <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-trash"></i> Delete</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="table-responsive" style="height: 310px;">
-                                        <table class="table card-table table-vcenter text-nowrap table-striped mb-0">
+                                    <div class="table-responsive">
+                                        <table class="table table-striped table-vcenter mb-0">
                                             <tbody>
                                                 <tr>
-                                                    <th>No.</th>                                                    
-                                                    <th>Name</th>
-                                                    <th></th>
-                                                    <th>Marks</th>
-                                                    <th>%AGE</th>
+                                                    <td class="w20"><i class="fa fa-calendar text-blue"></i></td>
+                                                    <td class="tx-medium">Duration</td>
+                                                    <td class="text-right">6 Months</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>11</td>
-                                                    <td class="w40">
-                                                        <div class="avatar">
-                                                            <img class="avatar" src="../assets/images/xs/avatar1.jpg" alt="avatar">
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div>Merri Diamond</div>
-                                                        <div class="text-muted">Science</div>
-                                                    </td>
-                                                    <td>199</td>
-                                                    <td>99.00</td>
+                                                    <td><i class="fa fa-cc-visa text-danger"></i></td>
+                                                    <td class="tx-medium">Fees</td>
+                                                    <td class="text-right">$1,674</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>23</td>
-                                                    <td class="w40">
-                                                        <div class="avatar">
-                                                            <img class="avatar" src="../assets/images/xs/avatar2.jpg" alt="avatar">
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div>Sara Hopkins</div>
-                                                        <div class="text-muted">Mechanical</div>
-                                                    </td>
-                                                    <td>197</td>
-                                                    <td>98.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>41</td>
-                                                    <td class="w40">
-                                                        <div class="avatar">
-                                                            <img class="avatar" src="../assets/images/xs/avatar3.jpg" alt="avatar">
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div>Allen Collins</div>
-                                                        <div class="text-muted">M.C.A.</div>
-                                                    </td>
-                                                    <td>197</td>
-                                                    <td>98.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>17</td>
-                                                    <td class="w40">
-                                                        <div class="avatar">
-                                                            <img class="avatar" src="../assets/images/xs/avatar4.jpg" alt="avatar">
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div>Erin Gonzales</div>
-                                                        <div class="text-muted">Arts</div>
-                                                    </td>
-                                                    <td>194</td>
-                                                    <td>97.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>57</td>
-                                                    <td class="w40">
-                                                        <div class="avatar">
-                                                            <img class="avatar" src="../assets/images/xs/avatar5.jpg" alt="avatar">
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div>Claire Peters</div>
-                                                        <div class="text-muted">Science</div>
-                                                    </td>
-                                                    <td>192</td>
-                                                    <td>95.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>85</td>
-                                                    <td class="w40">
-                                                        <div class="avatar">
-                                                            <img class="avatar" src="../assets/images/xs/avatar6.jpg" alt="avatar">
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div>Claire Peters</div>
-                                                        <div class="text-muted">Science</div>
-                                                    </td>
-                                                    <td>192</td>
-                                                    <td>95.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>9</td>
-                                                    <td class="w40">
-                                                        <div class="avatar">
-                                                            <img class="avatar" src="../assets/images/xs/avatar7.jpg" alt="avatar">
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div>Claire Peters</div>
-                                                        <div class="text-muted">Science</div>
-                                                    </td>
-                                                    <td>191</td>
-                                                    <td>95.00</td>
+                                                    <td><i class="fa fa-users text-warning"></i></td>
+                                                    <td class="tx-medium">Students</td>
+                                                    <td class="text-right">125+</td>
                                                 </tr>
                                             </tbody>
                                         </table>
                                     </div>
-                                    <div class="card-footer d-flex justify-content-between">
-                                        <div class="font-14"><span>Measure How Fast You’re Growing Monthly Recurring Revenue. <a href="#">View All</a></span></div>
-                                        <div>
-                                            <button type="button" class="btn btn-primary">Export</button>
+                                    <div class="card-footer">
+                                        <div class="d-flex align-items-center mt-auto">
+                                            <img class="avatar avatar-md mr-3" src="../assets/images/xs/avatar4.jpg" alt="avatar">
+                                            <div>
+                                                <a href="#">Pro. Jane</a>
+                                                <small class="d-block text-muted">Head OF Dept.</small>
+                                            </div>
+                                            <div class="ml-auto text-muted">
+                                                <a href="javascript:void(0)" class="icon d-none d-md-inline-block ml-3"><i class="fe fe-heart mr-1"></i> 521</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-6 col-lg-6 col-md-12">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h3 class="card-title">Performance</h3>
+                            <div class="col-xl-4 col-lg-4 col-md-6">
+                                <div class="card ribbon">
+                                    <div class="ribbon-box orange"><i class="fa fa-star"></i></div>
+                                    <a href="#"><img class="card-img-top" src="../assets/images/gallery/2.jpg" alt=""></a>
+                                    <div class="card-body d-flex flex-column">
+                                        <h5><a href="courses-details.php">Account Management Course</a></h5>
+                                        <div class="text-muted">Look, my liege! The Knights Who Say Ni demand a sacrifice!</div>
                                     </div>
-                                    <div class="card-body">
-                                        <div id="apex-radar-multiple-series"></div>
+                                    <div class="table-responsive">
+                                        <table class="table table-striped table-vcenter mb-0">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="w20"><i class="fa fa-calendar text-blue"></i></td>
+                                                    <td class="tx-medium">Duration</td>
+                                                    <td class="text-right">1 Year</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><i class="fa fa-cc-visa text-danger"></i></td>
+                                                    <td class="tx-medium">Fees</td>
+                                                    <td class="text-right">$1,674</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><i class="fa fa-users text-warning"></i></td>
+                                                    <td class="tx-medium">Students</td>
+                                                    <td class="text-right">50+</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="d-flex align-items-center mt-auto">
+                                            <img class="avatar avatar-md mr-3" src="../assets/images/xs/avatar2.jpg" alt="avatar">
+                                            <div>
+                                                <a href="#">Pro. Alan</a>
+                                                <small class="d-block text-muted">Head OF Dept.</small>
+                                            </div>
+                                            <div class="ml-auto text-muted">
+                                                <a href="javascript:void(0)" class="icon d-none d-md-inline-block ml-3"><i class="fe fe-heart mr-1"></i> 521</a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-xl-4 col-lg-4 col-md-6">
                                 <div class="card">
-                                    <div class="card-header">
-                                        <h3 class="card-title">New Student List</h3>
-                                        <div class="card-options">
-                                            <a href="#" class="card-options-collapse" data-toggle="card-collapse"><i class="fe fe-chevron-up"></i></a>
-                                            <a href="#" class="card-options-fullscreen" data-toggle="card-fullscreen"><i class="fe fe-maximize"></i></a>
-                                            <a href="#" class="card-options-remove" data-toggle="card-remove"><i class="fe fe-x"></i></a>
+                                    <a href="#"><img class="card-img-top" src="../assets/images/gallery/3.jpg" alt=""></a>
+                                    <div class="card-body d-flex flex-column">
+                                        <h5><a href="courses-details.php">Angular Programmer Course</a></h5>
+                                        <div class="text-muted">Look, my liege! The Knights Who Say Ni demand a sacrifice!</div>
+                                    </div>
+                                    <div class="table-responsive">
+                                        <table class="table table-striped table-vcenter mb-0">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="w20"><i class="fa fa-calendar text-blue"></i></td>
+                                                    <td class="tx-medium">Duration</td>
+                                                    <td class="text-right">6 Months</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><i class="fa fa-cc-visa text-danger"></i></td>
+                                                    <td class="tx-medium">Fees</td>
+                                                    <td class="text-right">$1,674</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><i class="fa fa-users text-warning"></i></td>
+                                                    <td class="tx-medium">Students</td>
+                                                    <td class="text-right">125+</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="d-flex align-items-center mt-auto">
+                                            <img class="avatar avatar-md mr-3" src="../assets/images/xs/avatar3.jpg" alt="avatar">
+                                            <div>
+                                                <a href="#">Pro. Jane</a>
+                                                <small class="d-block text-muted">Head OF Dept.</small>
+                                            </div>
+                                            <div class="ml-auto text-muted">
+                                                <a href="javascript:void(0)" class="icon d-none d-md-inline-block ml-3"><i class="fe fe-heart mr-1"></i> 521</a>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="card-body">
-                                        <div class="table-responsive">
-                                            <table class="table table-striped mb-0 text-nowrap">
-                                                <thead>
-                                                    <tr>
-                                                        <th>No</th>
-                                                        <th>Name</th>
-                                                        <th>Assigned Professor</th>
-                                                        <th>Date Of Admit</th>
-                                                        <th>Fees</th>
-                                                        <th>Branch</th>
-                                                        <th>Edit</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>1</td>
-                                                        <td>Jens Brincker</td>
-                                                        <td>Kenny Josh</td>
-                                                        <td>27/05/2016</td>
-                                                        <td>
-                                                            <span class="tag tag-success">paid</span>
-                                                        </td>
-                                                        <td>Mechanical</td>
-                                                        <td>
-                                                            <a href="javascript:void(0)"><i class="fa fa-check"></i></a>
-                                                            <a href="javascript:void(0)"><i class="fa fa-trash"></i></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>2</td>
-                                                        <td>Mark Hay</td>
-                                                        <td> Mark</td>
-                                                        <td>26/05/2018</td>
-                                                        <td>
-                                                            <span class="tag tag-warning">unpaid</span>
-                                                        </td>
-                                                        <td>Science</td>
-                                                        <td>
-                                                            <a href="javascript:void(0)"><i class="fa fa-check"></i></a>
-                                                            <a href="javascript:void(0)"><i class="fa fa-trash"></i></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>3</td>
-                                                        <td>Anthony Davie</td>
-                                                        <td>Cinnabar</td>
-                                                        <td>21/05/2018</td>
-                                                        <td>
-                                                            <span class="tag tag-success ">paid</span>
-                                                        </td>
-                                                        <td>Commerce</td>
-                                                        <td>
-                                                            <a href="javascript:void(0)"><i class="fa fa-check"></i></a>
-                                                            <a href="javascript:void(0)"><i class="fa fa-trash"></i></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>4</td>
-                                                        <td>David Perry</td>
-                                                        <td>Felix </td>
-                                                        <td>20/04/2019</td>
-                                                        <td>
-                                                            <span class="tag tag-danger">unpaid</span>
-                                                        </td>
-                                                        <td>Mechanical</td>
-                                                        <td>
-                                                            <a href="javascript:void(0)"><i class="fa fa-check"></i></a>
-                                                            <a href="javascript:void(0)"><i class="fa fa-trash"></i></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>5</td>
-                                                        <td>Anthony Davie</td>
-                                                        <td>Beryl</td>
-                                                        <td>24/05/2017</td>
-                                                        <td>
-                                                            <span class="tag tag-success ">paid</span>
-                                                        </td>
-                                                        <td>M.B.A.</td>
-                                                        <td>
-                                                            <a href="javascript:void(0)"><i class="fa fa-check"></i></a>
-                                                            <a href="javascript:void(0)"><i class="fa fa-trash"></i></a>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>  
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-6">
+                                <div class="card">
+                                    <a href="#"><img class="card-img-top" src="../assets/images/gallery/4.jpg" alt=""></a>
+                                    <div class="card-body d-flex flex-column">
+                                        <h5><a href="courses-details.php">PHP Development Course</a></h5>
+                                        <div class="text-muted">Look, my liege! The Knights Who Say Ni demand a sacrifice!</div>
+                                    </div>
+                                    <div class="table-responsive">
+                                        <table class="table table-striped table-vcenter mb-0">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="w20"><i class="fa fa-calendar text-blue"></i></td>
+                                                    <td class="tx-medium">Duration</td>
+                                                    <td class="text-right">6 Months</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><i class="fa fa-cc-visa text-danger"></i></td>
+                                                    <td class="tx-medium">Fees</td>
+                                                    <td class="text-right">$1,674</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><i class="fa fa-users text-warning"></i></td>
+                                                    <td class="tx-medium">Students</td>
+                                                    <td class="text-right">125+</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="d-flex align-items-center mt-auto">
+                                            <img class="avatar avatar-md mr-3" src="../assets/images/xs/avatar4.jpg" alt="avatar">
+                                            <div>
+                                                <a href="#">Pro. Jane</a>
+                                                <small class="d-block text-muted">Head OF Dept.</small>
+                                            </div>
+                                            <div class="ml-auto text-muted">
+                                                <a href="javascript:void(0)" class="icon d-none d-md-inline-block ml-3"><i class="fe fe-heart mr-1"></i> 521</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-6">
+                                <div class="card">
+                                    <a href="#"><img class="card-img-top" src="../assets/images/gallery/5.jpg" alt=""></a>
+                                    <div class="card-body d-flex flex-column">
+                                        <h5><a href="courses-details.php">Magento Programmer Course</a></h5>
+                                        <div class="text-muted">Look, my liege! The Knights Who Say Ni demand a sacrifice!</div>
+                                    </div>
+                                    <div class="table-responsive">
+                                        <table class="table table-striped table-vcenter mb-0">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="w20"><i class="fa fa-calendar text-blue"></i></td>
+                                                    <td class="tx-medium">Duration</td>
+                                                    <td class="text-right">1 Year</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><i class="fa fa-cc-visa text-danger"></i></td>
+                                                    <td class="tx-medium">Fees</td>
+                                                    <td class="text-right">$1,674</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><i class="fa fa-users text-warning"></i></td>
+                                                    <td class="tx-medium">Students</td>
+                                                    <td class="text-right">50+</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="d-flex align-items-center mt-auto">
+                                            <img class="avatar avatar-md mr-3" src="../assets/images/xs/avatar5.jpg" alt="avatar">
+                                            <div>
+                                                <a href="#">Pro. Corrine</a>
+                                                <small class="d-block text-muted">Head OF Dept.</small>
+                                            </div>
+                                            <div class="ml-auto text-muted">
+                                                <a href="javascript:void(0)" class="icon d-none d-md-inline-block ml-3"><i class="fe fe-heart mr-1"></i> 521</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-6">
+                                <div class="card">
+                                    <a href="#"><img class="card-img-top" src="../assets/images/gallery/6.jpg" alt=""></a>
+                                    <div class="card-body d-flex flex-column">
+                                        <h5><a href="courses-details.php">UI UX Design Course</a></h5>
+                                        <div class="text-muted">Look, my liege! The Knights Who Say Ni demand a sacrifice!</div>
+                                    </div>
+                                    <div class="table-responsive">
+                                        <table class="table table-striped table-vcenter mb-0">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="w20"><i class="fa fa-calendar text-blue"></i></td>
+                                                    <td class="tx-medium">Duration</td>
+                                                    <td class="text-right">6 Months</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><i class="fa fa-cc-visa text-danger"></i></td>
+                                                    <td class="tx-medium">Fees</td>
+                                                    <td class="text-right">$1,674</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><i class="fa fa-users text-warning"></i></td>
+                                                    <td class="tx-medium">Students</td>
+                                                    <td class="text-right">125+</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="d-flex align-items-center mt-auto">
+                                            <img class="avatar avatar-md mr-3" src="../assets/images/xs/avatar6.jpg" alt="avatar">
+                                            <div>
+                                                <a href="#">Pro. Emmett</a>
+                                                <small class="d-block text-muted">Head OF Dept.</small>
+                                            </div>
+                                            <div class="ml-auto text-muted">
+                                                <a href="javascript:void(0)" class="icon d-none d-md-inline-block ml-3"><i class="fe fe-heart mr-1"></i> 521</a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="admin-Activity" role="tabpanel">
-                        <div class="row clearfix row-deck">
-                            <div class="col-xl-7 col-lg-6 col-md-12">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h3 class="card-title">Quick Mail</h3>
-                                        <div class="card-options">
-                                            <a href="javascript:void(0)" class="card-options-remove" data-toggle="card-remove"><i class="fe fe-x"></i></a>
-                                            <div class="item-action dropdown ml-2">
-                                                <a href="javascript:void(0)" data-toggle="dropdown"><i class="fe fe-more-vertical"></i></a>
-                                                <div class="dropdown-menu dropdown-menu-right">
-                                                    <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-eye"></i> View Details </a>
-                                                    <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-share-alt"></i> Share </a>
-                                                    <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-cloud-download"></i> Download</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-copy"></i> Copy to</a>
-                                                    <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-folder"></i> Move to</a>
-                                                    <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-edit"></i> Rename</a>
-                                                    <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-trash"></i> Delete</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="input-group">
-                                            <div class="input-group-prepend">
-                                                <span class="input-group-text w80">To:</span>
-                                            </div>
-                                            <input type="text" class="form-control">
-                                            <div class="input-group-append">
-                                                <span class="input-group-text">CC BCC</span>
-                                            </div>
-                                        </div>
-                                        <div class="input-group mt-1 mb-3">
-                                            <div class="input-group-prepend">
-                                                <span class="input-group-text w80">Subject:</span>
-                                            </div>
-                                            <input type="text" class="form-control">
-                                        </div>
-
-                                        <div class="summernote">
-                                            Hi there,
-                                            <br/>
-                                            <p>The toolbar can be customized and it also supports various callbacks such as <code>oninit</code>, <code>onfocus</code>, <code>onpaste</code> and many more.</p>
-                                            <br/>
-                                            <p>Thank you!</p>
-                                            <h6>Summer Note</h6>
-                                        </div>
-                                        <button class="btn btn-default mt-3">Send</button>
-                                    </div>
+                    <div class="tab-pane" id="Courses-add">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">Department Basic Info</h3>
+                                <div class="card-options ">
+                                    <a href="#" class="card-options-collapse" data-toggle="card-collapse"><i class="fe fe-chevron-up"></i></a>
+                                    <a href="#" class="card-options-remove" data-toggle="card-remove"><i class="fe fe-x"></i></a>
                                 </div>
-                
                             </div>
-                            <div class="col-xl-5 col-lg-6 col-md-12">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h3 class="card-title">University Stats</h3>
-                                        <div class="card-options">
-                                            <a href="javascript:void(0)" class="card-options-remove" data-toggle="card-remove"><i class="fe fe-x"></i></a>
-                                            <div class="item-action dropdown ml-2">
-                                                <a href="javascript:void(0)" data-toggle="dropdown"><i class="fe fe-more-vertical"></i></a>
-                                                <div class="dropdown-menu dropdown-menu-right">
-                                                    <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-eye"></i> View Details </a>
-                                                    <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-share-alt"></i> Share </a>
-                                                    <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-cloud-download"></i> Download</a>                                            
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-copy"></i> Copy to</a>
-                                                    <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-folder"></i> Move to</a>
-                                                    <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-edit"></i> Rename</a>
-                                                    <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-trash"></i> Delete</a>
-                                                </div>
-                                            </div>
+                            <div class="card-body">
+                                <div class="row clearfix">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Department Name ">
                                         </div>
                                     </div>
-                                    <div class="card-body">
-                                        <div class="row text-center">
-                                            <div class="col-lg-4 col-4 border-right">
-                                                <label class="mb-0 font-10">Department</label>
-                                                <h4 class="font-20 font-weight-bold">05</h4>
-                                            </div>
-                                            <div class="col-lg-4 col-4 border-right">
-                                                <label class="mb-0 font-10">Total Teacher</label>
-                                                <h4 class="font-20 font-weight-bold">43</h4>
-                                            </div>
-                                            <div class="col-lg-4 col-4">
-                                                <label class="mb-0 font-10">Total Student</label>
-                                                <h4 class="font-20 font-weight-bold">267</h4>
-                                            </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Head of Department">
                                         </div>
-                                        <table class="table table-striped mt-4">
-                                            <tbody><tr>
-                                                <td>
-                                                    <label class="d-block">Mechanical Engineering<span class="float-right">43%</span></label>
-                                                    <div class="progress progress-xs">
-                                                        <div class="progress-bar bg-indigo" role="progressbar" aria-valuenow="43" aria-valuemin="0" aria-valuemax="100" style="width: 43%;"></div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <label class="d-block">Business Analysis - BUS <span class="float-right">27%</span></label>
-                                                    <div class="progress progress-xs">
-                                                        <div class="progress-bar bg-blue" role="progressbar" aria-valuenow="27" aria-valuemin="0" aria-valuemax="100" style="width: 27%;"></div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <label class="d-block">Computer Technology - CT <span class="float-right">81%</span></label>
-                                                    <div class="progress progress-xs">
-                                                        <div class="progress-bar bg-cyan" role="progressbar" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100" style="width: 81%;"></div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <label class="d-block">Management - MGT <span class="float-right">61%</span></label>
-                                                    <div class="progress progress-xs">
-                                                        <div class="progress-bar bg-pink" role="progressbar" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100" style="width: 61%;"></div>
-                                                    </div>   
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <label class="d-block">Science <span class="float-right">77%</span></label>
-                                                    <div class="progress progress-xs">
-                                                        <div class="progress-bar bg-orange" role="progressbar" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100" style="width: 77%;"></div>
-                                                    </div>   
-                                                </td>
-                                            </tr>
-                                        </tbody></table> 
                                     </div>
-                                    <div class="card-footer">
-                                        <small>Measure How Fast You’re Growing Monthly Recurring Revenue. <a href="#">Learn More</a></small>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <input type="number" class="form-control" placeholder="No. of Students ">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <input data-provide="datepicker" data-date-autoclose="true" class="form-control" placeholder="Department Start Date">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="form-group">
+                                            <textarea rows="4" class="form-control no-resize" placeholder="Brief"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                        <button type="submit" class="btn btn-outline-secondary btn-default">Cancel</button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-12 col-lg-12">
-                                <div class="card">
-                                    <div class="table-responsive todo_list">
-                                        <table class="table table-hover text-nowrap table-striped table-vcenter mb-0">
-                                            <thead>
-                                                <tr>
-                                                    <th>Task</th>
-                                                    <th class="w150 text-right">Due</th>
-                                                    <th class="w100">Priority</th>
-                                                    <th class="w80 text-center"><i class="icon-user"></i></th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <label class="custom-control custom-checkbox">
-                                                            <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" checked>
-                                                            <span class="custom-control-label">Report Panel Usag</span>
-                                                        </label>
-                                                    </td>
-                                                    <td class="text-right">Feb 12-2019</td>
-                                                    <td><span class="tag tag-danger ml-0 mr-0">HIGH</span></td>
-                                                    <td>
-                                                        <span class="avatar avatar-pink"  data-toggle="tooltip" data-placement="top" title="" data-original-title="Avatar Name">NG</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <label class="custom-control custom-checkbox">
-                                                            <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1">
-                                                            <span class="custom-control-label">Report Panel Usag</span>
-                                                        </label>
-                                                    </td>
-                                                    <td class="text-right">Feb 18-2019</td>
-                                                    <td><span class="tag tag-warning ml-0 mr-0">MED</span></td>
-                                                    <td>
-                                                        <img src="../assets/images/xs/avatar1.jpg" data-toggle="tooltip" data-placement="top" title="" alt="Avatar" class="avatar" data-original-title="Avatar Name">
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <label class="custom-control custom-checkbox">
-                                                            <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" checked>
-                                                            <span class="custom-control-label">New logo design for Angular Admin</span>
-                                                        </label>
-                                                    </td>
-                                                    <td class="text-right">March 02-2019</td>
-                                                    <td><span class="tag tag-success ml-0 mr-0">High</span></td>
-                                                    <td>
-                                                        <img src="../assets/images/xs/avatar2.jpg" data-toggle="tooltip" data-placement="top" title="" alt="Avatar" class="avatar" data-original-title="Avatar Name">
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <label class="custom-control custom-checkbox">
-                                                            <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" checked>
-                                                            <span class="custom-control-label">Report Panel Usag</span>
-                                                        </label>
-                                                    </td>
-                                                    <td class="text-right">Feb 12-2019</td>
-                                                    <td><span class="tag tag-danger ml-0 mr-0">HIGH</span></td>
-                                                    <td>
-                                                        <span class="avatar avatar-pink"  data-toggle="tooltip" data-placement="top" title="" data-original-title="Avatar Name">NG</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <label class="custom-control custom-checkbox">
-                                                            <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1">
-                                                            <span class="custom-control-label">Report Panel Usag</span>
-                                                        </label>
-                                                    </td>
-                                                    <td class="text-right">Feb 18-2019</td>
-                                                    <td><span class="tag tag-warning ml-0 mr-0">MED</span></td>
-                                                    <td>
-                                                        <img src="../assets/images/xs/avatar3.jpg" data-toggle="tooltip" data-placement="top" title="" alt="Avatar" class="avatar" data-original-title="Avatar Name">
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <label class="custom-control custom-checkbox">
-                                                            <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" checked>
-                                                            <span class="custom-control-label">New logo design for Angular Admin</span>
-                                                        </label>
-                                                    </td>
-                                                    <td class="text-right">March 02-2019</td>
-                                                    <td><span class="tag tag-success ml-0 mr-0">High</span></td>
-                                                    <td>
-                                                        <span class="avatar avatar-blue"  data-toggle="tooltip" data-placement="top" title="" data-original-title="Avatar Name">NG</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <label class="custom-control custom-checkbox">
-                                                            <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1">
-                                                            <span class="custom-control-label">Design PSD files for Angular Admin</span>
-                                                        </label>
-                                                    </td>
-                                                    <td class="text-right">March 20-2019</td>
-                                                    <td><span class="tag tag-warning ml-0 mr-0">MED</span></td>
-                                                    <td>
-                                                        <img src="../assets/images/xs/avatar4.jpg" data-toggle="tooltip" data-placement="top" title="" alt="Avatar" class="avatar" data-original-title="Avatar Name">
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <label class="custom-control custom-checkbox">
-                                                            <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1">
-                                                            <span class="custom-control-label">Design PSD files for Angular Admin</span>
-                                                        </label>
-                                                    </td>
-                                                    <td class="text-right">March 20-2019</td>
-                                                    <td><span class="tag tag-warning ml-0 mr-0">MED</span></td>
-                                                    <td>
-                                                        <img src="../assets/images/xs/avatar5.jpg" data-toggle="tooltip" data-placement="top" title="" alt="Avatar" class="avatar" data-original-title="Avatar Name">
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">Staff Member Account Info</h3>
+                                <div class="card-options ">
+                                    <a href="#" class="card-options-collapse" data-toggle="card-collapse"><i class="fe fe-chevron-up"></i></a>
+                                    <a href="#" class="card-options-remove" data-toggle="card-remove"><i class="fe fe-x"></i></a>
                                 </div>
                             </div>
+                            <div class="card-body">
+                                <div class="row clearfix">
+                                    <div class="col-sm-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Email">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Phone">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                        <button type="submit" class="btn btn-outline-secondary btn-default">Cancel</button>
+                                    </div>
+                                </div>                        
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="Courses-add-Boot">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">Add Department</h3>
+                                <div class="card-options ">
+                                    <a href="#" class="card-options-collapse" data-toggle="card-collapse"><i class="fe fe-chevron-up"></i></a>
+                                    <a href="#" class="card-options-remove" data-toggle="card-remove"><i class="fe fe-x"></i></a>
+                                </div>
+                            </div>
+                            <form class="card-body">
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Department Name <span class="text-danger">*</span></label>
+                                    <div class="col-md-7">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Head Of Department</label>
+                                    <div class="col-md-7">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Department Start Date <span class="text-danger">*</span></label>
+                                    <div class="col-md-7">
+                                        <input data-provide="datepicker" data-date-autoclose="true" class="form-control" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Student Capacity <span class="text-danger">*</span></label>
+                                    <div class="col-md-7">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Department Details <span class="text-danger">*</span></label>
+                                    <div class="col-md-7">
+                                        <textarea rows="4" class="form-control no-resize" placeholder="Please type what you want..."></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label"></label>
+                                    <div class="col-md-7">
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                        <button type="submit" class="btn btn-outline-secondary">Cancel</button>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -1523,14 +1236,12 @@
 <!-- Start Main project js, jQuery, Bootstrap -->
 <script src="../assets/bundles/lib.vendor.bundle.js"></script>
 
-<!-- Start all plugin js -->
-<script src="../assets/bundles/counterup.bundle.js"></script>
-<script src="../assets/bundles/apexcharts.bundle.js"></script>
-<script src="../assets/bundles/summernote.bundle.js"></script>
+<!-- Start Plugin Js -->
+<script src="../assets/plugins/sweetalert/sweetalert.min.js"></script>
+<script src="../assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
 
 <!-- Start project main js  and page js -->
 <script src="../assets/js/core.js"></script>
-<script src="assets/js/page/index.js"></script>
-<script src="assets/js/page/summernote.js"></script>
+<script src="assets/js/page/dialogs.js"></script>
 </body>
 </html>
