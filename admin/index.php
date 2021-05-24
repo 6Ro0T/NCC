@@ -65,16 +65,17 @@
       $myusername = mysqli_real_escape_string($conn,$_POST['email']);
       $mypassword = mysqli_real_escape_string($conn,$_POST['passwd']); 
       
-      $sql = "SELECT email FROM student WHERE email = '$myusername' and password = '$mypassword'";
+      $sql = "SELECT username FROM admin WHERE username = '$myusername' and password = '$mypassword'";
       $result = mysqli_query($conn,$sql);
       $row = mysqli_fetch_array($result);
       $count = mysqli_num_rows($result);
-      
       // If result matched $myusername and $mypassword, table row must be 1 row
-      $sql1="select division from student where email='$myusername'";
+      $sql1="select division from admin where username='$myusername'";
       $result1=mysqli_query($conn,$sql1);
       $row1=mysqli_fetch_array($result1);
       $value=$row1["division"];
+      $debug="<script>alert('<?php echo $value ?>')";
+      echo $debug;
       echo $value;
       if($count == 1) {
          //session_register("username");
