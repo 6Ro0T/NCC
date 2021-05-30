@@ -85,10 +85,10 @@
             header("location: navy.php");
          }
          elseif($value=='army'){
-             header("location: army.php");
+             header("location: army/army.php");
          }
          elseif($value=='airforce'){
-             header("location: airforce.php");
+             header("location: /airforce/airforce.php");
          }
       }else {
            header("location:index.php?msg=failed");
