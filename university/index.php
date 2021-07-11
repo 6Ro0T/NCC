@@ -48,7 +48,6 @@
 					if (isset($_GET["msg"]) == 'failed') {
 						echo "Incorrect username or password";
 }       			?>
-                    <div class="text-muted mt-4">Don't have account yet? <a href="register.html">Sign up</a></div>
                 </div>
             </div>
         </div>        
