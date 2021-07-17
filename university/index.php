@@ -23,7 +23,7 @@
         <div class="card">
             <div class="card-body">
                 <div class="text-center">
-                    <a class="header-brand" href="myncc/index.html"><i class="fa fa-graduation-cap brand-logo"></i></a>
+                    <a class="header-brand" href="../index.html"><i class="fa fa-graduation-cap brand-logo"></i></a>
                     <div class="card-title mt-3">Login to your account</div>
                     
                 </div>
