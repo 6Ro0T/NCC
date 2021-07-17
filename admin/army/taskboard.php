@@ -1,6 +1,6 @@
 <?php
    include('session.php');
-?>
+?><!doctype html>
 <!doctype html>
 <html lang="en" dir="ltr">
 <head>
@@ -8,20 +8,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <link rel="icon" href="favicon.ico" type="image/x-icon"/>
-<title>:: Ericsson :: Home</title>
+<title>:: Ericsson :: Taskboard</title>
 
 <!-- Bootstrap Core and vandor -->
-<link rel="stylesheet" href="../assets/plugins/bootstrap/css/bootstrap.min.css" />
-
-<!-- Plugins css -->
-<link rel="stylesheet" href="../assets/plugins/summernote/dist/summernote.css"/>
-
+<link rel="stylesheet" href="../../assets/plugins/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="../../assets/plugins/nestable/jquery-nestable.css"/>
+<link rel="stylesheet" href="../../assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css">
 
 <!-- Core css -->
-<link rel="stylesheet" href="../assets/css/style.min.css"/>
+<link rel="stylesheet" href="../../assets/css/style.min.css"/>
 </head>
 
 <body class="font-muli theme-cyan gradient">
+
 <!-- Page Loader -->
 <div class="page-loader-wrapper">
     <div class="loader">
@@ -198,10 +197,10 @@
                             <h3>Developer Team</h3>
                             <h4>Hangouts</h4>
                             <ul class="list-unstyled team-info margin-0 p-t-5">                                            
-                                <li><img src="../assets/images/xs/avatar1.jpg" alt="Avatar"></li>
-                                <li><img src="../assets/images/xs/avatar2.jpg" alt="Avatar"></li>
-                                <li><img src="../assets/images/xs/avatar3.jpg" alt="Avatar"></li>
-                                <li><img src="../assets/images/xs/avatar4.jpg" alt="Avatar"></li>                                            
+                                <li><img src="../../assets/images/xs/avatar1.jpg" alt="Avatar"></li>
+                                <li><img src="../../assets/images/xs/avatar2.jpg" alt="Avatar"></li>
+                                <li><img src="../../assets/images/xs/avatar3.jpg" alt="Avatar"></li>
+                                <li><img src="../../assets/images/xs/avatar4.jpg" alt="Avatar"></li>                                            
                             </ul>
                         </div>
                     </li>
@@ -239,15 +238,15 @@
                 <ul class="list-group list-unstyled">
                     <li class="list-group-item mb-2">
                         <p>Light Version</p>
-                        <a href="../university/index.html"><img src="../assets/images/themes/default.png" class="img-fluid" alt="" /></a>
+                        <a href="../../university/index.html"><img src="../../assets/images/themes/default.png" class="img-fluid" alt="" /></a>
                     </li>
                     <li class="list-group-item mb-2">
                         <p>Dark Version</p>
-                        <a href="../university-dark/index.html"><img src="../assets/images/themes/dark.png" class="img-fluid" alt="" /></a>
+                        <a href="../../university-dark/index.html"><img src="../../assets/images/themes/dark.png" class="img-fluid" alt="" /></a>
                     </li>
                     <li class="list-group-item mb-2">
                         <p>RTL Version</p>
-                        <a href="../university-rtl/index.html"><img src="../assets/images/themes/rtl.png" class="img-fluid" alt="" /></a>
+                        <a href="../../university-rtl/index.html"><img src="../../assets/images/themes/rtl.png" class="img-fluid" alt="" /></a>
                     </li>
                 </ul>
             </div>
@@ -517,7 +516,7 @@
                         <li class="alfabet">A</li>
                         <li>
                             <a href="javascript:void(0);" class="media">
-                                <img class="media-object" src="../assets/images/xs/avatar1.jpg" alt="">
+                                <img class="media-object" src="../../assets/images/xs/avatar1.jpg" alt="">
                                 <div class="media-body">
                                     <span class="name">Abigail Churchill</span>
                                     <span class="message">Art & Design</span>
@@ -526,7 +525,7 @@
                         </li>
                         <li>
                             <a href="javascript:void(0);" class="media">
-                                <img class="media-object" src="../assets/images/xs/avatar2.jpg" alt="">
+                                <img class="media-object" src="../../assets/images/xs/avatar2.jpg" alt="">
                                 <div class="media-body">
                                     <span class="name">Alexandra Carr</span>
                                     <span class="message">Fashion</span>
@@ -535,7 +534,7 @@
                         </li>
                         <li>
                             <a href="javascript:void(0);" class="media">
-                                <img class="media-object" src="../assets/images/xs/avatar3.jpg" alt="">
+                                <img class="media-object" src="../../assets/images/xs/avatar3.jpg" alt="">
                                 <div class="media-body">
                                     <span class="name">Alison Berry</span>
                                     <span class="message">Fashion</span>
@@ -545,7 +544,7 @@
                         <li class="alfabet">B</li>
                         <li>
                             <a href="javascript:void(0);" class="media">
-                                <img class="media-object" src="../assets/images/xs/avatar4.jpg" alt="">
+                                <img class="media-object" src="../../assets/images/xs/avatar4.jpg" alt="">
                                 <div class="media-body">
                                     <span class="name">Bella Alan</span>
                                     <span class="message">Sports Science</span>
@@ -555,7 +554,7 @@
                         <li class="alfabet">C</li>
                         <li>
                             <a href="javascript:void(0);" class="media">
-                                <img class="media-object" src="../assets/images/xs/avatar5.jpg" alt="">
+                                <img class="media-object" src="../../assets/images/xs/avatar5.jpg" alt="">
                                 <div class="media-body">
                                     <span class="name">Caroline Alan</span>
                                     <span class="message">Sports Science</span>
@@ -564,7 +563,7 @@
                         </li>
                         <li>
                             <a href="javascript:void(0);" class="media">
-                                <img class="media-object" src="../assets/images/xs/avatar6.jpg" alt="">
+                                <img class="media-object" src="../../assets/images/xs/avatar6.jpg" alt="">
                                 <div class="media-body">
                                     <span class="name">Connor Campbell</span>
                                     <span class="message">Computers</span>
@@ -573,7 +572,7 @@
                         </li>
                         <li>
                             <a href="javascript:void(0);" class="media">
-                                <img class="media-object" src="../assets/images/xs/avatar7.jpg" alt="">
+                                <img class="media-object" src="../../assets/images/xs/avatar7.jpg" alt="">
                                 <div class="media-body">
                                     <span class="name">Charles Campbell</span>
                                     <span class="message">Computers</span>
@@ -583,7 +582,7 @@
                         <li class="alfabet">D</li>
                         <li>
                             <a href="javascript:void(0);" class="media">
-                                <img class="media-object" src="../assets/images/xs/avatar8.jpg" alt="">
+                                <img class="media-object" src="../../assets/images/xs/avatar8.jpg" alt="">
                                 <div class="media-body">
                                     <span class="name">Donna Hudson</span>
                                     <span class="message">Computers</span>
@@ -592,7 +591,7 @@
                         </li>
                         <li>
                             <a href="javascript:void(0);" class="media">
-                                <img class="media-object" src="../assets/images/xs/avatar9.jpg" alt="">
+                                <img class="media-object" src="../../assets/images/xs/avatar9.jpg" alt="">
                                 <div class="media-body">
                                     <span class="name">Dylan Jones</span>
                                     <span class="message">Computers</span>
@@ -602,7 +601,7 @@
                         <li class="alfabet">G</li>
                         <li>
                             <a href="javascript:void(0);" class="media">
-                                <img class="media-object" src="../assets/images/xs/avatar8.jpg" alt="">
+                                <img class="media-object" src="../../assets/images/xs/avatar8.jpg" alt="">
                                 <div class="media-body">
                                     <span class="name">Gordon Hudson</span>
                                     <span class="message">Sports Science</span>
@@ -611,7 +610,7 @@
                         </li>
                         <li>
                             <a href="javascript:void(0);" class="media">
-                                <img class="media-object" src="../assets/images/xs/avatar9.jpg" alt="">
+                                <img class="media-object" src="../../assets/images/xs/avatar9.jpg" alt="">
                                 <div class="media-body">
                                     <span class="name">Gabrielle Walker</span>
                                     <span class="message">Computers</span>
@@ -620,7 +619,7 @@
                         </li>
                         <li>
                             <a href="javascript:void(0);" class="media">
-                                <img class="media-object" src="../assets/images/xs/avatar10.jpg" alt="">
+                                <img class="media-object" src="../../assets/images/xs/avatar10.jpg" alt="">
                                 <div class="media-body">
                                     <span class="name">Gavin North</span>
                                     <span class="message">Computers</span>
@@ -630,7 +629,7 @@
                         <li class="alfabet">S</li>
                         <li>
                             <a href="javascript:void(0);" class="media">
-                                <img class="media-object" src="../assets/images/xs/avatar1.jpg" alt="">
+                                <img class="media-object" src="../../assets/images/xs/avatar1.jpg" alt="">
                                 <div class="media-body">
                                     <span class="name">Stephanie Hudson</span>
                                     <span class="message">Sports Science</span>
@@ -640,7 +639,7 @@
                         <li class="alfabet">W</li>
                         <li>
                             <a href="javascript:void(0);" class="media">
-                                <img class="media-object" src="../assets/images/xs/avatar1.jpg" alt="">
+                                <img class="media-object" src="../../assets/images/xs/avatar1.jpg" alt="">
                                 <div class="media-body">
                                     <span class="name">William Paige</span>
                                     <span class="message">Fashion</span>
@@ -666,14 +665,14 @@
                     <div class="chat_windows">
                         <ul class="mb-0">
                             <li class="other-message">
-                                <img class="avatar mr-3" src="../assets/images/xs/avatar1.jpg" alt="avatar">
+                                <img class="avatar mr-3" src="../../assets/images/xs/avatar1.jpg" alt="avatar">
                                 <div class="message">
                                     <p class="bg-light-blue">Are we meeting today?</p>
                                     <span class="time">10:10 AM, Today</span>
                                 </div>
                             </li>    
                             <li class="other-message">
-                                <img class="avatar mr-3" src="../assets/images/xs/avatar1.jpg" alt="avatar">
+                                <img class="avatar mr-3" src="../../assets/images/xs/avatar1.jpg" alt="avatar">
                                 <div class="message">
                                     <p class="bg-light-blue">Hi Aiden, how are you? How is the project coming along?</p>
                                     <p class="bg-light-blue">Are we meeting today?</p>
@@ -698,17 +697,17 @@
                                 </div>
                             </li>
                             <li class="other-message">
-                                <img class="avatar mr-3" src="../assets/images/xs/avatar1.jpg" alt="avatar">
+                                <img class="avatar mr-3" src="../../assets/images/xs/avatar1.jpg" alt="avatar">
                                 <div class="message">
                                     <div class="media_img">
-                                        <img src="../assets/images/gallery/1.jpg" class="w100 img-thumbnail" alt="">
-                                        <img src="../assets/images/gallery/2.jpg" class="w100 img-thumbnail" alt="">
+                                        <img src="../../assets/images/gallery/1.jpg" class="w100 img-thumbnail" alt="">
+                                        <img src="../../assets/images/gallery/2.jpg" class="w100 img-thumbnail" alt="">
                                     </div>
                                     <span class="time">10:15 AM, Today</span>
                                 </div>
                             </li> 
                             <li class="other-message">
-                                <img class="avatar mr-3" src="../assets/images/xs/avatar1.jpg" alt="avatar">
+                                <img class="avatar mr-3" src="../../assets/images/xs/avatar1.jpg" alt="avatar">
                                 <div class="message">                                            
                                     <p class="bg-light-blue">Are we meeting today I have results?</p>
                                     <span class="time">10:18 AM, Today</span>
@@ -769,54 +768,33 @@
         </div>
     </div>
     <!-- Start Main leftbar navigation -->
-    <div id="left-sidebar" class="sidebar">
+        <div id="left-sidebar" class="sidebar">
         <h5 class="brand-name">Ericsson<a href="javascript:void(0)" class="menu_option float-right"><i class="icon-grid font-16" data-toggle="tooltip" data-placement="left" title="Grid & List Toggle"></i></a></h5>
         <ul class="nav nav-tabs">
-            <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#menu-uni">University</a></li>
-            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#menu-admin">Admin</a></li>
+            <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#menu-admin">Admin</a></li>
         </ul>
         <div class="tab-content mt-3">
             <div class="tab-pane fade show active" id="menu-uni" role="tabpanel">
                 <nav class="sidebar-nav">
                     <ul class="metismenu">
-                        <li class="active"><a href="index.html"><i class="fa fa-dashboard"></i><span>Dashboard</span></a></li>
-                        <li><a href="professors.html"><i class="fa fa-black-tie"></i><span>Professors</span></a></li>
-                        <li><a href="staff.html"><i class="fa fa-user-circle-o"></i><span>Staff</span></a></li>
-                        <li><a href="students.html"><i class="fa fa-users"></i><span>Students</span></a></li>
-                        <li><a href="departments.html"><i class="fa fa-users"></i><span>Departments</span></a></li>
-                        <li><a href="courses.html"><i class="fa fa-graduation-cap"></i><span>Courses</span></a></li>                        
-                        <li><a href="library.html"><i class="fa fa-book"></i><span>Library</span></a></li>
-                        <li><a href="holiday.html"><i class="fa fa-bullhorn"></i><span>Holiday</span></a></li>
-                        <li class="g_heading">Extra</li>
-                        <li><a href="events.html"><i class="fa fa-calendar"></i><span>Calender</span></a></li>
-                        <li><a href="app-chat.html"><i class="fa fa-comments-o"></i><span>Chat App</span></a></li>
-                        <li><a href="app-contact.html"><i class="fa fa-address-book"></i><span>Contact</span></a></li>
-                        <li><a href="app-filemanager.html"><i class="fa fa-folder"></i><span>FileManager</span></a></li>
-                        <li><a href="our-centres.html"><i class="fa fa-map"></i><span>OurCentres</span></a></li>
-                        <li><a href="gallery.html"><i class="fa fa-camera-retro"></i><span>Gallery</span></a></li>
+                        <li><a href="payments.php"><i class="fa fa-credit-card"></i><span>Payments</span></a></li>
+                        <li><a href="noticeboard.php"><i class="fa fa-dashboard"></i><span>Noticeboard</span></a></li>
+                        <li><a href="taskboard.php"><i class="fa fa-list-ul"></i><span>Taskboard</span></a></li>
+                        <li><a href="hostel.php"><i class="fa fa-bed"></i><span>Hostel</span></a></li>
+                        <li><a href="transport.php"><i class="fa fa-truck"></i><span>Transport</span></a></li>
+                        <li><a href="attendance.php"><i class="fa fa-calendar-check-o"></i><span>Attendance</span></a></li>
+                        <li><a href="leave.php"><i class="fa fa-flag"></i><span>Leave</span></a></li>
+                        <li><a href="setting.php"><i class="fa fa-gear"></i><span>Settings</span></a></li>
                     </ul>
                 </nav>
             </div>
-            <div class="tab-pane fade" id="menu-admin" role="tabpanel">
-                <nav class="sidebar-nav">
-                    <ul class="metismenu">
-                        <li><a href="payments.html"><i class="fa fa-credit-card"></i><span>Payments</span></a></li>
-                        <li><a href="noticeboard.html"><i class="fa fa-dashboard"></i><span>Noticeboard</span></a></li>
-                        <li><a href="taskboard.html"><i class="fa fa-list-ul"></i><span>Taskboard</span></a></li>
-                        <li><a href="hostel.html"><i class="fa fa-bed"></i><span>Hostel</span></a></li>
-                        <li><a href="transport.html"><i class="fa fa-truck"></i><span>Transport</span></a></li>
-                        <li><a href="attendance.html"><i class="fa fa-calendar-check-o"></i><span>Attendance</span></a></li>
-                        <li><a href="leave.html"><i class="fa fa-flag"></i><span>Leave</span></a></li>
-                        <li><a href="setting.html"><i class="fa fa-gear"></i><span>Settings</span></a></li>
-                    </ul>
-                </nav>
-            </div>
+
         </div>
     </div>
     <!-- Start project content area -->
     <div class="page">
         <!-- Start Page header -->
-        <div class="section-body" id="page_top">
+        <div class="section-body" id="page_top" >
             <div class="container-fluid">
                 <div class="page-header">
                     <div class="left">                        
@@ -828,7 +806,7 @@
                         </div>
                     </div>
                     <div class="right">
-                        <ul class="nav nav-pills">                            
+                        <ul class="nav nav-pills">
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
                                 <div class="dropdown-menu">
@@ -856,11 +834,11 @@
                             <div class="dropdown d-flex">
                                 <a class="nav-link icon d-none d-md-flex btn btn-default btn-icon ml-1" data-toggle="dropdown"><i class="fa fa-language"></i></a>
                                 <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                                    <a class="dropdown-item" href="#"><img class="w20 mr-2" src="../assets/images/flags/us.svg" alt="">English</a>
+                                    <a class="dropdown-item" href="#"><img class="w20 mr-2" src="../../assets/images/flags/us.svg" alt="">English</a>
                                     <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#"><img class="w20 mr-2" src="../assets/images/flags/es.svg" alt="">Spanish</a>
-                                    <a class="dropdown-item" href="#"><img class="w20 mr-2" src="../assets/images/flags/jp.svg" alt="">japanese</a>
-                                    <a class="dropdown-item" href="#"><img class="w20 mr-2" src="../assets/images/flags/bl.svg" alt="">France</a> 
+                                    <a class="dropdown-item" href="#"><img class="w20 mr-2" src="../../assets/images/flags/es.svg" alt="">Spanish</a>
+                                    <a class="dropdown-item" href="#"><img class="w20 mr-2" src="../../assets/images/flags/jp.svg" alt="">japanese</a>
+                                    <a class="dropdown-item" href="#"><img class="w20 mr-2" src="../../assets/images/flags/bl.svg" alt="">France</a>
                                 </div>
                             </div>
                             <div class="dropdown d-flex">
@@ -869,7 +847,7 @@
                                     <ul class="right_chat list-unstyled w350 p-0">
                                         <li class="online">
                                             <a href="javascript:void(0);" class="media">
-                                                <img class="media-object" src="../assets/images/xs/avatar4.jpg" alt="">
+                                                <img class="media-object" src="../../assets/images/xs/avatar4.jpg" alt="">
                                                 <div class="media-body">
                                                     <span class="name">Donald Gardner</span>
                                                     <div class="message">It is a long established fact that a reader</div>
@@ -880,7 +858,7 @@
                                         </li>
                                         <li class="online">
                                             <a href="javascript:void(0);" class="media">
-                                                <img class="media-object " src="../assets/images/xs/avatar5.jpg" alt="">
+                                                <img class="media-object " src="../../assets/images/xs/avatar5.jpg" alt="">
                                                 <div class="media-body">
                                                     <span class="name">Wendy Keen</span>
                                                     <div class="message">There are many variations of passages of Lorem Ipsum</div>
@@ -891,7 +869,7 @@
                                         </li>
                                         <li class="offline">
                                             <a href="javascript:void(0);" class="media">
-                                                <img class="media-object " src="../assets/images/xs/avatar2.jpg" alt="">
+                                                <img class="media-object " src="../../assets/images/xs/avatar2.jpg" alt="">
                                                 <div class="media-body">
                                                     <span class="name">Matt Rosales</span>
                                                     <div class="message">Contrary to popular belief, Lorem Ipsum is not simply</div>
@@ -902,7 +880,7 @@
                                         </li>
                                         <li class="online">
                                             <a href="javascript:void(0);" class="media">
-                                                <img class="media-object " src="../assets/images/xs/avatar3.jpg" alt="">
+                                                <img class="media-object " src="../../assets/images/xs/avatar3.jpg" alt="">
                                                 <div class="media-body">
                                                     <span class="name">Phillip Smith</span>
                                                     <div class="message">It has roots in a piece of classical Latin literature from 45 BC</div>
@@ -959,7 +937,7 @@
                             </div>
                             <div class="dropdown d-flex">
                                 <a href="javascript:void(0)" class="chip ml-3" data-toggle="dropdown">
-                                    <span class="avatar" style="background-image: url(../assets/images/xs/avatar5.jpg)"></span> George</a>
+                                    <span class="avatar" style="background-image: url(../../assets/images/xs/avatar5.jpg)"></span> George</a>
                                 <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
                                     <a class="dropdown-item" href="page-profile.html"><i class="dropdown-icon fe fe-user"></i> Profile</a>
                                     <a class="dropdown-item" href="app-setting.html"><i class="dropdown-icon fe fe-settings"></i> Settings</a>
@@ -978,179 +956,384 @@
         <!-- Start Page title and tab -->
         <div class="section-body">
             <div class="container-fluid">
-                <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex justify-content-between align-items-center ">
                     <div class="header-action">
-                        <h1 class="page-title">Dashboard</h1>
+                        <h1 class="page-title">TaskBoard</h1>
                         <ol class="breadcrumb page-breadcrumb">
                             <li class="breadcrumb-item"><a href="#">Ericsson</a></li>
-                            <li class="breadcrumb-item"><a href="#">University</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+                            <li class="breadcrumb-item active" aria-current="page">TaskBoard</li>
                         </ol>
                     </div>
                     <ul class="nav nav-tabs page-header-tab">
-                        <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#admin-Dashboard">Dashboard</a></li>
-                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#admin-Activity">Activity</a></li>
+                        <li class="nav-item"><a class="nav-link active" id="TaskBoard-tab" data-toggle="tab" href="#TaskBoard-all">Task List</a></li>
+                        <li class="nav-item"><a class="nav-link" id="TaskBoard-tab" data-toggle="tab" href="#TaskBoard-Scrum">Scrum Type</a></li>
+                        <li class="nav-item"><a class="nav-link" id="TaskBoard-tab" data-toggle="tab" href="#TaskBoard-add">Add Task</a></li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="section-body mt-4">
             <div class="container-fluid">
-                <div class="row clearfix row-deck">
-                    <div class="col-6 col-md-4 col-xl-2">
-                        <div class="card">
-                            <div class="card-body ribbon">
-                                <div class="ribbon-box green" data-toggle="tooltip" title="New Professors">5</div>
-                                <a href="professors.html" class="my_sort_cut text-muted">
-                                    <i class="fa fa-black-tie"></i>
-                                    <span>Professors</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-xl-2">
-                        <div class="card">
-                            <div class="card-body">
-                                <a href="app-contact.html" class="my_sort_cut text-muted">
-                                    <i class="fa fa-address-book"></i>
-                                    <span>Contact</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-xl-2">
-                        <div class="card">
-                            <div class="card-body ribbon">
-                                <div class="ribbon-box orange" data-toggle="tooltip" title="New Staff">8</div>
-                                <a href="staff.html" class="my_sort_cut text-muted">
-                                    <i class="fa fa-user-circle-o"></i>
-                                    <span>Staff</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-xl-2">
-                        <div class="card">
-                            <div class="card-body">
-                                <a href="app-filemanager.html" class="my_sort_cut text-muted">
-                                    <i class="fa fa-folder"></i>
-                                    <span>FileManager</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-xl-2">
-                        <div class="card">
-                            <div class="card-body">
-                                <a href="library.html" class="my_sort_cut text-muted">
-                                    <i class="fa fa-book"></i>
-                                    <span>Library</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-xl-2">
-                        <div class="card">
-                            <div class="card-body">
-                                <a href="holiday.html" class="my_sort_cut text-muted">
-                                    <i class="fa fa-bullhorn"></i>
-                                    <span>Holiday</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="tab-content">
-                    <div class="tab-pane fade show active" id="admin-Dashboard" role="tabpanel">
-                        <div class="row clearfix">
-                            <div class="col-xl-12">
+                    <div class="tab-pane active" id="TaskBoard-all">
+                        <div class="row clearfix mt-2">
+                            <div class="col-lg-3 col-md-6">
                                 <div class="card">
+                                    <div class="card-body text-center">
+                                        <h6>Planned</h6>
+                                        <input type="text" class="knob" value="23" data-width="90" data-height="90" data-thickness="0.1" data-fgColor="#2185d0">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <h6>In progress</h6>
+                                        <input type="text" class="knob" value="43" data-width="90" data-height="90" data-thickness="0.1" data-fgColor="#f2711c">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <h6>Completed</h6>
+                                        <input type="text" class="knob" value="83" data-width="90" data-height="90" data-thickness="0.1" data-fgColor="#21ba45">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <h6>In Completed</h6>
+                                        <input type="text" class="knob" value="12" data-width="90" data-height="90" data-thickness="0.1" data-fgColor="#e03997">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table table-hover table-vcenter mb-0 table_custom spacing8 text-nowrap">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Task</th>
+                                        <th>Team</th>
+                                        <th>Duration</th>
+                                        <th>Action</th>
+                                        <th class="w200"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>01</td>
+                                        <td>
+                                            <h6 class="mb-0">New code Update on github</h6>
+                                            <span>It is a long established fact that a reader will be distracted...</span>
+                                        </td>
+                                        <td>
+                                            <ul class="list-unstyled team-info mb-0 w150">
+                                                <li><img src="../../assets/images/xs/avatar1.jpg" data-toggle="tooltip" data-placement="top" title="Avatar" alt="Avatar"></li>
+                                                <li><img src="../../assets/images/xs/avatar2.jpg" data-toggle="tooltip" data-placement="top" title="Avatar" alt="Avatar"></li>
+                                                <li><img src="../../assets/images/xs/avatar5.jpg" data-toggle="tooltip" data-placement="top" title="Avatar" alt="Avatar"></li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <div class="text-info">Start: 3 Jun 2019</div>
+                                            <div class="text-pink">End: 15 Jun 2019</div>
+                                        </td>
+                                        <td>
+                                            <span class="tag tag-blue">Planned</span>
+                                        </td>
+                                        <td>
+                                            <div class="clearfix">
+                                                <div class="float-left"><strong>0%</strong></div>
+                                                <div class="float-right"><small class="text-muted">Progress</small></div>
+                                            </div>
+                                            <div class="progress progress-xs">
+                                                <div class="progress-bar bg-azure" role="progressbar" style="width: 0%" aria-valuenow="42" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>02</td>
+                                        <td>
+                                            <h6 class="mb-0">Design Events</h6>
+                                            <span>It is a long established fact that a reader will be distracted...</span>
+                                        </td>
+                                        <td>
+                                            <ul class="list-unstyled team-info mb-0 w150">
+                                                <li><img src="../../assets/images/xs/avatar1.jpg" data-toggle="tooltip" data-placement="top" title="Avatar" alt="Avatar"></li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <div class="text-info">Start: 02 Jun 2019</div>
+                                            <div class="text-pink">End: 08 Jun 2019</div>
+                                        </td>
+                                        <td>
+                                            <span class="tag tag-green">Completed</span>
+                                        </td>
+                                        <td>
+                                            <div class="clearfix">
+                                                <div class="float-left"><strong>100%</strong></div>
+                                                <div class="float-right"><small class="text-muted">Progress</small></div>
+                                            </div>
+                                            <div class="progress progress-xs">
+                                                <div class="progress-bar bg-green" role="progressbar" style="width: 100%" aria-valuenow="42" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>03</td>
+                                        <td>
+                                            <h6 class="mb-0">Feed Details on Dribbble</h6>
+                                            <span>The point of using Lorem Ipsum is that...</span>
+                                        </td>
+                                        <td>
+                                            <ul class="list-unstyled team-info mb-0 w150">
+                                                <li><img src="../../assets/images/xs/avatar1.jpg" data-toggle="tooltip" data-placement="top" title="Avatar" alt="Avatar"></li>
+                                                <li><img src="../../assets/images/xs/avatar2.jpg" data-toggle="tooltip" data-placement="top" title="Avatar" alt="Avatar"></li>
+                                                <li><img src="../../assets/images/xs/avatar5.jpg" data-toggle="tooltip" data-placement="top" title="Avatar" alt="Avatar"></li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <div class="text-info">Start: 3 Jun 2019</div>
+                                            <div class="text-pink">End: 15 Jun 2019</div>
+                                        </td>
+                                        <td>
+                                            <span class="tag tag-orange">In progress</span>
+                                        </td>
+                                        <td>
+                                            <div class="clearfix">
+                                                <div class="float-left"><strong>35%</strong></div>
+                                                <div class="float-right"><small class="text-muted">Progress</small></div>
+                                            </div>
+                                            <div class="progress progress-xs">
+                                                <div class="progress-bar bg-azure" role="progressbar" style="width: 35%" aria-valuenow="42" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>04</td>
+                                        <td>
+                                            <h6 class="mb-0">New code Update on github</h6>
+                                            <span>It is a long established fact that a reader will be distracted...</span>
+                                        </td>
+                                        <td>
+                                            <ul class="list-unstyled team-info mb-0 w150">
+                                                <li><img src="../../assets/images/xs/avatar1.jpg" data-toggle="tooltip" data-placement="top" title="Avatar" alt="Avatar"></li>
+                                                <li><img src="../../assets/images/xs/avatar2.jpg" data-toggle="tooltip" data-placement="top" title="Avatar" alt="Avatar"></li>
+                                                <li><img src="../../assets/images/xs/avatar5.jpg" data-toggle="tooltip" data-placement="top" title="Avatar" alt="Avatar"></li>
+                                                <li><img src="../../assets/images/xs/avatar3.jpg" data-toggle="tooltip" data-placement="top" title="Avatar" alt="Avatar"></li>
+                                                <li><img src="../../assets/images/xs/avatar7.jpg" data-toggle="tooltip" data-placement="top" title="Avatar" alt="Avatar"></li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <div class="text-info">Start: 13 Jun 2019</div>
+                                            <div class="text-pink">End: 23 Jun 2019</div>
+                                        </td>
+                                        <td>
+                                            <span class="tag tag-orange">In progress</span>
+                                        </td>
+                                        <td>
+                                            <div class="clearfix">
+                                                <div class="float-left"><strong>75%</strong></div>
+                                                <div class="float-right"><small class="text-muted">Progress</small></div>
+                                            </div>
+                                            <div class="progress progress-xs">
+                                                <div class="progress-bar bg-green" role="progressbar" style="width: 75%" aria-valuenow="42" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>05</td>
+                                        <td>
+                                            <h6 class="mb-0">New code Update on github</h6>
+                                            <span>Contrary to popular belief, Lorem Ipsum is not simply random text.</span>
+                                        </td>
+                                        <td>
+                                            <ul class="list-unstyled team-info mb-0 w150">
+                                                <li><img src="../../assets/images/xs/avatar4.jpg" data-toggle="tooltip" data-placement="top" title="Avatar" alt="Avatar"></li>
+                                                <li><img src="../../assets/images/xs/avatar5.jpg" data-toggle="tooltip" data-placement="top" title="Avatar" alt="Avatar"></li>
+                                                <li><img src="../../assets/images/xs/avatar6.jpg" data-toggle="tooltip" data-placement="top" title="Avatar" alt="Avatar"></li>
+                                                <li><img src="../../assets/images/xs/avatar7.jpg" data-toggle="tooltip" data-placement="top" title="Avatar" alt="Avatar"></li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <div class="text-info">Start: 8 Jun 2019</div>
+                                            <div class="text-pink">End: 15 Jun 2019</div>
+                                        </td>
+                                        <td>
+                                            <span class="tag tag-orange">In progress</span>
+                                        </td>
+                                        <td>
+                                            <div class="clearfix">
+                                                <div class="float-left"><strong>35%</strong></div>
+                                                <div class="float-right"><small class="text-muted">Progress</small></div>
+                                            </div>
+                                            <div class="progress progress-xs">
+                                                <div class="progress-bar bg-azure" role="progressbar" style="width: 35%" aria-valuenow="42" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>06</td>
+                                        <td>
+                                            <h6 class="mb-0">Angular App Design bug</h6>
+                                            <span>There are many variations of passages of Lorem Ipsum available...</span>
+                                        </td>
+                                        <td>
+                                            <ul class="list-unstyled team-info mb-0 w150">
+                                                <li><img src="../../assets/images/xs/avatar3.jpg" data-toggle="tooltip" data-placement="top" title="Avatar" alt="Avatar"></li>
+                                                <li><img src="../../assets/images/xs/avatar4.jpg" data-toggle="tooltip" data-placement="top" title="Avatar" alt="Avatar"></li>
+                                                <li><img src="../../assets/images/xs/avatar7.jpg" data-toggle="tooltip" data-placement="top" title="Avatar" alt="Avatar"></li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <div class="text-info">Start: 3 Jun 2019</div>
+                                            <div class="text-pink">End: 15 Jun 2019</div>
+                                        </td>
+                                        <td>
+                                            <span class="tag tag-orange">Planned</span>
+                                        </td>
+                                        <td>
+                                            <div class="clearfix">
+                                                <div class="float-left"><strong>35%</strong></div>
+                                                <div class="float-right"><small class="text-muted">Progress</small></div>
+                                            </div>
+                                            <div class="progress progress-xs">
+                                                <div class="progress-bar bg-azure" role="progressbar" style="width: 35%" aria-valuenow="42" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="TaskBoard-Scrum">
+                        <div class="row clearfix">
+                            <div class="col-lg-4 col-md-12">
+                                <div class="card planned_task">
                                     <div class="card-header">
-                                        <h3 class="card-title">University Report</h3>
+                                        <h3 class="card-title">Planned</h3>
                                         <div class="card-options">
                                             <a href="#" class="card-options-collapse" data-toggle="card-collapse"><i class="fe fe-chevron-up"></i></a>
                                             <a href="#" class="card-options-fullscreen" data-toggle="card-fullscreen"><i class="fe fe-maximize"></i></a>
                                             <a href="#" class="card-options-remove" data-toggle="card-remove"><i class="fe fe-x"></i></a>
+                                            <div class="item-action dropdown ml-2">
+                                                <a href="javascript:void(0)" data-toggle="dropdown"><i class="fe fe-more-vertical"></i></a>
+                                                <div class="dropdown-menu dropdown-menu-right">
+                                                        <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-eye"></i> View Details </a>
+                                                        <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-share-alt"></i> Share </a>
+                                                        <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-cloud-download"></i> Download</a>                                            
+                                                        <div class="dropdown-divider"></div>
+                                                        <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-copy"></i> Copy to</a>
+                                                        <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-folder"></i> Move to</a>
+                                                        <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-edit"></i> Rename</a>
+                                                        <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-trash"></i> Delete</a>
+                                                    </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="card-body">
-                                        <div class="d-sm-flex justify-content-between">
-                                            <div class="font-12 mb-2"><span>Measure How Fast You’re Growing Monthly Recurring Revenue. <a href="#">Learn More</a></span></div>
-                                            <div class="selectgroup w250">
-                                                <label class="selectgroup-item">
-                                                    <input type="radio" name="intensity" value="low" class="selectgroup-input" checked="">
-                                                    <span class="selectgroup-button">1D</span>
-                                                </label>
-                                                <label class="selectgroup-item">
-                                                    <input type="radio" name="intensity" value="medium" class="selectgroup-input">
-                                                    <span class="selectgroup-button">1W</span>
-                                                </label>
-                                                <label class="selectgroup-item">
-                                                    <input type="radio" name="intensity" value="high" class="selectgroup-input">
-                                                    <span class="selectgroup-button">1M</span>
-                                                </label>
-                                                <label class="selectgroup-item">
-                                                    <input type="radio" name="intensity" value="veryhigh" class="selectgroup-input">
-                                                    <span class="selectgroup-button">1Y</span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div id="apex-chart-line-column"></div>
-                                    </div>
-                                    <div class="card-footer">
-                                        <div class="row">
-                                            <div class="col-xl-3 col-md-6 mb-2">
-                                                <div class="clearfix">
-                                                    <div class="float-left"><strong>Fees</strong></div>
-                                                    <div class="float-right"><small class="text-muted">35%</small></div>
-                                                </div>
-                                                <div class="progress progress-xs">
-                                                    <div class="progress-bar bg-indigo" role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
-                                                </div>
-                                                <span class="text-uppercase font-10">Compared to last year</span>
-                                            </div>
-                                            <div class="col-xl-3 col-md-6 mb-2">
-                                                <div class="clearfix">
-                                                    <div class="float-left"><strong>Donation</strong></div>
-                                                    <div class="float-right"><small class="text-muted">61%</small></div>
-                                                </div>
-                                                <div class="progress progress-xs">
-                                                    <div class="progress-bar bg-yellow" role="progressbar" style="width: 61%" aria-valuenow="61" aria-valuemin="0" aria-valuemax="100"></div>
-                                                </div>
-                                                <span class="text-uppercase font-10">Compared to last year</span>
-                                            </div> 
-                                            <div class="col-xl-3 col-md-6 mb-2">
-                                                <div class="clearfix">
-                                                    <div class="float-left"><strong>Income</strong></div>
-                                                    <div class="float-right"><small class="text-muted">87%</small></div>
-                                                </div>
-                                                <div class="progress progress-xs">
-                                                    <div class="progress-bar bg-green" role="progressbar" style="width: 87%" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100"></div>
-                                                </div>
-                                                <span class="text-uppercase font-10">Compared to last year</span>
-                                            </div>
-                                            <div class="col-xl-3 col-md-6 mb-2">
-                                                <div class="clearfix">
-                                                    <div class="float-left"><strong>Expense</strong></div>
-                                                    <div class="float-right"><small class="text-muted">42%</small></div>
-                                                </div>
-                                                <div class="progress progress-xs">
-                                                    <div class="progress-bar bg-pink" role="progressbar" style="width: 42%" aria-valuenow="42" aria-valuemin="0" aria-valuemax="100"></div>
-                                                </div>
-                                                <span class="text-uppercase font-10">Compared to last year</span>
-                                            </div>                                                                       
+                                        <div class="dd" data-plugin="nestable">
+                                            <ol class="dd-list">
+                                                <li class="dd-item" data-id="1">
+                                                    <div class="dd-handle">
+                                                        <h6>Dashbaord</h6>
+                                                        <span class="time"><span class="text-primary">Start: 5 Aug</span> to <span class="text-danger">Complete: 15 Aug</span></span>
+                                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                                        <ul class="list-unstyled team-info">
+                                                            <li><img src="../../assets/images/xs/avatar1.jpg" data-toggle="tooltip" data-placement="top" title="Avatar" alt="Avatar"></li>
+                                                            <li><img src="../../assets/images/xs/avatar2.jpg" data-toggle="tooltip" data-placement="top" title="Avatar" alt="Avatar"></li>
+                                                            <li><img src="../../assets/images/xs/avatar5.jpg" data-toggle="tooltip" data-placement="top" title="Avatar" alt="Avatar"></li>
+                                                        </ul>                                            
+                                                    </div>
+                                                </li>
+                                                <li class="dd-item" data-id="2">
+                                                    <div class="dd-handle">
+                                                        <h6>New project</h6>
+                                                        <span class="time"><span class="text-primary">Start: 6 Aug</span> to <span class="text-danger">Complete: 28 Aug</span></span>
+                                                        <p>It is a long established fact that a reader will be distracted.</p>
+                                                    </div>
+                                                </li>
+                                                <li class="dd-item" data-id="3">
+                                                    <div class="dd-handle">
+                                                        <h6>Feed Details</h6>
+                                                        <p>here are many variations of passages of Lorem Ipsum available, but the majority have suffered.</p>
+                                                    </div>
+                                                </li>
+                                            </ol>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>                
-                        <div class="row clearfix row-deck">
-                            <div class="col-xl-6 col-lg-6 col-md-12">
-                                <div class="card">
+                            <div class="col-lg-4 col-md-12">
+                                <div class="card progress_task">
                                     <div class="card-header">
-                                        <h3 class="card-title">Exam Toppers</h3>
+                                        <h3 class="card-title">In progress</h3>
                                         <div class="card-options">
                                             <a href="#" class="card-options-collapse" data-toggle="card-collapse"><i class="fe fe-chevron-up"></i></a>
+                                            <a href="#" class="card-options-fullscreen" data-toggle="card-fullscreen"><i class="fe fe-maximize"></i></a>
+                                            <a href="#" class="card-options-remove" data-toggle="card-remove"><i class="fe fe-x"></i></a>
+                                            <div class="item-action dropdown ml-2">
+                                                <a href="javascript:void(0)" data-toggle="dropdown"><i class="fe fe-more-vertical"></i></a>
+                                                <div class="dropdown-menu dropdown-menu-right">
+                                                        <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-eye"></i> View Details </a>
+                                                        <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-share-alt"></i> Share </a>
+                                                        <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-cloud-download"></i> Download</a>                                            
+                                                        <div class="dropdown-divider"></div>
+                                                        <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-copy"></i> Copy to</a>
+                                                        <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-folder"></i> Move to</a>
+                                                        <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-edit"></i> Rename</a>
+                                                        <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-trash"></i> Delete</a>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="dd" data-plugin="nestable">
+                                            <ol class="dd-list">
+                                                <li class="dd-item" data-id="1">
+                                                    <div class="dd-handle">
+                                                        <h6>New Code Update</h6>
+                                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                                    </div>
+                                                </li>
+                                                <li class="dd-item" data-id="2">
+                                                    <div class="dd-handle">
+                                                        <h6>Meeting</h6>
+                                                        <span class="time"><span class="text-primary">Start: 5 Aug</span> to <span class="text-danger">Complete: 11 Aug</span></span>
+                                                        <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero</p>
+                                                        <ul class="list-unstyled team-info">                                                
+                                                            <li><img src="../../assets/images/xs/avatar7.jpg" data-toggle="tooltip" data-placement="top" title="Avatar" alt="Avatar"></li>
+                                                            <li><img src="../../assets/images/xs/avatar9.jpg" data-toggle="tooltip" data-placement="top" title="Avatar" alt="Avatar"></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li class="dd-item" data-id="2">
+                                                    <div class="dd-handle">
+                                                        <h6>New project</h6>
+                                                        <p>It is a long established fact that a reader will be distracted.</p>
+                                                    </div>
+                                                </li>                                    
+                                                <li class="dd-item" data-id="3">
+                                                    <div class="dd-handle">
+                                                        <h6>Feed Details</h6>
+                                                        <p>here are many variations of passages of Lorem Ipsum available, but the majority have suffered.</p>
+                                                    </div>
+                                                </li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-12">
+                                <div class="card completed_task">
+                                    <div class="card-header">
+                                        <h3 class="card-title">Completed</h3>
+                                        <div class="card-options">
+                                            <a href="#" class="card-options-collapse" data-toggle="card-collapse"><i class="fe fe-chevron-up"></i></a>
+                                            <a href="#" class="card-options-fullscreen" data-toggle="card-fullscreen"><i class="fe fe-maximize"></i></a>
+                                            <a href="#" class="card-options-remove" data-toggle="card-remove"><i class="fe fe-x"></i></a>
                                             <div class="item-action dropdown ml-2">
                                                 <a href="javascript:void(0)" data-toggle="dropdown"><i class="fe fe-more-vertical"></i></a>
                                                 <div class="dropdown-menu dropdown-menu-right">
@@ -1166,499 +1349,99 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="table-responsive" style="height: 310px;">
-                                        <table class="table card-table table-vcenter text-nowrap table-striped mb-0">
-                                            <tbody>
-                                                <tr>
-                                                    <th>No.</th>                                                    
-                                                    <th>Name</th>
-                                                    <th></th>
-                                                    <th>Marks</th>
-                                                    <th>%AGE</th>
-                                                </tr>
-                                                <tr>
-                                                    <td>11</td>
-                                                    <td class="w40">
-                                                        <div class="avatar">
-                                                            <img class="avatar" src="../assets/images/xs/avatar1.jpg" alt="avatar">
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div>Merri Diamond</div>
-                                                        <div class="text-muted">Science</div>
-                                                    </td>
-                                                    <td>199</td>
-                                                    <td>99.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>23</td>
-                                                    <td class="w40">
-                                                        <div class="avatar">
-                                                            <img class="avatar" src="../assets/images/xs/avatar2.jpg" alt="avatar">
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div>Sara Hopkins</div>
-                                                        <div class="text-muted">Mechanical</div>
-                                                    </td>
-                                                    <td>197</td>
-                                                    <td>98.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>41</td>
-                                                    <td class="w40">
-                                                        <div class="avatar">
-                                                            <img class="avatar" src="../assets/images/xs/avatar3.jpg" alt="avatar">
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div>Allen Collins</div>
-                                                        <div class="text-muted">M.C.A.</div>
-                                                    </td>
-                                                    <td>197</td>
-                                                    <td>98.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>17</td>
-                                                    <td class="w40">
-                                                        <div class="avatar">
-                                                            <img class="avatar" src="../assets/images/xs/avatar4.jpg" alt="avatar">
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div>Erin Gonzales</div>
-                                                        <div class="text-muted">Arts</div>
-                                                    </td>
-                                                    <td>194</td>
-                                                    <td>97.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>57</td>
-                                                    <td class="w40">
-                                                        <div class="avatar">
-                                                            <img class="avatar" src="../assets/images/xs/avatar5.jpg" alt="avatar">
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div>Claire Peters</div>
-                                                        <div class="text-muted">Science</div>
-                                                    </td>
-                                                    <td>192</td>
-                                                    <td>95.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>85</td>
-                                                    <td class="w40">
-                                                        <div class="avatar">
-                                                            <img class="avatar" src="../assets/images/xs/avatar6.jpg" alt="avatar">
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div>Claire Peters</div>
-                                                        <div class="text-muted">Science</div>
-                                                    </td>
-                                                    <td>192</td>
-                                                    <td>95.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>9</td>
-                                                    <td class="w40">
-                                                        <div class="avatar">
-                                                            <img class="avatar" src="../assets/images/xs/avatar7.jpg" alt="avatar">
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div>Claire Peters</div>
-                                                        <div class="text-muted">Science</div>
-                                                    </td>
-                                                    <td>191</td>
-                                                    <td>95.00</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <div class="card-footer d-flex justify-content-between">
-                                        <div class="font-14"><span>Measure How Fast You’re Growing Monthly Recurring Revenue. <a href="#">View All</a></span></div>
-                                        <div>
-                                            <button type="button" class="btn btn-primary">Export</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-6 col-lg-6 col-md-12">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h3 class="card-title">Performance</h3>
-                                    </div>
                                     <div class="card-body">
-                                        <div id="apex-radar-multiple-series"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h3 class="card-title">New Student List</h3>
-                                        <div class="card-options">
-                                            <a href="#" class="card-options-collapse" data-toggle="card-collapse"><i class="fe fe-chevron-up"></i></a>
-                                            <a href="#" class="card-options-fullscreen" data-toggle="card-fullscreen"><i class="fe fe-maximize"></i></a>
-                                            <a href="#" class="card-options-remove" data-toggle="card-remove"><i class="fe fe-x"></i></a>
+                                        <div class="dd" data-plugin="nestable">
+                                            <ol class="dd-list">                                   
+                                                <li class="dd-item" data-id="1">
+                                                    <div class="dd-handle">                                        
+                                                        <h6>Job title</h6>
+                                                        <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+                                                        <ul class="list-unstyled team-info">
+                                                            <li><img src="../../assets/images/xs/avatar4.jpg" data-toggle="tooltip" data-placement="top" title="Avatar" alt="Avatar"></li>
+                                                            <li><img src="../../assets/images/xs/avatar5.jpg" data-toggle="tooltip" data-placement="top" title="Avatar" alt="Avatar"></li>
+                                                            <li><img src="../../assets/images/xs/avatar6.jpg" data-toggle="tooltip" data-placement="top" title="Avatar" alt="Avatar"></li>
+                                                            <li><img src="../../assets/images/xs/avatar8.jpg" data-toggle="tooltip" data-placement="top" title="Avatar" alt="Avatar"></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li class="dd-item" data-id="2">
+                                                    <div class="dd-handle">
+                                                        <h6>Event Done</h6>
+                                                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical</p>
+                                                    </div>
+                                                </li>
+                                                <li class="dd-item" data-id="1">
+                                                    <div class="dd-handle">
+                                                        <h6>New Code Update</h6>
+                                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                                    </div>
+                                                </li>
+                                            </ol>
                                         </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="table-responsive">
-                                            <table class="table table-striped mb-0 text-nowrap">
-                                                <thead>
-                                                    <tr>
-                                                        <th>No</th>
-                                                        <th>Name</th>
-                                                        <th>Assigned Professor</th>
-                                                        <th>Date Of Admit</th>
-                                                        <th>Fees</th>
-                                                        <th>Branch</th>
-                                                        <th>Edit</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>1</td>
-                                                        <td>Jens Brincker</td>
-                                                        <td>Kenny Josh</td>
-                                                        <td>27/05/2016</td>
-                                                        <td>
-                                                            <span class="tag tag-success">paid</span>
-                                                        </td>
-                                                        <td>Mechanical</td>
-                                                        <td>
-                                                            <a href="javascript:void(0)"><i class="fa fa-check"></i></a>
-                                                            <a href="javascript:void(0)"><i class="fa fa-trash"></i></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>2</td>
-                                                        <td>Mark Hay</td>
-                                                        <td> Mark</td>
-                                                        <td>26/05/2018</td>
-                                                        <td>
-                                                            <span class="tag tag-warning">unpaid</span>
-                                                        </td>
-                                                        <td>Science</td>
-                                                        <td>
-                                                            <a href="javascript:void(0)"><i class="fa fa-check"></i></a>
-                                                            <a href="javascript:void(0)"><i class="fa fa-trash"></i></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>3</td>
-                                                        <td>Anthony Davie</td>
-                                                        <td>Cinnabar</td>
-                                                        <td>21/05/2018</td>
-                                                        <td>
-                                                            <span class="tag tag-success ">paid</span>
-                                                        </td>
-                                                        <td>Commerce</td>
-                                                        <td>
-                                                            <a href="javascript:void(0)"><i class="fa fa-check"></i></a>
-                                                            <a href="javascript:void(0)"><i class="fa fa-trash"></i></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>4</td>
-                                                        <td>David Perry</td>
-                                                        <td>Felix </td>
-                                                        <td>20/04/2019</td>
-                                                        <td>
-                                                            <span class="tag tag-danger">unpaid</span>
-                                                        </td>
-                                                        <td>Mechanical</td>
-                                                        <td>
-                                                            <a href="javascript:void(0)"><i class="fa fa-check"></i></a>
-                                                            <a href="javascript:void(0)"><i class="fa fa-trash"></i></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>5</td>
-                                                        <td>Anthony Davie</td>
-                                                        <td>Beryl</td>
-                                                        <td>24/05/2017</td>
-                                                        <td>
-                                                            <span class="tag tag-success ">paid</span>
-                                                        </td>
-                                                        <td>M.B.A.</td>
-                                                        <td>
-                                                            <a href="javascript:void(0)"><i class="fa fa-check"></i></a>
-                                                            <a href="javascript:void(0)"><i class="fa fa-trash"></i></a>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>  
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="admin-Activity" role="tabpanel">
-                        <div class="row clearfix row-deck">
-                            <div class="col-xl-7 col-lg-6 col-md-12">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h3 class="card-title">Quick Mail</h3>
-                                        <div class="card-options">
-                                            <a href="javascript:void(0)" class="card-options-remove" data-toggle="card-remove"><i class="fe fe-x"></i></a>
-                                            <div class="item-action dropdown ml-2">
-                                                <a href="javascript:void(0)" data-toggle="dropdown"><i class="fe fe-more-vertical"></i></a>
-                                                <div class="dropdown-menu dropdown-menu-right">
-                                                    <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-eye"></i> View Details </a>
-                                                    <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-share-alt"></i> Share </a>
-                                                    <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-cloud-download"></i> Download</a>
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-copy"></i> Copy to</a>
-                                                    <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-folder"></i> Move to</a>
-                                                    <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-edit"></i> Rename</a>
-                                                    <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-trash"></i> Delete</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="input-group">
-                                            <div class="input-group-prepend">
-                                                <span class="input-group-text w80">To:</span>
-                                            </div>
-                                            <input type="text" class="form-control">
-                                            <div class="input-group-append">
-                                                <span class="input-group-text">CC BCC</span>
-                                            </div>
-                                        </div>
-                                        <div class="input-group mt-1 mb-3">
-                                            <div class="input-group-prepend">
-                                                <span class="input-group-text w80">Subject:</span>
-                                            </div>
-                                            <input type="text" class="form-control">
-                                        </div>
-
-                                        <div class="summernote">
-                                            Hi there,
-                                            <br/>
-                                            <p>The toolbar can be customized and it also supports various callbacks such as <code>oninit</code>, <code>onfocus</code>, <code>onpaste</code> and many more.</p>
-                                            <br/>
-                                            <p>Thank you!</p>
-                                            <h6>Summer Note</h6>
-                                        </div>
-                                        <button class="btn btn-default mt-3">Send</button>
-                                    </div>
-                                </div>
-                
-                            </div>
-                            <div class="col-xl-5 col-lg-6 col-md-12">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h3 class="card-title">University Stats</h3>
-                                        <div class="card-options">
-                                            <a href="javascript:void(0)" class="card-options-remove" data-toggle="card-remove"><i class="fe fe-x"></i></a>
-                                            <div class="item-action dropdown ml-2">
-                                                <a href="javascript:void(0)" data-toggle="dropdown"><i class="fe fe-more-vertical"></i></a>
-                                                <div class="dropdown-menu dropdown-menu-right">
-                                                    <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-eye"></i> View Details </a>
-                                                    <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-share-alt"></i> Share </a>
-                                                    <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-cloud-download"></i> Download</a>                                            
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-copy"></i> Copy to</a>
-                                                    <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-folder"></i> Move to</a>
-                                                    <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-edit"></i> Rename</a>
-                                                    <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-trash"></i> Delete</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="row text-center">
-                                            <div class="col-lg-4 col-4 border-right">
-                                                <label class="mb-0 font-10">Department</label>
-                                                <h4 class="font-20 font-weight-bold">05</h4>
-                                            </div>
-                                            <div class="col-lg-4 col-4 border-right">
-                                                <label class="mb-0 font-10">Total Teacher</label>
-                                                <h4 class="font-20 font-weight-bold">43</h4>
-                                            </div>
-                                            <div class="col-lg-4 col-4">
-                                                <label class="mb-0 font-10">Total Student</label>
-                                                <h4 class="font-20 font-weight-bold">267</h4>
-                                            </div>
-                                        </div>
-                                        <table class="table table-striped mt-4">
-                                            <tbody><tr>
-                                                <td>
-                                                    <label class="d-block">Mechanical Engineering<span class="float-right">43%</span></label>
-                                                    <div class="progress progress-xs">
-                                                        <div class="progress-bar bg-indigo" role="progressbar" aria-valuenow="43" aria-valuemin="0" aria-valuemax="100" style="width: 43%;"></div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <label class="d-block">Business Analysis - BUS <span class="float-right">27%</span></label>
-                                                    <div class="progress progress-xs">
-                                                        <div class="progress-bar bg-blue" role="progressbar" aria-valuenow="27" aria-valuemin="0" aria-valuemax="100" style="width: 27%;"></div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <label class="d-block">Computer Technology - CT <span class="float-right">81%</span></label>
-                                                    <div class="progress progress-xs">
-                                                        <div class="progress-bar bg-cyan" role="progressbar" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100" style="width: 81%;"></div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <label class="d-block">Management - MGT <span class="float-right">61%</span></label>
-                                                    <div class="progress progress-xs">
-                                                        <div class="progress-bar bg-pink" role="progressbar" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100" style="width: 61%;"></div>
-                                                    </div>   
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <label class="d-block">Science <span class="float-right">77%</span></label>
-                                                    <div class="progress progress-xs">
-                                                        <div class="progress-bar bg-orange" role="progressbar" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100" style="width: 77%;"></div>
-                                                    </div>   
-                                                </td>
-                                            </tr>
-                                        </tbody></table> 
-                                    </div>
-                                    <div class="card-footer">
-                                        <small>Measure How Fast You’re Growing Monthly Recurring Revenue. <a href="#">Learn More</a></small>
-                                    </div>
+                    <div class="tab-pane" id="TaskBoard-add">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">Add Task</h3>
+                                <div class="card-options ">
+                                    <a href="#" class="card-options-collapse" data-toggle="card-collapse"><i class="fe fe-chevron-up"></i></a>
+                                    <a href="#" class="card-options-remove" data-toggle="card-remove"><i class="fe fe-x"></i></a>
                                 </div>
                             </div>
-                            <div class="col-xl-12 col-lg-12">
-                                <div class="card">
-                                    <div class="table-responsive todo_list">
-                                        <table class="table table-hover text-nowrap table-striped table-vcenter mb-0">
-                                            <thead>
-                                                <tr>
-                                                    <th>Task</th>
-                                                    <th class="w150 text-right">Due</th>
-                                                    <th class="w100">Priority</th>
-                                                    <th class="w80 text-center"><i class="icon-user"></i></th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <label class="custom-control custom-checkbox">
-                                                            <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" checked>
-                                                            <span class="custom-control-label">Report Panel Usag</span>
-                                                        </label>
-                                                    </td>
-                                                    <td class="text-right">Feb 12-2019</td>
-                                                    <td><span class="tag tag-danger ml-0 mr-0">HIGH</span></td>
-                                                    <td>
-                                                        <span class="avatar avatar-pink"  data-toggle="tooltip" data-placement="top" title="" data-original-title="Avatar Name">NG</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <label class="custom-control custom-checkbox">
-                                                            <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1">
-                                                            <span class="custom-control-label">Report Panel Usag</span>
-                                                        </label>
-                                                    </td>
-                                                    <td class="text-right">Feb 18-2019</td>
-                                                    <td><span class="tag tag-warning ml-0 mr-0">MED</span></td>
-                                                    <td>
-                                                        <img src="../assets/images/xs/avatar1.jpg" data-toggle="tooltip" data-placement="top" title="" alt="Avatar" class="avatar" data-original-title="Avatar Name">
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <label class="custom-control custom-checkbox">
-                                                            <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" checked>
-                                                            <span class="custom-control-label">New logo design for Angular Admin</span>
-                                                        </label>
-                                                    </td>
-                                                    <td class="text-right">March 02-2019</td>
-                                                    <td><span class="tag tag-success ml-0 mr-0">High</span></td>
-                                                    <td>
-                                                        <img src="../assets/images/xs/avatar2.jpg" data-toggle="tooltip" data-placement="top" title="" alt="Avatar" class="avatar" data-original-title="Avatar Name">
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <label class="custom-control custom-checkbox">
-                                                            <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" checked>
-                                                            <span class="custom-control-label">Report Panel Usag</span>
-                                                        </label>
-                                                    </td>
-                                                    <td class="text-right">Feb 12-2019</td>
-                                                    <td><span class="tag tag-danger ml-0 mr-0">HIGH</span></td>
-                                                    <td>
-                                                        <span class="avatar avatar-pink"  data-toggle="tooltip" data-placement="top" title="" data-original-title="Avatar Name">NG</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <label class="custom-control custom-checkbox">
-                                                            <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1">
-                                                            <span class="custom-control-label">Report Panel Usag</span>
-                                                        </label>
-                                                    </td>
-                                                    <td class="text-right">Feb 18-2019</td>
-                                                    <td><span class="tag tag-warning ml-0 mr-0">MED</span></td>
-                                                    <td>
-                                                        <img src="../assets/images/xs/avatar3.jpg" data-toggle="tooltip" data-placement="top" title="" alt="Avatar" class="avatar" data-original-title="Avatar Name">
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <label class="custom-control custom-checkbox">
-                                                            <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" checked>
-                                                            <span class="custom-control-label">New logo design for Angular Admin</span>
-                                                        </label>
-                                                    </td>
-                                                    <td class="text-right">March 02-2019</td>
-                                                    <td><span class="tag tag-success ml-0 mr-0">High</span></td>
-                                                    <td>
-                                                        <span class="avatar avatar-blue"  data-toggle="tooltip" data-placement="top" title="" data-original-title="Avatar Name">NG</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <label class="custom-control custom-checkbox">
-                                                            <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1">
-                                                            <span class="custom-control-label">Design PSD files for Angular Admin</span>
-                                                        </label>
-                                                    </td>
-                                                    <td class="text-right">March 20-2019</td>
-                                                    <td><span class="tag tag-warning ml-0 mr-0">MED</span></td>
-                                                    <td>
-                                                        <img src="../assets/images/xs/avatar4.jpg" data-toggle="tooltip" data-placement="top" title="" alt="Avatar" class="avatar" data-original-title="Avatar Name">
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <label class="custom-control custom-checkbox">
-                                                            <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1">
-                                                            <span class="custom-control-label">Design PSD files for Angular Admin</span>
-                                                        </label>
-                                                    </td>
-                                                    <td class="text-right">March 20-2019</td>
-                                                    <td><span class="tag tag-warning ml-0 mr-0">MED</span></td>
-                                                    <td>
-                                                        <img src="../assets/images/xs/avatar5.jpg" data-toggle="tooltip" data-placement="top" title="" alt="Avatar" class="avatar" data-original-title="Avatar Name">
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                            <form class="card-body">
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Task no. <span class="text-danger">*</span></label>
+                                    <div class="col-md-7">
+                                        <input type="text" class="form-control">
                                     </div>
                                 </div>
-                            </div>
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Job title <span class="text-danger">*</span></label>
+                                    <div class="col-md-7">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Select Team <span class="text-danger">*</span></label>
+                                    <div class="col-md-7">
+                                        <select class="form-control show-tick">
+                                            <option>Select</option>
+                                            <option>John Smith</option>
+                                            <option>Claire Peters</option>
+                                            <option>Allen Collins</option>
+                                            <option>Cory Carter</option>
+                                            <option>Rochelle Barton</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Description <span class="text-danger">*</span></label>
+                                    <div class="col-md-7">
+                                        <textarea rows="4" class="form-control no-resize" placeholder="Please type what you want..."></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Range <span class="text-danger">*</span></label>
+                                    <div class="col-md-7">
+                                        <div class="input-daterange input-group" data-provide="datepicker">
+                                            <input type="text" class="form-control" name="start">
+                                            <span class="input-group-addon"> to </span>
+                                            <input type="text" class="form-control" name="end">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label"></label>
+                                    <div class="col-md-7">
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                        <button type="submit" class="btn btn-outline-secondary">Cancel</button>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -1674,7 +1457,7 @@
                         </div>
                         <div class="col-md-6 col-sm-12 text-md-right">
                             <ul class="list-inline mb-0">
-                                <li class="list-inline-item"><a href="../doc/index.html">Documentation</a></li>
+                                <li class="list-inline-item"><a href="../../doc/index.html">Documentation</a></li>
                                 <li class="list-inline-item"><a href="javascript:void(0)">FAQ</a></li>
                                 <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-outline-primary btn-sm">Buy Now</a></li>
                             </ul>
@@ -1687,16 +1470,16 @@
 </div>
 
 <!-- Start Main project js, jQuery, Bootstrap -->
-<script src="../assets/bundles/lib.vendor.bundle.js"></script>
+<script src="../../assets/bundles/lib.vendor.bundle.js"></script>
 
-<!-- Start all plugin js -->
-<script src="../assets/bundles/counterup.bundle.js"></script>
-<script src="../assets/bundles/apexcharts.bundle.js"></script>
-<script src="../assets/bundles/summernote.bundle.js"></script>
+<!-- Start Plugin Js -->
+<script src="../../assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+<script src="../../assets/bundles/knobjs.bundle.js"></script>
+<script src="../../assets/bundles/nestable.bundle.js"></script>
 
 <!-- Start project main js  and page js -->
-<script src="../assets/js/core.js"></script>
-<script src="assets/js/page/index.js"></script>
-<script src="assets/js/page/summernote.js"></script>
+<script src="../../assets/js/core.js"></script>
+<script src="assets/js/page/sortable-nestable.js"></script>
+<script src="assets/js/chart/knobjs.js"></script>
 </body>
 </html>

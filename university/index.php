@@ -81,7 +81,7 @@
          $_SESSION['role']=$value;
          if($value=='navy'){
          
-            header("location: navy.php");
+            header("location: navy/navy.php");
          }
          elseif($value=='army'){
              header("location: army/army.php");

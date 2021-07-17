@@ -74,7 +74,7 @@
       $result1=mysqli_query($conn,$sql1);
       $row1=mysqli_fetch_array($result1);
       $value=$row1["division"];
-      $debug="<script>alert('<?php echo $value ?>')";
+     
       echo $debug;
       echo $value;
       if($count == 1) {
@@ -83,13 +83,13 @@
          $_SESSION['role']=$value;
          if($value=='navy'){
          
-            header("location: navy.php");
+            header("location: navy/navy.php");
          }
          elseif($value=='army'){
-             header("location: army.php");
+             header("location: army/army.php");
          }
          elseif($value=='airforce'){
-             header("location: airforce.php");
+             header("location: airforce/airforce.php");
          }
       }else {
            header("location:index.php?msg=failed");
