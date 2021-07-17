@@ -11,14 +11,14 @@
 <title>:: Ericsson :: Home</title>
 
 <!-- Bootstrap Core and vandor -->
-<link rel="stylesheet" href="../assets/plugins/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="../../assets/plugins/bootstrap/css/bootstrap.min.css" />
 
 <!-- Plugins css -->
-<link rel="stylesheet" href="../assets/plugins/summernote/dist/summernote.css"/>
+<link rel="stylesheet" href="../../assets/plugins/summernote/dist/summernote.css"/>
 
 
 <!-- Core css -->
-<link rel="stylesheet" href="../assets/css/style.min.css"/>
+<link rel="stylesheet" href="../../assets/css/style.min.css"/>
 </head>
 
 <body class="font-muli theme-cyan gradient">
@@ -198,10 +198,10 @@
                             <h3>Developer Team</h3>
                             <h4>Hangouts</h4>
                             <ul class="list-unstyled team-info margin-0 p-t-5">                                            
-                                <li><img src="../assets/images/xs/avatar1.jpg" alt="Avatar"></li>
-                                <li><img src="../assets/images/xs/avatar2.jpg" alt="Avatar"></li>
-                                <li><img src="../assets/images/xs/avatar3.jpg" alt="Avatar"></li>
-                                <li><img src="../assets/images/xs/avatar4.jpg" alt="Avatar"></li>                                            
+                                <li><img src="../../assets/images/xs/avatar1.jpg" alt="Avatar"></li>
+                                <li><img src="../../assets/images/xs/avatar2.jpg" alt="Avatar"></li>
+                                <li><img src="../../assets/images/xs/avatar3.jpg" alt="Avatar"></li>
+                                <li><img src="../../assets/images/xs/avatar4.jpg" alt="Avatar"></li>                                            
                             </ul>
                         </div>
                     </li>
@@ -239,15 +239,15 @@
                 <ul class="list-group list-unstyled">
                     <li class="list-group-item mb-2">
                         <p>Light Version</p>
-                        <a href="../university/index.html"><img src="../assets/images/themes/default.png" class="img-fluid" alt="" /></a>
+                        <a href="../../university/index.html"><img src="../../assets/images/themes/default.png" class="img-fluid" alt="" /></a>
                     </li>
                     <li class="list-group-item mb-2">
                         <p>Dark Version</p>
-                        <a href="../university-dark/index.html"><img src="../assets/images/themes/dark.png" class="img-fluid" alt="" /></a>
+                        <a href="../../university-dark/index.html"><img src="../../assets/images/themes/dark.png" class="img-fluid" alt="" /></a>
                     </li>
                     <li class="list-group-item mb-2">
                         <p>RTL Version</p>
-                        <a href="../university-rtl/index.html"><img src="../assets/images/themes/rtl.png" class="img-fluid" alt="" /></a>
+                        <a href="../../university-rtl/index.html"><img src="../../assets/images/themes/rtl.png" class="img-fluid" alt="" /></a>
                     </li>
                 </ul>
             </div>
@@ -517,7 +517,7 @@
                         <li class="alfabet">A</li>
                         <li>
                             <a href="javascript:void(0);" class="media">
-                                <img class="media-object" src="../assets/images/xs/avatar1.jpg" alt="">
+                                <img class="media-object" src="../../assets/images/xs/avatar1.jpg" alt="">
                                 <div class="media-body">
                                     <span class="name">Abigail Churchill</span>
                                     <span class="message">Art & Design</span>
@@ -526,7 +526,7 @@
                         </li>
                         <li>
                             <a href="javascript:void(0);" class="media">
-                                <img class="media-object" src="../assets/images/xs/avatar2.jpg" alt="">
+                                <img class="media-object" src="../../assets/images/xs/avatar2.jpg" alt="">
                                 <div class="media-body">
                                     <span class="name">Alexandra Carr</span>
                                     <span class="message">Fashion</span>
@@ -535,7 +535,7 @@
                         </li>
                         <li>
                             <a href="javascript:void(0);" class="media">
-                                <img class="media-object" src="../assets/images/xs/avatar3.jpg" alt="">
+                                <img class="media-object" src="../../assets/images/xs/avatar3.jpg" alt="">
                                 <div class="media-body">
                                     <span class="name">Alison Berry</span>
                                     <span class="message">Fashion</span>
@@ -545,7 +545,7 @@
                         <li class="alfabet">B</li>
                         <li>
                             <a href="javascript:void(0);" class="media">
-                                <img class="media-object" src="../assets/images/xs/avatar4.jpg" alt="">
+                                <img class="media-object" src="../../assets/images/xs/avatar4.jpg" alt="">
                                 <div class="media-body">
                                     <span class="name">Bella Alan</span>
                                     <span class="message">Sports Science</span>
@@ -555,7 +555,7 @@
                         <li class="alfabet">C</li>
                         <li>
                             <a href="javascript:void(0);" class="media">
-                                <img class="media-object" src="../assets/images/xs/avatar5.jpg" alt="">
+                                <img class="media-object" src="../../assets/images/xs/avatar5.jpg" alt="">
                                 <div class="media-body">
                                     <span class="name">Caroline Alan</span>
                                     <span class="message">Sports Science</span>
@@ -564,7 +564,7 @@
                         </li>
                         <li>
                             <a href="javascript:void(0);" class="media">
-                                <img class="media-object" src="../assets/images/xs/avatar6.jpg" alt="">
+                                <img class="media-object" src="../../assets/images/xs/avatar6.jpg" alt="">
                                 <div class="media-body">
                                     <span class="name">Connor Campbell</span>
                                     <span class="message">Computers</span>
@@ -573,7 +573,7 @@
                         </li>
                         <li>
                             <a href="javascript:void(0);" class="media">
-                                <img class="media-object" src="../assets/images/xs/avatar7.jpg" alt="">
+                                <img class="media-object" src="../../assets/images/xs/avatar7.jpg" alt="">
                                 <div class="media-body">
                                     <span class="name">Charles Campbell</span>
                                     <span class="message">Computers</span>
@@ -583,7 +583,7 @@
                         <li class="alfabet">D</li>
                         <li>
                             <a href="javascript:void(0);" class="media">
-                                <img class="media-object" src="../assets/images/xs/avatar8.jpg" alt="">
+                                <img class="media-object" src="../../assets/images/xs/avatar8.jpg" alt="">
                                 <div class="media-body">
                                     <span class="name">Donna Hudson</span>
                                     <span class="message">Computers</span>
@@ -592,7 +592,7 @@
                         </li>
                         <li>
                             <a href="javascript:void(0);" class="media">
-                                <img class="media-object" src="../assets/images/xs/avatar9.jpg" alt="">
+                                <img class="media-object" src="../../assets/images/xs/avatar9.jpg" alt="">
                                 <div class="media-body">
                                     <span class="name">Dylan Jones</span>
                                     <span class="message">Computers</span>
@@ -602,7 +602,7 @@
                         <li class="alfabet">G</li>
                         <li>
                             <a href="javascript:void(0);" class="media">
-                                <img class="media-object" src="../assets/images/xs/avatar8.jpg" alt="">
+                                <img class="media-object" src="../../assets/images/xs/avatar8.jpg" alt="">
                                 <div class="media-body">
                                     <span class="name">Gordon Hudson</span>
                                     <span class="message">Sports Science</span>
@@ -611,7 +611,7 @@
                         </li>
                         <li>
                             <a href="javascript:void(0);" class="media">
-                                <img class="media-object" src="../assets/images/xs/avatar9.jpg" alt="">
+                                <img class="media-object" src="../../assets/images/xs/avatar9.jpg" alt="">
                                 <div class="media-body">
                                     <span class="name">Gabrielle Walker</span>
                                     <span class="message">Computers</span>
@@ -620,7 +620,7 @@
                         </li>
                         <li>
                             <a href="javascript:void(0);" class="media">
-                                <img class="media-object" src="../assets/images/xs/avatar10.jpg" alt="">
+                                <img class="media-object" src="../../assets/images/xs/avatar10.jpg" alt="">
                                 <div class="media-body">
                                     <span class="name">Gavin North</span>
                                     <span class="message">Computers</span>
@@ -630,7 +630,7 @@
                         <li class="alfabet">S</li>
                         <li>
                             <a href="javascript:void(0);" class="media">
-                                <img class="media-object" src="../assets/images/xs/avatar1.jpg" alt="">
+                                <img class="media-object" src="../../assets/images/xs/avatar1.jpg" alt="">
                                 <div class="media-body">
                                     <span class="name">Stephanie Hudson</span>
                                     <span class="message">Sports Science</span>
@@ -640,7 +640,7 @@
                         <li class="alfabet">W</li>
                         <li>
                             <a href="javascript:void(0);" class="media">
-                                <img class="media-object" src="../assets/images/xs/avatar1.jpg" alt="">
+                                <img class="media-object" src="../../assets/images/xs/avatar1.jpg" alt="">
                                 <div class="media-body">
                                     <span class="name">William Paige</span>
                                     <span class="message">Fashion</span>
@@ -666,14 +666,14 @@
                     <div class="chat_windows">
                         <ul class="mb-0">
                             <li class="other-message">
-                                <img class="avatar mr-3" src="../assets/images/xs/avatar1.jpg" alt="avatar">
+                                <img class="avatar mr-3" src="../../assets/images/xs/avatar1.jpg" alt="avatar">
                                 <div class="message">
                                     <p class="bg-light-blue">Are we meeting today?</p>
                                     <span class="time">10:10 AM, Today</span>
                                 </div>
                             </li>    
                             <li class="other-message">
-                                <img class="avatar mr-3" src="../assets/images/xs/avatar1.jpg" alt="avatar">
+                                <img class="avatar mr-3" src="../../assets/images/xs/avatar1.jpg" alt="avatar">
                                 <div class="message">
                                     <p class="bg-light-blue">Hi Aiden, how are you? How is the project coming along?</p>
                                     <p class="bg-light-blue">Are we meeting today?</p>
@@ -698,17 +698,17 @@
                                 </div>
                             </li>
                             <li class="other-message">
-                                <img class="avatar mr-3" src="../assets/images/xs/avatar1.jpg" alt="avatar">
+                                <img class="avatar mr-3" src="../../assets/images/xs/avatar1.jpg" alt="avatar">
                                 <div class="message">
                                     <div class="media_img">
-                                        <img src="../assets/images/gallery/1.jpg" class="w100 img-thumbnail" alt="">
-                                        <img src="../assets/images/gallery/2.jpg" class="w100 img-thumbnail" alt="">
+                                        <img src="../../assets/images/gallery/1.jpg" class="w100 img-thumbnail" alt="">
+                                        <img src="../../assets/images/gallery/2.jpg" class="w100 img-thumbnail" alt="">
                                     </div>
                                     <span class="time">10:15 AM, Today</span>
                                 </div>
                             </li> 
                             <li class="other-message">
-                                <img class="avatar mr-3" src="../assets/images/xs/avatar1.jpg" alt="avatar">
+                                <img class="avatar mr-3" src="../../assets/images/xs/avatar1.jpg" alt="avatar">
                                 <div class="message">                                            
                                     <p class="bg-light-blue">Are we meeting today I have results?</p>
                                     <span class="time">10:18 AM, Today</span>
@@ -836,11 +836,11 @@
                             <div class="dropdown d-flex">
                                 <a class="nav-link icon d-none d-md-flex btn btn-default btn-icon ml-1" data-toggle="dropdown"><i class="fa fa-language"></i></a>
                                 <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                                    <a class="dropdown-item" href="#"><img class="w20 mr-2" src="../assets/images/flags/us.svg" alt="">English</a>
+                                    <a class="dropdown-item" href="#"><img class="w20 mr-2" src="../../assets/images/flags/us.svg" alt="">English</a>
                                     <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#"><img class="w20 mr-2" src="../assets/images/flags/es.svg" alt="">Spanish</a>
-                                    <a class="dropdown-item" href="#"><img class="w20 mr-2" src="../assets/images/flags/jp.svg" alt="">japanese</a>
-                                    <a class="dropdown-item" href="#"><img class="w20 mr-2" src="../assets/images/flags/bl.svg" alt="">France</a> 
+                                    <a class="dropdown-item" href="#"><img class="w20 mr-2" src="../../assets/images/flags/es.svg" alt="">Spanish</a>
+                                    <a class="dropdown-item" href="#"><img class="w20 mr-2" src="../../assets/images/flags/jp.svg" alt="">japanese</a>
+                                    <a class="dropdown-item" href="#"><img class="w20 mr-2" src="../../assets/images/flags/bl.svg" alt="">France</a> 
                                 </div>
                             </div>
                             <div class="dropdown d-flex">
@@ -849,7 +849,7 @@
                                     <ul class="right_chat list-unstyled w350 p-0">
                                         <li class="online">
                                             <a href="javascript:void(0);" class="media">
-                                                <img class="media-object" src="../assets/images/xs/avatar4.jpg" alt="">
+                                                <img class="media-object" src="../../assets/images/xs/avatar4.jpg" alt="">
                                                 <div class="media-body">
                                                     <span class="name">Donald Gardner</span>
                                                     <div class="message">It is a long established fact that a reader</div>
@@ -860,7 +860,7 @@
                                         </li>
                                         <li class="online">
                                             <a href="javascript:void(0);" class="media">
-                                                <img class="media-object " src="../assets/images/xs/avatar5.jpg" alt="">
+                                                <img class="media-object " src="../../assets/images/xs/avatar5.jpg" alt="">
                                                 <div class="media-body">
                                                     <span class="name">Wendy Keen</span>
                                                     <div class="message">There are many variations of passages of Lorem Ipsum</div>
@@ -871,7 +871,7 @@
                                         </li>
                                         <li class="offline">
                                             <a href="javascript:void(0);" class="media">
-                                                <img class="media-object " src="../assets/images/xs/avatar2.jpg" alt="">
+                                                <img class="media-object " src="../../assets/images/xs/avatar2.jpg" alt="">
                                                 <div class="media-body">
                                                     <span class="name">Matt Rosales</span>
                                                     <div class="message">Contrary to popular belief, Lorem Ipsum is not simply</div>
@@ -882,7 +882,7 @@
                                         </li>
                                         <li class="online">
                                             <a href="javascript:void(0);" class="media">
-                                                <img class="media-object " src="../assets/images/xs/avatar3.jpg" alt="">
+                                                <img class="media-object " src="../../assets/images/xs/avatar3.jpg" alt="">
                                                 <div class="media-body">
                                                     <span class="name">Phillip Smith</span>
                                                     <div class="message">It has roots in a piece of classical Latin literature from 45 BC</div>
@@ -939,7 +939,7 @@
                             </div>
                             <div class="dropdown d-flex">
                                 <a href="javascript:void(0)" class="chip ml-3" data-toggle="dropdown">
-                                    <span class="avatar" style="background-image: url(../assets/images/xs/avatar5.jpg)"></span> George</a>
+                                    <span class="avatar" style="background-image: url(../../assets/images/xs/avatar5.jpg)"></span> George</a>
                                 <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
                                     <a class="dropdown-item" href="page-profile.html"><i class="dropdown-icon fe fe-user"></i> Profile</a>
                                     <a class="dropdown-item" href="app-setting.html"><i class="dropdown-icon fe fe-settings"></i> Settings</a>
@@ -1160,7 +1160,7 @@
                                                     <td>11</td>
                                                     <td class="w40">
                                                         <div class="avatar">
-                                                            <img class="avatar" src="../assets/images/xs/avatar1.jpg" alt="avatar">
+                                                            <img class="avatar" src="../../assets/images/xs/avatar1.jpg" alt="avatar">
                                                         </div>
                                                     </td>
                                                     <td>
@@ -1174,7 +1174,7 @@
                                                     <td>23</td>
                                                     <td class="w40">
                                                         <div class="avatar">
-                                                            <img class="avatar" src="../assets/images/xs/avatar2.jpg" alt="avatar">
+                                                            <img class="avatar" src="../../assets/images/xs/avatar2.jpg" alt="avatar">
                                                         </div>
                                                     </td>
                                                     <td>
@@ -1188,7 +1188,7 @@
                                                     <td>41</td>
                                                     <td class="w40">
                                                         <div class="avatar">
-                                                            <img class="avatar" src="../assets/images/xs/avatar3.jpg" alt="avatar">
+                                                            <img class="avatar" src="../../assets/images/xs/avatar3.jpg" alt="avatar">
                                                         </div>
                                                     </td>
                                                     <td>
@@ -1202,7 +1202,7 @@
                                                     <td>17</td>
                                                     <td class="w40">
                                                         <div class="avatar">
-                                                            <img class="avatar" src="../assets/images/xs/avatar4.jpg" alt="avatar">
+                                                            <img class="avatar" src="../../assets/images/xs/avatar4.jpg" alt="avatar">
                                                         </div>
                                                     </td>
                                                     <td>
@@ -1216,7 +1216,7 @@
                                                     <td>57</td>
                                                     <td class="w40">
                                                         <div class="avatar">
-                                                            <img class="avatar" src="../assets/images/xs/avatar5.jpg" alt="avatar">
+                                                            <img class="avatar" src="../../assets/images/xs/avatar5.jpg" alt="avatar">
                                                         </div>
                                                     </td>
                                                     <td>
@@ -1230,7 +1230,7 @@
                                                     <td>85</td>
                                                     <td class="w40">
                                                         <div class="avatar">
-                                                            <img class="avatar" src="../assets/images/xs/avatar6.jpg" alt="avatar">
+                                                            <img class="avatar" src="../../assets/images/xs/avatar6.jpg" alt="avatar">
                                                         </div>
                                                     </td>
                                                     <td>
@@ -1244,7 +1244,7 @@
                                                     <td>9</td>
                                                     <td class="w40">
                                                         <div class="avatar">
-                                                            <img class="avatar" src="../assets/images/xs/avatar7.jpg" alt="avatar">
+                                                            <img class="avatar" src="../../assets/images/xs/avatar7.jpg" alt="avatar">
                                                         </div>
                                                     </td>
                                                     <td>
@@ -1553,7 +1553,7 @@
                                                     <td class="text-right">Feb 18-2019</td>
                                                     <td><span class="tag tag-warning ml-0 mr-0">MED</span></td>
                                                     <td>
-                                                        <img src="../assets/images/xs/avatar1.jpg" data-toggle="tooltip" data-placement="top" title="" alt="Avatar" class="avatar" data-original-title="Avatar Name">
+                                                        <img src="../../assets/images/xs/avatar1.jpg" data-toggle="tooltip" data-placement="top" title="" alt="Avatar" class="avatar" data-original-title="Avatar Name">
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -1566,7 +1566,7 @@
                                                     <td class="text-right">March 02-2019</td>
                                                     <td><span class="tag tag-success ml-0 mr-0">High</span></td>
                                                     <td>
-                                                        <img src="../assets/images/xs/avatar2.jpg" data-toggle="tooltip" data-placement="top" title="" alt="Avatar" class="avatar" data-original-title="Avatar Name">
+                                                        <img src="../../assets/images/xs/avatar2.jpg" data-toggle="tooltip" data-placement="top" title="" alt="Avatar" class="avatar" data-original-title="Avatar Name">
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -1592,7 +1592,7 @@
                                                     <td class="text-right">Feb 18-2019</td>
                                                     <td><span class="tag tag-warning ml-0 mr-0">MED</span></td>
                                                     <td>
-                                                        <img src="../assets/images/xs/avatar3.jpg" data-toggle="tooltip" data-placement="top" title="" alt="Avatar" class="avatar" data-original-title="Avatar Name">
+                                                        <img src="../../assets/images/xs/avatar3.jpg" data-toggle="tooltip" data-placement="top" title="" alt="Avatar" class="avatar" data-original-title="Avatar Name">
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -1618,7 +1618,7 @@
                                                     <td class="text-right">March 20-2019</td>
                                                     <td><span class="tag tag-warning ml-0 mr-0">MED</span></td>
                                                     <td>
-                                                        <img src="../assets/images/xs/avatar4.jpg" data-toggle="tooltip" data-placement="top" title="" alt="Avatar" class="avatar" data-original-title="Avatar Name">
+                                                        <img src="../../assets/images/xs/avatar4.jpg" data-toggle="tooltip" data-placement="top" title="" alt="Avatar" class="avatar" data-original-title="Avatar Name">
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -1631,7 +1631,7 @@
                                                     <td class="text-right">March 20-2019</td>
                                                     <td><span class="tag tag-warning ml-0 mr-0">MED</span></td>
                                                     <td>
-                                                        <img src="../assets/images/xs/avatar5.jpg" data-toggle="tooltip" data-placement="top" title="" alt="Avatar" class="avatar" data-original-title="Avatar Name">
+                                                        <img src="../../assets/images/xs/avatar5.jpg" data-toggle="tooltip" data-placement="top" title="" alt="Avatar" class="avatar" data-original-title="Avatar Name">
                                                     </td>
                                                 </tr>
                                             </tbody>
@@ -1654,7 +1654,7 @@
                         </div>
                         <div class="col-md-6 col-sm-12 text-md-right">
                             <ul class="list-inline mb-0">
-                                <li class="list-inline-item"><a href="../doc/index.html">Documentation</a></li>
+                                <li class="list-inline-item"><a href="../../doc/index.html">Documentation</a></li>
                                 <li class="list-inline-item"><a href="javascript:void(0)">FAQ</a></li>
                                 <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-outline-primary btn-sm">Buy Now</a></li>
                             </ul>
@@ -1667,15 +1667,15 @@
 </div>
 
 <!-- Start Main project js, jQuery, Bootstrap -->
-<script src="../assets/bundles/lib.vendor.bundle.js"></script>
+<script src="../../assets/bundles/lib.vendor.bundle.js"></script>
 
 <!-- Start all plugin js -->
-<script src="../assets/bundles/counterup.bundle.js"></script>
-<script src="../assets/bundles/apexcharts.bundle.js"></script>
-<script src="../assets/bundles/summernote.bundle.js"></script>
+<script src="../../assets/bundles/counterup.bundle.js"></script>
+<script src="../../assets/bundles/apexcharts.bundle.js"></script>
+<script src="../../assets/bundles/summernote.bundle.js"></script>
 
 <!-- Start project main js  and page js -->
-<script src="../assets/js/core.js"></script>
+<script src="../../assets/js/core.js"></script>
 <script src="assets/js/page/index.js"></script>
 <script src="assets/js/page/summernote.js"></script>
 </body>
