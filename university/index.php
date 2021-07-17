@@ -7,7 +7,7 @@
 
 <link rel="icon" href="favicon.ico" type="image/x-icon"/>
 
-<title>:: Epic :: Login</title>
+<title>MYNCC:Login</title>
 
 <!-- Bootstrap Core and vandor -->
 <link rel="stylesheet" href="../assets/plugins/bootstrap/css/bootstrap.min.css" />
@@ -23,7 +23,7 @@
         <div class="card">
             <div class="card-body">
                 <div class="text-center">
-                    <a class="header-brand" href="index.html"><i class="fa fa-graduation-cap brand-logo"></i></a>
+                    <a class="header-brand" href="myncc/index.html"><i class="fa fa-graduation-cap brand-logo"></i></a>
                     <div class="card-title mt-3">Login to your account</div>
                     
                 </div>
