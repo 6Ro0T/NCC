@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <link rel="icon" href="favicon.ico" type="image/x-icon"/>
-<title>MyNCC:Staff</title>
+<title>MyNCC : Staff</title>
 
 <!-- Bootstrap Core and vandor -->
 <link rel="stylesheet" href="../../assets/plugins/bootstrap/css/bootstrap.min.css" />
@@ -33,239 +33,32 @@
     <div id="header_top" class="header_top">
         <div class="container">
             <div class="hleft">
-                <a class="header-brand" href="index.php"><i class="fa fa-graduation-cap brand-logo"></i></a>
+                <a class="header-brand" href="army.php"><i class="fa fa-graduation-cap brand-logo"></i></a>
                 <div class="dropdown">
                     <a href="javascript:void(0)" class="nav-link icon menu_toggle"><i class="fe fe-align-center"></i></a>
                 </div>
             </div>
             <div class="hright">
-                <a href="javascript:void(0)" class="nav-link icon right_tab"><i class="fe fe-align-right"></i></a>
-                <a href="login.php" class="nav-link icon settingbar"><i class="fe fe-power"></i></a>                
+                <a href="../index.php" class="nav-link icon settingbar"><i class="fe fe-power"></i></a>                
             </div>
         </div>
-    </div>
-    <!-- Start Rightbar setting panel -->
-    <div id="rightsidebar" class="right_sidebar">
-        <a href="javascript:void(0)" class="p-3 settingbar float-right"><i class="fa fa-close"></i></a>
-        <ul class="nav nav-tabs" role="tablist">
-            <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#Settings" aria-expanded="true">Settings</a></li>
-            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#activity" aria-expanded="false">Activity</a></li>
-        </ul>
-        <div class="tab-content">
-            <div role="tabpanel" class="tab-pane vivify fadeIn active" id="Settings" aria-expanded="true">
-                <div class="mb-4">
-                    <h6 class="font-14 font-weight-bold text-muted">Theme Color</h6>
-                    <ul class="choose-skin list-unstyled mb-0">
-                        <li data-theme="azure"><div class="azure"></div></li>
-                        <li data-theme="indigo"><div class="indigo"></div></li>
-                        <li data-theme="purple"><div class="purple"></div></li>
-                        <li data-theme="orange"><div class="orange"></div></li>
-                        <li data-theme="green"><div class="green"></div></li>
-                        <li data-theme="cyan" class="active"><div class="cyan"></div></li>
-                        <li data-theme="blush"><div class="blush"></div></li>
-                        <li data-theme="white"><div class="bg-white"></div></li>
-                    </ul>
-                </div>
-                <div class="mb-4">
-                    <h6 class="font-14 font-weight-bold text-muted">Font Style</h6>
-                    <div class="custom-controls-stacked font_setting">
-                        <label class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" class="custom-control-input" name="font" value="font-muli" checked="">
-                            <span class="custom-control-label">Muli Google Font</span>
-                        </label>
-                        <label class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" class="custom-control-input" name="font" value="font-montserrat">
-                            <span class="custom-control-label">Montserrat Google Font</span>
-                        </label>
-                        <label class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" class="custom-control-input" name="font" value="font-poppins">
-                            <span class="custom-control-label">Poppins Google Font</span>
-                        </label>
-                    </div>
-                </div>
-                <div>
-                    <h6 class="font-14 font-weight-bold mt-4 text-muted">General Settings</h6>
-                    <ul class="setting-list list-unstyled mt-1 setting_switch">
-                        <li>
-                            <label class="custom-switch">
-                                <span class="custom-switch-description">Night Mode</span>
-                                <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-darkmode">
-                                <span class="custom-switch-indicator"></span>
-                            </label>
-                        </li>
-                        <li>
-                            <label class="custom-switch">
-                                <span class="custom-switch-description">Fix Navbar top</span>
-                                <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-fixnavbar">
-                                <span class="custom-switch-indicator"></span>
-                            </label>
-                        </li>
-                        <li>
-                            <label class="custom-switch">
-                                <span class="custom-switch-description">Header Dark</span>
-                                <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-pageheader">
-                                <span class="custom-switch-indicator"></span>
-                            </label>
-                        </li>
-                        <li>
-                            <label class="custom-switch">
-                                <span class="custom-switch-description">Min Sidebar Dark</span>
-                                <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-min_sidebar">
-                                <span class="custom-switch-indicator"></span>
-                            </label>
-                        </li>
-                        <li>
-                            <label class="custom-switch">
-                                <span class="custom-switch-description">Sidebar Dark</span>
-                                <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-sidebar">
-                                <span class="custom-switch-indicator"></span>
-                            </label>
-                        </li>
-                        <li>
-                            <label class="custom-switch">
-                                <span class="custom-switch-description">Icon Color</span>
-                                <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-iconcolor">
-                                <span class="custom-switch-indicator"></span>
-                            </label>
-                        </li>
-                        <li>
-                            <label class="custom-switch">
-                                <span class="custom-switch-description">Gradient Color</span>
-                                <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-gradient" checked="">
-                                <span class="custom-switch-indicator"></span>
-                            </label>
-                        </li>
-                        <li>
-                            <label class="custom-switch">
-                                <span class="custom-switch-description">Box Shadow</span>
-                                <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-boxshadow">
-                                <span class="custom-switch-indicator"></span>
-                            </label>
-                        </li>
-                        <li>
-                            <label class="custom-switch">
-                                <span class="custom-switch-description">RTL Support</span>
-                                <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-rtl">
-                                <span class="custom-switch-indicator"></span>
-                            </label>
-                        </li>
-                        <li>
-                            <label class="custom-switch">
-                                <span class="custom-switch-description">Box Layout</span>
-                                <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-boxlayout">
-                                <span class="custom-switch-indicator"></span>
-                            </label>
-                        </li>
-                    </ul>
-                </div>
-                <hr>
-                <div class="form-group">
-                    <label class="d-block">Storage <span class="float-right">77%</span></label>
-                    <div class="progress progress-sm">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100" style="width: 77%;"></div>
-                    </div>
-                    <button type="button" class="btn btn-primary btn-block mt-3">Upgrade Storage</button>
-                </div>
-            </div>
-            <div role="tabpanel" class="tab-pane vivify fadeIn" id="activity" aria-expanded="false">
-                <ul class="new_timeline mt-3">
-                    <li>
-                        <div class="bullet pink"></div>
-                        <div class="time">11:00am</div>
-                        <div class="desc">
-                            <h3>Attendance</h3>
-                            <h4>Computer Class</h4>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="bullet pink"></div>
-                        <div class="time">11:30am</div>
-                        <div class="desc">
-                            <h3>Added an interest</h3>
-                            <h4>“Volunteer Activities”</h4>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="bullet green"></div>
-                        <div class="time">12:00pm</div>
-                        <div class="desc">
-                            <h3>Developer Team</h3>
-                            <h4>Hangouts</h4>
-                            <ul class="list-unstyled team-info margin-0 p-t-5">                                            
-                                <li><img src="../../assets/images/xs/avatar1.jpg" alt="Avatar"></li>
-                                <li><img src="../../assets/images/xs/avatar2.jpg" alt="Avatar"></li>
-                                <li><img src="../../assets/images/xs/avatar3.jpg" alt="Avatar"></li>
-                                <li><img src="../../assets/images/xs/avatar4.jpg" alt="Avatar"></li>                                            
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="bullet green"></div>
-                        <div class="time">2:00pm</div>
-                        <div class="desc">
-                            <h3>Responded to need</h3>
-                            <a href="javascript:void(0)">“In-Kind Opportunity”</a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="bullet orange"></div>
-                        <div class="time">1:30pm</div>
-                        <div class="desc">
-                            <h3>Lunch Break</h3>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="bullet green"></div>
-                        <div class="time">2:38pm</div>
-                        <div class="desc">
-                            <h3>Finish</h3>
-                            <h4>Go to Home</h4>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!-- Start Theme panel do not add in project -->
-    <div class="theme_div">
-        <div class="card">
-            <div class="card-body">
-                <ul class="list-group list-unstyled">
-                    <li class="list-group-item mb-2">
-                        <p>Light Version</p>
-                        <a href="../../university/index.php"><img src="../../assets/images/themes/default.png" class="img-fluid" alt="" /></a>
-                    </li>
-                    <li class="list-group-item mb-2">
-                        <p>Dark Version</p>
-                        <a href="../../university-dark/index.php"><img src="../../assets/images/themes/dark.png" class="img-fluid" alt="" /></a>
-                    </li>
-                    <li class="list-group-item mb-2">
-                        <p>RTL Version</p>
-                        <a href="../../university-rtl/index.php"><img src="../../assets/images/themes/rtl.png" class="img-fluid" alt="" /></a>
-                    </li>
-                </ul>
-            </div>
-        </div>        
     </div>
     <!-- Start Quick menu with more functio -->
     <!-- Start Main leftbar navigation -->
     <div id="left-sidebar" class="sidebar">
-        <h5 class="brand-name">Ericsson<a href="javascript:void(0)" class="menu_option float-right"><i class="icon-grid font-16" data-toggle="tooltip" data-placement="left" title="Grid & List Toggle"></i></a></h5>
+        <h5 class="brand-name">MyNCC<a href="javascript:void(0)" class="menu_option float-right"><i class="icon-grid font-16" data-toggle="tooltip" data-placement="left" title="Grid & List Toggle"></i></a></h5>
         <ul class="nav nav-tabs">
-            <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#menu-uni">University</a></li>
+            <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#menu-uni">Cadets</a></li>
         </ul>
         <div class="tab-content mt-3">
             <div class="tab-pane fade show active" id="menu-uni" role="tabpanel">
                 <nav class="sidebar-nav">
                     <ul class="metismenu">
-                        <li><a href="index.php"><i class="fa fa-dashboard"></i><span>Dashboard</span></a></li>
-                        <li><a href="professors.php"><i class="fa fa-black-tie"></i><span>Professors</span></a></li>
-                        <li class="active"><a href="staff.php"><i class="fa fa-user-circle-o"></i><span>Staff</span></a></li>
-                        <li><a href="departments.php"><i class="fa fa-users"></i><span>Departments</span></a></li>
-                        <li><a href="courses.php"><i class="fa fa-graduation-cap"></i><span>Courses</span></a></li>                        
-                        <li><a href="library.php"><i class="fa fa-book"></i><span>Library</span></a></li>
-                        <li><a href="holiday.php"><i class="fa fa-bullhorn"></i><span>Holiday</span></a></li>
-                        <li><a href="events.php"><i class="fa fa-calendar"></i><span>Calender</span></a></li>
+                        <li><a href="army.php"><i class="fa fa-dashboard"></i><span>Dashboard</span></a></li>
+                        <li class="active"><a href="staff.php"><i class="fa fa-user-circle-o"></i><span>Staffs</span></a></li>
+                        <li><a href="courses.php"><i class="fa fa-graduation-cap"></i><span>Classes</span></a></li>                        
+                        <li><a href="library.php"><i class="fa fa-book"></i><span>Study Materials</span></a></li>
+                        <li><a href="holiday.php"><i class="fa fa-bullhorn"></i><span>Events</span></a></li>
                     </ul>
                 </nav>
             </div>
@@ -273,29 +66,6 @@
     </div>
     <!-- Start project content area -->
     <div class="page">
-        <!-- Start Page header -->
-        <div class="section-body" id="page_top" >
-            <div class="container-fluid">
-                <div class="page-header">
-                    <div class="left">                        
-                    </div>
-                    <div class="right">
-                        <div class="notification d-flex">
-                            
-                        
-                            <div class="dropdown d-flex">
-                                <a href="javascript:void(0)" class="chip ml-3" data-toggle="dropdown">
-                                    <span class="avatar" style="background-image: url(../../assets/images/xs/avatar5.jpg)"></span> George</a>
-                                <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                                    <a class="dropdown-item" href="page-profile.php"><i class="dropdown-icon fe fe-user"></i> Profile</a>
-                                    <a class="dropdown-item" href="logout.php"><i class="dropdown-icon fe fe-log-out"></i> Sign out</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <!-- Start Page title and tab -->
         <div class="section-body">
             <div class="container-fluid">
@@ -303,15 +73,15 @@
                     <div class="header-action">
                         <h1 class="page-title">Staff</h1>
                         <ol class="breadcrumb page-breadcrumb">
-                            <li class="breadcrumb-item"><a href="#">Ericsson</a></li>
+                            <li class="breadcrumb-item"><a href="#">MyNCC</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Staff</li>
                         </ol>
                     </div>
                     <ul class="nav nav-tabs page-header-tab">
                         <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#Staff-all">List View</a></li>
                         <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#Staff-grid">Grid View</a></li>
-                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#Staff-profile">Profile</a></li>
-                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#Staff-add">Add</a></li>
+                        <!--<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#Staff-profile">Profile</a></li>-->
+                        <!--<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#Staff-add">Add</a></li>-->
                     </ul>
                 </div>
             </div>
@@ -873,161 +643,6 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane" id="Staff-add">
-                        <div class="row clearfix">
-                            <div class="col-lg-8 col-md-12 col-sm-12">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h3 class="card-title">Basic Information</h3>
-                                        <div class="card-options ">
-                                            <a href="#" class="card-options-collapse" data-toggle="card-collapse"><i class="fe fe-chevron-up"></i></a>
-                                            <a href="#" class="card-options-remove" data-toggle="card-remove"><i class="fe fe-x"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="row clearfix">
-                                            <div class="col-md-6 col-sm-12">
-                                                <div class="form-group">
-                                                    <label>First Name</label>
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 col-sm-12">
-                                                <div class="form-group">
-                                                    <label>Last Name</label>
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 col-sm-12">
-                                                <div class="form-group">
-                                                    <label>Joining Date</label>
-                                                    <input data-provide="datepicker" data-date-autoclose="true" class="form-control" placeholder="">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 col-sm-12">
-                                                <label>Gender</label>
-                                                <select class="form-control show-tick">
-                                                    <option value="">-- Gender --</option>
-                                                    <option value="10">Male</option>
-                                                    <option value="20">Female</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-md-6 col-sm-12">
-                                                <div class="form-group">
-                                                    <label>Department</label>
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 col-sm-12">
-                                                <div class="form-group">
-                                                    <label>Position</label>
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 col-sm-12">
-                                                <div class="form-group">
-                                                    <label>Phone</label>
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 col-sm-12">
-                                                <div class="form-group">
-                                                    <label>Enter Your Email</label>
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-12">
-                                                <div class="form-group mt-2 mb-3">
-                                                    <input type="file" class="dropify">
-                                                    <small id="fileHelp" class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-12">
-                                                <div class="form-group mt-3">
-                                                    <label>Messages</label>
-                                                    <textarea rows="4" class="form-control no-resize" placeholder="Please type what you want..."></textarea>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-12">
-                                                <button type="submit" class="btn btn-primary">Submit</button>
-                                                <button type="submit" class="btn btn-outline-secondary">Cancel</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-12 col-sm-12">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h3 class="card-title">Account Information</h3>
-                                        <div class="card-options ">
-                                            <a href="#" class="card-options-collapse" data-toggle="card-collapse"><i class="fe fe-chevron-up"></i></a>
-                                            <a href="#" class="card-options-remove" data-toggle="card-remove"><i class="fe fe-x"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="row clearfix">
-                                            <div class="col-sm-12">
-                                                <div class="form-group">
-                                                    <label>User Name</label>
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 col-sm-12">
-                                                <div class="form-group">
-                                                    <label>Password</label>
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 col-sm-12">
-                                                <div class="form-group">
-                                                    <label>Confirm Password</label>
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-12">
-                                                <button type="submit" class="btn btn-primary">Submit</button>
-                                                <button type="submit" class="btn btn-outline-secondary">Cancel</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h3 class="card-title">Account Information</h3>
-                                        <div class="card-options ">
-                                            <a href="#" class="card-options-collapse" data-toggle="card-collapse"><i class="fe fe-chevron-up"></i></a>
-                                            <a href="#" class="card-options-remove" data-toggle="card-remove"><i class="fe fe-x"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="form-group">
-                                            <label>Facebook</label>
-                                            <input type="text" class="form-control">
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Twitter</label>
-                                            <input type="text" class="form-control">
-                                        </div>
-                                        <div class="form-group">
-                                            <label>LinkedIN</label>
-                                            <input type="text" class="form-control">
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Behance</label>
-                                            <input type="text" class="form-control">
-                                        </div>
-                                        <div class="form-group">
-                                            <label>dribbble</label>
-                                            <input type="text" class="form-control">
-                                        </div>
-                                        <button type="submit" class="btn btn-primary">Submit</button>
-                                        <button type="submit" class="btn btn-outline-secondary">Cancel</button>
                                     </div>
                                 </div>
                             </div>
