@@ -118,7 +118,7 @@
                             <div class="card-body">
                                 <a href="courses.php" class="my_sort_cut text-muted">
                                     <i class="fa fa-folder"></i>
-                                    <span>Study Materials</span>
+                                    <span>Classes</span>
                                 </a>
                             </div>
                         </div>
@@ -138,7 +138,7 @@
                             <div class="card-body">
                                 <a href="holiday.php" class="my_sort_cut text-muted">
                                     <i class="fa fa-bullhorn"></i>
-                                    <span>Holiday</span>
+                                    <span>Events</span>
                                 </a>
                             </div>
                         </div>
