@@ -782,7 +782,7 @@
                     <ul class="metismenu">
                         <li><a href="index.php"><i class="fa fa-dashboard"></i><span>Dashboard</span></a></li>
                         <li><a href="professors.php"><i class="fa fa-black-tie"></i><span>Professors</span></a></li>
-                        <li><a href="staff.php"><i class="fa fa-user-circle-o"></i><span>Staff</span></a></li>
+                        <li><a href="viewat.php"><i class="fa fa-user-circle-o"></i><span>View Attendance</span></a></li>
                         <li><a href="departments.php"><i class="fa fa-users"></i><span>Departments</span></a></li>
                         <li><a href="courses.php"><i class="fa fa-graduation-cap"></i><span>Courses</span></a></li>                        
                         <li class="active"><a href="library.php"><i class="fa fa-book"></i><span>Library</span></a></li>
