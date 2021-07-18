@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <link rel="icon" href="favicon.ico" type="image/x-icon"/>
-<title>MYNCC:Home</title>
+<title>MYNCC : Home</title>
 
 <!-- Bootstrap Core and vandor -->
 <link rel="stylesheet" href="../../assets/plugins/bootstrap/css/bootstrap.min.css" />
@@ -72,16 +72,6 @@
     </div>
     <!-- Start project content area -->
     <div class="page">
-        <!-- Start Page header -->
-        <div class="section-body" id="page_top">
-            <div class="container-fluid">
-                <div class="page-header">
-                    <div class="left">                        
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
         <!-- Start Page title and tab -->
         <div class="section-body">
             <div class="container-fluid">
