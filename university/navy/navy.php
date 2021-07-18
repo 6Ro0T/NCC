@@ -1014,7 +1014,7 @@
                             <div class="card-body">
                                 <a href="app-filemanager.html" class="my_sort_cut text-muted">
                                     <i class="fa fa-folder"></i>
-                                    <span>FileManager</span>
+                                    <span>Study Material</span>
                                 </a>
                             </div>
                         </div>
