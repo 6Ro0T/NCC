@@ -80,8 +80,6 @@
                     <ul class="nav nav-tabs page-header-tab">
                         <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#Staff-all">List View</a></li>
                         <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#Staff-grid">Grid View</a></li>
-                        <!--<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#Staff-profile">Profile</a></li>-->
-                        <!--<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#Staff-add">Add</a></li>-->
                     </ul>
                 </div>
             </div>
