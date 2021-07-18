@@ -12,13 +12,13 @@
 <title>:: Ericsson :: Staff</title>
 
 <!-- Bootstrap Core and vandor -->
-<link rel="stylesheet" href="../assets/plugins/bootstrap/css/bootstrap.min.css" />
-<link rel="stylesheet" href="../assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css">
-<link rel="stylesheet" href="../assets/plugins/dropify/css/dropify.min.css">
-<link rel="stylesheet" href="../assets/plugins/summernote/dist/summernote.css"/>
+<link rel="stylesheet" href="../../assets/plugins/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="../../assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css">
+<link rel="stylesheet" href="../../assets/plugins/dropify/css/dropify.min.css">
+<link rel="stylesheet" href="../../assets/plugins/summernote/dist/summernote.css"/>
 
 <!-- Core css -->
-<link rel="stylesheet" href="../assets/css/style.min.css"/>
+<link rel="stylesheet" href="../../assets/css/style.min.css"/>
 </head>
 
 <body class="font-muli theme-cyan gradient">
@@ -199,10 +199,10 @@
                             <h3>Developer Team</h3>
                             <h4>Hangouts</h4>
                             <ul class="list-unstyled team-info margin-0 p-t-5">                                            
-                                <li><img src="../assets/images/xs/avatar1.jpg" alt="Avatar"></li>
-                                <li><img src="../assets/images/xs/avatar2.jpg" alt="Avatar"></li>
-                                <li><img src="../assets/images/xs/avatar3.jpg" alt="Avatar"></li>
-                                <li><img src="../assets/images/xs/avatar4.jpg" alt="Avatar"></li>                                            
+                                <li><img src="../../assets/images/xs/avatar1.jpg" alt="Avatar"></li>
+                                <li><img src="../../assets/images/xs/avatar2.jpg" alt="Avatar"></li>
+                                <li><img src="../../assets/images/xs/avatar3.jpg" alt="Avatar"></li>
+                                <li><img src="../../assets/images/xs/avatar4.jpg" alt="Avatar"></li>                                            
                             </ul>
                         </div>
                     </li>
@@ -240,15 +240,15 @@
                 <ul class="list-group list-unstyled">
                     <li class="list-group-item mb-2">
                         <p>Light Version</p>
-                        <a href="../university/index.html"><img src="../assets/images/themes/default.png" class="img-fluid" alt="" /></a>
+                        <a href="../../university/index.html"><img src="../../assets/images/themes/default.png" class="img-fluid" alt="" /></a>
                     </li>
                     <li class="list-group-item mb-2">
                         <p>Dark Version</p>
-                        <a href="../university-dark/index.html"><img src="../assets/images/themes/dark.png" class="img-fluid" alt="" /></a>
+                        <a href="../../university-dark/index.html"><img src="../../assets/images/themes/dark.png" class="img-fluid" alt="" /></a>
                     </li>
                     <li class="list-group-item mb-2">
                         <p>RTL Version</p>
-                        <a href="../university-rtl/index.html"><img src="../assets/images/themes/rtl.png" class="img-fluid" alt="" /></a>
+                        <a href="../../university-rtl/index.html"><img src="../../assets/images/themes/rtl.png" class="img-fluid" alt="" /></a>
                     </li>
                 </ul>
             </div>
@@ -518,7 +518,7 @@
                         <li class="alfabet">A</li>
                         <li>
                             <a href="javascript:void(0);" class="media">
-                                <img class="media-object" src="../assets/images/xs/avatar1.jpg" alt="">
+                                <img class="media-object" src="../../assets/images/xs/avatar1.jpg" alt="">
                                 <div class="media-body">
                                     <span class="name">Abigail Churchill</span>
                                     <span class="message">Art & Design</span>
@@ -527,7 +527,7 @@
                         </li>
                         <li>
                             <a href="javascript:void(0);" class="media">
-                                <img class="media-object" src="../assets/images/xs/avatar2.jpg" alt="">
+                                <img class="media-object" src="../../assets/images/xs/avatar2.jpg" alt="">
                                 <div class="media-body">
                                     <span class="name">Alexandra Carr</span>
                                     <span class="message">Fashion</span>
@@ -536,7 +536,7 @@
                         </li>
                         <li>
                             <a href="javascript:void(0);" class="media">
-                                <img class="media-object" src="../assets/images/xs/avatar3.jpg" alt="">
+                                <img class="media-object" src="../../assets/images/xs/avatar3.jpg" alt="">
                                 <div class="media-body">
                                     <span class="name">Alison Berry</span>
                                     <span class="message">Fashion</span>
@@ -546,7 +546,7 @@
                         <li class="alfabet">B</li>
                         <li>
                             <a href="javascript:void(0);" class="media">
-                                <img class="media-object" src="../assets/images/xs/avatar4.jpg" alt="">
+                                <img class="media-object" src="../../assets/images/xs/avatar4.jpg" alt="">
                                 <div class="media-body">
                                     <span class="name">Bella Alan</span>
                                     <span class="message">Sports Science</span>
@@ -556,7 +556,7 @@
                         <li class="alfabet">C</li>
                         <li>
                             <a href="javascript:void(0);" class="media">
-                                <img class="media-object" src="../assets/images/xs/avatar5.jpg" alt="">
+                                <img class="media-object" src="../../assets/images/xs/avatar5.jpg" alt="">
                                 <div class="media-body">
                                     <span class="name">Caroline Alan</span>
                                     <span class="message">Sports Science</span>
@@ -565,7 +565,7 @@
                         </li>
                         <li>
                             <a href="javascript:void(0);" class="media">
-                                <img class="media-object" src="../assets/images/xs/avatar6.jpg" alt="">
+                                <img class="media-object" src="../../assets/images/xs/avatar6.jpg" alt="">
                                 <div class="media-body">
                                     <span class="name">Connor Campbell</span>
                                     <span class="message">Computers</span>
@@ -574,7 +574,7 @@
                         </li>
                         <li>
                             <a href="javascript:void(0);" class="media">
-                                <img class="media-object" src="../assets/images/xs/avatar7.jpg" alt="">
+                                <img class="media-object" src="../../assets/images/xs/avatar7.jpg" alt="">
                                 <div class="media-body">
                                     <span class="name">Charles Campbell</span>
                                     <span class="message">Computers</span>
@@ -584,7 +584,7 @@
                         <li class="alfabet">D</li>
                         <li>
                             <a href="javascript:void(0);" class="media">
-                                <img class="media-object" src="../assets/images/xs/avatar8.jpg" alt="">
+                                <img class="media-object" src="../../assets/images/xs/avatar8.jpg" alt="">
                                 <div class="media-body">
                                     <span class="name">Donna Hudson</span>
                                     <span class="message">Computers</span>
@@ -593,7 +593,7 @@
                         </li>
                         <li>
                             <a href="javascript:void(0);" class="media">
-                                <img class="media-object" src="../assets/images/xs/avatar9.jpg" alt="">
+                                <img class="media-object" src="../../assets/images/xs/avatar9.jpg" alt="">
                                 <div class="media-body">
                                     <span class="name">Dylan Jones</span>
                                     <span class="message">Computers</span>
@@ -603,7 +603,7 @@
                         <li class="alfabet">G</li>
                         <li>
                             <a href="javascript:void(0);" class="media">
-                                <img class="media-object" src="../assets/images/xs/avatar8.jpg" alt="">
+                                <img class="media-object" src="../../assets/images/xs/avatar8.jpg" alt="">
                                 <div class="media-body">
                                     <span class="name">Gordon Hudson</span>
                                     <span class="message">Sports Science</span>
@@ -612,7 +612,7 @@
                         </li>
                         <li>
                             <a href="javascript:void(0);" class="media">
-                                <img class="media-object" src="../assets/images/xs/avatar9.jpg" alt="">
+                                <img class="media-object" src="../../assets/images/xs/avatar9.jpg" alt="">
                                 <div class="media-body">
                                     <span class="name">Gabrielle Walker</span>
                                     <span class="message">Computers</span>
@@ -621,7 +621,7 @@
                         </li>
                         <li>
                             <a href="javascript:void(0);" class="media">
-                                <img class="media-object" src="../assets/images/xs/avatar10.jpg" alt="">
+                                <img class="media-object" src="../../assets/images/xs/avatar10.jpg" alt="">
                                 <div class="media-body">
                                     <span class="name">Gavin North</span>
                                     <span class="message">Computers</span>
@@ -631,7 +631,7 @@
                         <li class="alfabet">S</li>
                         <li>
                             <a href="javascript:void(0);" class="media">
-                                <img class="media-object" src="../assets/images/xs/avatar1.jpg" alt="">
+                                <img class="media-object" src="../../assets/images/xs/avatar1.jpg" alt="">
                                 <div class="media-body">
                                     <span class="name">Stephanie Hudson</span>
                                     <span class="message">Sports Science</span>
@@ -641,7 +641,7 @@
                         <li class="alfabet">W</li>
                         <li>
                             <a href="javascript:void(0);" class="media">
-                                <img class="media-object" src="../assets/images/xs/avatar1.jpg" alt="">
+                                <img class="media-object" src="../../assets/images/xs/avatar1.jpg" alt="">
                                 <div class="media-body">
                                     <span class="name">William Paige</span>
                                     <span class="message">Fashion</span>
@@ -667,14 +667,14 @@
                     <div class="chat_windows">
                         <ul class="mb-0">
                             <li class="other-message">
-                                <img class="avatar mr-3" src="../assets/images/xs/avatar1.jpg" alt="avatar">
+                                <img class="avatar mr-3" src="../../assets/images/xs/avatar1.jpg" alt="avatar">
                                 <div class="message">
                                     <p class="bg-light-blue">Are we meeting today?</p>
                                     <span class="time">10:10 AM, Today</span>
                                 </div>
                             </li>    
                             <li class="other-message">
-                                <img class="avatar mr-3" src="../assets/images/xs/avatar1.jpg" alt="avatar">
+                                <img class="avatar mr-3" src="../../assets/images/xs/avatar1.jpg" alt="avatar">
                                 <div class="message">
                                     <p class="bg-light-blue">Hi Aiden, how are you? How is the project coming along?</p>
                                     <p class="bg-light-blue">Are we meeting today?</p>
@@ -699,17 +699,17 @@
                                 </div>
                             </li>
                             <li class="other-message">
-                                <img class="avatar mr-3" src="../assets/images/xs/avatar1.jpg" alt="avatar">
+                                <img class="avatar mr-3" src="../../assets/images/xs/avatar1.jpg" alt="avatar">
                                 <div class="message">
                                     <div class="media_img">
-                                        <img src="../assets/images/gallery/1.jpg" class="w100 img-thumbnail" alt="">
-                                        <img src="../assets/images/gallery/2.jpg" class="w100 img-thumbnail" alt="">
+                                        <img src="../../assets/images/gallery/1.jpg" class="w100 img-thumbnail" alt="">
+                                        <img src="../../assets/images/gallery/2.jpg" class="w100 img-thumbnail" alt="">
                                     </div>
                                     <span class="time">10:15 AM, Today</span>
                                 </div>
                             </li> 
                             <li class="other-message">
-                                <img class="avatar mr-3" src="../assets/images/xs/avatar1.jpg" alt="avatar">
+                                <img class="avatar mr-3" src="../../assets/images/xs/avatar1.jpg" alt="avatar">
                                 <div class="message">                                            
                                     <p class="bg-light-blue">Are we meeting today I have results?</p>
                                     <span class="time">10:18 AM, Today</span>
@@ -857,11 +857,11 @@
                             <div class="dropdown d-flex">
                                 <a class="nav-link icon d-none d-md-flex btn btn-default btn-icon ml-1" data-toggle="dropdown"><i class="fa fa-language"></i></a>
                                 <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                                    <a class="dropdown-item" href="#"><img class="w20 mr-2" src="../assets/images/flags/us.svg" alt="">English</a>
+                                    <a class="dropdown-item" href="#"><img class="w20 mr-2" src="../../assets/images/flags/us.svg" alt="">English</a>
                                     <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#"><img class="w20 mr-2" src="../assets/images/flags/es.svg" alt="">Spanish</a>
-                                    <a class="dropdown-item" href="#"><img class="w20 mr-2" src="../assets/images/flags/jp.svg" alt="">japanese</a>
-                                    <a class="dropdown-item" href="#"><img class="w20 mr-2" src="../assets/images/flags/bl.svg" alt="">France</a>
+                                    <a class="dropdown-item" href="#"><img class="w20 mr-2" src="../../assets/images/flags/es.svg" alt="">Spanish</a>
+                                    <a class="dropdown-item" href="#"><img class="w20 mr-2" src="../../assets/images/flags/jp.svg" alt="">japanese</a>
+                                    <a class="dropdown-item" href="#"><img class="w20 mr-2" src="../../assets/images/flags/bl.svg" alt="">France</a>
                                 </div>
                             </div>
                             <div class="dropdown d-flex">
@@ -870,7 +870,7 @@
                                     <ul class="right_chat list-unstyled w350 p-0">
                                         <li class="online">
                                             <a href="javascript:void(0);" class="media">
-                                                <img class="media-object" src="../assets/images/xs/avatar4.jpg" alt="">
+                                                <img class="media-object" src="../../assets/images/xs/avatar4.jpg" alt="">
                                                 <div class="media-body">
                                                     <span class="name">Donald Gardner</span>
                                                     <div class="message">It is a long established fact that a reader</div>
@@ -881,7 +881,7 @@
                                         </li>
                                         <li class="online">
                                             <a href="javascript:void(0);" class="media">
-                                                <img class="media-object " src="../assets/images/xs/avatar5.jpg" alt="">
+                                                <img class="media-object " src="../../assets/images/xs/avatar5.jpg" alt="">
                                                 <div class="media-body">
                                                     <span class="name">Wendy Keen</span>
                                                     <div class="message">There are many variations of passages of Lorem Ipsum</div>
@@ -892,7 +892,7 @@
                                         </li>
                                         <li class="offline">
                                             <a href="javascript:void(0);" class="media">
-                                                <img class="media-object " src="../assets/images/xs/avatar2.jpg" alt="">
+                                                <img class="media-object " src="../../assets/images/xs/avatar2.jpg" alt="">
                                                 <div class="media-body">
                                                     <span class="name">Matt Rosales</span>
                                                     <div class="message">Contrary to popular belief, Lorem Ipsum is not simply</div>
@@ -903,7 +903,7 @@
                                         </li>
                                         <li class="online">
                                             <a href="javascript:void(0);" class="media">
-                                                <img class="media-object " src="../assets/images/xs/avatar3.jpg" alt="">
+                                                <img class="media-object " src="../../assets/images/xs/avatar3.jpg" alt="">
                                                 <div class="media-body">
                                                     <span class="name">Phillip Smith</span>
                                                     <div class="message">It has roots in a piece of classical Latin literature from 45 BC</div>
@@ -960,7 +960,7 @@
                             </div>
                             <div class="dropdown d-flex">
                                 <a href="javascript:void(0)" class="chip ml-3" data-toggle="dropdown">
-                                    <span class="avatar" style="background-image: url(../assets/images/xs/avatar5.jpg)"></span> George</a>
+                                    <span class="avatar" style="background-image: url(../../assets/images/xs/avatar5.jpg)"></span> George</a>
                                 <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
                                     <a class="dropdown-item" href="page-profile.html"><i class="dropdown-icon fe fe-user"></i> Profile</a>
                                     <a class="dropdown-item" href="app-setting.html"><i class="dropdown-icon fe fe-settings"></i> Settings</a>
@@ -1018,7 +1018,7 @@
                                     <tbody>
                                         <tr>
                                             <td class="w60">
-                                                <img class="avatar" src="../assets/images/xs/avatar3.jpg" alt="">
+                                                <img class="avatar" src="../../assets/images/xs/avatar3.jpg" alt="">
                                             </td>
                                             <td><div class="font-15">Ken Smith</div></td>
                                             <td><span>(417) 646-8377</span></td>
@@ -1034,7 +1034,7 @@
                                         </tr>
                                         <tr>
                                             <td class="w60">
-                                                <img class="avatar" src="../assets/images/xs/avatar4.jpg" alt="">
+                                                <img class="avatar" src="../../assets/images/xs/avatar4.jpg" alt="">
                                             </td>
                                             <td><div class="font-15">Alice A Smith</div></td>
                                             <td><span>(417) 646-5023</span></td>
@@ -1050,7 +1050,7 @@
                                         </tr>
                                         <tr>
                                             <td class="w60">
-                                                <img class="avatar" src="../assets/images/xs/avatar5.jpg" alt="">
+                                                <img class="avatar" src="../../assets/images/xs/avatar5.jpg" alt="">
                                             </td>
                                             <td><div class="font-15">Gladys J Smith</div></td>
                                             <td><span>(417) 646-9207</span></td>
@@ -1084,7 +1084,7 @@
                                         </tr>
                                         <tr>
                                             <td class="w60">
-                                                <img class="avatar" src="../assets/images/xs/avatar1.jpg" alt="">
+                                                <img class="avatar" src="../../assets/images/xs/avatar1.jpg" alt="">
                                             </td>
                                             <td><div class="font-15">Alan Johnson</div></td>
                                             <td><span>(417) 646-8377</span></td>
@@ -1100,7 +1100,7 @@
                                         </tr>
                                         <tr>
                                             <td class="w60">
-                                                <img class="avatar" src="../assets/images/xs/avatar2.jpg" alt="">
+                                                <img class="avatar" src="../../assets/images/xs/avatar2.jpg" alt="">
                                             </td>
                                             <td><div class="font-15">James A Johnson</div></td>
                                             <td><span>(417) 646-1636</span></td>
@@ -1116,7 +1116,7 @@
                                         </tr>
                                         <tr>
                                             <td class="w60">
-                                                <img class="avatar" src="../assets/images/xs/avatar7.jpg" alt="">
+                                                <img class="avatar" src="../../assets/images/xs/avatar7.jpg" alt="">
                                             </td>
                                             <td><div class="font-15">Gladys J Smith</div></td>
                                             <td><span>(417) 646-9207</span></td>
@@ -1132,7 +1132,7 @@
                                         </tr>
                                         <tr>
                                             <td class="w60">
-                                                <img class="avatar" src="../assets/images/xs/avatar8.jpg" alt="">
+                                                <img class="avatar" src="../../assets/images/xs/avatar8.jpg" alt="">
                                             </td>
                                             <td><div class="font-15">Danny M Johnson</div></td>
                                             <td><span>(417) 646-8377</span></td>
@@ -1148,7 +1148,7 @@
                                         </tr>
                                         <tr>
                                             <td class="w60">
-                                                <img class="avatar" src="../assets/images/xs/avatar9.jpg" alt="">
+                                                <img class="avatar" src="../../assets/images/xs/avatar9.jpg" alt="">
                                             </td>
                                             <td><div class="font-15">Patricia Smith</div></td>
                                             <td><span>(417) 646-8377</span></td>
@@ -1164,7 +1164,7 @@
                                         </tr>
                                         <tr>
                                             <td class="w60">
-                                                <img class="avatar" src="../assets/images/xs/avatar10.jpg" alt="">
+                                                <img class="avatar" src="../../assets/images/xs/avatar10.jpg" alt="">
                                             </td>
                                             <td><div class="font-15">Gladys J Smith</div></td>
                                             <td><span>(417) 646-9207</span></td>
@@ -1180,7 +1180,7 @@
                                         </tr>
                                         <tr>
                                             <td class="w60">
-                                                <img class="avatar" src="../assets/images/xs/avatar6.jpg" alt="">
+                                                <img class="avatar" src="../../assets/images/xs/avatar6.jpg" alt="">
                                             </td>
                                             <td><div class="font-15">Gerald K Smith</div></td>
                                             <td><span>(417) 646-8377</span></td>
@@ -1204,7 +1204,7 @@
                             <div class="col-xl-3 col-lg-4 col-md-6">
                                 <div class="card">
                                     <div class="card-body text-center">
-                                        <img class="card-profile-img" src="../assets/images/sm/avatar1.jpg" alt="">
+                                        <img class="card-profile-img" src="../../assets/images/sm/avatar1.jpg" alt="">
                                         <h5 class="mb-0">Peter Richards</h5>
                                         <span>Librarian</span>
                                         <div class="text-muted">+ (916) 369-7180</div>
@@ -1217,7 +1217,7 @@
                                 <div class="card">
                                     <div class="card-body text-center ribbon">
                                         <div class="ribbon-box orange" data-toggle="tooltip" title="Permanent"><i class="fa fa-star"></i></div>
-                                        <img class="card-profile-img" src="../assets/images/sm/avatar2.jpg" alt="">
+                                        <img class="card-profile-img" src="../../assets/images/sm/avatar2.jpg" alt="">
                                         <h5 class="mb-0">Ken Smith</h5>
                                         <span>Clerk</span>
                                         <div class="text-muted">+ (916) 369-7180</div>
@@ -1229,7 +1229,7 @@
                             <div class="col-xl-3 col-lg-4 col-md-6">
                                 <div class="card">
                                     <div class="card-body text-center">
-                                        <img class="card-profile-img" src="../assets/images/sm/avatar3.jpg" alt="">
+                                        <img class="card-profile-img" src="../../assets/images/sm/avatar3.jpg" alt="">
                                         <h5 class="mb-0">Alan Johnson</h5>
                                         <span>Librarian</span>
                                         <div class="text-muted">+ (916) 369-7180</div>
@@ -1241,7 +1241,7 @@
                             <div class="col-xl-3 col-lg-4 col-md-6">
                                 <div class="card">
                                     <div class="card-body text-center">
-                                        <img class="card-profile-img" src="../assets/images/sm/avatar4.jpg" alt="">
+                                        <img class="card-profile-img" src="../../assets/images/sm/avatar4.jpg" alt="">
                                         <h5 class="mb-0">Alice A Smith</h5>
                                         <span>Clerk</span>
                                         <div class="text-muted">+ (916) 369-7180</div>
@@ -1254,7 +1254,7 @@
                                 <div class="card">
                                     <div class="card-body text-center ribbon">
                                         <div class="ribbon-box orange" data-toggle="tooltip" title="Permanent"><i class="fa fa-star"></i></div>
-                                        <img class="card-profile-img" src="../assets/images/sm/avatar5.jpg" alt="">
+                                        <img class="card-profile-img" src="../../assets/images/sm/avatar5.jpg" alt="">
                                         <h5 class="mb-0">Gerald K Smith</h5>
                                         <span>Receptionist</span>
                                         <div class="text-muted">+ (916) 369-7180</div>
@@ -1267,7 +1267,7 @@
                                 <div class="card">
                                     <div class="card-status bg-yellow"></div>
                                     <div class="card-body text-center">
-                                        <img class="card-profile-img" src="../assets/images/sm/avatar6.jpg" alt="">
+                                        <img class="card-profile-img" src="../../assets/images/sm/avatar6.jpg" alt="">
                                         <h5 class="mb-0">Peter Richards</h5>
                                         <span>Purchase Officer</span>
                                         <div class="text-muted">+ (916) 369-7180</div>
@@ -1279,7 +1279,7 @@
                             <div class="col-xl-3 col-lg-4 col-md-6">
                                 <div class="card">
                                     <div class="card-body text-center">
-                                        <img class="card-profile-img" src="../assets/images/sm/avatar3.jpg" alt="">
+                                        <img class="card-profile-img" src="../../assets/images/sm/avatar3.jpg" alt="">
                                         <h5 class="mb-0">Alan Johnson</h5>
                                         <span>Peon</span>
                                         <div class="text-muted">+ (916) 369-7180</div>
@@ -1292,7 +1292,7 @@
                                 <div class="card">
                                     <div class="card-body text-center ribbon">
                                         <div class="ribbon-box green" data-toggle="tooltip" title="Assistent"><i class="fa fa-star"></i></div>
-                                        <img class="card-profile-img" src="../assets/images/sm/avatar2.jpg" alt="">
+                                        <img class="card-profile-img" src="../../assets/images/sm/avatar2.jpg" alt="">
                                         <h5 class="mb-0">Ken Smith</h5>
                                         <span>Lab Assistent</span>
                                         <div class="text-muted">+ (916) 369-7180</div>
@@ -1305,7 +1305,7 @@
                                 <div class="card">
                                     <div class="card-body text-center ribbon">
                                         <div class="ribbon-box orange" data-toggle="tooltip" title="Permanent"><i class="fa fa-star"></i></div>
-                                        <img class="card-profile-img" src="../assets/images/sm/avatar5.jpg" alt="">
+                                        <img class="card-profile-img" src="../../assets/images/sm/avatar5.jpg" alt="">
                                         <h5 class="mb-0">Gerald K Smith</h5>
                                         <span>Peon</span>
                                         <div class="text-muted">+ (916) 369-7180</div>
@@ -1317,7 +1317,7 @@
                             <div class="col-xl-3 col-lg-4 col-md-6">
                                 <div class="card">
                                     <div class="card-body text-center">
-                                        <img class="card-profile-img" src="../assets/images/sm/avatar4.jpg" alt="">
+                                        <img class="card-profile-img" src="../../assets/images/sm/avatar4.jpg" alt="">
                                         <h5 class="mb-0">Alice A Smith</h5>
                                         <span>Driver</span>
                                         <div class="text-muted">+ (916) 369-7180</div>
@@ -1334,7 +1334,7 @@
                                 <div class="card">
                                     <div class="card-body w_user">
                                         <div class="user_avtar">
-                                            <img class="rounded-circle" src="../assets/images/sm/avatar1.jpg" alt="">
+                                            <img class="rounded-circle" src="../../assets/images/sm/avatar1.jpg" alt="">
                                         </div>
                                         <div class="wid-u-info">
                                             <h5>Dessie Parks</h5>
@@ -1461,7 +1461,7 @@
                                             <p>Please try <b>paste some texts</b> here</p>
                                         </div>
                                         <div class="timeline_item ">
-                                            <img class="tl_avatar" src="../assets/images/xs/avatar1.jpg" alt="" />
+                                            <img class="tl_avatar" src="../../assets/images/xs/avatar1.jpg" alt="" />
                                             <span><a href="javascript:void(0);">Elisse Joson</a> San Francisco, CA <small class="float-right text-right">20-April-2019 - Today</small></span>
                                             <h6 class="font600">Hello, 'Im a single div responsive timeline without media Queries!</h6>
                                             <div class="msg">
@@ -1478,7 +1478,7 @@
                                                     <ul class="recent_comments list-unstyled mt-4 mb-0">
                                                         <li>
                                                             <div class="avatar_img">
-                                                                <img class="rounded img-fluid" src="../assets/images/xs/avatar4.jpg" alt="">
+                                                                <img class="rounded img-fluid" src="../../assets/images/xs/avatar4.jpg" alt="">
                                                             </div>
                                                             <div class="comment_body">
                                                                 <h6>Donald Gardner <small class="float-right font-14">Just now</small></h6>
@@ -1490,14 +1490,14 @@
                                             </div>                                
                                         </div>
                                         <div class="timeline_item ">
-                                            <img class="tl_avatar" src="../assets/images/xs/avatar4.jpg" alt="" />
+                                            <img class="tl_avatar" src="../../assets/images/xs/avatar4.jpg" alt="" />
                                             <span><a href="javascript:void(0);" title="">Dessie Parks</a> Oakland, CA <small class="float-right text-right">19-April-2019 - Yesterday</small></span>
                                             <h6 class="font600">Oeehhh, that's awesome.. Me too!</h6>
                                             <div class="msg">
                                                 <p>I'm speaking with myself, number one, because I have a very good brain and I've said a lot of things. on the web by far... While that's mock-ups and this is politics, are they really so different? I think the only card she has is the Lorem card.</p>
                                                 <div class="timeline_img mb-20">
-                                                    <img class="width100" src="../assets/images/gallery/1.jpg" alt="Awesome Image">
-                                                    <img class="width100" src="../assets/images/gallery/2.jpg" alt="Awesome Image">
+                                                    <img class="width100" src="../../assets/images/gallery/1.jpg" alt="Awesome Image">
+                                                    <img class="width100" src="../../assets/images/gallery/2.jpg" alt="Awesome Image">
                                                 </div>
                                                 <a href="javascript:void(0);" class="mr-20 text-muted"><i class="fa fa-heart text-pink"></i> 23 Love</a>
                                                 <a class="text-muted" role="button" data-toggle="collapse" href="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1"><i class="fa fa-comments"></i> 2 Comment</a>
@@ -1511,20 +1511,20 @@
                                                     <ul class="recent_comments list-unstyled mt-4 mb-0">
                                                         <li>
                                                             <div class="avatar_img">
-                                                                <img class="rounded img-fluid" src="../assets/images/xs/avatar4.jpg" alt="">
+                                                                <img class="rounded img-fluid" src="../../assets/images/xs/avatar4.jpg" alt="">
                                                             </div>
                                                             <div class="comment_body">
                                                                 <h6>Donald Gardner <small class="float-right font-14">Just now</small></h6>
                                                                 <p>Lorem ipsum Veniam aliquip culpa laboris minim tempor</p>
                                                                 <div class="timeline_img mb-20">
-                                                                    <img class="width150" src="../assets/images/gallery/7.jpg" alt="Awesome Image">
-                                                                    <img class="width150" src="../assets/images/gallery/8.jpg" alt="Awesome Image">
+                                                                    <img class="width150" src="../../assets/images/gallery/7.jpg" alt="Awesome Image">
+                                                                    <img class="width150" src="../../assets/images/gallery/8.jpg" alt="Awesome Image">
                                                                 </div>
                                                             </div>
                                                         </li>
                                                         <li>
                                                             <div class="avatar_img">
-                                                                <img class="rounded img-fluid" src="../assets/images/xs/avatar3.jpg" alt="">
+                                                                <img class="rounded img-fluid" src="../../assets/images/xs/avatar3.jpg" alt="">
                                                             </div>
                                                             <div class="comment_body">
                                                                 <h6>Dessie Parks <small class="float-right font-14">1min ago</small></h6>
@@ -1536,7 +1536,7 @@
                                             </div>
                                         </div>
                                         <div class="timeline_item ">
-                                            <img class="tl_avatar" src="../assets/images/xs/avatar7.jpg" alt="" />
+                                            <img class="tl_avatar" src="../../assets/images/xs/avatar7.jpg" alt="" />
                                             <span><a href="javascript:void(0);" title="" >Rochelle Barton</a> San Francisco, CA <small class="float-right text-right">12-April-2019</small></span>
                                             <h6 class="font600">An Engineer Explains Why You Should Always Order the Larger Pizza</h6>
                                             <div class="msg">
@@ -1726,7 +1726,7 @@
                         </div>
                         <div class="col-md-6 col-sm-12 text-md-right">
                             <ul class="list-inline mb-0">
-                                <li class="list-inline-item"><a href="../doc/index.html">Documentation</a></li>
+                                <li class="list-inline-item"><a href="../../doc/index.html">Documentation</a></li>
                                 <li class="list-inline-item"><a href="javascript:void(0)">FAQ</a></li>
                                 <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-outline-primary btn-sm">Buy Now</a></li>
                             </ul>
@@ -1739,15 +1739,15 @@
 </div>
 
 <!-- Start Main project js, jQuery, Bootstrap -->
-<script src="../assets/bundles/lib.vendor.bundle.js"></script>
+<script src="../../assets/bundles/lib.vendor.bundle.js"></script>
 
 <!-- Start Plugin Js -->
-<script src="../assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
-<script src="../assets/plugins/dropify/js/dropify.min.js"></script>
-<script src="../assets/bundles/summernote.bundle.js"></script>
+<script src="../../assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+<script src="../../assets/plugins/dropify/js/dropify.min.js"></script>
+<script src="../../assets/bundles/summernote.bundle.js"></script>
 
 <!-- Start project main js  and page js -->
-<script src="../assets/js/core.js"></script>
+<script src="../../assets/js/core.js"></script>
 <script src="assets/js/form/dropify.js"></script>
 <script src="assets/js/page/summernote.js"></script>
 </body>

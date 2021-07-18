@@ -260,7 +260,7 @@
                         <li><a href="payments.php"><i class="fa fa-credit-card"></i><span>Payments</span></a></li>
                         <li><a href="noticeboard.php"><i class="fa fa-dashboard"></i><span>Noticeboard</span></a></li>
                         <li><a href="taskboard.php"><i class="fa fa-list-ul"></i><span>Taskboard</span></a></li>
-                        <li><a href="hostel.php"><i class="fa fa-bed"></i><span>Hostel</span></a></li>
+                        <li><a href="addstudent.php"><i class="fa fa-bed"></i><span>Add Student</span></a></li>
                         <li><a href="transport.php"><i class="fa fa-truck"></i><span>Transport</span></a></li>
                         <li><a href="attendance.php"><i class="fa fa-calendar-check-o"></i><span>Attendance</span></a></li>
                         <li><a href="leave.php"><i class="fa fa-flag"></i><span>Leave</span></a></li>
@@ -444,16 +444,12 @@
                 <div class="d-flex justify-content-between align-items-center ">
                     <div class="header-action">
                         <h1 class="page-title">Attendance</h1>
-                        <ol class="breadcrumb page-breadcrumb">
-                            <li class="breadcrumb-item"><a href="#">Ericsson</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Attendance</li>
-                            
-                        </ol>
+
                     </div>
                     <a href="javascript:void(0)" class="btn btn-info btn-sm">Export Excel</a>
                 </div>
                <form method="POST" action="attendance.php">
-               Date:    <input type="date" name="date" placeholder="select date" >
+               Date:    <input type="date" name="date" placeholder="select date" required>
             </div>
             
         </div>
@@ -494,8 +490,8 @@
                                         <td><?php echo $row['name']; ?></td>
                                         <input type='hidden' value='<?php echo $row['name'];?>' name='sname[]'>
                                         <td>
-                                            <input type="radio" name="status[<?php echo $counter;?>]" value="Present">Present
-                                            <input type="radio" name="status[<?php echo $counter;?>]" value="Absent">Absent
+                                            <input type="radio" name="status[<?php echo $counter;?>]" value="Present" required>Present
+                                            <input type="radio" name="status[<?php echo $counter;?>]" value="Absent" required>Absent
                                         </td>
                                         <?php 
                                             $counter++;    

@@ -253,7 +253,7 @@
                         <li><a href="payments.php"><i class="fa fa-credit-card"></i><span>Payments</span></a></li>
                         <li><a href="noticeboard.php"><i class="fa fa-dashboard"></i><span>Noticeboard</span></a></li>
                         <li><a href="taskboard.php"><i class="fa fa-list-ul"></i><span>Taskboard</span></a></li>
-                        <li><a href="hostel.php"><i class="fa fa-bed"></i><span>Hostel</span></a></li>
+                        <li><a href="addstudent.php"><i class="fa fa-bed"></i><span>Add Student</span></a></li>
                         <li><a href="transport.php"><i class="fa fa-truck"></i><span>Transport</span></a></li>
                         <li><a href="attendance.php"><i class="fa fa-calendar-check-o"></i><span>Attendance</span></a></li>
                         <li><a href="leave.php"><i class="fa fa-flag"></i><span>Leave</span></a></li>
@@ -455,41 +455,41 @@
                         <Strong>Successfully Added Student</strong>
                         </div>
                         <?php } ?>
-                            <form class="card-body" method="post" action="hostel.php">
+                            <form class="card-body" method="post" action="addstudent.php">
                                 <div class="form-group row">
                                     <label class="col-md-3 col-form-label">Student Name <span class="text-danger">*</span></label>
                                     <div class="col-md-7">
-                                        <input type="text" class="form-control" name='name'>
+                                        <input type="text" class="form-control" name='name' required>
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label class="col-md-3 col-form-label">Roll Number. <span class="text-danger">*</span></label>
                                     <div class="col-md-7">
-                                        <input type="text" class="form-control" name='roll_num'>
+                                        <input type="text" class="form-control" name='roll_num' required>
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label class="col-md-3 col-form-label">E-mail <span class="text-danger">*</span></label>
                                     <div class="col-md-7">
-                                        <input type="text" class="form-control" name='email'>
+                                        <input type="text" class="form-control" name='email' required>
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label class="col-md-3 col-form-label">Password <span class="text-danger">*</span></label>
                                     <div class="col-md-7">
-                                        <input type="password" class="form-control" name='password'>
+                                        <input type="password" class="form-control" name='password' required>
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     
                                     <div class="col-md-7">
-                                        <input type="hidden" class="form-control" name='role' value='student'>
+                                        <input type="hidden" class="form-control" name='role' value='student' required>
                                     </div>
                                 </div>
                                 
                                 <div class="form-group row">
                                     <div class="col-md-7">
-                                        <input type="hidden" class="form-control" name='division'value='army'>
+                                        <input type="hidden" class="form-control" name='division'value='army' required>
                                     </div>
                                 </div>
                                   <div class="form-group row">
