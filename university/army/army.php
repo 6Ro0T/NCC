@@ -284,17 +284,7 @@
         <div class="section-body mt-4">
             <div class="container-fluid">
                 <div class="row clearfix row-deck">
-                    <div class="col-6 col-md-4 col-xl-2">
-                        <div class="card">
-                            <div class="card-body ribbon">
-                                <a href="professors.php" class="my_sort_cut text-muted">
-                                    <i class="fa fa-black-tie"></i>
-                                    <span>Professors</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-4 col-xl-2">
+                                      <div class="col-6 col-md-4 col-xl-2">
                         <div class="card">
                             <div class="card-body ribbon">
                                 <a href="staff.php" class="my_sort_cut text-muted">
@@ -304,6 +294,16 @@
                             </div>
                         </div>
                     </div>
+					<div class="col-6 col-md-4 col-xl-2">
+                        <div class="card">
+                            <div class="card-body">
+                                <a href="app-filemanager.html" class="my_sort_cut text-muted">
+                                    <i class="fa fa-folder"></i>
+                                    <span>Study Materials</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>  
                     <div class="col-6 col-md-4 col-xl-2">
                         <div class="card">
                             <div class="card-body">
