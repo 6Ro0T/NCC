@@ -1,15 +1,19 @@
 <?php
    include('session.php');
    include('conn.php');
+   $flag=0;
    if(isset($_POST['submit']))
    {
         foreach($_POST['status'] as $id=>$attendance)
         {
+            
             $stname=$_POST['sname'][$id];
             $rollnumber=$_POST['roll_num'][$id];
             $date=$_POST['date'];
             $sql="INSERT INTO `attendance`(`name`, `roll_number`, `status`, `date`) VALUES ('$stname','$rollnumber','$attendance','$date')";
-            mysqli_query($conn,$sql);
+            $result=mysqli_query($conn,$sql);
+            if($result)
+                $flag=1;
         }
    }
 ?>
@@ -432,6 +436,11 @@
         <!-- Start Page title and tab -->
         <div class="section-body">
             <div class="container-fluid">
+                        <?php if($flag) {?>
+                        <div class="alert alert-success">
+                        <Strong>Attendance added Succesfully</strong>
+                        </div>
+                        <?php } ?>
                 <div class="d-flex justify-content-between align-items-center ">
                     <div class="header-action">
                         <h1 class="page-title">Attendance</h1>

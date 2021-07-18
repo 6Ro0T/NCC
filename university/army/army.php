@@ -40,12 +40,16 @@
                 </div>
             </div>
             <div class="hright">
-                <a href="../index.php" class="nav-link icon settingbar"><i class="fe fe-power"></i></a>                
+                <a href="logout.php" class="nav-link icon settingbar"><i class="fe fe-power"></i></a>                
             </div>
         </div>
     </div>
     <!-- Start Rightbar setting panel -->
+<<<<<<< Updated upstream
     </div>
+=======
+    
+>>>>>>> Stashed changes
     <!-- Start Theme panel do not add in project -->
     <!-- Start Quick menu with more functio -->
     </div>
@@ -60,7 +64,7 @@
                 <nav class="sidebar-nav">
                     <ul class="metismenu">
                         <li class="active"><a href="army.php"><i class="fa fa-dashboard"></i><span>Dashboard</span></a></li>
-                        <li><a href="staff.php"><i class="fa fa-user-circle-o"></i><span>Staffs</span></a></li>
+                        <li><a href="viewat.php"><i class="fa fa-user-circle-o"></i><span>View Attendance</span></a></li>
                         <li><a href="courses.php"><i class="fa fa-graduation-cap"></i><span>Classes</span></a></li>                        
                         <li><a href="library.php"><i class="fa fa-book"></i><span>Study Materials</span></a></li>
                         <li><a href="holiday.php"><i class="fa fa-bullhorn"></i><span>Events</span></a></li>
