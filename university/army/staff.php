@@ -1,5 +1,6 @@
 <?php
    include('session.php');
+   echo $user_check;
 ?>
 <!doctype html>
 <html lang="en" dir="ltr">
@@ -73,6 +74,7 @@
                     <div class="header-action">
                         <h1 class="page-title">Staff</h1>
                         <ol class="breadcrumb page-breadcrumb">
+<<<<<<< Updated upstream
                             <li class="breadcrumb-item"><a href="#">MyNCC</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Staff</li>
                         </ol>
@@ -80,6 +82,15 @@
                     <ul class="nav nav-tabs page-header-tab">
                         <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#Staff-all">List View</a></li>
                         <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#Staff-grid">Grid View</a></li>
+=======
+                            <li class="breadcrumb-item"><a href="#">Ericsson</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Attendance</li>
+                        </ol>
+                    </div>
+                    <ul class="nav nav-tabs page-header-tab">
+                        
+                    
+>>>>>>> Stashed changes
                     </ul>
                 </div>
             </div>
@@ -93,200 +104,46 @@
                                 <table class="table table-hover table-vcenter text-nowrap table-striped mb-0">
                                     <thead>
                                         <tr>
-                                            <th>#</th>
+                                            <th>Serial Number</th>
                                             <th>Name</th>
                                             <th>Number</th>
-                                            <th>Designation</th>
-                                            <th>Email</th>
-                                            <th>Joining Date</th>
-                                            <th></th>
-                                            <th>Action</th>
+                                            <th>Status</th>
+                                            <th>Date</th>
+                                            
                                         </tr>
+                                        <?php 
+                                        include('conn.php');
+                                        $roll=$row['roll_number'];
+                                        $sql="select * from attendance where roll_number='$roll'";
+                                        $result=mysqli_query($conn,$sql);
+                                        $serial=0;
+                                        $counter=0;
+                                        while($row=mysqli_fetch_array($result)){
+                                            $serial++;
+                                    
+                                    ?>
                                     </thead>
                                     <tbody>
+                                    
                                         <tr>
-                                            <td class="w60">
-                                                <img class="avatar" src="../../assets/images/xs/avatar3.jpg" alt="">
-                                            </td>
-                                            <td><div class="font-15">Ken Smith</div></td>
-                                            <td><span>(417) 646-8377</span></td>
-                                            <td><span class="text-muted">Peon</span></td>
-                                            <td>ken@gmail.com</td>
-                                            <td><strong>04 Jan, 2019</strong></td>
-                                            <td><span class="tag tag-success">Full-time</span></td>
-                                            <td>
-                                                <button type="button" class="btn btn-icon btn-sm" title="View"><i class="fa fa-eye"></i></button>
-                                                <button type="button" class="btn btn-icon btn-sm" title="Edit"><i class="fa fa-edit"></i></button>
-                                                <button type="button" class="btn btn-icon btn-sm js-sweetalert" title="Delete" data-type="confirm"><i class="fa fa-trash-o text-danger"></i></button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="w60">
-                                                <img class="avatar" src="../../assets/images/xs/avatar4.jpg" alt="">
-                                            </td>
-                                            <td><div class="font-15">Alice A Smith</div></td>
-                                            <td><span>(417) 646-5023</span></td>
-                                            <td><span class="text-muted">Purchase Officer</span></td>
-                                            <td>Alice@info.com</td>
-                                            <td><strong>04 Jan, 2019</strong></td>
-                                            <td><span class="tag tag-success">Full-time</span></td>
-                                            <td>
-                                                <button type="button" class="btn btn-icon btn-sm" title="View"><i class="fa fa-eye"></i></button>
-                                                <button type="button" class="btn btn-icon btn-sm" title="Edit"><i class="fa fa-edit"></i></button>
-                                                <button type="button" class="btn btn-icon btn-sm js-sweetalert" title="Delete" data-type="confirm"><i class="fa fa-trash-o text-danger"></i></button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="w60">
-                                                <img class="avatar" src="../../assets/images/xs/avatar5.jpg" alt="">
-                                            </td>
-                                            <td><div class="font-15">Gladys J Smith</div></td>
-                                            <td><span>(417) 646-9207</span></td>
-                                            <td><span class="text-muted">Receptionist</span></td>
-                                            <td>Gladys@info.com</td>
-                                            <td><strong>04 Jan, 2019</strong></td>
-                                            <td><span class="tag tag-success">Full-time</span></td>
-                                            <td>
-                                                <button type="button" class="btn btn-icon btn-sm" title="View"><i class="fa fa-eye"></i></button>
-                                                <button type="button" class="btn btn-icon btn-sm" title="Edit"><i class="fa fa-edit"></i></button>
-                                                <button type="button" class="btn btn-icon btn-sm js-sweetalert" title="Delete" data-type="confirm"><i class="fa fa-trash-o text-danger"></i></button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="w60">
-                                                <div class="avatar avatar-pink" data-toggle="tooltip" data-placement="top" title="" data-original-title="Avatar Name">
-                                                    <span>GS</span>
-                                                </div>
-                                            </td>
-                                            <td><div class="font-15">Gladys J Smith</div></td>
-                                            <td><span>(417) 646-8377</span></td>
-                                            <td><span class="text-muted">Clerk</span></td>
-                                            <td>sarah@gmail.com</td>
-                                            <td><strong>04 Jan, 2019</strong></td>
-                                            <td><span class="tag tag-success">Full-time</span></td>
-                                            <td>
-                                                <button type="button" class="btn btn-icon btn-sm" title="View"><i class="fa fa-eye"></i></button>
-                                                <button type="button" class="btn btn-icon btn-sm" title="Edit"><i class="fa fa-edit"></i></button>
-                                                <button type="button" class="btn btn-icon btn-sm js-sweetalert" title="Delete" data-type="confirm"><i class="fa fa-trash-o text-danger"></i></button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="w60">
-                                                <img class="avatar" src="../../assets/images/xs/avatar1.jpg" alt="">
-                                            </td>
-                                            <td><div class="font-15">Alan Johnson</div></td>
-                                            <td><span>(417) 646-8377</span></td>
-                                            <td><span class="text-muted">Librarian</span></td>
-                                            <td>kenh@gmail.com</td>
-                                            <td><strong>04 Jan, 2019</strong></td>
-                                            <td><span class="tag tag-warning">Part-time</span></td>
-                                            <td>
-                                                <button type="button" class="btn btn-icon btn-sm" title="View"><i class="fa fa-eye"></i></button>
-                                                <button type="button" class="btn btn-icon btn-sm" title="Edit"><i class="fa fa-edit"></i></button>
-                                                <button type="button" class="btn btn-icon btn-sm js-sweetalert" title="Delete" data-type="confirm"><i class="fa fa-trash-o text-danger"></i></button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="w60">
-                                                <img class="avatar" src="../../assets/images/xs/avatar2.jpg" alt="">
-                                            </td>
-                                            <td><div class="font-15">James A Johnson</div></td>
-                                            <td><span>(417) 646-1636</span></td>
-                                            <td><span class="text-muted">Librarian</span></td>
-                                            <td>johnson@gmail.com</td>
-                                            <td><strong>04 Jan, 2019</strong></td>
-                                            <td><span class="tag tag-success">Full-time</span></td>
-                                            <td>
-                                                <button type="button" class="btn btn-icon btn-sm" title="View"><i class="fa fa-eye"></i></button>
-                                                <button type="button" class="btn btn-icon btn-sm" title="Edit"><i class="fa fa-edit"></i></button>
-                                                <button type="button" class="btn btn-icon btn-sm js-sweetalert" title="Delete" data-type="confirm"><i class="fa fa-trash-o text-danger"></i></button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="w60">
-                                                <img class="avatar" src="../../assets/images/xs/avatar7.jpg" alt="">
-                                            </td>
-                                            <td><div class="font-15">Gladys J Smith</div></td>
-                                            <td><span>(417) 646-9207</span></td>
-                                            <td><span class="text-muted">Driver</span></td>
-                                            <td>Gladys@info.com</td>
-                                            <td><strong>04 Jan, 2019</strong></td>
-                                            <td><span class="tag tag-warning">Part-time</span></td>
-                                            <td>
-                                                <button type="button" class="btn btn-icon btn-sm" title="View"><i class="fa fa-eye"></i></button>
-                                                <button type="button" class="btn btn-icon btn-sm" title="Edit"><i class="fa fa-edit"></i></button>
-                                                <button type="button" class="btn btn-icon btn-sm js-sweetalert" title="Delete" data-type="confirm"><i class="fa fa-trash-o text-danger"></i></button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="w60">
-                                                <img class="avatar" src="../../assets/images/xs/avatar8.jpg" alt="">
-                                            </td>
-                                            <td><div class="font-15">Danny M Johnson</div></td>
-                                            <td><span>(417) 646-8377</span></td>
-                                            <td><span class="text-muted">Driver</span></td>
-                                            <td>Danny@info.com</td>
-                                            <td><strong>04 Jan, 2019</strong></td>
-                                            <td><span class="tag tag-success">Full-time</span></td>
-                                            <td>
-                                                <button type="button" class="btn btn-icon btn-sm" title="View"><i class="fa fa-eye"></i></button>
-                                                <button type="button" class="btn btn-icon btn-sm" title="Edit"><i class="fa fa-edit"></i></button>
-                                                <button type="button" class="btn btn-icon btn-sm js-sweetalert" title="Delete" data-type="confirm"><i class="fa fa-trash-o text-danger"></i></button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="w60">
-                                                <img class="avatar" src="../../assets/images/xs/avatar9.jpg" alt="">
-                                            </td>
-                                            <td><div class="font-15">Patricia Smith</div></td>
-                                            <td><span>(417) 646-8377</span></td>
-                                            <td><span class="text-muted">Purchase Officer</span></td>
-                                            <td>Patricia@info.com</td>
-                                            <td><strong>04 Jan, 2019</strong></td>
-                                            <td><span class="tag tag-warning">Part-time</span></td>
-                                            <td>
-                                                <button type="button" class="btn btn-icon btn-sm" title="View"><i class="fa fa-eye"></i></button>
-                                                <button type="button" class="btn btn-icon btn-sm" title="Edit"><i class="fa fa-edit"></i></button>
-                                                <button type="button" class="btn btn-icon btn-sm js-sweetalert" title="Delete" data-type="confirm"><i class="fa fa-trash-o text-danger"></i></button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="w60">
-                                                <img class="avatar" src="../../assets/images/xs/avatar10.jpg" alt="">
-                                            </td>
-                                            <td><div class="font-15">Gladys J Smith</div></td>
-                                            <td><span>(417) 646-9207</span></td>
-                                            <td><span class="text-muted">Librarian</span></td>
-                                            <td>Gladys@info.com</td>
-                                            <td><strong>04 Jan, 2019</strong></td>
-                                            <td><span class="tag tag-success">Full-time</span></td>
-                                            <td>
-                                                <button type="button" class="btn btn-icon btn-sm" title="View"><i class="fa fa-eye"></i></button>
-                                                <button type="button" class="btn btn-icon btn-sm" title="Edit"><i class="fa fa-edit"></i></button>
-                                                <button type="button" class="btn btn-icon btn-sm js-sweetalert" title="Delete" data-type="confirm"><i class="fa fa-trash-o text-danger"></i></button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="w60">
-                                                <img class="avatar" src="../../assets/images/xs/avatar6.jpg" alt="">
-                                            </td>
-                                            <td><div class="font-15">Gerald K Smith</div></td>
-                                            <td><span>(417) 646-8377</span></td>
-                                            <td><span class="text-muted">Lab Assistent</span></td>
-                                            <td>Smith@info.com</td>
-                                            <td><strong>04 Jan, 2019</strong></td>
-                                            <td><span class="tag tag-success">Full-time</span></td>
-                                            <td>
-                                                <button type="button" class="btn btn-icon btn-sm" title="View"><i class="fa fa-eye"></i></button>
-                                                <button type="button" class="btn btn-icon btn-sm" title="Edit"><i class="fa fa-edit"></i></button>
-                                                <button type="button" class="btn btn-icon btn-sm js-sweetalert" title="Delete" data-type="confirm"><i class="fa fa-trash-o text-danger"></i></button>
-                                            </td>
+                                        
+                                        <td><?php echo $serial;?></td>
+                                        <td><?php echo $row['name'];?></td>
+                                        <td><?php echo $row['roll_number']; ?></td>
+                                        <td><?php echo $row['status']; ?></td>
+                                        <td><?php echo $row['date']; ?></td>
+                                        
+                                            
+                                        <?php 
+                                            $counter++;    
+                                        } ?>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
                         </div>
                     </div>
+<<<<<<< Updated upstream
                     <div class="tab-pane" id="Staff-grid">
                         <div class="row">
                             <div class="col-xl-3 col-lg-4 col-md-6">
@@ -647,6 +504,11 @@
                         </div>
                     </div>
                 </div>
+=======
+                    
+                    
+                    </div>
+>>>>>>> Stashed changes
             </div>
         </div>
         <!-- Start main footer -->

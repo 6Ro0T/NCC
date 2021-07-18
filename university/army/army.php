@@ -40,12 +40,16 @@
                 </div>
             </div>
             <div class="hright">
-                <a href="../index.php" class="nav-link icon settingbar"><i class="fe fe-power"></i></a>                
+                <a href="logout.php" class="nav-link icon settingbar"><i class="fe fe-power"></i></a>                
             </div>
         </div>
     </div>
     <!-- Start Rightbar setting panel -->
+<<<<<<< Updated upstream
     </div>
+=======
+    
+>>>>>>> Stashed changes
     <!-- Start Theme panel do not add in project -->
     <!-- Start Quick menu with more functio -->
     </div>
