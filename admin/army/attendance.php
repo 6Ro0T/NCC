@@ -3,7 +3,14 @@
    include('conn.php');
    if(isset($_POST['submit']))
    {
-        foreach($_POST['status'])
+        foreach($_POST['status'] as $id=>$attendance)
+        {
+            $stname=$_POST['sname'][$id];
+            $rollnumber=$_POST['roll_num'][$id];
+            $date=$_POST['date'];
+            $sql="INSERT INTO `attendance`(`name`, `roll_number`, `status`, `date`) VALUES ('$stname','$rollnumber','$attendance','$date')";
+            mysqli_query($conn,$sql);
+        }
    }
 ?>
 <!doctype html>
