@@ -44,15 +44,8 @@
             </div>
         </div>
     </div>
-    <!-- Start Rightbar setting panel -->
-<<<<<<< Updated upstream
-    </div>
-=======
-    
->>>>>>> Stashed changes
     <!-- Start Theme panel do not add in project -->
     <!-- Start Quick menu with more functio -->
-    </div>
     <!-- Start Main leftbar navigation -->
     <div id="left-sidebar" class="sidebar">
         <h5 class="brand-name">MyNCC<a href="javascript:void(0)" class="menu_option float-right"><i class="icon-grid font-16" data-toggle="tooltip" data-placement="left" title="Grid & List Toggle"></i></a></h5>
@@ -64,7 +57,7 @@
                 <nav class="sidebar-nav">
                     <ul class="metismenu">
                         <li class="active"><a href="army.php"><i class="fa fa-dashboard"></i><span>Dashboard</span></a></li>
-                        <li><a href="viewat.php"><i class="fa fa-user-circle-o"></i><span>View Attendance</span></a></li>
+                        <li><a href="viewat.php"><i class="fa fa-user-circle-o"></i><span>Attendance</span></a></li>
 						<li><a href="staff.php"><i class="fa fa-users"></i><span>Staffs</span></a></li>
                         <li><a href="courses.php"><i class="fa fa-graduation-cap"></i><span>Classes</span></a></li>                        
                         <li><a href="library.php"><i class="fa fa-book"></i><span>Study Materials</span></a></li>
@@ -98,7 +91,17 @@
         <div class="section-body mt-4">
             <div class="container-fluid">
                 <div class="row clearfix row-deck">
-                                      <div class="col-6 col-md-4 col-xl-2">
+					<div class="col-6 col-md-4 col-xl-2">
+                        <div class="card">
+                            <div class="card-body ribbon">
+                                <a href="viewat.php" class="my_sort_cut text-muted">
+                                    <i class="fa fa-black-tie"></i>
+                                    <span>Attendance</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-xl-2">
                         <div class="card">
                             <div class="card-body ribbon">
                                 <a href="staff.php" class="my_sort_cut text-muted">
