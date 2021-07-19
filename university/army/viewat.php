@@ -1,6 +1,5 @@
 <?php
    include('session.php');
-   echo $user_check;
 ?>
 <!doctype html>
 <html lang="en" dir="ltr">
@@ -9,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <link rel="icon" href="favicon.ico" type="image/x-icon"/>
-<title>MyNCC : Staff</title>
+<title>MyNCC : Attendance</title>
 
 <!-- Bootstrap Core and vandor -->
 <link rel="stylesheet" href="../../assets/plugins/bootstrap/css/bootstrap.min.css" />
@@ -40,7 +39,7 @@
                 </div>
             </div>
             <div class="hright">
-                <a href="../index.php" class="nav-link icon settingbar"><i class="fe fe-power"></i></a>                
+                <a href="logout.php" class="nav-link icon settingbar"><i class="fe fe-power"></i></a>                
             </div>
         </div>
     </div>
@@ -56,7 +55,8 @@
                 <nav class="sidebar-nav">
                     <ul class="metismenu">
                         <li><a href="army.php"><i class="fa fa-dashboard"></i><span>Dashboard</span></a></li>
-                        <li class="active"><a href="viewat.php"><i class="fa fa-user-circle-o"></i><span>View Attendance</span></a></li>
+                        <li class="active"><a href="viewat.php"><i class="fa fa-user-circle-o"></i><span>Attendance</span></a></li>
+						<li><a href="staff.php"><i class="fa fa-users"></i><span>Staffs</span></a></li>
                         <li><a href="courses.php"><i class="fa fa-graduation-cap"></i><span>Classes</span></a></li>                        
                         <li><a href="library.php"><i class="fa fa-book"></i><span>Study Materials</span></a></li>
                         <li><a href="holiday.php"><i class="fa fa-bullhorn"></i><span>Events</span></a></li>
@@ -72,7 +72,7 @@
             <div class="container-fluid">
                 <div class="d-flex justify-content-between align-items-center ">
                     <div class="header-action">
-                        <h1 class="page-title">Staff</h1>
+                        <h1 class="page-title">Attendance</h1>
                         <ol class="breadcrumb page-breadcrumb">
 
                     </ul>
