@@ -44,10 +44,7 @@
             </div>
         </div>
     </div>
-<<<<<<< Updated upstream
-=======
-    <!-- Start Rightbar setting panel -->
->>>>>>> Stashed changes
+
     <!-- Start Theme panel do not add in project -->
     <!-- Start Quick menu with more functio -->
     <!-- Start Main leftbar navigation -->
