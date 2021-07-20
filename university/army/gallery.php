@@ -33,7 +33,7 @@
                 </div>
             </div>
             <div class="hright">
-                <a href="../../index.html" class="nav-link icon settingbar"><i class="fe fe-power"></i></a>                
+                <a href="logout.php" class="nav-link icon settingbar"><i class="fe fe-power"></i></a>                
             </div>
         </div>
     </div>
