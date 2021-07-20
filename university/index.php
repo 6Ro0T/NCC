@@ -49,6 +49,9 @@
 						echo "Incorrect username or password";
 }       			?>
                 </div>
+				<div class="text-center">
+                    <div class="text-muted mt-4">Go back to <a href="../index.html">Homepage</a></div>
+                </div>
             </div>
         </div>        
     </div>
