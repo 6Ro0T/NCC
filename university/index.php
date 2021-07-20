@@ -24,7 +24,7 @@
             <div class="card-body">
                 <div class="text-center">
                     <a class="header-brand" href="../index.html"><i class="fa fa-graduation-cap brand-logo"></i></a>
-                    <div class="card-title mt-3">Login to your account</div>
+                    <div class="card-title mt-3">Student Login</div>
                     
                 </div>
                 <div class="form-group">
@@ -50,7 +50,7 @@
 }       			?>
                 </div>
 				<div class="text-center">
-                    <div class="text-muted mt-4">Are you an Admin?<a href="../admin/index.php">Click Here</a></div>
+                    <div class="text-muted mt-4">Are you an Admin? <a href="../admin/index.php">Click Here</a></div>
                 </div>
             </div>
         </div>        
