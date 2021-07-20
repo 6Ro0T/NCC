@@ -259,7 +259,7 @@
                     <ul class="metismenu">
                         <li><a href="payments.php"><i class="fa fa-credit-card"></i><span>Payments</span></a></li>
                         <li><a href="noticeboard.php"><i class="fa fa-dashboard"></i><span>Noticeboard</span></a></li>
-                        <li><a href="taskboard.php"><i class="fa fa-list-ul"></i><span>Taskboard</span></a></li>
+                        <li><a href="view_all.php"><i class="fa fa-list-ul"></i><span>View Student</span></a></li>
                         <li><a href="addstudent.php"><i class="fa fa-bed"></i><span>Add Student</span></a></li>
                         <li><a href="transport.php"><i class="fa fa-truck"></i><span>Transport</span></a></li>
                         <li><a href="attendance.php"><i class="fa fa-calendar-check-o"></i><span>Attendance</span></a></li>
@@ -446,7 +446,7 @@
                         <h1 class="page-title">Attendance</h1>
 
                     </div>
-                    <a href="javascript:void(0)" class="btn btn-info btn-sm">Export Excel</a>
+                    <a href="javascript:void(0)" class="btn btn-info btn-sm">View All Stide</a>
                 </div>
                <form method="POST" action="attendance.php">
                Date:    <input type="date" name="date" placeholder="select date" required>
