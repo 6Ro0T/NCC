@@ -1,6 +1,7 @@
 <?php
    include('session.php');
    include('conn.php');
+   date_default_timezone_set('Asia/Kolkata');
    $flag=0;
    $dat=0;
    $count=0;
@@ -8,14 +9,13 @@
    
    if(isset($_POST['submit']))
    {
-        $date=$_POST['date'];
+        $date=date("Y-m-d");
         if($date>$curdate){
                 $dat=1;
         }
         else{
              $sql = "SELECT date FROM attendance WHERE date='$date'";
              $check = mysqli_query($conn,$sql);
-             $row=mysqli_fetch_array($check);
              $count = mysqli_num_rows($check);
             foreach($_POST['status'] as $id=>$attendance)
             {
@@ -74,7 +74,7 @@
             </div>
             <div class="hright">
                 <a href="javascript:void(0)" class="nav-link icon right_tab"><i class="fe fe-align-right"></i></a>
-                <a href="login.html" class="nav-link icon settingbar"><i class="fe fe-power"></i></a>                
+                <a href="logout.php" class="nav-link icon settingbar"><i class="fe fe-power"></i></a>                
             </div>
         </div>
     </div>
@@ -302,7 +302,7 @@
                     <a href="view_at.php" class="btn btn-info btn-sm">View All Attendance</a>
                 </div>
                <form method="POST" action="attendance.php">
-               Date:    <input type="date" name="date" placeholder="select date" required>
+               Date:<?php date("Y-m-d");?>
                <div class="text-md-center">
                   </strong>Today: <?php echo date("Y-m-d");?></strong>
                 </div>

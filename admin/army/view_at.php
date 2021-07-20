@@ -1,7 +1,6 @@
 <?php
    include('session.php');
    include('conn.php');
-
 ?>
 <!doctype html>
 <html lang="en" dir="ltr">
@@ -437,7 +436,7 @@
         </div>
         
         <div class="section-body mt-4">
-        <form method="POST" action="view_by_date.php"
+        
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12">
@@ -470,10 +469,13 @@
                                         <td><?php echo $row['date'];?></td>
                                         
                                         
-                                        
+                                        <form method="POST" action="view_by_date.php">
                                         <td>
+											
                                             <button type="submit" value="<?php echo $row['date'] ?>" class="btn btn-primary btn-block" name="submit">View</button>
+											
                                         </td>
+										</form>
                                         <?php 
                                             $counter++;    
                                         } ?>
@@ -486,7 +488,7 @@
                     </div>
                 </div>
             </div>
-			</form>
+			
 			
         </div>
         <!-- Start main footer -->

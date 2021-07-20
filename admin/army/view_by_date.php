@@ -3,34 +3,28 @@
    include('conn.php');
    $flag=0;
    $dat=0;
-
-   $curdate=date("Y-m-d");
-   if(isset($_POST['submit']))
+   $count=0;
+   date_default_timezone_set('Asia/Kolkata');
+   $date=date("Y-m-d");
+   if(isset($_POST['update']))
    {
-        $date=$_POST['submit'];
-        if($date>$curdate){
-                $dat=1;
-        }
-        else{
-             $sql = "SELECT * FROM attendance WHERE date='$date'";
-             $check = mysqli_query($conn,$sql);
-             $count = mysqli_num_rows($check);
-			 
-			 if($count==0){
-				foreach($_POST['status'] as $id=>$attendance)
-				{
-					$stname=$_POST['sname'][$id];
+        
+                
+             
+            foreach($_POST['status'] as $id=>$attendance)
+            {
+                $stname=$_POST['sname'][$id];
+                $rollnumber=$_POST['roll_num'][$id];
+                
+                    $sql1="UPDATE `attendance` SET `name`='$stname',`roll_number`='$rollnumber',`status`='$attendance' ,`date`='$date' WHERE date='$date' and name='$stname'";
 					
-
-					$rollnumber=$_POST['roll_num'][$id];
-                    $sql1="UPDATE `attendance` SET `name`='$stname',`roll_number`='$rollnumber',`status`='$attendance' WHERE date='$date'";
                     $result=mysqli_query($conn,$sql1);
                     if($result)
                         $flag=1;
-				}
-			}
+                
+            }
         
-        }
+        
    }
    
 ?>
@@ -313,15 +307,14 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12">
-					<h5>Date:<?php echo $date?></h5> 
-					<?php echo $attendance;?>
+					<h5>Date:<?php echo $date;?></h5> 
                         <div class="card">
-                            <form method="POST" action="view_by_date.php">
+                            
                             <div class="table-responsive"> 
 							  
 							</div>
                         
-                                                      
+								<form method="POST" action="view_by_date.php">
                                 <table class="table table-sm table-hover table-striped table-vcenter mb-0 text-nowrap">
                                     <thead>
                                     <tr>
@@ -332,6 +325,7 @@
                                      </tr>
                                         <?php 
                                         include('conn.php');
+										
                                         $sql="select * from attendance where date='$date'";
                                         $result=mysqli_query($conn,$sql);
                                         $serial=0;
@@ -343,18 +337,24 @@
                                     </thead>
                                     <tbody>
                                     <tr>
-                                        <td><?php echo $serial;?></td>
+									
+
+										<td><?php echo $serial;?></td>
                                         <td><?php echo $row['roll_number'];?></td>
                                         <input type='hidden' value='<?php echo $row['roll_number'];?>' name='roll_num[]'>
+										
                                         <td><?php echo $row['name']; ?></td>
+										
                                         <input type='hidden' value='<?php echo $row['name'];?>' name='sname[]'>
                                         <td>
                                             <input type="radio" name="status[<?php echo $counter;?>]" value="Present" required <?php if($row['status']=="Present"){echo "checked=checked";}?>  >Present
                                             <input type="radio" name="status[<?php echo $counter;?>]" value="Absent" required <?php if($row['status']=="Absent"){echo "checked=checked";}?>>Absent
                                         </td>
+									
                                         <?php 
-                                            $counter++;    
+                                             $counter++;    
                                         } ?>
+										
                                     </tr>
                                     </tbody>
                                 </table>
@@ -364,14 +364,14 @@
                     </div>
                 </div>
 				<div class="text-center">
-				<button type="submit" class="btn btn-primary " name="submit">UPDATE</button>
+				<button type="submit" class="btn btn-primary " name="update">UPDATE</button>
 				</form>
-				<a href="view_at.php"><button type="submit" class="btn btn-primary " name="submit" href="view_at.php">BACK</button></a>
+				<a href="view_at.php"><button type="" class="btn btn-primary "  >BACK</button></a>
 				</div>
             </div>
 			
         </div>
-        
+       
        
         <!-- Start main footer -->
         
