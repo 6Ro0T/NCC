@@ -34,7 +34,7 @@
     <div id="header_top" class="header_top">
         <div class="container">
             <div class="hleft">
-                <a class="header-brand" href="index.php"><i class="fa fa-graduation-cap brand-logo"></i></a>
+                <a class="header-brand" href="army.php"><i class="fa fa-graduation-cap brand-logo"></i></a>
                 <div class="dropdown">
                     <a href="javascript:void(0)" class="nav-link icon menu_toggle"><i class="fe fe-align-center"></i></a>
                 </div>
@@ -266,220 +266,26 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane" id="Holiday-add">
-                        <div class="card">
-                            <div class="card-header">
-                                <h3 class="card-title">Add Holiday</h3>
-                                <div class="card-options ">
-                                    <a href="#" class="card-options-collapse" data-toggle="card-collapse"><i class="fe fe-chevron-up"></i></a>
-                                    <a href="#" class="card-options-remove" data-toggle="card-remove"><i class="fe fe-x"></i></a>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <div class="form-group">
-                                            <input type="text" value="" placeholder="Enter Title" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12">
-                                        <div class="form-group">
-                                            <input type="text" value="" placeholder="Holiday Type" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                            <input data-provide="datepicker" data-date-autoclose="true" class="form-control" placeholder="Holiday Start Date">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                            <input data-provide="datepicker" data-date-autoclose="true" class="form-control" placeholder="Holiday End Date">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12">
-                                        <div class="form-group">
-                                            <textarea rows="4" class="form-control no-resize" placeholder="Please type what you want..."></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12">
-                                        <button class="btn btn-primary btn-lg btn-simple">Add Holiday</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane" id="Holiday-add-Boot">
-                        <div class="card">
-                            <div class="card-header">
-                                <h3 class="card-title">Add Library</h3>
-                                <div class="card-options ">
-                                    <a href="#" class="card-options-collapse" data-toggle="card-collapse"><i class="fe fe-chevron-up"></i></a>
-                                    <a href="#" class="card-options-remove" data-toggle="card-remove"><i class="fe fe-x"></i></a>
-                                </div>
-                            </div>
-                            <form class="card-body">
-                                <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">Title <span class="text-danger">*</span></label>
-                                    <div class="col-md-7">
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">Holiday Type  <span class="text-danger">*</span></label>
-                                    <div class="col-md-7">
-                                        <select class="form-control input-height" name="type">
-                                            <option value="">Select...</option>
-                                            <option value="Category 1">Public Holiday</option>
-                                            <option value="Category 2">Holiday By University</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">Holiday Start Date <span class="text-danger">*</span></label>
-                                    <div class="col-md-7">
-                                        <input data-provide="datepicker" data-date-autoclose="true" class="form-control" placeholder="">
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">Holiday End Date <span class="text-danger">*</span></label>
-                                    <div class="col-md-7">
-                                        <input data-provide="datepicker" data-date-autoclose="true" class="form-control" placeholder="">
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">Holiday Details <span class="text-danger">*</span></label>
-                                    <div class="col-md-7">
-                                        <textarea rows="4" class="form-control no-resize" placeholder="Please type what you want..."></textarea>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label class="col-md-3 col-form-label"></label>
-                                    <div class="col-md-7">
-                                        <button type="submit" class="btn btn-primary">Submit</button>
-                                        <button type="submit" class="btn btn-outline-secondary">Cancel</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
+         
                 </div>
             </div>
         </div>
-        <!-- Start main footer -->
-        <div class="section-body">
+    <!-- Start main footer -->
+    <div class="section-body">
+        <footer class="footer">
+        <div class="container-fluid">
+			<div class="row">
+				<div class="col-md-6 col-sm-12">
+					Copyright © 2021 | Phoenix Studios | <a href="https://kishannayak.000webhostapp.com/">Kishan Nayak</a>.
+				</div>
+			</div>
         </div>
+        </footer>
+    </div>
     </div>    
 </div>
 
-<!-- Add New Event popup -->
-<div class="modal fade" id="addNewEvent" aria-hidden="true" style="display: none;">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title"><strong>Add</strong> an event</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-            </div>
-            <div class="modal-body">
-                <form>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <label class="control-label">Event Name</label>
-                            <input class="form-control" placeholder="Enter name" type="text" name="category-name">
-                        </div>
-                        <div class="col-md-6">
-                            <label class="control-label">Choose Event Color</label>
-                            <select class="form-control" data-placeholder="Choose a color..." name="category-color">
-                                <option value="success">Success</option>
-                                <option value="danger">Danger</option>
-                                <option value="info">Info</option>
-                                <option value="primary">Primary</option>
-                                <option value="warning">Warning</option>
-                            </select>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-success save-event" data-dismiss="modal">Save</button>
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Add Direct Event popup -->
-<div class="modal fade" id="addDirectEvent" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title">Add Direct Event</h4>
-            </div>
-            <div class="modal-body">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label>Event Name</label>
-                            <input class="form-control" name="event-name" type="text" />
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label>Event Type</label>
-                            <select name="event-bg" class="form-control">
-                                <option value="success">Success</option>
-                                <option value="danger">Danger</option>
-                                <option value="info">Info</option>
-                                <option value="primary">Primary</option>
-                                <option value="warning">Warning</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button class="btn save-btn btn-success">Save</button>
-                <button class="btn btn-secondary" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Event Edit Modal popup -->
-<div class="modal fade" id="eventEditModal" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title">Edit Event</h4>
-            </div>
-            <div class="modal-body">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label>Event Name</label>
-                            <input class="form-control" name="event-name" type="text" />
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label>Event Type</label>
-                            <select name="event-bg" class="form-control">
-                                <option value="success">Success</option>
-                                <option value="danger">Danger</option>
-                                <option value="info">Info</option>
-                                <option value="primary">Primary</option>
-                                <option value="warning">Warning</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button class="btn mr-auto delete-btn btn-danger">Delete</button>
-                <button class="btn save-btn btn-success">Save</button>
-                <button class="btn btn-default" data-dismiss="modal">Cancel</button>
-            </div>
-        </div>
-    </div>
-</div>
+
 
 
 <!-- Start Main project js, jQuery, Bootstrap -->
