@@ -33,7 +33,7 @@
     <div id="header_top" class="header_top">
         <div class="container">
             <div class="hleft">
-                <a class="header-brand" href="army.php"><i class="fa fa-graduation-cap brand-logo"></i></a>
+                <a class="header-brand" href="navy.php"><i class="fa fa-graduation-cap brand-logo"></i></a>
                 <div class="dropdown">
                     <a href="javascript:void(0)" class="nav-link icon menu_toggle"><i class="fe fe-align-center"></i></a>
                 </div>
@@ -54,7 +54,7 @@
             <div class="tab-pane fade show active" id="menu-uni" role="tabpanel">
                 <nav class="sidebar-nav">
                     <ul class="metismenu">
-                        <li><a href="army.php"><i class="fa fa-dashboard"></i><span>Dashboard</span></a></li>
+                        <li><a href="navy.php"><i class="fa fa-dashboard"></i><span>Dashboard</span></a></li>
                         <li class="active"><a href="viewat.php"><i class="fa fa-user-circle-o"></i><span>Attendance</span></a></li>
 						<li><a href="staff.php"><i class="fa fa-users"></i><span>Staffs</span></a></li>
                         <li><a href="courses.php"><i class="fa fa-graduation-cap"></i><span>Classes</span></a></li>                        
