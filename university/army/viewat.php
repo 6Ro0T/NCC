@@ -70,15 +70,20 @@
         <!-- Start Page title and tab -->
         <div class="section-body">
             <div class="container-fluid">
-                <div class="d-flex justify-content-between align-items-center ">
+                <div class="d-flex justify-content-between align-items-center">
                     <div class="header-action">
                         <h1 class="page-title">Attendance</h1>
                         <ol class="breadcrumb page-breadcrumb">
-
+                            <li class="breadcrumb-item" ><a href="#">MyNCC</a></li>
+                            <li class="breadcrumb-item">Cadets</li>
+                            <li class="breadcrumb-item active" aria-current="page">Attendance</li>
+                        </ol>
+                    </div>
+                    <ul class="nav nav-tabs page-header-tab">
+                        <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#admin-Dashboard">Attendance</a></li>
                     </ul>
                 </div>
             </div>
-        </div>
         <div class="section-body mt-4">
             <div class="container-fluid">
                 <div class="tab-content">
