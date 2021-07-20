@@ -387,6 +387,15 @@
         </div>
         <!-- Start main footer -->
         <div class="section-body">
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            Copyright © 2021 | Phoenix Studios | <a href="https://kishannayak.000webhostapp.com/">Kishan Nayak</a>.
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </div>
     </div>    
 </div>
