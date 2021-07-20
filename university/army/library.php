@@ -41,7 +41,7 @@
                 </div>
             </div>
             <div class="hright">
-                <a href="../index.php" class="nav-link icon settingbar"><i class="fe fe-power"></i></a>                
+                <a href="logout.php" class="nav-link icon settingbar"><i class="fe fe-power"></i></a>                
             </div>
         </div>
     </div>
@@ -55,7 +55,7 @@
             <div class="tab-pane fade show active" id="menu-uni" role="tabpanel">
                 <nav class="sidebar-nav">
                     <ul class="metismenu">
-                        <li><a href="index.php"><i class="fa fa-dashboard"></i><span>Dashboard</span></a></li>
+                        <li><a href="army.php"><i class="fa fa-dashboard"></i><span>Dashboard</span></a></li>
                         <li><a href="viewat.php"><i class="fa fa-user-circle-o"></i><span>View Attendance</span></a></li>
                         <li><a href="staff.php"><i class="fa fa-users"></i><span>Staffs</span></a></li>
                         <li><a href="courses.php"><i class="fa fa-graduation-cap"></i><span>Classes</span></a></li>                        
@@ -92,12 +92,12 @@
                 <div class="tab-content">
                     <div class="tab-pane active" id="Library-all">
                         <div class="card">
-                            <div class="card-body">
+                           <div class="card-body">
                                 <div class="table-responsive">
                                     <table class="table table-hover js-basic-example dataTable table-striped table_custom border-style spacing5">
-                                        <thead>
-                                            <tr>
-                                                <th>#</th>
+                                       <thead>
+                                             <tr>
+                                                <!-- <th>#</th> -->
                                                 <th>Title</th>
                                                 <th>Subject</th>
                                                 <th>Department</th>
@@ -248,168 +248,21 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane" id="Library-add">
-                        <div class="card">
-                            <div class="card-header">
-                                <h3 class="card-title">Add Library</h3>
-                                <div class="card-options ">
-                                    <a href="#" class="card-options-collapse" data-toggle="card-collapse"><i class="fe fe-chevron-up"></i></a>
-                                    <a href="#" class="card-options-remove" data-toggle="card-remove"><i class="fe fe-x"></i></a>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <div class="form-group">
-                                            <input type="text" value="" placeholder="Enter Title" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12">
-                                        <div class="form-group">
-                                            <input type="text" value="" placeholder="Enter Subject" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12">
-                                        <div class="form-group">
-                                            <input type="text" value="" placeholder="Department" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12">
-                                        <div class="form-group">
-                                            <input type="text" value="" placeholder="Enter Type" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12">
-                                        <div class="form-group">
-                                            <input type="text" value="" placeholder="Enter Year" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12">
-                                        <div class="form-group">
-                                            <input type="text" value="" placeholder="Enter Status" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12">
-                                        <button class="btn btn-primary btn-lg btn-simple">Add Library</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane" id="Library-add-Boot">
-                        <div class="card">
-                            <div class="card-header">
-                                <h3 class="card-title">Add Library</h3>
-                                <div class="card-options ">
-                                    <a href="#" class="card-options-collapse" data-toggle="card-collapse"><i class="fe fe-chevron-up"></i></a>
-                                    <a href="#" class="card-options-remove" data-toggle="card-remove"><i class="fe fe-x"></i></a>
-                                </div>
-                            </div>
-                            <form class="card-body">
-                                <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">Title <span class="text-danger">*</span></label>
-                                    <div class="col-md-7">
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">Subject  <span class="text-danger">*</span></label>
-                                    <div class="col-md-7">
-                                        <select class="form-control input-height" name="sub">
-                                            <option value="">Select...</option>
-                                            <option value="Category 1">Mathematics</option>
-                                            <option value="Category 2">Science</option>
-                                            <option value="Category 3">Software</option>
-                                            <option value="Category 3">Other</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">Purchase Date <span class="text-danger">*</span></label>
-                                    <div class="col-md-7">
-                                        <input data-provide="datepicker" data-date-autoclose="true" class="form-control" placeholder="">
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">Auther Name <span class="text-danger">*</span></label>
-                                    <div class="col-md-7">
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">Publisher <span class="text-danger">*</span></label>
-                                    <div class="col-md-7">
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">Price <span class="text-danger">*</span></label>
-                                    <div class="col-md-7">
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">Department <span class="text-danger">*</span></label>
-                                    <div class="col-md-7">
-                                        <select class="form-control input-height" name="departmnt">
-                                            <option value="">Select...</option>
-                                            <option value="Category 1">Mathematics</option>
-                                            <option value="Category 2">Engineering</option>
-                                            <option value="Category 3">Science</option>
-                                            <option value="Category 3">M.B.A.</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">Asset Type <span class="text-danger">*</span></label>
-                                    <div class="col-md-7">
-                                        <select class="form-control input-height" name="assttype">
-                                            <option value="">Select...</option>
-                                            <option value="Category 1">Book</option>
-                                            <option value="Category 2">CD</option>
-                                            <option value="Category 3">DVD</option>
-                                            <option value="Category 3">NewsPaper</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">Asset Details <span class="text-danger">*</span></label>
-                                    <div class="col-md-7">
-                                        <textarea rows="4" class="form-control no-resize" placeholder="Please type what you want..."></textarea>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label class="col-md-3 col-form-label"></label>
-                                    <div class="col-md-7">
-                                        <button type="submit" class="btn btn-primary">Submit</button>
-                                        <button type="submit" class="btn btn-outline-secondary">Cancel</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
         <!-- Start main footer -->
-        <div class="section-body">
-            <footer class="footer">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-12">
-                            Copyright © 2019 <a href="https://themeforest.net/user/puffintheme/portfolio">PuffinTheme</a>.
-                        </div>
-                        <div class="col-md-6 col-sm-12 text-md-right">
-                            <ul class="list-inline mb-0">
-                                <li class="list-inline-item"><a href="../../doc/index.php">Documentation</a></li>
-                                <li class="list-inline-item"><a href="javascript:void(0)">FAQ</a></li>
-                                <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-outline-primary btn-sm">Buy Now</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </footer>
+    <div class="section-body">
+        <footer class="footer">
+        <div class="container-fluid">
+			<div class="row">
+				<div class="col-md-6 col-sm-12">
+					Copyright © 2021 | Phoenix Studios | <a href="https://kishannayak.000webhostapp.com/">Kishan Nayak</a>.
+				</div>
+			</div>
         </div>
+        </footer>
+    </div>
     </div>    
 </div>
 
