@@ -3,34 +3,36 @@
    include('conn.php');
    $flag=0;
    $dat=0;
-   $count=0;
+
    $curdate=date("Y-m-d");
-   
    if(isset($_POST['submit']))
    {
-        $date=$_POST['date'];
+        $date=$_POST['submit'];
         if($date>$curdate){
                 $dat=1;
         }
         else{
-             $sql = "SELECT date FROM attendance WHERE date='$date'";
+             $sql = "SELECT * FROM attendance WHERE date='$date'";
              $check = mysqli_query($conn,$sql);
-             $row=mysqli_fetch_array($check);
              $count = mysqli_num_rows($check);
-            foreach($_POST['status'] as $id=>$attendance)
-            {
-                $stname=$_POST['sname'][$id];
-                $rollnumber=$_POST['roll_num'][$id];
-                if($count==0){
-                    $sql="INSERT INTO `attendance`(`name`, `roll_number`, `status`, `date`) VALUES ('$stname','$rollnumber','$attendance','$date')";
-                    $result=mysqli_query($conn,$sql);
+			 
+			 if($count==0){
+				foreach($_POST['status'] as $id=>$attendance)
+				{
+					$stname=$_POST['sname'][$id];
+					
+
+					$rollnumber=$_POST['roll_num'][$id];
+                    $sql1="UPDATE `attendance` SET `name`='$stname',`roll_number`='$rollnumber',`status`='$attendance' WHERE date='$date'";
+                    $result=mysqli_query($conn,$sql1);
                     if($result)
                         $flag=1;
-                }
-            }
+				}
+			}
         
         }
    }
+   
 ?>
 <!doctype html>
 <html lang="en" dir="ltr">
@@ -294,46 +296,32 @@
         <div class="section-body">
             <div class="container-fluid">
                         
-                <div class="d-flex justify-content-between align-items-center ">
-                    <div class="header-action">
-                        <h1 class="page-title">Attendance</h1>
-
-                    </div>
-                    <a href="view_at.php" class="btn btn-info btn-sm">View All Attendance</a>
-                </div>
-               <form method="POST" action="attendance.php">
-               Date:    <input type="date" name="date" placeholder="select date" required>
+               
                <div class="text-md-center">
                   </strong>Today: <?php echo date("Y-m-d");?></strong>
                 </div>
             </div>
-            
+           
         </div>
         
         <div class="section-body mt-4">
-        
+			<?php if($flag) {?>
+             <div class="alert alert-success">
+             <Strong>Attendance Updated Successfully</strong>
+             </div>
+			<?php } ?>
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12">
+					<h5>Date:<?php echo $date?></h5> 
+					<?php echo $attendance;?>
                         <div class="card">
-                            
+                            <form method="POST" action="view_by_date.php">
                             <div class="table-responsive"> 
-                            <?php if($flag) {?>
-                        <div class="alert alert-success">
-                        <Strong>Attendance added Succesfully</strong>
-                        </div>
-                        <?php } ?>
-                        <?php if($dat) {?>
-                        <div class="alert alert-danger">
-                        <Strong>Cannot Use Future Date</strong>
-                        </div>
-                        <?php } ?>
-                        <?php if($count){?>
-                        <div class="alert alert-danger">
-                        <Strong>Attendance already marked</strong>
-                        </div>
-                        <?php } ?>
-                                                         
+							  
+							</div>
+                        
+                                                      
                                 <table class="table table-sm table-hover table-striped table-vcenter mb-0 text-nowrap">
                                     <thead>
                                     <tr>
@@ -344,7 +332,7 @@
                                      </tr>
                                         <?php 
                                         include('conn.php');
-                                        $sql="select * from student";
+                                        $sql="select * from attendance where date='$date'";
                                         $result=mysqli_query($conn,$sql);
                                         $serial=0;
                                         $counter=0;
@@ -361,8 +349,8 @@
                                         <td><?php echo $row['name']; ?></td>
                                         <input type='hidden' value='<?php echo $row['name'];?>' name='sname[]'>
                                         <td>
-                                            <input type="radio" name="status[<?php echo $counter;?>]" value="Present" required>Present
-                                            <input type="radio" name="status[<?php echo $counter;?>]" value="Absent" required>Absent
+                                            <input type="radio" name="status[<?php echo $counter;?>]" value="Present" required <?php if($row['status']=="Present"){echo "checked=checked";}?>  >Present
+                                            <input type="radio" name="status[<?php echo $counter;?>]" value="Absent" required <?php if($row['status']=="Absent"){echo "checked=checked";}?>>Absent
                                         </td>
                                         <?php 
                                             $counter++;    
@@ -375,30 +363,18 @@
                         </div>
                     </div>
                 </div>
-               <button type="submit" class="btn btn-primary btn-block" name="submit">SAVE</button>
+				<div class="text-center">
+				<button type="submit" class="btn btn-primary " name="submit">UPDATE</button>
+				</form>
+				<a href="view_at.php"><button type="submit" class="btn btn-primary " name="submit" href="view_at.php">BACK</button></a>
+				</div>
             </div>
+			
         </div>
         
-        </form>
+       
         <!-- Start main footer -->
-        <div class="section-body">
-            <footer class="footer">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-12">
-                            Copyright © 2019 <a href="https://themeforest.net/user/puffintheme/portfolio">PuffinTheme</a>.
-                        </div>
-                        <div class="col-md-6 col-sm-12 text-md-right">
-                            <ul class="list-inline mb-0">
-                                <li class="list-inline-item"><a href="../../doc/index.html">Documentation</a></li>
-                                <li class="list-inline-item"><a href="javascript:void(0)">FAQ</a></li>
-                                <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-outline-primary btn-sm">Buy Now</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-        </div>
+        
     </div>    
 </div>
 
