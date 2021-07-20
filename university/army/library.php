@@ -61,20 +61,7 @@
                         <li><a href="courses.php"><i class="fa fa-graduation-cap"></i><span>Classes</span></a></li>                        
                         <li class="active"><a href="library.php"><i class="fa fa-book"></i><span>Study Materials</span></a></li>
                         <li><a href="holiday.php"><i class="fa fa-bullhorn"></i><span>Events</span></a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="tab-pane fade" id="menu-admin" role="tabpanel">
-                <nav class="sidebar-nav">
-                    <ul class="metismenu">
-                        <li><a href="payments.php"><i class="fa fa-credit-card"></i><span>Payments</span></a></li>
-                        <li><a href="noticeboard.php"><i class="fa fa-dashboard"></i><span>Noticeboard</span></a></li>
-                        <li><a href="taskboard.php"><i class="fa fa-list-ul"></i><span>Taskboard</span></a></li>
-                        <li><a href="hostel.php"><i class="fa fa-bed"></i><span>Hostel</span></a></li>
-                        <li><a href="transport.php"><i class="fa fa-truck"></i><span>Transport</span></a></li>
-                        <li><a href="attendance.php"><i class="fa fa-calendar-check-o"></i><span>Attendance</span></a></li>
-                        <li><a href="leave.php"><i class="fa fa-flag"></i><span>Leave</span></a></li>
-                        <li><a href="setting.php"><i class="fa fa-gear"></i><span>Settings</span></a></li>
+						<li><a href="gallery.php"><i class="fa fa-camera-retro"></i><span>Gallery</span></a></li>
                     </ul>
                 </nav>
             </div>
@@ -82,44 +69,20 @@
     </div>
     <!-- Start project content area -->
     <div class="page">
-        <!-- Start Page header -->
-        <div class="section-body" id="page_top" >
-            <div class="container-fluid">
-                <div class="page-header">
-                    <div class="left">                        
-                        
-                    </div>
-                    <div class="right">
-                        <div class="notification d-flex">
-                            
-                            <div class="dropdown d-flex">
-                                <a href="javascript:void(0)" class="chip ml-3" data-toggle="dropdown">
-                                    <span class="avatar" style="background-image: url(../../assets/images/xs/avatar5.jpg)"></span> George</a>
-                                <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                                    <a class="dropdown-item" href="page-profile.php"><i class="dropdown-icon fe fe-user"></i> Profile</a>
-                                    <a class="dropdown-item" href="logout.php"><i class="dropdown-icon fe fe-log-out"></i> Sign out</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <!-- Start Page title and tab -->
         <div class="section-body">
             <div class="container-fluid">
                 <div class="d-flex justify-content-between align-items-center ">
                     <div class="header-action">
-                        <h1 class="page-title">Library</h1>
+                        <h1 class="page-title">Study Materials</h1>
                         <ol class="breadcrumb page-breadcrumb">
-                            <li class="breadcrumb-item"><a href="#">Ericsson</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Library</li>
+                            <li class="breadcrumb-item"><a href="#">MyNCC</a></li>
+							<li class="breadcrumb-item">Cadets</li>
+                            <li class="breadcrumb-item active" aria-current="page">Study Materials</li>
                         </ol>
                     </div>
                     <ul class="nav nav-tabs page-header-tab">
-                        <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#Library-all">List View</a></li>
-                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#Library-add">Add</a></li>
-                        <li class="nav-item"><a class="nav-link" id="Library-tab-Boot" data-toggle="tab" href="#Library-add-Boot">Add Bootstrap Style</a></li>
+                        <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#Library-all">Study Materials</a></li>
                     </ul>
                 </div>
             </div>
