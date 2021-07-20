@@ -7,7 +7,7 @@
 
 <link rel="icon" href="favicon.ico" type="image/x-icon"/>
 
-<title>:: Epic :: Login</title>
+<title>MyNCC : Admin Login</title>
 
 <!-- Bootstrap Core and vandor -->
 <link rel="stylesheet" href="../assets/plugins/bootstrap/css/bootstrap.min.css" />
@@ -24,7 +24,7 @@
             <div class="card-body">
                 <div class="text-center">
                     <a class="header-brand" href="index.html"><i class="fa fa-graduation-cap brand-logo"></i></a>
-                    <div class="card-title mt-3">Login to your account</div>
+                    <div class="card-title mt-3">Admin Login</div>
                     
                 </div>
                 <div class="form-group">
@@ -48,7 +48,7 @@
 					if (isset($_GET["msg"]) == 'failed') {
 						echo "Incorrect username or password";
 }       			?>
-                    <div class="text-muted mt-4">Don't have account yet? <a href="register.html">Sign up</a></div>
+                    <div class="text-muted mt-4">Are you a Student? <a href="../university/index.php">Click Here</a></div>
                 </div>
             </div>
         </div>        
