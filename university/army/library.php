@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <link rel="icon" href="favicon.ico" type="image/x-icon"/>
-<title>MyNCC : Classes</title>
+<title>MyNCC : Library</title>
 
 <!-- Bootstrap Core and vandor -->
 <link rel="stylesheet" href="../../assets/plugins/bootstrap/css/bootstrap.min.css" />
@@ -57,11 +57,10 @@
                     <ul class="metismenu">
                         <li><a href="index.php"><i class="fa fa-dashboard"></i><span>Dashboard</span></a></li>
                         <li><a href="viewat.php"><i class="fa fa-user-circle-o"></i><span>View Attendance</span></a></li>
-                        <li><a href="departments.php"><i class="fa fa-users"></i><span>Departments</span></a></li>
-                        <li><a href="courses.php"><i class="fa fa-graduation-cap"></i><span>Courses</span></a></li>                        
-                        <li class="active"><a href="library.php"><i class="fa fa-book"></i><span>Library</span></a></li>
-                        <li><a href="holiday.php"><i class="fa fa-bullhorn"></i><span>Holiday</span></a></li>
-                        <li><a href="events.php"><i class="fa fa-calendar"></i><span>Calender</span></a></li>
+                        <li><a href="staff.php"><i class="fa fa-users"></i><span>Staffs</span></a></li>
+                        <li><a href="courses.php"><i class="fa fa-graduation-cap"></i><span>Classes</span></a></li>                        
+                        <li class="active"><a href="library.php"><i class="fa fa-book"></i><span>Study Materials</span></a></li>
+                        <li><a href="holiday.php"><i class="fa fa-bullhorn"></i><span>Events</span></a></li>
                     </ul>
                 </nav>
             </div>
