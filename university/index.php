@@ -50,7 +50,7 @@
 }       			?>
                 </div>
 				<div class="text-center">
-                    <div class="text-muted mt-4">Go back to <a href="../index.html">Homepage</a></div>
+                    <div class="text-muted mt-4">Are you an Admin?<a href="../admin/index.php">Click Here</a></div>
                 </div>
             </div>
         </div>        
