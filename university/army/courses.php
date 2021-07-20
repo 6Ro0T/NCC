@@ -38,7 +38,7 @@
                 </div>
             </div>
             <div class="hright">
-                <a href="../index.php" class="nav-link icon settingbar"><i class="fe fe-power"></i></a>                
+                <a href="logout.php" class="nav-link icon settingbar"><i class="fe fe-power"></i></a>                
             </div>
         </div>
     </div>
@@ -54,6 +54,7 @@
                     <ul class="metismenu">
                         <li><a href="army.php"><i class="fa fa-dashboard"></i><span>Dashboard</span></a></li>
                         <li><a href="viewat.php"><i class="fa fa-user-circle-o"></i><span>View Attendance</span></a></li>
+						<li><a href="staff.php"><i class="fa fa-users"></i><span>Staffs</span></a></li>
                         <li class="active"><a href="courses.php"><i class="fa fa-graduation-cap"></i><span>Classes</span></a></li>                        
                         <li><a href="library.php"><i class="fa fa-book"></i><span>Study Materials</span></a></li>
                         <li><a href="holiday.php"><i class="fa fa-bullhorn"></i><span>Events</span></a></li>
@@ -74,11 +75,12 @@
                         <h1 class="page-title">Classes</h1>
                         <ol class="breadcrumb page-breadcrumb">
                             <li class="breadcrumb-item"><a href="#">MyNCC</a></li>
+							<li class="breadcrumb-item">Cadets</li>
                             <li class="breadcrumb-item active" aria-current="page">Classes</li>
                         </ol>
                     </div>
                     <ul class="nav nav-tabs page-header-tab">
-                        <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#Courses-all">View</a></li>
+                        <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#Courses-all">Classes</a></li>
                     </ul>
                 </div>
             </div>
@@ -348,10 +350,20 @@
                 </div>
             </div>
 		</div>
-    </div>
-    <!-- Start main footer -->
+		<!-- Start main footer -->
     <div class="section-body">
+        <footer class="footer">
+        <div class="container-fluid">
+			<div class="row">
+				<div class="col-md-6 col-sm-12">
+					Copyright © 2021 | Phoenix Studios | <a href="https://kishannayak.000webhostapp.com/">Kishan Nayak</a>.
+				</div>
+			</div>
+        </div>
+        </footer>
     </div>
+    </div>
+    
 </div>    
 </div>
 
