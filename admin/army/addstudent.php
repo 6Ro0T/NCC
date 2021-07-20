@@ -2,12 +2,22 @@
    include('session.php');
    include('conn.php');
    $flag=0;
+   $count=0;
    if(isset($_POST['submit']))
    {
-       $sql="INSERT INTO `student`(`roll_number`, `name`, `email`, `password`, `division`, `role`) VALUES ('$_POST[roll_num]','$_POST[name]','$_POST[email]','$_POST[password]','$_POST[division]','$_POST[role]')";
-       $result=mysqli_query($conn,$sql);
-       if($result)
-           $flag=1;
+       if($_POST['email']){
+            $sql = "SELECT email FROM student WHERE email='$_POST[email]'";
+            $check = mysqli_query($conn,$sql);
+            $row=mysqli_fetch_array($check);
+            $count = mysqli_num_rows($check);
+            if($count==0){
+                $sql="INSERT INTO `student`(`roll_number`, `name`, `email`, `password`, `division`, `role`) VALUES ('$_POST[roll_num]','$_POST[name]','$_POST[email]','$_POST[password]','$_POST[division]','$_POST[role]')";
+                $result=mysqli_query($conn,$sql);
+       
+                if($result)
+                    $flag=1;
+       }
+   }
    }
 ?>
 <!doctype html>
@@ -252,7 +262,7 @@
                     <ul class="metismenu">
                         <li><a href="payments.php"><i class="fa fa-credit-card"></i><span>Payments</span></a></li>
                         <li><a href="noticeboard.php"><i class="fa fa-dashboard"></i><span>Noticeboard</span></a></li>
-                        <li><a href="taskboard.php"><i class="fa fa-list-ul"></i><span>Taskboard</span></a></li>
+                        <li><a href="view_all.php"><i class="fa fa-list-ul"></i><span>View all Students</span></a></li>
                         <li><a href="addstudent.php"><i class="fa fa-bed"></i><span>Add Student</span></a></li>
                         <li><a href="transport.php"><i class="fa fa-truck"></i><span>Transport</span></a></li>
                         <li><a href="attendance.php"><i class="fa fa-calendar-check-o"></i><span>Attendance</span></a></li>
@@ -455,6 +465,11 @@
                         <Strong>Successfully Added Student</strong>
                         </div>
                         <?php } ?>
+                        <?php if($count==1){?>
+                        <div class="alert alert-success">
+                        <Strong>Student Exist</strong>
+                        </div>
+                        <?php } ?>
                             <form class="card-body" method="post" action="addstudent.php">
                                 <div class="form-group row">
                                     <label class="col-md-3 col-form-label">Student Name <span class="text-danger">*</span></label>
@@ -471,7 +486,7 @@
                                 <div class="form-group row">
                                     <label class="col-md-3 col-form-label">E-mail <span class="text-danger">*</span></label>
                                     <div class="col-md-7">
-                                        <input type="text" class="form-control" name='email' required>
+                                        <input type="email" class="form-control" name='email' required>
                                     </div>
                                 </div>
                                 <div class="form-group row">

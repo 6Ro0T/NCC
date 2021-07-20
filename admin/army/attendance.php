@@ -2,19 +2,36 @@
    include('session.php');
    include('conn.php');
    $flag=0;
+   $dat=0;
+   $count=0;
+   $curdate=date("Y-m-d");
+   
    if(isset($_POST['submit']))
    {
+        $date=$_POST['date'];
+        if($date>$curdate){
+                $dat=1;
+                
+        }
+        else{
         foreach($_POST['status'] as $id=>$attendance)
         {
             
             $stname=$_POST['sname'][$id];
             $rollnumber=$_POST['roll_num'][$id];
-            $date=$_POST['date'];
-            $sql="INSERT INTO `attendance`(`name`, `roll_number`, `status`, `date`) VALUES ('$stname','$rollnumber','$attendance','$date')";
-            $result=mysqli_query($conn,$sql);
-            if($result)
-                $flag=1;
+            $sql = "SELECT date FROM attendance WHERE date='$date'";
+            $check = mysqli_query($conn,$sql);
+            $row=mysqli_fetch_array($check);
+            $count = mysqli_num_rows($check);
+            if($count==0){
+                $sql="INSERT INTO `attendance`(`name`, `roll_number`, `status`, `date`) VALUES ('$stname','$rollnumber','$attendance','$date')";
+                $result=mysqli_query($conn,$sql);
+                if($result)
+                    $flag=1;
         }
+        }
+        
+   }
    }
 ?>
 <!doctype html>
@@ -259,7 +276,7 @@
                     <ul class="metismenu">
                         <li><a href="payments.php"><i class="fa fa-credit-card"></i><span>Payments</span></a></li>
                         <li><a href="noticeboard.php"><i class="fa fa-dashboard"></i><span>Noticeboard</span></a></li>
-                        <li><a href="taskboard.php"><i class="fa fa-list-ul"></i><span>Taskboard</span></a></li>
+                        <li><a href="view_all.php"><i class="fa fa-list-ul"></i><span>View all Students</span></a></li>
                         <li><a href="addstudent.php"><i class="fa fa-bed"></i><span>Add Student</span></a></li>
                         <li><a href="transport.php"><i class="fa fa-truck"></i><span>Transport</span></a></li>
                         <li><a href="attendance.php"><i class="fa fa-calendar-check-o"></i><span>Attendance</span></a></li>
@@ -436,20 +453,17 @@
         <!-- Start Page title and tab -->
         <div class="section-body">
             <div class="container-fluid">
-                        <?php if($flag) {?>
-                        <div class="alert alert-success">
-                        <Strong>Attendance added Succesfully</strong>
-                        </div>
-                        <?php } ?>
+                        
                 <div class="d-flex justify-content-between align-items-center ">
                     <div class="header-action">
                         <h1 class="page-title">Attendance</h1>
 
                     </div>
-                    <a href="javascript:void(0)" class="btn btn-info btn-sm">Export Excel</a>
+                    <a href="javascript:void(0)" class="btn btn-info btn-sm">View All Attendance</a>
                 </div>
                <form method="POST" action="attendance.php">
                Date:    <input type="date" name="date" placeholder="select date" required>
+                        
             </div>
             
         </div>
@@ -462,6 +476,21 @@
                         <div class="card">
                             
                             <div class="table-responsive"> 
+                            <?php if($flag) {?>
+                        <div class="alert alert-success">
+                        <Strong>Attendance added Succesfully</strong>
+                        </div>
+                        <?php } ?>
+                        <?php if($dat) {?>
+                        <div class="alert alert-success">
+                        <Strong>Cannot Use Future Date</strong>
+                        </div>
+                        <?php } ?>
+                        <?php if($count==1){?>
+                        <div class="alert alert-success">
+                        <Strong>Attendance already marked</strong>
+                        </div>
+                        <?php } ?>
                                                          
                                 <table class="table table-sm table-hover table-striped table-vcenter mb-0 text-nowrap">
                                     <thead>
