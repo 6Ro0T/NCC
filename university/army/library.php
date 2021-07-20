@@ -251,7 +251,7 @@
                 </div>
             </div>
         </div>
-        <!-- Start main footer -->
+    <!-- Start main footer -->
     <div class="section-body">
         <footer class="footer">
         <div class="container-fluid">
@@ -263,7 +263,7 @@
         </div>
         </footer>
     </div>
-    </div>    
+</div>    
 </div>
 
 <!-- Start Main project js, jQuery, Bootstrap -->
