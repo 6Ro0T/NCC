@@ -10,35 +10,7 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <link rel="icon" href="favicon.ico" type="image/x-icon"/>
 <title>MyNCC : Courses</title>
-<script>
-<script>
-    var tag = document.createElement('script');
-    tag.src = "//www.youtube.com/iframe_api";
-    var firstScriptTag = document.getElementsByTagName('script')[0];
-    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-    function onYouTubeIframeAPIReady() {
-        var $ = jQuery;
-        var players = [];
-        $('iframe').filter(function(){return this.src.indexOf('http://www.youtube.com/') == 0}).each( function (k, v) {
-            if (!this.id) { this.id='embeddedvideoiframe' + k }
-            players.push(new YT.Player(this.id, {
-                events: {
-                    'onStateChange': function(event) {
-                        if (event.data == YT.PlayerState.PLAYING) {
-                            $.each(players, function(k, v) {
-                                if (this.getIframe().id != event.target.getIframe().id) {
-                                    this.pauseVideo();
-                                }
-                            });
-                        }
-                    }
-                }
-            }))
-        });
-    }
-</script>
-</script>
 <!-- Bootstrap Core and vandor -->
 <link rel="stylesheet" href="../../assets/plugins/bootstrap/css/bootstrap.min.css" />
 <link rel="stylesheet" href="../../assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css">
@@ -138,7 +110,7 @@
                                 
                                     <?php 
                                     $id=$row['url'];
-                                    $text="<iframe width='320' height='200' src='https://www.youtube.com/embed/$id' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>";
+                                    $text="<iframe name='myframe'width='320' height='200' src='https://www.youtube.com/embed/$id' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>";
                                     
                                     $dur = file_get_contents("https://www.googleapis.com/youtube/v3/videos?part=statistics&id=$id&key=AIzaSyCUzBxx5oXGt57tKJTnnwZWAXPj-rz7H3A");
 
@@ -149,6 +121,34 @@
                                     }
                                     ?>
                                     <?php echo $text;?>
+                                    <script>
+    var tag = document.createElement('script');
+    tag.src = "www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    function onYouTubeIframeAPIReady() {
+        console.log("Ready");
+        var $ = jQuery;
+        var players = [];
+        $('iframe').filter(function(){return this.src.indexOf('http://www.youtube.com/') == 0}).each( function (k, v) {
+            if (!this.id) { this.id='embeddedvideoiframe' + k }
+            players.push(new YT.Player(this.id, {
+                events: {
+                    'onStateChange': function(event) {
+                        if (event.data == YT.PlayerState.PLAYING) {
+                            $.each(players, function(k, v) {
+                                if (this.getIframe().id != event.target.getIframe().id) {
+                                    this.pauseVideo();
+                                }
+                            });
+                        }
+                    }
+                }
+            }))
+        });
+    }
+</script>
                                     <div class="card-body d-flex flex-column">
                                         <h5><?php echo $row['coursename'];?></h5>
                                         <div class="text-muted"><?php echo $row['description'];?></div>
@@ -162,7 +162,7 @@
                                                     <td class="text-right"><?php echo $row['duration'];?></td>
                                                 </tr>
                                                 <tr>
-                                                    <td><i class="fa fa-cc-visa text-danger"></i></td>
+                                                    <td><i class="fa fa-user-circle-o"></i></td>
                                                     <td class="tx-medium">Professor</td>
                                                     <td class="text-right"><?php echo $row['professor']?></td>
                                                 </tr>

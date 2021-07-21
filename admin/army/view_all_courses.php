@@ -4,8 +4,8 @@
    $flag=0;
    if(isset($_POST['delete'])){
         
-        $mail=$_POST['delete'];
-        $sql="DELETE FROM `student` WHERE email='$mail'";
+        $id=$_POST['delete'];
+        $sql="DELETE FROM `course` WHERE id='$id'";
         $result=mysqli_query($conn,$sql);
         if($result)
             $flag=1;
@@ -104,20 +104,25 @@
     <!-- Start project content area -->
     <div class="page">
         <!-- Start Page header -->
-         <div class="section-body">
+        <div class="section-body" id="page_top" >
             <div class="container-fluid">
-                <div class="d-flex justify-content-between align-items-center ">
-                    <div class="header-action">
-                        <h1 class="page-title">View All Student</h1>
-                        <ol class="breadcrumb page-breadcrumb">
-                            <li class="breadcrumb-item"><a href="#">MyNCC</a></li>
-							<li class="breadcrumb-item">Cadets</li>
-                            <li class="breadcrumb-item active" aria-current="page">Classes</li>
-                        </ol>
+                <div class="page-header">
+                    <div>                        
                     </div>
-                    <ul class="nav nav-tabs page-header-tab">
-                        <li class="nav-item"><a class="nav-link active" data-toggle="tab" >Student</a></li>
-                    </ul>
+                    <div class="right">
+                        <div class="notification d-flex">
+                            
+                            
+                            <div class="dropdown d-flex">
+                                <a href="javascript:void(0)" class="chip ml-3" data-toggle="dropdown">
+                                    <span class="avatar" style="background-image: url(../../assets/images/xs/avatar5.jpg)"></span> George</a>
+                                <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                                    <a class="dropdown-item" href="page-profile.php"><i class="dropdown-icon fe fe-user"></i> Profile</a>
+                                    <a class="dropdown-item" href="logout.php"><i class="dropdown-icon fe fe-log-out"></i> Sign out</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -126,7 +131,7 @@
             <div class="container-fluid">
                 <div class="d-flex justify-content-between align-items-center ">
                     <div class="header-action">
-                        <h1 class="page-title">Student List</h1>
+                        <h1 class="page-title">Course List</h1>
                         
                     </div>
                 </div>
@@ -138,23 +143,25 @@
                     <div class="tab-pane active" >
                         <div class="card">
                             <div class="card-body">
-                            <form method="post" action="view_all.php">
+                            <form method="post" action="view_all_courses.php">
                                 <table class="table  spacing5">
-                                <?php if($flag) {?>
+                                <?php if($flag) { ?>
                                 <div class="alert alert-success">
-                                <Strong>Student Deleted Successfully.</strong>
+                                <Strong>Course Deleted Successfully.</strong>
                                 </div>
                                 <?php } ?>
                                         <thead>
                                             <tr>
                                                 <th>#</th>
-                                                <th>Name</th>
-                                                <th>Email</th>
-                                                <th>Status</th>
+                                                <th>Course Name</th>
+                                                <th>Author</th>
+                                                <th>Description</th>
+												<th>Delete</th>
+												<th>Update</th>
                                             </tr>
                                             <?php 
                                         include('conn.php');
-                                        $sql="select * from student where division='army'";
+                                        $sql="select * from course where division='army'";
                                         $result=mysqli_query($conn,$sql);
                                         $serial=0;
                                         $counter=0;
@@ -167,21 +174,30 @@
                                             <tr>
                                             
                                                 <td><?php echo $serial;?></td>
-                                                <td><?php echo $row['name'];?></td>
-                                                <td><?php echo $row['email'];?></td>
+                                                <td><?php echo $row['coursename'];?></td>
+                                                <td><?php echo $row['professor'];?></td>
+												<td><?php echo $row['description'];?></td>
                                                 
-                                                
+                                                <div class="text-center">
                                                 <td>
-                                                    <button type="submit"  name='delete' value="<?php echo $row['email'];?>"><i class="fa fa-trash-o text-danger"></i></button>
-                                                   
+													
+                                                    <button type="submit" class="btn btn-icon btn-sm" name='delete' value="<?php echo $row['id'];?>"><i class="fa fa-trash-o text-danger"></i></button>
+													</form>
+													
+													
+                                                   </form>
+												   
                                                 </td>
-                                               
+												<td>
+													<form action="update_course.php" method="POST"><button type="submit" class="btn btn-icon btn-sm" name='update' value="<?php echo $row['id'];?>"><i class="fa fa-pencil-square-o"></i></button></form>
+												</td>
+                                               </div>
                                             </tr>
                                           <?php
                                         }
                                         ?>
                                         </tbody>
-                                         </form>
+                                        
                                     </table>
                             </div>
                         </div>
