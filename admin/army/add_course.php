@@ -1,6 +1,34 @@
 <?php
    include('session.php');
-?><!doctype html>
+   include('conn.php');
+   $flag=0;
+   
+   if(isset($_POST['submit'])){
+         
+    $cname=$_POST['cname'];
+    $professor=$_POST['professor'];
+    $urlid=$_POST['url'];
+    $description=$_POST['description'];
+    // Notice: Undefined variable: dvTime in C:\xampp\htdocs\NCC\admin\army\add_course.php on line 21
+    $dur = file_get_contents("https://www.googleapis.com/youtube/v3/videos?part=contentDetails&part=statistics&id=$urlid&key=AIzaSyCUzBxx5oXGt57tKJTnnwZWAXPj-rz7H3A");
+
+    $duration = json_decode($dur, true);
+    foreach ($duration['items'] as $vidTime) {
+        $vTime= $vidTime['contentDetails']['duration'];
+        $views=$vidTime['statistics']['viewCount'];
+        
+    }
+    $str1=substr($vTime,2);
+    //$str2=substr($vTime,4);
+    //$str3=':'
+   // $str4=$str1,$str3,$str2;
+    $sql="INSERT INTO `course`(`coursename`, `duration`, `professor`, `url`,`description`) VALUES ('$cname','$str1','$professor','$urlid','$description')";
+    $result=mysqli_query($conn,$sql);
+    if($result)
+        $flag=1;
+
+   }
+?>
 <!doctype html>
 <html lang="en" dir="ltr">
 <head>
@@ -263,8 +291,8 @@
                 <nav class="sidebar-nav">
                     <ul class="metismenu">
                         <li><a href="payments.php"><i class="fa fa-credit-card"></i><span>Payments</span></a></li>
-                        <li><a href="noticeboard.php"><i class="fa fa-dashboard"></i><span>Noticeboard</span></a></li>
-                        <li><a href="taskboard.php"><i class="fa fa-list-ul"></i><span>Taskboard</span></a></li>
+                        <li><a href="add_course.php"><i class="fa fa-graduation-cap"></i><span>Add Courses</span></a></li>
+                        <li><a href="add_course.php"><i class="fa fa-list-ul"></i><span>Taskboard</span></a></li>
                         <li><a href="hostel.php"><i class="fa fa-bed"></i><span>Hostel</span></a></li>
                         <li><a href="transport.php"><i class="fa fa-truck"></i><span>Transport</span></a></li>
                         <li><a href="attendance.php"><i class="fa fa-calendar-check-o"></i><span>Attendance</span></a></li>
@@ -443,10 +471,10 @@
             <div class="container-fluid">
                 <div class="d-flex justify-content-between align-items-center ">
                     <div class="header-action">
-                        <h1 class="page-title">Page Empty</h1>
+                        <h1 class="page-title">Add Courses</h1>
                         <ol class="breadcrumb page-breadcrumb">
                             <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Page Empty</li>
+                            <li class="breadcrumb-item active" aria-current="page">Page Empty:</li>
                         </ol>
                     </div>
                 </div>
@@ -454,7 +482,50 @@
         </div>
         <div class="section-body mt-4">
             <div class="container-fluid">
-                <h4>Stater Page</h4>
+                <div class="tab-pane" id="Courses-add-Boot">
+                        <div class="card">
+                        <?php if($flag) {?>
+                        <div class="alert alert-success">
+                        <Strong>Course Added Successfully..</strong>
+                        </div>
+                        <?php } ?>
+                            <form class="card-body" method="POST" action="add_course.php">
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Course Name <span class="text-danger">*</span></label>
+                                    <div class="col-md-7">
+                                        <input type="text" class="form-control"name="cname" required>
+                                    </div>
+                                </div>
+                          
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Professor Name <span class="text-danger">*</span></label>
+                                    <div class="col-md-7">
+                                        <input type="text" class="form-control" name="professor", required>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Video URL <span class="text-danger">*</span></label>
+                                    <div class="col-md-7">
+                                        <input type="text" class="form-control" name="url", required>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Course Description <span class="text-danger">*</span></label>
+                                    <div class="col-md-7">
+                                        <textarea rows="4" class="form-control no-resize" placeholder="Please type what you want..." name="description"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label"></label>
+                                    <div class="col-md-7">
+                                        <button type="submit" class="btn btn-primary" name="submit">Submit</button>
+                                        
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
             </div>
         </div>
         <!-- Start main footer -->

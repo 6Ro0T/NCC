@@ -125,7 +125,6 @@
                                         
                                             
                                         <?php 
-                                            $counter++;    
                                         } ?>
                                         </tr>
                                     </tbody>

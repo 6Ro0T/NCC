@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 18, 2021 at 03:07 PM
+-- Generation Time: Jul 21, 2021 at 12:05 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.3
 
@@ -62,8 +62,33 @@ CREATE TABLE `attendance` (
 --
 
 INSERT INTO `attendance` (`id`, `name`, `roll_number`, `status`, `date`) VALUES
-(3, 'Ranjith', '100', 'Present', '2021-07-13'),
-(4, 'kishan', '101', 'Absent', '2021-07-13');
+(45, 'theertha', '101', 'Present', '2021-07-21');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `course`
+--
+
+CREATE TABLE `course` (
+  `id` int(10) NOT NULL,
+  `coursename` varchar(255) NOT NULL,
+  `duration` varchar(25) NOT NULL,
+  `professor` varchar(255) NOT NULL,
+  `url` varchar(255) NOT NULL,
+  `description` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `course`
+--
+
+INSERT INTO `course` (`id`, `coursename`, `duration`, `professor`, `url`, `description`) VALUES
+(9, 'Embed Iframe in PHP', '4M36S', 'Ranjith', 'cRCOVzkGVJM', 'la la la la alaala alaal'),
+(10, 'Party Play', 'D', 'Ranjith', 'YsBe9BFIjBs', 'lets party'),
+(11, 'Dua lipa', '3M45S', 'Ranjith', 'k2qgadSvNyU', 'party partyparty'),
+(12, 'Ed sheeran', 'D', 'Ranjith', 'kk42xRof9cY', 'lets dance'),
+(13, 'Arijit Songs', '52M31S', 'Ranjith', 'HPkydJOXXNs', 'meow mewo mewo meow mewo');
 
 -- --------------------------------------------------------
 
@@ -86,8 +111,7 @@ CREATE TABLE `student` (
 --
 
 INSERT INTO `student` (`id`, `roll_number`, `name`, `email`, `password`, `division`, `role`) VALUES
-(31, 100, 'Ranjith', 'Ranjith@mail.com', '123', 'army', 'student'),
-(32, 101, 'kishan', 'kishan@mail.com', '123', 'army', 'student');
+(59, 101, 'theertha', 'theertha@mail.com', '123', 'army', 'student');
 
 --
 -- Indexes for dumped tables
@@ -103,6 +127,12 @@ ALTER TABLE `admin`
 -- Indexes for table `attendance`
 --
 ALTER TABLE `attendance`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `course`
+--
+ALTER TABLE `course`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -125,13 +155,19 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `attendance`
 --
 ALTER TABLE `attendance`
-  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
+
+--
+-- AUTO_INCREMENT for table `course`
+--
+ALTER TABLE `course`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `student`
 --
 ALTER TABLE `student`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=61;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -264,7 +264,7 @@
                 <nav class="sidebar-nav">
                     <ul class="metismenu">
                         <li><a href="payments.php"><i class="fa fa-credit-card"></i><span>Payments</span></a></li>
-                        <li><a href="noticeboard.php"><i class="fa fa-dashboard"></i><span>Noticeboard</span></a></li>
+                        <li><a href="add_course.php"><i class="fa fa-graduation-cap"></i><span>Add Courses</span></a></li>
                         <li><a href="taskboard.php"><i class="fa fa-list-ul"></i><span>Taskboard</span></a></li>
                         <li><a href="addstudent.php"><i class="fa fa-bed"></i><span>Add Student</span></a></li>
                         <li><a href="transport.php"><i class="fa fa-truck"></i><span>Transport</span></a></li>
