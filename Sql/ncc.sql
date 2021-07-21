@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 21, 2021 at 12:05 PM
+-- Generation Time: Jul 21, 2021 at 12:25 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.3
 
@@ -54,15 +54,16 @@ CREATE TABLE `attendance` (
   `name` varchar(30) NOT NULL,
   `roll_number` varchar(20) NOT NULL,
   `status` varchar(10) NOT NULL,
-  `date` date NOT NULL
+  `date` date NOT NULL,
+  `division` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `attendance`
 --
 
-INSERT INTO `attendance` (`id`, `name`, `roll_number`, `status`, `date`) VALUES
-(45, 'theertha', '101', 'Present', '2021-07-21');
+INSERT INTO `attendance` (`id`, `name`, `roll_number`, `status`, `date`, `division`) VALUES
+(45, 'theertha', '101', 'Present', '2021-07-21', 'army');
 
 -- --------------------------------------------------------
 
@@ -76,19 +77,21 @@ CREATE TABLE `course` (
   `duration` varchar(25) NOT NULL,
   `professor` varchar(255) NOT NULL,
   `url` varchar(255) NOT NULL,
-  `description` varchar(255) NOT NULL
+  `description` varchar(255) NOT NULL,
+  `division` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `course`
 --
 
-INSERT INTO `course` (`id`, `coursename`, `duration`, `professor`, `url`, `description`) VALUES
-(9, 'Embed Iframe in PHP', '4M36S', 'Ranjith', 'cRCOVzkGVJM', 'la la la la alaala alaal'),
-(10, 'Party Play', 'D', 'Ranjith', 'YsBe9BFIjBs', 'lets party'),
-(11, 'Dua lipa', '3M45S', 'Ranjith', 'k2qgadSvNyU', 'party partyparty'),
-(12, 'Ed sheeran', 'D', 'Ranjith', 'kk42xRof9cY', 'lets dance'),
-(13, 'Arijit Songs', '52M31S', 'Ranjith', 'HPkydJOXXNs', 'meow mewo mewo meow mewo');
+INSERT INTO `course` (`id`, `coursename`, `duration`, `professor`, `url`, `description`, `division`) VALUES
+(9, 'Embed Iframe in PHP', '4M36S', 'Ranjith', 'cRCOVzkGVJM', 'la la la la alaala alaal', 'army'),
+(10, 'Party Play', 'D', 'Ranjith', 'YsBe9BFIjBs', 'lets party', 'army'),
+(11, 'Dua lipa', '3M45S', 'Ranjith', 'k2qgadSvNyU', 'party partyparty', 'army'),
+(12, 'Ed sheeran', 'D', 'Ranjith', 'kk42xRof9cY', 'lets dance', 'army'),
+(13, 'Arijit Songs', '52M31S', 'Ranjith', 'HPkydJOXXNs', 'meow mewo mewo meow mewo', 'army'),
+(14, 'Best Songs', '55M28S', 'Ranjith', '5mFTXbZzOAE', 'bla bla bla bla', 'army');
 
 -- --------------------------------------------------------
 
@@ -161,7 +164,7 @@ ALTER TABLE `attendance`
 -- AUTO_INCREMENT for table `course`
 --
 ALTER TABLE `course`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `student`

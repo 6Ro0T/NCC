@@ -9,6 +9,7 @@
     $professor=$_POST['professor'];
     $urlid=$_POST['url'];
     $description=$_POST['description'];
+    $division=$_POST['division'];
     // Notice: Undefined variable: dvTime in C:\xampp\htdocs\NCC\admin\army\add_course.php on line 21
     $dur = file_get_contents("https://www.googleapis.com/youtube/v3/videos?part=contentDetails&part=statistics&id=$urlid&key=AIzaSyCUzBxx5oXGt57tKJTnnwZWAXPj-rz7H3A");
 
@@ -22,7 +23,7 @@
     //$str2=substr($vTime,4);
     //$str3=':'
    // $str4=$str1,$str3,$str2;
-    $sql="INSERT INTO `course`(`coursename`, `duration`, `professor`, `url`,`description`) VALUES ('$cname','$str1','$professor','$urlid','$description')";
+    $sql="INSERT INTO `course`(`coursename`, `duration`, `professor`, `url`,`description`,`division`) VALUES ('$cname','$str1','$professor','$urlid','$description','$division')";
     $result=mysqli_query($conn,$sql);
     if($result)
         $flag=1;
@@ -292,8 +293,8 @@
                     <ul class="metismenu">
                         <li><a href="payments.php"><i class="fa fa-credit-card"></i><span>Payments</span></a></li>
                         <li><a href="add_course.php"><i class="fa fa-graduation-cap"></i><span>Add Courses</span></a></li>
-                        <li><a href="add_course.php"><i class="fa fa-list-ul"></i><span>Taskboard</span></a></li>
-                        <li><a href="hostel.php"><i class="fa fa-bed"></i><span>Hostel</span></a></li>
+                        <li><a href="taskboard.php"><i class="fa fa-list-ul"></i><span>Taskboard</span></a></li>
+                        <li><a href="addstudent.php"><i class="fa fa-bed"></i><span>Add Student</span></a></li>
                         <li><a href="transport.php"><i class="fa fa-truck"></i><span>Transport</span></a></li>
                         <li><a href="attendance.php"><i class="fa fa-calendar-check-o"></i><span>Attendance</span></a></li>
                         <li><a href="leave.php"><i class="fa fa-flag"></i><span>Leave</span></a></li>
@@ -505,9 +506,10 @@
                                 </div>
                                 
                                 <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">Video URL <span class="text-danger">*</span></label>
+                                    <label class="col-md-3 col-form-label">Video ID <span class="text-danger">*</span></label>
                                     <div class="col-md-7">
                                         <input type="text" class="form-control" name="url", required>
+                                        <input type="hidden" class="form-control" name="division" value="army" >
                                     </div>
                                 </div>
                                 <div class="form-group row">
