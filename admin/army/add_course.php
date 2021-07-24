@@ -291,14 +291,12 @@
             <div class="tab-pane fade show active" id="menu-uni" role="tabpanel">
                 <nav class="sidebar-nav">
                     <ul class="metismenu">
+						<li class="active"><a href="army.php"><i class="fa fa-dashboard"></i><span>Dashboard</span></a></li>
                         <li><a href="payments.php"><i class="fa fa-credit-card"></i><span>Payments</span></a></li>
                         <li><a href="add_course.php"><i class="fa fa-graduation-cap"></i><span>Add Courses</span></a></li>
-                        <li><a href="view_all.php"><i class="fa fa-list-ul"></i><span>View all Students</span></a></li>
+                        <li><a href="taskboard.php"><i class="fa fa-list-ul"></i><span>Taskboard</span></a></li>
                         <li><a href="addstudent.php"><i class="fa fa-bed"></i><span>Add Student</span></a></li>
-                        <li><a href="transport.php"><i class="fa fa-truck"></i><span>Transport</span></a></li>
                         <li><a href="attendance.php"><i class="fa fa-calendar-check-o"></i><span>Attendance</span></a></li>
-                        <li><a href="leave.php"><i class="fa fa-flag"></i><span>Leave</span></a></li>
-                        <li><a href="setting.php"><i class="fa fa-gear"></i><span>Settings</span></a></li>
                     </ul>
                 </nav>
             </div>
