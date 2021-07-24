@@ -103,6 +103,7 @@
                                         </tr>
                                         <?php 
                                         include('conn.php');
+                                        
                                         $roll=$row['roll_number'];
                                         $sql="select * from attendance where roll_number='$roll' and division='army'";
                                         $result=mysqli_query($conn,$sql);
