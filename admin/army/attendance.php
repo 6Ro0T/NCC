@@ -21,8 +21,9 @@
             {
                 $stname=$_POST['sname'][$id];
                 $rollnumber=$_POST['roll_num'][$id];
+                $division=$_POST['division'];
                 if($count==0){
-                    $sql="INSERT INTO `attendance`(`name`, `roll_number`, `status`, `date`) VALUES ('$stname','$rollnumber','$attendance','$date')";
+                    $sql="INSERT INTO `attendance`(`name`, `roll_number`, `status`, `date`,`division`) VALUES ('$stname','$rollnumber','$attendance','$date','$division')";
                     $result=mysqli_query($conn,$sql);
                     if($result)
                         $flag=1;
@@ -180,6 +181,7 @@
                                         <input type='hidden' value='<?php echo $row['roll_number'];?>' name='roll_num[]'>
                                         <td><?php echo $row['name']; ?></td>
                                         <input type='hidden' value='<?php echo $row['name'];?>' name='sname[]'>
+                                        <input type="hidden" value="<?php echo $row['division'];?>" name="division">
                                         <td>
                                             <input type="radio" name="status[<?php echo $counter;?>]" value="Present" required>Present
                                             <input type="radio" name="status[<?php echo $counter;?>]" value="Absent" required>Absent
