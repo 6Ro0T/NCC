@@ -1,6 +1,6 @@
 <?php
    include('session.php');
-?><!doctype html>
+?>
 <!doctype html>
 <html lang="en" dir="ltr">
 <head>
@@ -44,8 +44,6 @@
         </div>
     </div>
     <!-- Start Rightbar setting panel -->
-
-
     <!-- Start Quick menu with more functio -->
     <!-- Start Main leftbar navigation -->
     <div id="left-sidebar" class="sidebar">
@@ -58,14 +56,11 @@
                 <nav class="sidebar-nav">
                     <ul class="metismenu">
 						<li class="active"><a href="army.php"><i class="fa fa-dashboard"></i><span>Dashboard</span></a></li>
-                        <li><a href="payments.php"><i class="fa fa-credit-card"></i><span>Payments</span></a></li>
-                        <li><a href="add_course.php"><i class="fa fa-graduation-cap"></i><span>Add Courses</span></a></li>
-                        <li><a href="taskboard.php"><i class="fa fa-list-ul"></i><span>Taskboard</span></a></li>
-                        <li><a href="addstudent.php"><i class="fa fa-bed"></i><span>Add Student</span></a></li>
-                        <li><a href="transport.php"><i class="fa fa-truck"></i><span>Transport</span></a></li>
+                        <li><a href="payments.php"><i class="fa fa-graduation-cap"></></i><span>Students</span></a></li>
+                        <li><a href="add_course.php"><i class="fa fa-book"></i><span>Add Courses</span></a></li>
+                        <li><a href="addstudent.php"><i class="fa fa-users"></i><span>Add Student</span></a></li>
                         <li><a href="attendance.php"><i class="fa fa-calendar-check-o"></i><span>Attendance</span></a></li>
-                        <li><a href="leave.html"><i class="fa fa-flag"></i><span>Leave</span></a></li>
-                        <li><a href="setting.php"><i class="fa fa-gear"></i><span>Settings</span></a></li>
+						<li><a href="holiday.php"><i class="fa fa-bullhorn"></i><span>Events</span></a></li>
                     </ul>
                 </nav>
             </div>
@@ -99,10 +94,9 @@
                     <div class="col-6 col-md-4 col-xl-2">
                         <div class="card">
                             <div class="card-body ribbon">
-                                <div class="ribbon-box green" data-toggle="tooltip" title="New Professors">5</div>
                                 <a href="professors.html" class="my_sort_cut text-muted">
-                                    <i class="fa fa-black-tie"></i>
-                                    <span>Professors</span>
+                                    <i class="fa fa-graduation-cap"></i>
+                                    <span>Students</span>
                                 </a>
                             </div>
                         </div>
@@ -112,7 +106,7 @@
                             <div class="card-body">
                                 <a href="app-contact.html" class="my_sort_cut text-muted">
                                     <i class="fa fa-address-book"></i>
-                                    <span>Contact</span>
+                                    <span>Add Courses</span>
                                 </a>
                             </div>
                         </div>
@@ -120,10 +114,9 @@
                     <div class="col-6 col-md-4 col-xl-2">
                         <div class="card">
                             <div class="card-body ribbon">
-                                <div class="ribbon-box orange" data-toggle="tooltip" title="New Staff">8</div>
                                 <a href="staff.html" class="my_sort_cut text-muted">
                                     <i class="fa fa-user-circle-o"></i>
-                                    <span>Staff</span>
+                                    <span>Add Students</span>
                                 </a>
                             </div>
                         </div>
@@ -133,7 +126,7 @@
                             <div class="card-body">
                                 <a href="app-filemanager.html" class="my_sort_cut text-muted">
                                     <i class="fa fa-folder"></i>
-                                    <span>FileManager</span>
+                                    <span>Attendance</span>
                                 </a>
                             </div>
                         </div>
@@ -161,21 +154,7 @@
                 </div>
                 <div class="tab-content">
                     <div class="tab-pane fade show active" id="admin-Dashboard" role="tabpanel">
-                        <div class="row clearfix">
-                            <div class="col-xl-12">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h3 class="card-title">University Report</h3>
-                                        <div class="card-options">
-                                            <a href="#" class="card-options-collapse" data-toggle="card-collapse"><i class="fe fe-chevron-up"></i></a>
-                                            <a href="#" class="card-options-fullscreen" data-toggle="card-fullscreen"><i class="fe fe-maximize"></i></a>
-                                            <a href="#" class="card-options-remove" data-toggle="card-remove"><i class="fe fe-x"></i></a>
-                                        </div>
-                                    </div>
-                                    
-                                    
-                            </div>
-                        </div>                
+                        <div class="row clearfix"> 
                         <div class="row clearfix row-deck">
                             <div class="col-xl-6 col-lg-6 col-md-12">
                                 <div class="card">
@@ -184,17 +163,7 @@
                                         <div class="card-options">
                                             <a href="#" class="card-options-collapse" data-toggle="card-collapse"><i class="fe fe-chevron-up"></i></a>
                                             <div class="item-action dropdown ml-2">
-                                                <a href="javascript:void(0)" data-toggle="dropdown"><i class="fe fe-more-vertical"></i></a>
-                                                <div class="dropdown-menu dropdown-menu-right">
-                                                    <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-eye"></i> View Details </a>
-                                                    <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-share-alt"></i> Share </a>
-                                                    <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-cloud-download"></i> Download</a>                                            
-                                                    <div class="dropdown-divider"></div>
-                                                    <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-copy"></i> Copy to</a>
-                                                    <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-folder"></i> Move to</a>
-                                                    <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-edit"></i> Rename</a>
-                                                    <a href="javascript:void(0)" class="dropdown-item"><i class="dropdown-icon fa fa-trash"></i> Delete</a>
-                                                </div>
+                                                
                                             </div>
                                         </div>
                                     </div>
@@ -310,7 +279,6 @@
                                         </table>
                                     </div>
                                     <div class="card-footer d-flex justify-content-between">
-                                        <div class="font-14"><span>Measure How Fast You’re Growing Monthly Recurring Revenue. <a href="#">View All</a></span></div>
                                         <div>
                                             <button type="button" class="btn btn-primary">Export</button>
                                         </div>
@@ -362,50 +330,6 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h3 class="card-title">New Student List</h3>
-                                        <div class="card-options">
-                                            <a href="#" class="card-options-collapse" data-toggle="card-collapse"><i class="fe fe-chevron-up"></i></a>
-                                            <a href="#" class="card-options-fullscreen" data-toggle="card-fullscreen"><i class="fe fe-maximize"></i></a>
-                                            <a href="#" class="card-options-remove" data-toggle="card-remove"><i class="fe fe-x"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="table-responsive">
-                                            <table class="table table-striped mb-0 text-nowrap">
-                                                <thead>
-                                                    <tr>
-                    
-                                                        <th>Name</th>
-                                                        <th>Email</th>
-                
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                <?php 
-                                                    include('conn.php');
-                                                    $a=1;
-                                                    $sql="SELECT * FROM student where division='army'";
-                                                    $stmt=mysqli_query($conn,$sql);
-                                                    
-                                                    while($row=mysqli_fetch_array($stmt)){
-                                                        echo "<tr>";
-                                                            echo "<td>".$row['name']."</td>";
-                                                            echo "<td>".$row['email']."</td>";
-                                                            
-                                                        echo "</tr>";
-                                                    }
-                                                ?>
-                                                </tbody>
-                                            </table>
-                                        </div>  
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                     
         </div>
@@ -415,14 +339,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-6 col-sm-12">
-                            Copyright © 2019 <a href="https://themeforest.net/user/puffintheme/portfolio">PuffinTheme</a>.
-                        </div>
-                        <div class="col-md-6 col-sm-12 text-md-right">
-                            <ul class="list-inline mb-0">
-                                <li class="list-inline-item"><a href="../../doc/index.html">Documentation</a></li>
-                                <li class="list-inline-item"><a href="javascript:void(0)">FAQ</a></li>
-                                <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-outline-primary btn-sm">Buy Now</a></li>
-                            </ul>
+                            Copyright © 2021 | Phoenix Studios | <a href="https://kishannayak.000webhostapp.com/">Kishan Nayak</a>.
                         </div>
                     </div>
                 </div>
