@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 21, 2021 at 12:25 PM
+-- Generation Time: Jul 24, 2021 at 08:41 AM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.3
 
@@ -86,12 +86,9 @@ CREATE TABLE `course` (
 --
 
 INSERT INTO `course` (`id`, `coursename`, `duration`, `professor`, `url`, `description`, `division`) VALUES
-(9, 'Embed Iframe in PHP', '4M36S', 'Ranjith', 'cRCOVzkGVJM', 'la la la la alaala alaal', 'army'),
-(10, 'Party Play', 'D', 'Ranjith', 'YsBe9BFIjBs', 'lets party', 'army'),
-(11, 'Dua lipa', '3M45S', 'Ranjith', 'k2qgadSvNyU', 'party partyparty', 'army'),
-(12, 'Ed sheeran', 'D', 'Ranjith', 'kk42xRof9cY', 'lets dance', 'army'),
-(13, 'Arijit Songs', '52M31S', 'Ranjith', 'HPkydJOXXNs', 'meow mewo mewo meow mewo', 'army'),
-(14, 'Best Songs', '55M28S', 'Ranjith', '5mFTXbZzOAE', 'bla bla bla bla', 'army');
+(9, 'Embed Iframe in PHP', 'PT4M36S', 'Rohan', 'cRCOVzkGVJM', 'la la la la alaala alaal', 'army'),
+(10, 'Party Play', 'P0D', 'chandan', 'YsBe9BFIjBs', 'lets party', 'army'),
+(12, 'Ed sheeran', 'D', 'Ranjith', 'kk42xRof9cY', 'lets dance', 'army');
 
 -- --------------------------------------------------------
 
@@ -114,7 +111,8 @@ CREATE TABLE `student` (
 --
 
 INSERT INTO `student` (`id`, `roll_number`, `name`, `email`, `password`, `division`, `role`) VALUES
-(59, 101, 'theertha', 'theertha@mail.com', '123', 'army', 'student');
+(59, 103, 'thrupthi', 'thrupthi@mail.com', '123456', 'army', 'student'),
+(61, 104, 'Ranjith', 'ranjith@mail.com', '123123', 'army', 'student');
 
 --
 -- Indexes for dumped tables
@@ -170,7 +168,7 @@ ALTER TABLE `course`
 -- AUTO_INCREMENT for table `student`
 --
 ALTER TABLE `student`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=61;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=62;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
