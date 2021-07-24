@@ -57,6 +57,7 @@
             <div class="tab-pane fade show active" id="menu-uni" role="tabpanel">
                 <nav class="sidebar-nav">
                     <ul class="metismenu">
+						<li class="active"><a href="army.php"><i class="fa fa-dashboard"></i><span>Dashboard</span></a></li>
                         <li><a href="payments.php"><i class="fa fa-credit-card"></i><span>Payments</span></a></li>
                         <li><a href="add_course.php"><i class="fa fa-graduation-cap"></i><span>Add Courses</span></a></li>
                         <li><a href="taskboard.php"><i class="fa fa-list-ul"></i><span>Taskboard</span></a></li>
@@ -81,10 +82,13 @@
                         <h1 class="page-title">Dashboard</h1>
                         <ol class="breadcrumb page-breadcrumb">
                             <li class="breadcrumb-item"><a href="#">MyNCC</a></li>
-                            <li class="breadcrumb-item"><a href="#">MyNCC</a></li>
+                            <li class="breadcrumb-item"><a href="#">Admin</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
                         </ol>
                     </div>
+					<ul class="nav nav-tabs page-header-tab">
+                        <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#admin-Dashboard">Dashboard</a></li>
+                    </ul>
 
                 </div>
             </div>
@@ -315,12 +319,46 @@
                             </div>
                             <div class="col-xl-6 col-lg-6 col-md-12">
                                 <div class="card">
+                                    <div class="card">
                                     <div class="card-header">
-                                        <h3 class="card-title">Performance</h3>
+                                        <h3 class="card-title">New Student List</h3>
+                                        <div class="card-options">
+                                            <a href="#" class="card-options-collapse" data-toggle="card-collapse"><i class="fe fe-chevron-up"></i></a>
+                                            <a href="#" class="card-options-fullscreen" data-toggle="card-fullscreen"><i class="fe fe-maximize"></i></a>
+                                            <a href="#" class="card-options-remove" data-toggle="card-remove"><i class="fe fe-x"></i></a>
+                                        </div>
                                     </div>
                                     <div class="card-body">
-                                        <div id="apex-radar-multiple-series"></div>
+                                        <div class="table-responsive">
+                                            <table class="table table-striped mb-0 text-nowrap">
+                                                <thead>
+                                                    <tr>
+                    
+                                                        <th>Name</th>
+                                                        <th>Email</th>
+                
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                <?php 
+                                                    include('conn.php');
+                                                    $a=1;
+                                                    $sql="SELECT * FROM student where division='army'";
+                                                    $stmt=mysqli_query($conn,$sql);
+                                                    
+                                                    while($row=mysqli_fetch_array($stmt)){
+                                                        echo "<tr>";
+                                                            echo "<td>".$row['name']."</td>";
+                                                            echo "<td>".$row['email']."</td>";
+                                                            
+                                                        echo "</tr>";
+                                                    }
+                                                ?>
+                                                </tbody>
+                                            </table>
+                                        </div>  
                                     </div>
+                                </div>
                                 </div>
                             </div>
                         </div>
