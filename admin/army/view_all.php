@@ -150,7 +150,8 @@
                                                 <th>#</th>
                                                 <th>Name</th>
                                                 <th>Email</th>
-                                                <th>Status</th>
+                                                <th>DELETE</th>
+                                                <th>UPDATE</th>
                                             </tr>
                                             <?php 
                                         include('conn.php');
@@ -172,16 +173,21 @@
                                                 
                                                 
                                                 <td>
-                                                    <button type="submit"  name='delete' value="<?php echo $row['email'];?>"><i class="fa fa-trash-o text-danger"></i></button>
+                                                    <button type="submit"  class="btn btn-icon btn-sm" name='delete' value="<?php echo $row['email'];?>"><i class="fa fa-trash-o text-danger"></i></button>
                                                    
                                                 </td>
-                                               
+                                                </form>
+                                                <form method="POST" action="update_student.php">
+                                               <td>
+                                               <button type="submit"  class="btn btn-icon btn-sm" name='update' value="<?php echo $row['email'];?>"><i class="fa fa-pencil-square-o"></i></button>
+                                               </td>
+                                               </form
                                             </tr>
                                           <?php
                                         }
                                         ?>
                                         </tbody>
-                                         </form>
+                                         
                                     </table>
                             </div>
                         </div>
