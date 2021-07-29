@@ -49,12 +49,12 @@
                 <nav class="sidebar-nav">
                     <ul class="metismenu">
                         <li><a href="army.php"><i class="fa fa-dashboard"></i><span>Dashboard</span></a></li>
-						<li><a href="viewat.php"><i class="fa fa-user-circle-o"></i><span>View Attendance</span></a></li>
-                        <li><a href="staff.php"><i class="fa fa-users"></i><span>Staffs</span></a></li>
+						<li><a href="viewat.php"><i class="fa fa-black-tie"></i><span>View Attendance</span></a></li>
+                        <li><a href="staff.php"><i class="fa fa-users"></i><span>Staff</span></a></li>
                         <li><a href="courses.php"><i class="fa fa-graduation-cap"></i><span>Classes</span></a></li>                        
                         <li><a href="library.php"><i class="fa fa-book"></i><span>Study Materials</span></a></li>
                         <li><a href="holiday.php"><i class="fa fa-bullhorn"></i><span>Events</span></a></li>
-                        <li class="active"><a href="gallery.html"><i class="fa fa-camera-retro"></i><span>Gallery</span></a></li>
+                        <li class="active"><a href="gallery.php"><i class="fa fa-camera-retro"></i><span>Gallery</span></a></li>
                     </ul>
                 </nav>
             </div>
@@ -88,7 +88,7 @@
                             <div class="col-xl-4 col-lg-6 col-sm-6">
                                 <div class="card p-3">
                                     <a href="javascript:void(0)" class="mb-3">
-                                        <img src="../../assets/images/gallery/1.jpg" alt="Photo by Nathan Guerrero" class="rounded">
+                                        <img src="../../assets/images/gallery/1.jpeg" alt="Photo by Nathan Guerrero" class="rounded">
                                     </a>
                                     <div class="d-flex align-items-center px-2">
                                         <img class="avatar avatar-md mr-3" src="../../assets/images/xs/avatar1.jpg" alt="">
