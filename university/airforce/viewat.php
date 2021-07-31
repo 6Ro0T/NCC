@@ -55,8 +55,8 @@
                 <nav class="sidebar-nav">
                     <ul class="metismenu">
                         <li><a href="airforce.php"><i class="fa fa-dashboard"></i><span>Dashboard</span></a></li>
-                        <li class="active"><a href="viewat.php"><i class="fa fa-user-circle-o"></i><span>Attendance</span></a></li>
-						<li><a href="staff.php"><i class="fa fa-users"></i><span>Staffs</span></a></li>
+                        <li class="active"><a href="viewat.php"><i class="fa fa-black-tie"></i><span>Attendance</span></a></li>
+						<li><a href="staff.php"><i class="fa fa-users"></i><span>Staff</span></a></li>
                         <li><a href="courses.php"><i class="fa fa-graduation-cap"></i><span>Classes</span></a></li>                        
                         <li><a href="library.php"><i class="fa fa-book"></i><span>Study Materials</span></a></li>
                         <li><a href="holiday.php"><i class="fa fa-bullhorn"></i><span>Events</span></a></li>
@@ -103,8 +103,9 @@
                                         </tr>
                                         <?php 
                                         include('conn.php');
+                                        
                                         $roll=$row['roll_number'];
-                                        $sql="select * from attendance where roll_number='$roll' and division='navy'";
+                                        $sql="select * from attendance where roll_number='$roll' and division='army'";
                                         $result=mysqli_query($conn,$sql);
                                         $serial=0;
                                         $counter=0;
@@ -125,7 +126,6 @@
                                         
                                             
                                         <?php 
-                                            $counter++;    
                                         } ?>
                                         </tr>
                                     </tbody>
