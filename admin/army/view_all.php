@@ -20,7 +20,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <link rel="icon" href="favicon.ico" type="image/x-icon"/>
-<title>:: Ericsson :: Holiday</title>
+<title>MyNCC : Admin</title>
 
 <!-- Bootstrap Core and vandor -->
 <link rel="stylesheet" href="../../assets/plugins/bootstrap/css/bootstrap.min.css" />
@@ -46,39 +46,23 @@
     <div id="header_top" class="header_top">
         <div class="container">
             <div class="hleft">
-                <a class="header-brand" href="index.php"><i class="fa fa-graduation-cap brand-logo"></i></a>
+                <a class="header-brand" href="army.php"><i class="fa fa-graduation-cap brand-logo"></i></a>
                 <div class="dropdown">
                     <a href="javascript:void(0)" class="nav-link icon menu_toggle"><i class="fe fe-align-center"></i></a>
-                    <a href="page-search.php" class="nav-link icon"><i class="fe fe-search" data-toggle="tooltip" data-placement="right" title="Search..."></i></a>
-                    <a href="app-email.php"  class="nav-link icon app_inbox"><i class="fe fe-inbox" data-toggle="tooltip" data-placement="right" title="Inbox"></i></a>
-                    <a href="app-filemanager.php"  class="nav-link icon app_file xs-hide"><i class="fe fe-folder" data-toggle="tooltip" data-placement="right" title="File Manager"></i></a>
-                    <a href="app-social.php"  class="nav-link icon xs-hide"><i class="fe fe-share-2" data-toggle="tooltip" data-placement="right" title="Social Media"></i></a>
-                    <a href="javascript:void(0)" class="nav-link icon theme_btn"><i class="fe fe-feather"></i></a>
-                    <a href="javascript:void(0)" class="nav-link icon settingbar"><i class="fe fe-settings"></i></a>
                 </div>
             </div>
             <div class="hright">
-                <a href="javascript:void(0)" class="nav-link icon right_tab"><i class="fe fe-align-right"></i></a>
-                <a href="login.php" class="nav-link icon settingbar"><i class="fe fe-power"></i></a>                
+                <a href="logout.php" class="nav-link icon settingbar"><i class="fe fe-power"></i></a>                
             </div>
         </div>
     </div>
-    <!-- Start Rightbar setting panel -->
-    <div id="rightsidebar" class="right_sidebar">
-        <a href="javascript:void(0)" class="p-3 settingbar float-right"><i class="fa fa-close"></i></a>
-        <ul class="nav nav-tabs" role="tablist">
-            <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#Settings" aria-expanded="true">Settings</a></li>
-            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#activity" aria-expanded="false">Activity</a></li>
-        </ul>
-        
-    </div>
-    <!-- Start Theme panel do not add in project -->
+ 
 
     <!-- Start Quick menu with more functio -->
     
     <!-- Start Main leftbar navigation -->
-  <div id="left-sidebar" class="sidebar">
-        <h5 class="brand-name">Ericsson<a href="javascript:void(0)" class="menu_option float-right"><i class="icon-grid font-16" data-toggle="tooltip" data-placement="left" title="Grid & List Toggle"></i></a></h5>
+    <div id="left-sidebar" class="sidebar">
+        <h5 class="brand-name">MyNCC<a href="javascript:void(0)" class="menu_option float-right"><i class="icon-grid font-16" data-toggle="tooltip" data-placement="left" title="Grid & List Toggle"></i></a></h5>
         <ul class="nav nav-tabs">
             <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#menu-admin">Admin</a></li>
         </ul>
@@ -86,14 +70,12 @@
             <div class="tab-pane fade show active" id="menu-uni" role="tabpanel">
                 <nav class="sidebar-nav">
                     <ul class="metismenu">
-                        <li><a href="payments.php"><i class="fa fa-credit-card"></i><span>Payments</span></a></li>
-                        <li><a href="add_course.php"><i class="fa fa-graduation-cap"></i><span>Add Courses</span></a></li>
-                        <li><a href="view_all.php"><i class="fa fa-list-ul"></i><span>View all Students</span></a></li>
-                        <li><a href="addstudent.php"><i class="fa fa-bed"></i><span>Add Student</span></a></li>
-                        <li><a href="transport.php"><i class="fa fa-truck"></i><span>Transport</span></a></li>
+						<li><a href="army.php"><i class="fa fa-dashboard"></i><span>Dashboard</span></a></li>
+                        <li class="active"><a href="student.php"><i class="fa fa-graduation-cap"></></i><span>Students</span></a></li>
+                        <li><a href="add_course.php"><i class="fa fa-book"></i><span>Add Courses</span></a></li>
+                        <li><a href="addstudent.php"><i class="fa fa-users"></i><span>Add Student</span></a></li>
                         <li><a href="attendance.php"><i class="fa fa-calendar-check-o"></i><span>Attendance</span></a></li>
-                        <li><a href="leave.html"><i class="fa fa-flag"></i><span>Leave</span></a></li>
-                        <li><a href="setting.php"><i class="fa fa-gear"></i><span>Settings</span></a></li>
+						<li><a href="events.php"><i class="fa fa-bullhorn"></i><span>Events</span></a></li>
                     </ul>
                 </nav>
             </div>
@@ -111,12 +93,11 @@
                         <h1 class="page-title">View All Student</h1>
                         <ol class="breadcrumb page-breadcrumb">
                             <li class="breadcrumb-item"><a href="#">MyNCC</a></li>
-							<li class="breadcrumb-item">Cadets</li>
-                            <li class="breadcrumb-item active" aria-current="page">Classes</li>
+                            <li class="breadcrumb-item active" aria-current="page">All Students</li>
                         </ol>
                     </div>
                     <ul class="nav nav-tabs page-header-tab">
-                        <li class="nav-item"><a class="nav-link active" data-toggle="tab" >Student</a></li>
+                        <li class="nav-item"><a class="nav-link active" data-toggle="tab" >Students</a></li>
                     </ul>
                 </div>
             </div>
@@ -170,11 +151,8 @@
                                                 <td><?php echo $serial;?></td>
                                                 <td><?php echo $row['name'];?></td>
                                                 <td><?php echo $row['email'];?></td>
-                                                
-                                                
                                                 <td>
-                                                    <button type="submit"  class="btn btn-icon btn-sm" name='delete' value="<?php echo $row['email'];?>"><i class="fa fa-trash-o text-danger"></i></button>
-                                                   
+                                                    <button type="submit"  class="btn btn-icon btn-sm" name='delete' value="<?php echo $row['email'];?>"><i class="fa fa-trash-o text-danger"></i></button>                                                 
                                                 </td>
                                                 </form>
                                                 <form method="POST" action="update_student.php">
@@ -186,20 +164,28 @@
                                           <?php
                                         }
                                         ?>
-                                        </tbody>
-                                         
+                                        </tbody> 
                                     </table>
                             </div>
                         </div>
                     </div>
-                   
-                    
-                    
-                </div>
+				</div>
             </div>
         </div>
         <!-- Start main footer -->
-    </div>    
+        <div class="section-body">
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            Copyright © 2021 | Phoenix Studios | <a href="https://kishannayak.000webhostapp.com/">Kishan Nayak</a>.
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>	
+    </div> 
+
 </div>
 
 <!-- Add New Event popup -->
