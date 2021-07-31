@@ -4,6 +4,7 @@
 <!doctype html>
 <html lang="en" dir="ltr">
 <head>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -53,8 +54,8 @@
                 <nav class="sidebar-nav">
                     <ul class="metismenu">
                         <li><a href="airforce.php"><i class="fa fa-dashboard"></i><span>Dashboard</span></a></li>
-                        <li><a href="viewat.php"><i class="fa fa-user-circle-o"></i><span>View Attendance</span></a></li>
-						<li><a href="staff.php"><i class="fa fa-users"></i><span>Staffs</span></a></li>
+                        <li><a href="viewat.php"><i class="fa fa-black-tie"></i><span>View Attendance</span></a></li>
+						<li><a href="staff.php"><i class="fa fa-users"></i><span>Staff</span></a></li>
                         <li class="active"><a href="courses.php"><i class="fa fa-graduation-cap"></i><span>Classes</span></a></li>                        
                         <li><a href="library.php"><i class="fa fa-book"></i><span>Study Materials</span></a></li>
                         <li><a href="holiday.php"><i class="fa fa-bullhorn"></i><span>Events</span></a></li>
@@ -90,13 +91,67 @@
             <div class="container-fluid">
                 <div class="tab-content">
                     <div class="tab-pane active" id="Courses-all">
+                    
                         <div class="row row-deck">
+                                <?php
+                                    include('conn.php');
+                                    $flag=0;
+                                    $sql="select * from course where division='army'";
+                                    $result=mysqli_query($conn,$sql);
+                                    $check=mysqli_num_rows($result);
+                                    if($check)
+                                        $flag=0;
+                                    while($row=mysqli_fetch_array($result))
+                                    {
+                                ?>
+                               
                             <div class="col-xl-4 col-lg-4 col-md-6">
                                 <div class="card">
-                                    <a href="#"><img class="card-img-top" src="../../assets/images/gallery/1.jpg" alt=""></a>
+                                
+                                    <?php 
+                                    $id=$row['url'];
+                                    $text="<iframe name='myframe'width='320' height='200' src='https://www.youtube.com/embed/$id' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>";
+                                    
+                                    $dur = file_get_contents("https://www.googleapis.com/youtube/v3/videos?part=statistics&id=$id&key=AIzaSyCUzBxx5oXGt57tKJTnnwZWAXPj-rz7H3A");
+
+                                    $duration = json_decode($dur, true);
+                                    foreach ($duration['items'] as $vidTime) {
+                                        $views=$vidTime['statistics']['viewCount'];
+        
+                                    }
+                                    ?>
+                                    <?php echo $text;?>
+                                    <script>
+    var tag = document.createElement('script');
+    tag.src = "www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    function onYouTubeIframeAPIReady() {
+        console.log("Ready");
+        var $ = jQuery;
+        var players = [];
+        $('iframe').filter(function(){return this.src.indexOf('http://www.youtube.com/') == 0}).each( function (k, v) {
+            if (!this.id) { this.id='embeddedvideoiframe' + k }
+            players.push(new YT.Player(this.id, {
+                events: {
+                    'onStateChange': function(event) {
+                        if (event.data == YT.PlayerState.PLAYING) {
+                            $.each(players, function(k, v) {
+                                if (this.getIframe().id != event.target.getIframe().id) {
+                                    this.pauseVideo();
+                                }
+                            });
+                        }
+                    }
+                }
+            }))
+        });
+    }
+</script>
                                     <div class="card-body d-flex flex-column">
-                                        <h5><a href="courses-details.php">PHP Development Course</a></h5>
-                                        <div class="text-muted">Look, my liege! The Knights Who Say Ni demand a sacrifice!</div>
+                                        <h5><?php echo $row['coursename'];?></h5>
+                                        <div class="text-muted"><?php echo $row['description'];?></div>
                                     </div>
                                     <div class="table-responsive">
                                         <table class="table table-striped table-vcenter mb-0">
@@ -104,253 +159,33 @@
                                                 <tr>
                                                     <td class="w20"><i class="fa fa-calendar text-blue"></i></td>
                                                     <td class="tx-medium">Duration</td>
-                                                    <td class="text-right">6 Months</td>
+                                                    <td class="text-right"><?php echo $row['duration'];?></td>
                                                 </tr>
                                                 <tr>
-                                                    <td><i class="fa fa-cc-visa text-danger"></i></td>
-                                                    <td class="tx-medium">Fees</td>
-                                                    <td class="text-right">$1,674</td>
+                                                    <td><i class="fa fa-user-circle-o"></i></td>
+                                                    <td class="tx-medium">Professor</td>
+                                                    <td class="text-right"><?php echo $row['professor']?></td>
                                                 </tr>
                                                 <tr>
-                                                    <td><i class="fa fa-users text-warning"></i></td>
-                                                    <td class="tx-medium">Students</td>
-                                                    <td class="text-right">125+</td>
+                                                    <td><i class="fa fa-eye"></i></td>
+                                                    <td class="tx-medium">Views</td>
+                                                    <td class="text-right"><?php echo $views;?></td>
                                                 </tr>
                                             </tbody>
                                         </table>
                                     </div>
-                                    <div class="card-footer">
-                                        <div class="d-flex align-items-center mt-auto">
-                                            <img class="avatar avatar-md mr-3" src="../../assets/images/xs/avatar4.jpg" alt="avatar">
-                                            <div>
-                                                <a href="#">Pro. Jane</a>
-                                                <small class="d-block text-muted">Head OF Dept.</small>
-                                            </div>
-                                            <div class="ml-auto text-muted">
-                                                <a href="javascript:void(0)" class="icon d-none d-md-inline-block ml-3"><i class="fe fe-heart mr-1"></i> 521</a>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    
                                 </div>
                             </div>
-                            <div class="col-xl-4 col-lg-4 col-md-6">
-                                <div class="card ribbon">
-                                    <div class="ribbon-box orange"><i class="fa fa-star"></i></div>
-                                    <a href="#"><img class="card-img-top" src="../../assets/images/gallery/2.jpg" alt=""></a>
-                                    <div class="card-body d-flex flex-column">
-                                        <h5><a href="courses-details.php">Account Management Course</a></h5>
-                                        <div class="text-muted">Look, my liege! The Knights Who Say Ni demand a sacrifice!</div>
-                                    </div>
-                                    <div class="table-responsive">
-                                        <table class="table table-striped table-vcenter mb-0">
-                                            <tbody>
-                                                <tr>
-                                                    <td class="w20"><i class="fa fa-calendar text-blue"></i></td>
-                                                    <td class="tx-medium">Duration</td>
-                                                    <td class="text-right">1 Year</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><i class="fa fa-cc-visa text-danger"></i></td>
-                                                    <td class="tx-medium">Fees</td>
-                                                    <td class="text-right">$1,674</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><i class="fa fa-users text-warning"></i></td>
-                                                    <td class="tx-medium">Students</td>
-                                                    <td class="text-right">50+</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <div class="card-footer">
-                                        <div class="d-flex align-items-center mt-auto">
-                                            <img class="avatar avatar-md mr-3" src="../../assets/images/xs/avatar2.jpg" alt="avatar">
-                                            <div>
-                                                <a href="#">Pro. Alan</a>
-                                                <small class="d-block text-muted">Head OF Dept.</small>
-                                            </div>
-                                            <div class="ml-auto text-muted">
-                                                <a href="javascript:void(0)" class="icon d-none d-md-inline-block ml-3"><i class="fe fe-heart mr-1"></i> 521</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-4 col-md-6">
-                                <div class="card">
-                                    <a href="#"><img class="card-img-top" src="../../assets/images/gallery/3.jpg" alt=""></a>
-                                    <div class="card-body d-flex flex-column">
-                                        <h5><a href="courses-details.php">Angular Programmer Course</a></h5>
-                                        <div class="text-muted">Look, my liege! The Knights Who Say Ni demand a sacrifice!</div>
-                                    </div>
-                                    <div class="table-responsive">
-                                        <table class="table table-striped table-vcenter mb-0">
-                                            <tbody>
-                                                <tr>
-                                                    <td class="w20"><i class="fa fa-calendar text-blue"></i></td>
-                                                    <td class="tx-medium">Duration</td>
-                                                    <td class="text-right">6 Months</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><i class="fa fa-cc-visa text-danger"></i></td>
-                                                    <td class="tx-medium">Fees</td>
-                                                    <td class="text-right">$1,674</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><i class="fa fa-users text-warning"></i></td>
-                                                    <td class="tx-medium">Students</td>
-                                                    <td class="text-right">125+</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <div class="card-footer">
-                                        <div class="d-flex align-items-center mt-auto">
-                                            <img class="avatar avatar-md mr-3" src="../../assets/images/xs/avatar3.jpg" alt="avatar">
-                                            <div>
-                                                <a href="#">Pro. Jane</a>
-                                                <small class="d-block text-muted">Head OF Dept.</small>
-                                            </div>
-                                            <div class="ml-auto text-muted">
-                                                <a href="javascript:void(0)" class="icon d-none d-md-inline-block ml-3"><i class="fe fe-heart mr-1"></i> 521</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-4 col-md-6">
-                                <div class="card">
-                                    <a href="#"><img class="card-img-top" src="../../assets/images/gallery/4.jpg" alt=""></a>
-                                    <div class="card-body d-flex flex-column">
-                                        <h5><a href="courses-details.php">PHP Development Course</a></h5>
-                                        <div class="text-muted">Look, my liege! The Knights Who Say Ni demand a sacrifice!</div>
-                                    </div>
-                                    <div class="table-responsive">
-                                        <table class="table table-striped table-vcenter mb-0">
-                                            <tbody>
-                                                <tr>
-                                                    <td class="w20"><i class="fa fa-calendar text-blue"></i></td>
-                                                    <td class="tx-medium">Duration</td>
-                                                    <td class="text-right">6 Months</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><i class="fa fa-cc-visa text-danger"></i></td>
-                                                    <td class="tx-medium">Fees</td>
-                                                    <td class="text-right">$1,674</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><i class="fa fa-users text-warning"></i></td>
-                                                    <td class="tx-medium">Students</td>
-                                                    <td class="text-right">125+</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <div class="card-footer">
-                                        <div class="d-flex align-items-center mt-auto">
-                                            <img class="avatar avatar-md mr-3" src="../../assets/images/xs/avatar4.jpg" alt="avatar">
-                                            <div>
-                                                <a href="#">Pro. Jane</a>
-                                                <small class="d-block text-muted">Head OF Dept.</small>
-                                            </div>
-                                            <div class="ml-auto text-muted">
-                                                <a href="javascript:void(0)" class="icon d-none d-md-inline-block ml-3"><i class="fe fe-heart mr-1"></i> 521</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-4 col-md-6">
-                                <div class="card">
-                                    <a href="#"><img class="card-img-top" src="../../assets/images/gallery/5.jpg" alt=""></a>
-                                    <div class="card-body d-flex flex-column">
-                                        <h5><a href="courses-details.php">Magento Programmer Course</a></h5>
-                                        <div class="text-muted">Look, my liege! The Knights Who Say Ni demand a sacrifice!</div>
-                                    </div>
-                                    <div class="table-responsive">
-                                        <table class="table table-striped table-vcenter mb-0">
-                                            <tbody>
-                                                <tr>
-                                                    <td class="w20"><i class="fa fa-calendar text-blue"></i></td>
-                                                    <td class="tx-medium">Duration</td>
-                                                    <td class="text-right">1 Year</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><i class="fa fa-cc-visa text-danger"></i></td>
-                                                    <td class="tx-medium">Fees</td>
-                                                    <td class="text-right">$1,674</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><i class="fa fa-users text-warning"></i></td>
-                                                    <td class="tx-medium">Students</td>
-                                                    <td class="text-right">50+</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <div class="card-footer">
-                                        <div class="d-flex align-items-center mt-auto">
-                                            <img class="avatar avatar-md mr-3" src="../../assets/images/xs/avatar5.jpg" alt="avatar">
-                                            <div>
-                                                <a href="#">Pro. Corrine</a>
-                                                <small class="d-block text-muted">Head OF Dept.</small>
-                                            </div>
-                                            <div class="ml-auto text-muted">
-                                                <a href="javascript:void(0)" class="icon d-none d-md-inline-block ml-3"><i class="fe fe-heart mr-1"></i> 521</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-4 col-md-6">
-                                <div class="card">
-                                    <a href="#"><img class="card-img-top" src="../../assets/images/gallery/6.jpg" alt=""></a>
-                                    <div class="card-body d-flex flex-column">
-                                        <h5><a href="courses-details.php">UI UX Design Course</a></h5>
-                                        <div class="text-muted">Look, my liege! The Knights Who Say Ni demand a sacrifice!</div>
-                                    </div>
-                                    <div class="table-responsive">
-                                        <table class="table table-striped table-vcenter mb-0">
-                                            <tbody>
-                                                <tr>
-                                                    <td class="w20"><i class="fa fa-calendar text-blue"></i></td>
-                                                    <td class="tx-medium">Duration</td>
-                                                    <td class="text-right">6 Months</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><i class="fa fa-cc-visa text-danger"></i></td>
-                                                    <td class="tx-medium">Fees</td>
-                                                    <td class="text-right">$1,674</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><i class="fa fa-users text-warning"></i></td>
-                                                    <td class="tx-medium">Students</td>
-                                                    <td class="text-right">125+</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <div class="card-footer">
-                                        <div class="d-flex align-items-center mt-auto">
-                                            <img class="avatar avatar-md mr-3" src="../../assets/images/xs/avatar6.jpg" alt="avatar">
-                                            <div>
-                                                <a href="#">Pro. Emmett</a>
-                                                <small class="d-block text-muted">Head OF Dept.</small>
-                                            </div>
-                                            <div class="ml-auto text-muted">
-                                                <a href="javascript:void(0)" class="icon d-none d-md-inline-block ml-3"><i class="fe fe-heart mr-1"></i> 521</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                            <?php } ?>
+                            
                     </div>
                     
                    
                 </div>
             </div>
 		</div>
+    </div>
 		<!-- Start main footer -->
     <div class="section-body">
         <footer class="footer">
