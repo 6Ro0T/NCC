@@ -33,7 +33,7 @@
     <div id="header_top" class="header_top">
         <div class="container">
             <div class="hleft">
-                <a class="header-brand" href="index.html"><i class="fa fa-graduation-cap brand-logo"></i></a>
+                <a class="header-brand" href="army.php"><i class="fa fa-graduation-cap brand-logo"></i></a>
                 <div class="dropdown">
                     <a href="javascript:void(0)" class="nav-link icon menu_toggle"><i class="fe fe-align-center"></i></a>
                 </div>
@@ -56,11 +56,11 @@
                 <nav class="sidebar-nav">
                     <ul class="metismenu">
 						<li class="active"><a href="army.php"><i class="fa fa-dashboard"></i><span>Dashboard</span></a></li>
-                        <li><a href="payments.php"><i class="fa fa-graduation-cap"></></i><span>Students</span></a></li>
+                        <li><a href="student.php"><i class="fa fa-graduation-cap"></></i><span>Students</span></a></li>
                         <li><a href="add_course.php"><i class="fa fa-book"></i><span>Add Courses</span></a></li>
                         <li><a href="addstudent.php"><i class="fa fa-users"></i><span>Add Student</span></a></li>
                         <li><a href="attendance.php"><i class="fa fa-calendar-check-o"></i><span>Attendance</span></a></li>
-						<li><a href="holiday.php"><i class="fa fa-bullhorn"></i><span>Events</span></a></li>
+						<li><a href="events.php"><i class="fa fa-bullhorn"></i><span>Events</span></a></li>
                     </ul>
                 </nav>
             </div>
@@ -77,7 +77,6 @@
                         <h1 class="page-title">Dashboard</h1>
                         <ol class="breadcrumb page-breadcrumb">
                             <li class="breadcrumb-item"><a href="#">MyNCC</a></li>
-                            <li class="breadcrumb-item"><a href="#">Admin</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
                         </ol>
                     </div>
@@ -125,7 +124,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <a href="app-filemanager.html" class="my_sort_cut text-muted">
-                                    <i class="fa fa-folder"></i>
+                                    <i class="fa fa-calendar-check-o"></i>
                                     <span>Attendance</span>
                                 </a>
                             </div>
@@ -134,9 +133,9 @@
                     <div class="col-6 col-md-4 col-xl-2">
                         <div class="card">
                             <div class="card-body">
-                                <a href="holiday.php" class="my_sort_cut text-muted">
+                                <a href="events.php" class="my_sort_cut text-muted">
                                     <i class="fa fa-bullhorn"></i>
-                                    <span>Holiday</span>
+                                    <span>Events</span>
                                 </a>
                             </div>
                         </div>
@@ -277,7 +276,7 @@
                             </div>
                             <div class="col-xl-6 col-lg-6 col-md-12">
                                 <div class="card">
-                                    <div class="card">
+      
                                     <div class="card-header">
                                         <h3 class="card-title">New Student List</h3>
                                         <div class="card-options">
