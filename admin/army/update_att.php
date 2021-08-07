@@ -1,6 +1,32 @@
 <?php
    include('session.php');
    include('conn.php');
+   $flag=0;
+   $dat=0;
+   $count=0;
+   date_default_timezone_set('Asia/Kolkata');
+   
+   if(isset($_POST['update']))
+   {
+        
+                
+            $date=$_POST['date'];
+            foreach($_POST['status'] as $id=>$attendance)
+            {
+                $stname=$_POST['sname'][$id];
+                $rollnumber=$_POST['roll_num'][$id];
+                
+                    $sql1="UPDATE `attendance` SET `name`='$stname',`roll_number`='$rollnumber',`status`='$attendance' ,`date`='$date' WHERE date='$date' and name='$stname'";
+					
+                    $result=mysqli_query($conn,$sql1);
+                    if($result)
+                        $flag=1;
+                
+            }
+        
+        
+   }
+   
 ?>
 <!doctype html>
 <html lang="en" dir="ltr">
@@ -41,7 +67,6 @@
             </div>
         </div>
     </div>
-    <!-- Start Theme panel do not add in project -->
     
     <!-- Start Main leftbar navigation -->
     <div id="left-sidebar" class="sidebar">
@@ -67,6 +92,8 @@
     </div>
     <!-- Start project content area -->
     <div class="page">
+        <!-- Start Page header -->
+        
         <!-- Start Page title and tab -->
         <div class="section-body">
             <div class="container-fluid">
@@ -79,36 +106,43 @@
                         </ol>
                     </div>
 					<ul class="nav nav-tabs page-header-tab">
-                        <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#Fees-all">View Attendance</a></li>
+                        <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#Fees-all">Update</a></li>
                     </ul>
-                </div>
-               <div class="text-md-center">
-                  </strong>Today: <?php echo date("Y-m-d");?></strong>
                 </div>
             </div>
             
         </div>
         
         <div class="section-body mt-4">
-        
+			<?php if($flag) {?>
+             <div class="alert alert-success">
+             <Strong>Attendance Updated Successfully</strong>
+             </div>
+			<?php } ?>
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12">
+                    <?php $date=$_POST['date'];?>
+					<h5>Date:<?php echo $date;?></h5> 
                         <div class="card">
                             
                             <div class="table-responsive"> 
-                                                         
+							  
+							</div>
+                        
+								<form method="POST" action="update_att.php">
                                 <table class="table table-sm table-hover table-striped table-vcenter mb-0 text-nowrap">
                                     <thead>
                                     <tr>
                                         <th>Serial number</th>
-                                       <th>Date</th>
-                                        
-                                       <th>status</th>
+                                       <th>Roll Number</th>
+                                        <th>Name</th> 
+                                       <th>isPresent</th>
                                      </tr>
                                         <?php 
                                         include('conn.php');
-                                        $sql="select distinct date from attendance";
+										
+                                        $sql="select * from attendance where date='$date'";
                                         $result=mysqli_query($conn,$sql);
                                         $serial=0;
                                         $counter=0;
@@ -119,18 +153,24 @@
                                     </thead>
                                     <tbody>
                                     <tr>
-                                        <td><?php echo $serial;?></td>
-                                        <td><?php echo $row['date'];?></td>
-                                        
-                                        
-                                        <form method="POST" action="view_by_date.php">
+									
+
+										<td><?php echo $serial;?></td>
+                                        <td><?php echo $row['roll_number'];?></td>
+                                        <input type='hidden' value='<?php echo $row['roll_number'];?>' name='roll_num[]'>
+										
+                                        <td><?php echo $row['name']; ?></td>
+										
+                                        <input type='hidden' value='<?php echo $row['name'];?>' name='sname[]'>
                                         <td>
-                                            <button type="submit" value="<?php echo $row['date']; ?>" class="btn btn-primary" name="submit">View</button>
-										</td>
-										</form>
+                                            <input type="radio" name="status[<?php echo $counter;?>]" value="Present" required <?php if($row['status']=="Present"){echo "checked=checked";}?>  >Present
+                                            <input type="radio" name="status[<?php echo $counter;?>]" value="Absent" required <?php if($row['status']=="Absent"){echo "checked=checked";}?>>Absent
+                                        </td>
+									
                                         <?php 
-                                            $counter++;    
+                                             $counter++;    
                                         } ?>
+										
                                     </tr>
                                     </tbody>
                                 </table>
@@ -139,14 +179,13 @@
                         </div>
                     </div>
                 </div>
+				<div class="text-center">
+				</form>
+				<a href="view_at.php"><button type="" class="btn btn-primary ">BACK</button></a>
+				</div>
             </div>
-			<div class="text-center">
-				<a href="attendance.php"><button type="" class="btn btn-primary "  >BACK</button></a>
-			</div>
-			
-			
-        </div>
-        <!-- Start main footer -->
+		
+		<!-- Start main footer -->
         <div class="section-body">
             <footer class="footer">
                 <div class="container-fluid">
@@ -159,7 +198,6 @@
             </footer>
         </div>
     </div>    
-</div>
 
 <!-- Start Main project js, jQuery, Bootstrap -->
 <script src="../../assets/bundles/lib.vendor.bundle.js"></script>

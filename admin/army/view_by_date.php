@@ -1,33 +1,3 @@
-<?php
-   include('session.php');
-   include('conn.php');
-   $flag=0;
-   $dat=0;
-   $count=0;
-   date_default_timezone_set('Asia/Kolkata');
-   $date=date("Y-m-d");
-   if(isset($_POST['update']))
-   {
-        
-                
-             
-            foreach($_POST['status'] as $id=>$attendance)
-            {
-                $stname=$_POST['sname'][$id];
-                $rollnumber=$_POST['roll_num'][$id];
-                
-                    $sql1="UPDATE `attendance` SET `name`='$stname',`roll_number`='$rollnumber',`status`='$attendance' ,`date`='$date' WHERE date='$date' and name='$stname'";
-					
-                    $result=mysqli_query($conn,$sql1);
-                    if($result)
-                        $flag=1;
-                
-            }
-        
-        
-   }
-   
-?>
 <!doctype html>
 <html lang="en" dir="ltr">
 <head>
@@ -114,14 +84,11 @@
         </div>
         
         <div class="section-body mt-4">
-			<?php if($flag) {?>
-             <div class="alert alert-success">
-             <Strong>Attendance Updated Successfully</strong>
-             </div>
-			<?php } ?>
+			
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12">
+                    <?php $date=$_POST['submit'];?>
 					<h5>Date:<?php echo $date;?></h5> 
                         <div class="card">
                             
@@ -129,7 +96,7 @@
 							  
 							</div>
                         
-								<form method="POST" action="view_by_date.php">
+								<form method="POST" action="update_att.php">
                                 <table class="table table-sm table-hover table-striped table-vcenter mb-0 text-nowrap">
                                     <thead>
                                     <tr>
@@ -161,6 +128,7 @@
                                         <td><?php echo $row['name']; ?></td>
 										
                                         <input type='hidden' value='<?php echo $row['name'];?>' name='sname[]'>
+                                        <input type="hidden" value='<?php echo $row['date'];?>' name='date'>
                                         <td>
                                             <input type="radio" name="status[<?php echo $counter;?>]" value="Present" required <?php if($row['status']=="Present"){echo "checked=checked";}?>  >Present
                                             <input type="radio" name="status[<?php echo $counter;?>]" value="Absent" required <?php if($row['status']=="Absent"){echo "checked=checked";}?>>Absent
@@ -180,6 +148,7 @@
                 </div>
 				<div class="text-center">
 				<button type="submit" class="btn btn-primary " name="update">UPDATE</button>
+                
 				</form>
 				<a href="view_at.php"><button type="" class="btn btn-primary ">BACK</button></a>
 				</div>
