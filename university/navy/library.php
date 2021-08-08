@@ -118,7 +118,7 @@
                                                 <td>SD_SW_Army Cadet Handbook</td>
                                                 <td>Navy</td>
                                                 <td>All Year</td>
-                                                <td><a href="https://pdfhost.io/v/3cS5kjUgO_Army_Cadet_Handbook.pdf">View Here</a></td>
+                                                <td><a href="https://pdfhost.io/v/myWhRs778_Microsoft_Word_Cadet_SDSW_NAVY_docx.pdf">View Here</a></td>
                                             </tr>
                                             <tr>
                                                 <td>3</td>
