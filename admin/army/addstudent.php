@@ -11,7 +11,6 @@
             $row=mysqli_fetch_array($check);
             $count = mysqli_num_rows($check);
             if($count==0){
-                $sql="INSERT INTO `student`(`roll_number`, `name`, `email`, `password`, `division`, `role`) VALUES ('$_POST[roll_num]','$_POST[name]','$_POST[email]','$_POST[password]','$_POST[division]','$_POST[role]')";
                 $sql="INSERT INTO `student`( `roll_number`, `name`, `Cadet_rank`, `year`, `dob`, `phone`, `email`, `password`, `division`, `role`) VALUES ('$_POST[roll_num]','$_POST[name]','$_POST[rank]','$_POST[year]','$_POST[dob]','$_POST[phone]','$_POST[email]','$_POST[password]','$_POST[division]','$_POST[role]')";
                 $result=mysqli_query($conn,$sql);
        
