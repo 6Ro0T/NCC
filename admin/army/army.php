@@ -93,7 +93,7 @@
                     <div class="col-6 col-md-4 col-xl-2">
                         <div class="card">
                             <div class="card-body ribbon">
-                                <a href="professors.html" class="my_sort_cut text-muted">
+                                <a href="student.php" class="my_sort_cut text-muted">
                                     <i class="fa fa-graduation-cap"></i>
                                     <span>Students</span>
                                 </a>
@@ -103,7 +103,7 @@
                     <div class="col-6 col-md-4 col-xl-2">
                         <div class="card">
                             <div class="card-body">
-                                <a href="app-contact.html" class="my_sort_cut text-muted">
+                                <a href="add_course.php" class="my_sort_cut text-muted">
                                     <i class="fa fa-book"></i>
                                     <span>Add Courses</span>
                                 </a>
@@ -113,7 +113,7 @@
                     <div class="col-6 col-md-4 col-xl-2">
                         <div class="card">
                             <div class="card-body ribbon">
-                                <a href="staff.html" class="my_sort_cut text-muted">
+                                <a href="addstudent.php" class="my_sort_cut text-muted">
                                     <i class="fa fa-users"></i>
                                     <span>Add Students</span>
                                 </a>
@@ -123,7 +123,7 @@
                     <div class="col-6 col-md-4 col-xl-2">
                         <div class="card">
                             <div class="card-body">
-                                <a href="app-filemanager.html" class="my_sort_cut text-muted">
+                                <a href="attendance.php" class="my_sort_cut text-muted">
                                     <i class="fa fa-calendar-check-o"></i>
                                     <span>Attendance</span>
                                 </a>
