@@ -12,6 +12,7 @@
             $count = mysqli_num_rows($check);
             if($count==0){
                 $sql="INSERT INTO `student`(`roll_number`, `name`, `email`, `password`, `division`, `role`) VALUES ('$_POST[roll_num]','$_POST[name]','$_POST[email]','$_POST[password]','$_POST[division]','$_POST[role]')";
+                $sql="INSERT INTO `student`( `roll_number`, `name`, `Cadet_rank`, `year`, `dob`, `phone`, `email`, `password`, `division`, `role`) VALUES ('$_POST[roll_num]','$_POST[name]','$_POST[rank]','$_POST[year]','$_POST[dob]','$_POST[phone]','$_POST[email]','$_POST[password]','$_POST[division]','$_POST[role]')";
                 $result=mysqli_query($conn,$sql);
        
                 if($result)
@@ -113,21 +114,45 @@
                         </div>
                         <?php } ?>
                         <?php if($count==1){?>
-                        <div class="alert alert-success">
+                        <div class="alert alert-danger">
                         <Strong>Student Exist</strong>
                         </div>
                         <?php } ?>
                             <form class="card-body" method="post" action="addstudent.php">
                                 <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">Student Name <span class="text-danger">*</span></label>
+                                    <label class="col-md-3 col-form-label">Cadet Name <span class="text-danger">*</span></label>
                                     <div class="col-md-7">
                                         <input type="text" class="form-control" name='name' required>
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">Roll Number. <span class="text-danger">*</span></label>
+                                    <label class="col-md-3 col-form-label">Regimental Number. <span class="text-danger">*</span></label>
                                     <div class="col-md-7">
-                                        <input type="text" class="form-control" name='roll_num' required>
+                                        <input type="number" class="form-control" name='roll_num' required>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Cadet Rank.<span class="text-danger">*</span></label>
+                                    <div class="col-md-7">
+                                        <input type="text" class="form-control" name='rank' required>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Year. <span class="text-danger">*</span></label>
+                                    <div class="col-md-7">
+                                        <input type="number" class="form-control" name='year' required>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Date of Birth. <span class="text-danger">*</span></label>
+                                    <div class="col-md-7">
+                                        <input type="date" class="form-control" name='dob' required>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Phone Number. <span class="text-danger">*</span></label>
+                                    <div class="col-md-7">
+                                        <input type="tel" class="form-control" name='phone' required>
                                     </div>
                                 </div>
                                 <div class="form-group row">
@@ -159,7 +184,7 @@
                                   <div class="col-md-7">
                                  <button align="center"type="submit"name='submit' class="btn btn-primary">Submit</button>
                                 
-                                    </div>
+                                </div>
                                 </div>
                             </form>
                         </div>
