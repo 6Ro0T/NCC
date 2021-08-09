@@ -120,35 +120,7 @@
         
                                     }
                                     ?>
-                                    <?php echo $text;?>
-                                    <script>
-    var tag = document.createElement('script');
-    tag.src = "www.youtube.com/iframe_api";
-    var firstScriptTag = document.getElementsByTagName('script')[0];
-    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-    function onYouTubeIframeAPIReady() {
-        console.log("Ready");
-        var $ = jQuery;
-        var players = [];
-        $('iframe').filter(function(){return this.src.indexOf('http://www.youtube.com/') == 0}).each( function (k, v) {
-            if (!this.id) { this.id='embeddedvideoiframe' + k }
-            players.push(new YT.Player(this.id, {
-                events: {
-                    'onStateChange': function(event) {
-                        if (event.data == YT.PlayerState.PLAYING) {
-                            $.each(players, function(k, v) {
-                                if (this.getIframe().id != event.target.getIframe().id) {
-                                    this.pauseVideo();
-                                }
-                            });
-                        }
-                    }
-                }
-            }))
-        });
-    }
-</script>
+                                    <a href="https://www.youtube.com/watch?v=<?php echo$row['url'];?>" target="_blank"><img src="../../images/<?php echo $row['filename'];?>" ></a>
                                     <div class="card-body d-flex flex-column">
                                         <h5><?php echo $row['coursename'];?></h5>
                                         <div class="text-muted"><?php echo $row['description'];?></div>
