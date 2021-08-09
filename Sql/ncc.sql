@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 24, 2021 at 08:41 AM
+-- Generation Time: Aug 09, 2021 at 08:24 AM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.3
 
@@ -63,7 +63,10 @@ CREATE TABLE `attendance` (
 --
 
 INSERT INTO `attendance` (`id`, `name`, `roll_number`, `status`, `date`, `division`) VALUES
-(45, 'theertha', '101', 'Present', '2021-07-21', 'army');
+(49, 'thrupthi', '103', 'Absent', '2021-07-24', 'army'),
+(50, 'Ranjith', '104', 'Absent', '2021-07-24', 'army'),
+(51, 'thrupthi', '103', 'Present', '2021-08-07', 'army'),
+(52, 'Ranjith', '104', 'Present', '2021-08-07', 'army');
 
 -- --------------------------------------------------------
 
@@ -100,7 +103,11 @@ CREATE TABLE `student` (
   `id` int(10) NOT NULL,
   `roll_number` int(10) NOT NULL,
   `name` varchar(20) NOT NULL,
-  `email` varchar(20) NOT NULL,
+  `Cadet_rank` varchar(255) NOT NULL,
+  `year` int(10) NOT NULL,
+  `dob` date NOT NULL,
+  `phone` bigint(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
   `password` varchar(25) NOT NULL,
   `division` varchar(10) NOT NULL,
   `role` varchar(20) NOT NULL
@@ -110,9 +117,12 @@ CREATE TABLE `student` (
 -- Dumping data for table `student`
 --
 
-INSERT INTO `student` (`id`, `roll_number`, `name`, `email`, `password`, `division`, `role`) VALUES
-(59, 103, 'thrupthi', 'thrupthi@mail.com', '123456', 'army', 'student'),
-(61, 104, 'Ranjith', 'ranjith@mail.com', '123123', 'army', 'student');
+INSERT INTO `student` (`id`, `roll_number`, `name`, `Cadet_rank`, `year`, `dob`, `phone`, `email`, `password`, `division`, `role`) VALUES
+(59, 103, 'thrupthi', '', 0, '0000-00-00', 0, 'thrupthi@mail.com', '123456', 'army', 'student'),
+(61, 104, 'Ranjith', '', 0, '0000-00-00', 0, 'ranjith@mail.com', '123123', 'army', 'student'),
+(62, 120, 'Kishan', '', 0, '0000-00-00', 0, 'tagore@mail.com', 'mtfnNQ7Ltgqc4QJ', 'army', 'student'),
+(63, 0, '10281', 'Flight cadet', 1, '1997-01-12', 1234567890, 'varsha@mail.com', '123456', 'army', 'student'),
+(64, 102834, 'Chandan Kumar', 'Flight cad', 1, '1997-01-31', 8105897579, 'chandangowda@mail.com', '123456', 'army', 'student');
 
 --
 -- Indexes for dumped tables
@@ -156,7 +166,7 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `attendance`
 --
 ALTER TABLE `attendance`
-  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
+  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=53;
 
 --
 -- AUTO_INCREMENT for table `course`
@@ -168,7 +178,7 @@ ALTER TABLE `course`
 -- AUTO_INCREMENT for table `student`
 --
 ALTER TABLE `student`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=62;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=65;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

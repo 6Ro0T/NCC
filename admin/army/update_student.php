@@ -5,7 +5,7 @@
    $count=0;
    if(isset($_POST['submit']))
    {
-		$sql="UPDATE `student` SET `roll_number`='$_POST[roll_num]',`name`='$_POST[name]',`email`='$_POST[email]',`password`='$_POST[password]',`division`='$_POST[division]',`role`='$_POST[role]' WHERE id='$_POST[submit]'";
+		$sql="UPDATE `student` SET `roll_number`='$_POST[roll_num]',`name`='$_POST[name]',`Cadet_rank`='$_POST[rank]',`year`='$_POST[year]',`dob`='$_POST[dob]',`phone`='$_POST[phone]',`email`='$_POST[email]',`password`='$_POST[password]',`division`='$_POST[division]',`role`='$_POST[role]' WHERE id='$_POST[submit]'";
 		$result=mysqli_query($conn,$sql);
 		if($result)
 			$flag=1;
@@ -93,7 +93,7 @@
                         
                        
                     </ul>
-					<a href="view_all.php" class="btn btn-info btn-sm">Back</a>
+					<a href="student.php" class="btn btn-info btn-sm">Back</a>
                 </div>
 				
             </div>
@@ -122,30 +122,53 @@
 						?>
                             <form class="card-body" method="post" action="update_student.php">
                                 <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">Student Name </label>
+                                    <label class="col-md-3 col-form-label">Cadet Name  </label>
                                     <div class="col-md-7">
-                                        <input type="text" value="<?php echo $row['name'];?>"class="form-control" name='name'>
+                                        <input type="text" class="form-control" value='<?php echo $row['name'];?>'name='name' required>
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">Roll Number. </label>
+                                    <label class="col-md-3 col-form-label">Regimental Number.  </label>
                                     <div class="col-md-7">
-                                        <input type="text" class="form-control" value="<?php echo $row['roll_number'];?>" name='roll_num' disabled>
+                                        <input type="number" class="form-control" value='<?php echo $row['roll_number'];?>' name='roll_num' required>
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">E-mail </label>
+                                    <label class="col-md-3 col-form-label">Cadet Rank. </label>
                                     <div class="col-md-7">
-                                        <input type="email" class="form-control" value="<?php echo $row['email'];?>" name='email' >
+                                        <input type="text" class="form-control" value='<?php echo $row['Cadet_rank'];?>'name='rank' required>
                                     </div>
                                 </div>
-								<div class="form-group row">
-                                    <label class="col-md-3 col-form-label">Password</label>
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Year.  </label>
                                     <div class="col-md-7">
-                                        <input type="password" class="form-control" value="<?php echo $row['password'];?>" name='password' >
+                                        <input type="number" class="form-control" value='<?php echo $row['year'];?>' name='year' required>
                                     </div>
                                 </div>
-                                
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Date of Birth.  </label>
+                                    <div class="col-md-7">
+                                        <input type="date" class="form-control" value='<?php echo $row['dob'];?>' name='dob' required>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Phone Number.  </label>
+                                    <div class="col-md-7">
+                                        <input type="text" class="form-control" value='<?php echo $row['phone'];?>' name='phone' required>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">E-mail  </label>
+                                    <div class="col-md-7">
+                                        <input type="email" class="form-control" value='<?php echo $row['email'];?>' name='email' required placeholder ="abc@ncc.com">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Password  </label>
+                                    <div class="col-md-7">
+                                        <input type="password" class="form-control" value='<?php echo $row['password'];?>' name='password' required>
+                                    </div>
+                                </div>
                                 <div class="form-group row">
                                     
                                     <div class="col-md-7">

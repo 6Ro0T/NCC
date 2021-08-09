@@ -1,5 +1,17 @@
 <?php
    include('session.php');
+   include('conn.php');
+   $flag=0;
+   if(isset($_POST['delete'])){
+        
+        $mail=$_POST['delete'];
+        $sql="DELETE FROM `student` WHERE email='$mail'";
+        $result=mysqli_query($conn,$sql);
+        if($result)
+            $flag=1;
+   
+   }
+
 ?>
 <!doctype html>
 <html lang="en" dir="ltr">
@@ -14,6 +26,8 @@
 <link rel="stylesheet" href="../../assets/plugins/bootstrap/css/bootstrap.min.css" />
 <link rel="stylesheet" href="../../assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css">
 <link rel="stylesheet" href="../../assets/plugins/datatable/dataTables.bootstrap4.min.css">
+<link rel="stylesheet" href="../../assets/plugins/fullcalendar/fullcalendar.min.css">
+<link rel="stylesheet" href="../../assets/plugins/sweetalert/sweetalert.css">
 
 <!-- Core css -->
 <link rel="stylesheet" href="../../assets/css/style.min.css"/>
@@ -42,8 +56,9 @@
             </div>
         </div>
     </div>
+ 
 
-    <!-- Start Quick menu with more function -->
+    <!-- Start Quick menu with more functio -->
     
     <!-- Start Main leftbar navigation -->
     <div id="left-sidebar" class="sidebar">
@@ -67,441 +82,94 @@
 
         </div>
     </div>
+     
     <!-- Start project content area -->
     <div class="page">
- 
+        <!-- Start Page header -->
+         <div class="section-body">
+            <div class="container-fluid">
+                <div class="d-flex justify-content-between align-items-center ">
+                    <div class="header-action">
+                        <h1 class="page-title">View All Student</h1>
+                        <ol class="breadcrumb page-breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">MyNCC</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">All Students</li>
+                        </ol>
+                    </div>
+                    <ul class="nav nav-tabs page-header-tab">
+                        <li class="nav-item"><a class="nav-link active" data-toggle="tab" >Students</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
         <!-- Start Page title and tab -->
         <div class="section-body">
             <div class="container-fluid">
                 <div class="d-flex justify-content-between align-items-center ">
                     <div class="header-action">
-                        <h1 class="page-title">Students</h1>
-                        <ol class="breadcrumb page-breadcrumb">
-                            <li class="breadcrumb-item"><a href="#">MyNCC</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Students</li>
-                        </ol>
+                        <h1 class="page-title">Student List</h1>
+                        
                     </div>
-                    <ul class="nav nav-tabs page-header-tab">
-                        <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#Fees-all">List</a></li>
-                    </ul>
                 </div>
             </div>
         </div>
         <div class="section-body mt-4">
             <div class="container-fluid">
                 <div class="tab-content">
-                    <div class="tab-pane active" id="Fees-all">
+                    <div class="tab-pane active" >
                         <div class="card">
                             <div class="card-body">
-                                <div class="table-responsive">
-                                    <table class="table table-hover text-nowrap js-basic-example dataTable table-striped table_custom border-style spacing5">
+                            <form method="post" action="view_all.php">
+                                <table class="table  spacing5">
+                                <?php if($flag) {?>
+                                <div class="alert alert-success">
+                                <Strong>Student Deleted Successfully.</strong>
+                                </div>
+                                <?php } ?>
                                         <thead>
                                             <tr>
-                                                <th>Roll No.</th>
-                                                <th>Student Name</th>
-                                                <th>Fees Type</th>
-                                                <th>Date</th>
-                                                <th>Invoice No.</th>
-                                                <th>Payment Type</th>
-                                                <th>Status</th>
-                                                <th>Amount</th>
+                                                <th>#</th>
+                                                <th>Name</th>
+                                                <th>Email</th>
+                                                <th>DELETE</th>
+                                                <th>UPDATE</th>
                                             </tr>
+                                            <?php 
+                                        include('conn.php');
+                                        $sql="select * from student where division='army'";
+                                        $result=mysqli_query($conn,$sql);
+                                        $serial=0;
+                                        $counter=0;
+                                        while($row=mysqli_fetch_array($result)){
+                                            $serial++;
+                                    
+                                        ?>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>111</td>
-                                                <td>Corrine Johnson</td>
-                                                <td>Annual</td>
-                                                <td>12 Jan 2018</td>
-                                                <td>IN-4578</td>
-                                                <td>cash</td>
-                                                <td><span class="tag tag-green">paid</span></td>
-                                                <td>248$</td>
+                                            
+                                                <td><?php echo $serial;?></td>
+                                                <td><?php echo $row['name'];?></td>
+                                                <td><?php echo $row['email'];?></td>
+                                                <td>
+                                                    <button type="submit"  class="btn btn-icon btn-sm" name='delete' value="<?php echo $row['email'];?>"><i class="fa fa-trash-o text-danger"></i></button>                                                 
+                                                </td>
+                                                </form>
+                                                <form method="POST" action="update_student.php">
+                                               <td>
+                                               <button type="submit"  class="btn btn-icon btn-sm" name='update' value="<?php echo $row['email'];?>"><i class="fa fa-pencil-square-o"></i></button>
+                                               </td>
+                                               </form
                                             </tr>
-                                            <tr>
-                                                <td>112</td>
-                                                <td>Gladys Smith</td>
-                                                <td>Tuition</td>
-                                                <td>12 Feb 2018</td>
-                                                <td>IN-3695</td>
-                                                <td>cheque</td>
-                                                <td><span class="tag tag-orange">pending</span></td>
-                                                <td>124$</td>
-                                            </tr>
-                                            <tr>
-                                                <td>113</td>
-                                                <td>Alice Smith</td>
-                                                <td>Annual</td>
-                                                <td>24 Feb 2018</td>
-                                                <td>IN-4679</td>
-                                                <td>credit card</td>
-                                                <td><span class="tag tag-red">unpaid</span></td>
-                                                <td>340$</td>
-                                            </tr>
-                                            <tr>
-                                                <td>114</td>
-                                                <td>Gladys Smith</td>
-                                                <td>Tuition</td>
-                                                <td>25 Feb 2018</td>
-                                                <td>IN-2839</td>
-                                                <td>cashn</td>
-                                                <td><span class="tag tag-green">paid</span></td>
-                                                <td>112$</td>
-                                            </tr>
-                                            <tr>
-                                                <td>115</td>
-                                                <td>Corrine Johnson</td>
-                                                <td>Transport</td>
-                                                <td>12 March 2018</td>
-                                                <td>IN-4916</td>
-                                                <td>cheque</td>
-                                                <td><span class="tag tag-green">paid</span></td>
-                                                <td>340$</td>
-                                            </tr>
-                                            <tr>
-                                                <td>116</td>
-                                                <td>Gladys Smith</td>
-                                                <td>Tuition</td>
-                                                <td>12 May 2018</td>
-                                                <td>IN-7542</td>
-                                                <td>cashn</td>
-                                                <td><span class="tag tag-red">unpaid</span></td>
-                                                <td>421$</td>
-                                            </tr>
-                                            <tr>
-                                                <td>117</td>
-                                                <td>Alice Smith</td>
-                                                <td>Transport</td>
-                                                <td>12 May 2018</td>
-                                                <td>IN-8653</td>
-                                                <td>credit card</td>
-                                                <td><span class="tag tag-orange">pending</span></td>
-                                                <td>124$</td>
-                                            </tr>
-                                            <tr>
-                                                <td>118</td>
-                                                <td>Gladys Smith</td>
-                                                <td>Library</td>
-                                                <td>12 May 2018</td>
-                                                <td>IN-4859</td>
-                                                <td>cheque</td>
-                                                <td><span class="tag tag-green">paid</span></td>
-                                                <td>485$</td>
-                                            </tr>
-                                            <tr>
-                                                <td>119</td>
-                                                <td>Alice Smith</td>
-                                                <td>Annual</td>
-                                                <td>12 Jun 2018</td>
-                                                <td>IN-2648</td>
-                                                <td>cheque</td>
-                                                <td><span class="tag tag-orange">pending</span></td>
-                                                <td>231$</td>
-                                            </tr>
-                                            <tr>
-                                                <td>120</td>
-                                                <td>Corrine Johnson</td>
-                                                <td>Tuition</td>
-                                                <td>21 Jun 2018</td>
-                                                <td>IN-4875</td>
-                                                <td>cashn</td>
-                                                <td><span class="tag tag-green">paid</span></td>
-                                                <td>4856$</td>
-                                            </tr>
-                                            <tr>
-                                                <td>121</td>
-                                                <td>Gladys Smith</td>
-                                                <td>Transport</td>
-                                                <td>28 Jun 2018</td>
-                                                <td>IN-7946</td>
-                                                <td>credit card</td>
-                                                <td><span class="tag tag-red">unpaid</span></td>
-                                                <td>340$</td>
-                                            </tr>
-                                            <tr>
-                                                <td>122</td>
-                                                <td>Ken Smith</td>
-                                                <td>Annual</td>
-                                                <td>12 Jun 2018</td>
-                                                <td>IN-9135</td>
-                                                <td>cheque</td>
-                                                <td><span class="tag tag-orange">pending</span></td>
-                                                <td>340$</td>
-                                            </tr>
-                                            <tr>
-                                                <td>123</td>
-                                                <td>Corrine Johnson</td>
-                                                <td>Annual</td>
-                                                <td>22 Jun 2018</td>
-                                                <td>IN-5284</td>
-                                                <td>credit card</td>
-                                                <td><span class="tag tag-orange">pending</span></td>
-                                                <td>340$</td>
-                                            </tr>
-                                            <tr>
-                                                <td>124</td>
-                                                <td>Ken Smith</td>
-                                                <td>Transport</td>
-                                                <td>18 Aug 2018</td>
-                                                <td>IN-4613</td>
-                                                <td>cashn</td>
-                                                <td><span class="tag tag-green">paid</span></td>
-                                                <td>254$</td>
-                                            </tr>
-                                            <tr>
-                                                <td>125</td>
-                                                <td>Emmett Johnson</td>
-                                                <td>Annual</td>
-                                                <td>13 Aug 2018</td>
-                                                <td>IN-1826</td>
-                                                <td>credit card</td>
-                                                <td><span class="tag tag-red">unpaid</span></td>
-                                                <td>340$</td>
-                                            </tr>
-                                            <tr>
-                                                <td>126</td>
-                                                <td>Ken Smith</td>
-                                                <td>Library</td>
-                                                <td>17 Aug 2018</td>
-                                                <td>IN-76149</td>
-                                                <td>cashn</td>
-                                                <td><span class="tag tag-green">paid</span></td>
-                                                <td>340$</td>
-                                            </tr>
-                                            <tr>
-                                                <td>127</td>
-                                                <td>Emmett Johnson</td>
-                                                <td>Annual</td>
-                                                <td>4 Sept 2018</td>
-                                                <td>IN-3794</td>
-                                                <td>credit card</td>
-                                                <td><span class="tag tag-orange">pending</span></td>
-                                                <td>548$</td>
-                                            </tr>
-                                        </tbody>
+                                          <?php
+                                        }
+                                        ?>
+                                        </tbody> 
                                     </table>
-                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane" id="Fees-Receipt">
-                        <div class="card">
-                            <div class="card-header">
-                                <h3 class="card-title">#AB0017</h3>
-                                <div class="card-options">
-                                    <button type="button" class="btn btn-primary"><i class="si si-printer"></i> Print Invoice</button>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <div class="row my-8">
-                                    <div class="col-6">
-                                        <p class="h3">Company</p>
-                                        <address>
-                                        Street Address<br>
-                                        State, City<br>
-                                        Region, Postal Code<br>
-                                        ltd@example.com
-                                        </address>
-                                    </div>
-                                    <div class="col-6 text-right">
-                                        <p class="h3">Client</p>
-                                        <address>
-                                        Street Address<br>
-                                        State, City<br>
-                                        Region, Postal Code<br>
-                                        ctr@example.com
-                                        </address>
-                                    </div>
-                                </div>
-                                <div class="table-responsive push">
-                                    <table class="table table-bordered table-hover text-nowrap">
-                                        <tbody><tr>
-                                            <th class="text-center width35"></th>
-                                            <th>Product</th>
-                                            <th class="text-center" style="width: 1%">Qnt</th>
-                                            <th class="text-right" style="width: 1%">Unit</th>
-                                            <th class="text-right" style="width: 1%">Amount</th>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-center">1</td>
-                                            <td>
-                                                <p class="font600 mb-1">Logo Creation</p>
-                                                <div class="text-muted">Logo and business cards design</div>
-                                            </td>
-                                            <td class="text-center">1</td>
-                                            <td class="text-right">$1.800,00</td>
-                                            <td class="text-right">$1.800,00</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-center">2</td>
-                                            <td>
-                                                <p class="font600 mb-1">Online Store Design &amp; Development</p>
-                                                <div class="text-muted">Design/Development for all popular modern browsers</div>
-                                            </td>
-                                            <td class="text-center">1</td>
-                                            <td class="text-right">$20.000,00</td>
-                                            <td class="text-right">$20.000,00</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-center">3</td>
-                                            <td>
-                                                <p class="font600 mb-1">App Design</p>
-                                                <div class="text-muted">Promotional mobile application</div>
-                                            </td>
-                                            <td class="text-center">1</td>
-                                            <td class="text-right">$3.200,00</td>
-                                            <td class="text-right">$3.200,00</td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="4" class="font600 text-right">Subtotal</td>
-                                            <td class="text-right">$25.000,00</td>
-                                        </tr>
-                                        <tr class="bg-light">
-                                            <td colspan="4" class="font600 text-right">Vat Rate</td>
-                                            <td class="text-right">20%</td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="4" class="font600 text-right">Vat Due</td>
-                                            <td class="text-right">$5.000,00</td>
-                                        </tr>
-                                        <tr class="bg-green text-light">
-                                            <td colspan="4" class="font700 text-right">Total Due</td>
-                                            <td class="font700 text-right">$30.000,00</td>
-                                        </tr>
-                                    </tbody></table>
-                                </div>
-                                <p class="text-muted text-center">Thank you very much for doing business with us. We look forward to working with you again!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane" id="Fees-add">
-                        <div class="card">
-                            <div class="card-header">
-                                <h3 class="card-title">Add Library</h3>
-                                <div class="card-options ">
-                                    <a href="#" class="card-options-collapse" data-toggle="card-collapse"><i class="fe fe-chevron-up"></i></a>
-                                    <a href="#" class="card-options-remove" data-toggle="card-remove"><i class="fe fe-x"></i></a>
-                                </div>
-                            </div>
-                            <form class="card-body">
-                                <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">Roll No <span class="text-danger">*</span></label>
-                                    <div class="col-md-7">
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">Student Name <span class="text-danger">*</span></label>
-                                    <div class="col-md-7">
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">Department/Class  <span class="text-danger">*</span></label>
-                                    <div class="col-md-7">
-                                        <select class="form-control" name="select">
-                                            <option value="">Select...</option>
-                                            <option value="Category 1">Mathematics</option>
-                                            <option value="Category 2">Engineering</option>
-                                            <option value="Category 3">Science</option>
-                                            <option value="Category 3">M.B.A.</option>
-                                            <option value="Category 3">Music</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">Fees Type  <span class="text-danger">*</span></label>
-                                    <div class="col-md-7">
-                                        <select class="form-control" name="selectType">
-                                            <option value="">Select...</option>
-                                            <option value="Category 1">Annual</option>
-                                            <option value="Category 2">Tuition</option>
-                                            <option value="Category 3">Transport</option>
-                                            <option value="Category 3">Exam</option>
-                                            <option value="Category 3">Library</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">Payment Duration <span class="text-danger">*</span></label>
-                                    <div class="col-md-7">
-                                        <div class="custom-controls-stacked">
-                                            <label class="custom-control custom-radio custom-control-inline">
-                                                <input type="radio" class="custom-control-input" name="example-inline-radios" value="option1" checked="">
-                                                <span class="custom-control-label">Monthly</span>
-                                            </label>
-                                            <label class="custom-control custom-radio custom-control-inline">
-                                                <input type="radio" class="custom-control-input" name="example-inline-radios" value="option2">
-                                                <span class="custom-control-label">Session</span>
-                                            </label>
-                                            <label class="custom-control custom-radio custom-control-inline">
-                                                <input type="radio" class="custom-control-input" name="example-inline-radios" value="option3">
-                                                <span class="custom-control-label">Yearly</span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">Collection Date <span class="text-danger">*</span></label>
-                                    <div class="col-md-7">
-                                        <input data-provide="datepicker" data-date-autoclose="true" class="form-control" placeholder="">
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">Amount <span class="text-danger">*</span></label>
-                                    <div class="col-md-7">
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">Payment Method <span class="text-danger">*</span></label>
-                                    <div class="col-md-7">
-                                        <select class="form-control" name="select">
-                                            <option value="">Select...</option>
-                                            <option value="Category 1">Cash</option>
-                                            <option value="Category 2">Cheque</option>
-                                            <option value="Category 3">Credit Card</option>
-                                            <option value="Category 4">Debit Card</option>
-                                            <option value="Category 5">Netbanking</option>
-                                            <option value="Category 6">Other</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">Payment Status <span class="text-danger">*</span></label>
-                                    <div class="col-md-7">
-                                        <select class="form-control" name="select">
-                                            <option value="">Select...</option>
-                                            <option value="Category 1">Paid</option>
-                                            <option value="Category 2">Unpaid</option>
-                                            <option value="Category 3">Pending</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">Payment Reference No. <span class="text-danger">*</span></label>
-                                    <div class="col-md-7">
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">Payment Details <span class="text-danger">*</span></label>
-                                    <div class="col-md-7">
-                                        <textarea rows="4" class="form-control no-resize" placeholder="Please type what you want..."></textarea>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label class="col-md-3 col-form-label"></label>
-                                    <div class="col-md-7">
-                                        <button type="submit" class="btn btn-primary">Submit</button>
-                                        <button type="submit" class="btn btn-outline-secondary">Cancel</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+				</div>
             </div>
         </div>
         <!-- Start main footer -->
@@ -515,19 +183,33 @@
                     </div>
                 </div>
             </footer>
-        </div>
-    </div>    
+        </div>	
+    </div> 
+
 </div>
+
+<!-- Add New Event popup -->
+
+<!-- Add Direct Event popup -->
+
+<!-- Event Edit Modal popup -->
+
+
+
 
 <!-- Start Main project js, jQuery, Bootstrap -->
 <script src="../../assets/bundles/lib.vendor.bundle.js"></script>
 
 <!-- Start Plugin Js -->
+<script src="../../assets/plugins/sweetalert/sweetalert.min.js"></script>
 <script src="../../assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
 <script src="../../assets/bundles/dataTables.bundle.js"></script>
+<script src="../../assets/bundles/fullcalendar.bundle.js"></script>
 
 <!-- Start project main js  and page js -->
 <script src="../../assets/js/core.js"></script>
+<script src="assets/js/page/dialogs.js"></script>
 <script src="assets/js/table/datatable.js"></script>
+<script src="assets/js/page/calendar.js"></script>
 </body>
 </html>
