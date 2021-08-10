@@ -14,14 +14,13 @@
     $uploads_dir = '../../images';
     move_uploaded_file($tname, $uploads_dir.'/'.$pname);
     $dur = file_get_contents("https://www.googleapis.com/youtube/v3/videos?part=contentDetails&part=statistics&id=$urlid&key=AIzaSyCUzBxx5oXGt57tKJTnnwZWAXPj-rz7H3A");
-
     $duration = json_decode($dur, true);
     foreach ($duration['items'] as $vidTime) {
         $vTime= $vidTime['contentDetails']['duration'];
         
     }
     $str1=substr($vTime,2);
-    $sql="UPDATE `course` SET `coursename`='$cname',`duration`='$vTime',`professor`='$professor',`url`='$urlid',`filename`='$pname',`description`='$description',`division`='$division' WHERE id='$id'";
+    $sql="UPDATE `course` SET `coursename`='$cname',`duration`='$str1',`professor`='$professor',`url`='$urlid',`filename`='$pname',`description`='$description',`division`='$division' WHERE id='$id'";
     $result=mysqli_query($conn,$sql);
     if($result){
         $flag=1;
@@ -131,34 +130,34 @@
 								
 								?>
                                 <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">Course Name <span class="text-danger">*</span></label>
+                                    <label class="col-md-3 col-form-label">Course Name  </label>
                                     <div class="col-md-7">
                                         <input type="text" class="form-control"name="cname" value="<?php echo $row['coursename'];?>">
                                     </div>
                                 </div>
                           
                                 <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">Professor Name <span class="text-danger">*</span></label>
+                                    <label class="col-md-3 col-form-label">Professor Name  </label>
                                     <div class="col-md-7">
                                         <input type="text" class="form-control" name="professor", value="<?php echo $row['professor'];?>">
                                     </div>
                                 </div>
                                 
                                 <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">Video ID <span class="text-danger">*</span></label>
+                                    <label class="col-md-3 col-form-label">Video ID  </label>
                                     <div class="col-md-7">
                                         <input type="text" class="form-control" name="url" value="<?php echo $row['url'];?>">
                                         <input type="hidden" class="form-control" name="division" value="army" >
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">Select Image<span class="text-danger">*</span></label>
+                                    <label class="col-md-3 col-form-label">Select Image </label>
                                     <div class="col-md-7">
                                         <input type="file" class="form-control" accept='.jpeg,.gif' name="file" required>
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">Course Description <span class="text-danger">*</span></label>
+                                    <label class="col-md-3 col-form-label">Course Description  </label>
                                     <div class="col-md-7">
                                         <textarea rows="4" class="form-control no-resize"  name="description"><?php echo $row['description'];?></textarea>
                                     </div>
