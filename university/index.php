@@ -57,7 +57,9 @@
     </div>
 </div>
 </form>
+
 <?php
+
    include("conn.php");
    session_start();
    
@@ -65,7 +67,9 @@
       // username and password sent from form 
       
       $myusername = mysqli_real_escape_string($conn,$_POST['email']);
-      $mypassword = mysqli_real_escape_string($conn,$_POST['passwd']); 
+      $passwd=$_POST['passwd'];
+      $mypassword=hash('sha256',$passwd );
+      echo $mypassword;
       
       $sql = "SELECT email FROM student WHERE email = '$myusername' and password = '$mypassword'";
       $result = mysqli_query($conn,$sql);
@@ -77,7 +81,6 @@
       $result1=mysqli_query($conn,$sql1);
       $row1=mysqli_fetch_array($result1);
       $value=$row1["division"];
-      echo $value;
       if($count == 1) {
          //session_register("username");
          $_SESSION['login_user'] = $myusername;
@@ -97,7 +100,9 @@
 		 
       }
    }
+
 ?>
+
 <!-- Start Main project js, jQuery, Bootstrap -->
 <script src="../assets/bundles/lib.vendor.bundle.js"></script>
 
