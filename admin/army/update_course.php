@@ -6,7 +6,8 @@
     $cname=$_POST['cname'];
 	$id=$_POST['submit'];
     $professor=$_POST['professor'];
-    $urlid=$_POST['url'];
+    $url=$_POST['url'];
+    $urlid = substr($url,32);
     $description=$_POST['description'];
     $division=$_POST['division'];
     $pname = rand(1000,10000)."-".$_FILES["file"]["name"];
@@ -144,7 +145,7 @@
                                 </div>
                                 
                                 <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">Video ID  </label>
+                                    <label class="col-md-3 col-form-label">Video URL </label>
                                     <div class="col-md-7">
                                         <input type="text" class="form-control" name="url" value="<?php echo $row['url'];?>">
                                         <input type="hidden" class="form-control" name="division" value="army" >
