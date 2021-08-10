@@ -2,6 +2,7 @@
    include('session.php');
    include('conn.php');
    $flag=0;
+   
    if(isset($_POST['submit'])){
         $cname=$_POST['cname'];
         $professor=$_POST['professor'];
