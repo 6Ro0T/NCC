@@ -14,14 +14,13 @@
     $uploads_dir = '../../images';
     move_uploaded_file($tname, $uploads_dir.'/'.$pname);
     $dur = file_get_contents("https://www.googleapis.com/youtube/v3/videos?part=contentDetails&part=statistics&id=$urlid&key=AIzaSyCUzBxx5oXGt57tKJTnnwZWAXPj-rz7H3A");
-
     $duration = json_decode($dur, true);
     foreach ($duration['items'] as $vidTime) {
         $vTime= $vidTime['contentDetails']['duration'];
         
     }
     $str1=substr($vTime,2);
-    $sql="UPDATE `course` SET `coursename`='$cname',`duration`='$vTime',`professor`='$professor',`url`='$urlid',`filename`='$pname',`description`='$description',`division`='$division' WHERE id='$id'";
+    $sql="UPDATE `course` SET `coursename`='$cname',`duration`='$str1',`professor`='$professor',`url`='$urlid',`filename`='$pname',`description`='$description',`division`='$division' WHERE id='$id'";
     $result=mysqli_query($conn,$sql);
     if($result){
         $flag=1;
