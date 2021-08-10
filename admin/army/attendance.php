@@ -116,7 +116,7 @@
                     <a href="view_at.php" class="btn btn-info btn-sm">View All Attendance</a>
                 </div>
                <form method="POST" action="attendance.php">
-               Date:<?php echo date("Y-m-d");?>
+            
                <div class="text-md-center">
                   </strong>Today: <?php echo date("Y-m-d");?></strong>
                 </div>
