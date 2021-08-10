@@ -131,34 +131,34 @@
 								
 								?>
                                 <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">Course Name <span class="text-danger">*</span></label>
+                                    <label class="col-md-3 col-form-label">Course Name  </label>
                                     <div class="col-md-7">
                                         <input type="text" class="form-control"name="cname" value="<?php echo $row['coursename'];?>">
                                     </div>
                                 </div>
                           
                                 <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">Professor Name <span class="text-danger">*</span></label>
+                                    <label class="col-md-3 col-form-label">Professor Name  </label>
                                     <div class="col-md-7">
                                         <input type="text" class="form-control" name="professor", value="<?php echo $row['professor'];?>">
                                     </div>
                                 </div>
                                 
                                 <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">Video ID <span class="text-danger">*</span></label>
+                                    <label class="col-md-3 col-form-label">Video ID  </label>
                                     <div class="col-md-7">
                                         <input type="text" class="form-control" name="url" value="<?php echo $row['url'];?>">
                                         <input type="hidden" class="form-control" name="division" value="army" >
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">Select Image<span class="text-danger">*</span></label>
+                                    <label class="col-md-3 col-form-label">Select Image </label>
                                     <div class="col-md-7">
                                         <input type="file" class="form-control" accept='.jpeg,.gif' name="file" required>
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">Course Description <span class="text-danger">*</span></label>
+                                    <label class="col-md-3 col-form-label">Course Description  </label>
                                     <div class="col-md-7">
                                         <textarea rows="4" class="form-control no-resize"  name="description"><?php echo $row['description'];?></textarea>
                                     </div>
