@@ -2,28 +2,26 @@
    include('session.php');
    include('conn.php');
    $flag=0;
-   
    if(isset($_POST['submit'])){
-         
-    $cname=$_POST['cname'];
-    $professor=$_POST['professor'];
-    $urlid=$_POST['url'];
-    $description=$_POST['description'];
-    $division=$_POST['division'];
-    // Notice: Undefined variable: dvTime in C:\xampp\htdocs\NCC\admin\army\add_course.php on line 21
-    $dur = file_get_contents("https://www.googleapis.com/youtube/v3/videos?part=contentDetails&part=statistics&id=$urlid&key=AIzaSyCUzBxx5oXGt57tKJTnnwZWAXPj-rz7H3A");
-
-    $duration = json_decode($dur, true);
+        $cname=$_POST['cname'];
+        $professor=$_POST['professor'];
+        $urlid=$_POST['url'];
+        $description=$_POST['description'];
+        $division=$_POST['division'];
+        $pname = rand(1000,10000)."-".$_FILES["file"]["name"];
+        $tname = $_FILES["file"]["tmp_name"];
+        $uploads_dir = '../../images';
+        move_uploaded_file($tname, $uploads_dir.'/'.$pname);
+        $dur = file_get_contents("https://www.googleapis.com/youtube/v3/videos?part=contentDetails&part=statistics&id=$urlid&key=AIzaSyCUzBxx5oXGt57tKJTnnwZWAXPj-rz7H3A");
+        $duration = json_decode($dur, true);
     foreach ($duration['items'] as $vidTime) {
         $vTime= $vidTime['contentDetails']['duration'];
         $views=$vidTime['statistics']['viewCount'];
         
     }
     $str1=substr($vTime,2);
-    //$str2=substr($vTime,4);
-    //$str3=':'
-   // $str4=$str1,$str3,$str2;
-    $sql="INSERT INTO `course`(`coursename`, `duration`, `professor`, `url`,`description`,`division`) VALUES ('$cname','$str1','$professor','$urlid','$description','$division')";
+    
+    $sql="INSERT INTO `course`(`coursename`, `duration`, `professor`, `url`,`filename`,`description`,`division`) VALUES ('$cname','$str1','$professor','$urlid','$pname','$description','$division')";
     $result=mysqli_query($conn,$sql);
     if($result)
         $flag=1;
@@ -118,7 +116,7 @@
                         <Strong>Course Added Successfully..</strong>
                         </div>
                         <?php } ?>
-                            <form class="card-body" method="POST" action="add_course.php">
+                            <form class="card-body" method="POST" action="add_course.php" enctype="multipart/form-data">
                                 <div class="form-group row">
                                     <label class="col-md-3 col-form-label">Course Name <span class="text-danger">*</span></label>
                                     <div class="col-md-7">
@@ -138,6 +136,12 @@
                                     <div class="col-md-7">
                                         <input type="text" class="form-control" name="url", required>
                                         <input type="hidden" class="form-control" name="division" value="army" >
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Select Image<span class="text-danger">*</span></label>
+                                    <div class="col-md-7">
+                                        <input type="file" class="form-control" accept='.jpeg,.gif' name="file" required>
                                     </div>
                                 </div>
                                 <div class="form-group row">

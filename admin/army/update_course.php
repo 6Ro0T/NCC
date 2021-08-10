@@ -2,15 +2,17 @@
    include('session.php');
    include('conn.php');
    $flag=0;
-   
    if(isset($_POST['submit'])){
-         
     $cname=$_POST['cname'];
 	$id=$_POST['submit'];
     $professor=$_POST['professor'];
     $urlid=$_POST['url'];
     $description=$_POST['description'];
     $division=$_POST['division'];
+    $pname = rand(1000,10000)."-".$_FILES["file"]["name"];
+    $tname = $_FILES["file"]["tmp_name"];
+    $uploads_dir = '../../images';
+    move_uploaded_file($tname, $uploads_dir.'/'.$pname);
     $dur = file_get_contents("https://www.googleapis.com/youtube/v3/videos?part=contentDetails&part=statistics&id=$urlid&key=AIzaSyCUzBxx5oXGt57tKJTnnwZWAXPj-rz7H3A");
 
     $duration = json_decode($dur, true);
@@ -19,10 +21,7 @@
         
     }
     $str1=substr($vTime,2);
-    //$str2=substr($vTime,4);
-    //$str3=':'
-   // $str4=$str1,$str3,$str2;
-    $sql="UPDATE `course` SET `coursename`='$cname',`duration`='$vTime',`professor`='$professor',`url`='$urlid',`description`='$description',`division`='$division' WHERE id='$id'";
+    $sql="UPDATE `course` SET `coursename`='$cname',`duration`='$vTime',`professor`='$professor',`url`='$urlid',`filename`='$pname',`description`='$description',`division`='$division' WHERE id='$id'";
     $result=mysqli_query($conn,$sql);
     if($result){
         $flag=1;
@@ -121,7 +120,7 @@
                         <Strong>Course Updated Successfully..</strong>
                         </div>
                         <?php } ?>
-                            <form class="card-body" method="POST" action="update_course.php">
+                            <form class="card-body" method="POST" action="update_course.php" enctype="multipart/form-data">
 								<?php
 								include('conn.php');
 								if(isset($_POST['update'])){
@@ -150,6 +149,12 @@
                                     <div class="col-md-7">
                                         <input type="text" class="form-control" name="url" value="<?php echo $row['url'];?>">
                                         <input type="hidden" class="form-control" name="division" value="army" >
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Select Image<span class="text-danger">*</span></label>
+                                    <div class="col-md-7">
+                                        <input type="file" class="form-control" accept='.jpeg,.gif' name="file" required>
                                     </div>
                                 </div>
                                 <div class="form-group row">
