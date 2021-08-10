@@ -100,6 +100,14 @@ $(function() {
                 start  : current + '09T12:30:00',
                 allDay : true, // will make the time show
                 className: 'bg-success',
+            },{
+                title  : 'Independence Day',
+                start  : current + '15',
+                className: 'bg-primary'
+            },{
+                title  : 'Republic Day',
+                start  : '2021-01-26',
+                className: 'bg-primary'
             }
         ],
 
