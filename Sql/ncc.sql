@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 09, 2021 at 08:24 AM
+-- Generation Time: Aug 10, 2021 at 09:59 AM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.3
 
@@ -66,7 +66,13 @@ INSERT INTO `attendance` (`id`, `name`, `roll_number`, `status`, `date`, `divisi
 (49, 'thrupthi', '103', 'Absent', '2021-07-24', 'army'),
 (50, 'Ranjith', '104', 'Absent', '2021-07-24', 'army'),
 (51, 'thrupthi', '103', 'Present', '2021-08-07', 'army'),
-(52, 'Ranjith', '104', 'Present', '2021-08-07', 'army');
+(52, 'Ranjith', '104', 'Present', '2021-08-07', 'army'),
+(53, 'thrupthi', '103', 'Present', '2021-08-10', 'army'),
+(54, 'Ranjith', '104', 'Absent', '2021-08-10', 'army'),
+(55, 'Kishan', '120', 'Present', '2021-08-10', 'army'),
+(56, '10281', '0', 'Absent', '2021-08-10', 'army'),
+(57, 'Chandan Kumar', '102834', 'Present', '2021-08-10', 'army'),
+(58, 'Pooja', '18205', 'Absent', '2021-08-10', 'army');
 
 -- --------------------------------------------------------
 
@@ -80,6 +86,7 @@ CREATE TABLE `course` (
   `duration` varchar(25) NOT NULL,
   `professor` varchar(255) NOT NULL,
   `url` varchar(255) NOT NULL,
+  `filename` varchar(255) NOT NULL,
   `description` varchar(255) NOT NULL,
   `division` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -88,10 +95,13 @@ CREATE TABLE `course` (
 -- Dumping data for table `course`
 --
 
-INSERT INTO `course` (`id`, `coursename`, `duration`, `professor`, `url`, `description`, `division`) VALUES
-(9, 'Embed Iframe in PHP', 'PT4M36S', 'Rohan', 'cRCOVzkGVJM', 'la la la la alaala alaal', 'army'),
-(10, 'Party Play', 'P0D', 'chandan', 'YsBe9BFIjBs', 'lets party', 'army'),
-(12, 'Ed sheeran', 'D', 'Ranjith', 'kk42xRof9cY', 'lets dance', 'army');
+INSERT INTO `course` (`id`, `coursename`, `duration`, `professor`, `url`, `filename`, `description`, `division`) VALUES
+(32, 'Best Songs', '52M31S', 'Theerthaaaa', 'HPkydJOXXNs', '4100-airforc.jpeg', 'qqqqqqqqqqq', 'army'),
+(33, 'Dua lipa', '3M45S', 'chandan', 'k2qgadSvNyU', '9739-airforc.jpeg', 'aaaaaaaaaaaaaa', 'army'),
+(34, 'Ed sheeran', '', 'kishan', 'kk42xRof9cY', '7390-airforc.jpeg', 'vvvvvvvvvv', 'army'),
+(35, 'Arijit Songs', '55M28S', 'pooja', '5mFTXbZzOAE', '4203-airforc.jpeg', 'dddddd', 'army'),
+(36, 'Party Play', '52M31S', 'chandan', 'HPkydJOXXNs', '6534-airforc.jpeg', 'aaaaaaaa', 'army'),
+(37, 'New year Mix', '', 'kishan', 'WdBldz3YL', '5732-airforc.jpeg', 'aaaaa', 'army');
 
 -- --------------------------------------------------------
 
@@ -118,11 +128,8 @@ CREATE TABLE `student` (
 --
 
 INSERT INTO `student` (`id`, `roll_number`, `name`, `Cadet_rank`, `year`, `dob`, `phone`, `email`, `password`, `division`, `role`) VALUES
-(59, 103, 'thrupthi', '', 0, '0000-00-00', 0, 'thrupthi@mail.com', '123456', 'army', 'student'),
-(61, 104, 'Ranjith', '', 0, '0000-00-00', 0, 'ranjith@mail.com', '123123', 'army', 'student'),
-(62, 120, 'Kishan', '', 0, '0000-00-00', 0, 'tagore@mail.com', 'mtfnNQ7Ltgqc4QJ', 'army', 'student'),
-(63, 0, '10281', 'Flight cadet', 1, '1997-01-12', 1234567890, 'varsha@mail.com', '123456', 'army', 'student'),
-(64, 102834, 'Chandan Kumar', 'Flight cad', 1, '1997-01-31', 8105897579, 'chandangowda@mail.com', '123456', 'army', 'student');
+(64, 102834, 'Chandan Kumar', 'Flight cad', 1, '1997-01-31', 8105897579, 'chandangowda@mail.com', '123456', 'army', 'student'),
+(65, 18203, 'Pooja Gowda', 'Army Cadet', 3, '1997-12-15', 9876543111, 'poojagowda@mail.com', '123456', 'army', 'student');
 
 --
 -- Indexes for dumped tables
@@ -166,19 +173,19 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `attendance`
 --
 ALTER TABLE `attendance`
-  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=53;
+  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=59;
 
 --
 -- AUTO_INCREMENT for table `course`
 --
 ALTER TABLE `course`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
 
 --
 -- AUTO_INCREMENT for table `student`
 --
 ALTER TABLE `student`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=65;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=66;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
