@@ -111,14 +111,14 @@
                                                 <td>SD_SW_Common Subjects Handbook</td>
                                                 <td>Common</td>
                                                 <td>All Year</td>
-                                                <td><a href="https://pdfhost.io/v/X.hMeTxfg_sdswcommonsubject.pdf">View Here</a></td>
+                                                <td><a href="https://pdfhost.io/v/X.hMeTxfg_sdswcommonsubject.pdf" target="_blank">View Here</a></td>
                                             </tr>
                                             <tr>
                                                 <td>2</td>
                                                 <td>SD_SW_Army Cadet Handbook</td>
                                                 <td>Army</td>
                                                 <td>All Year</td>
-                                                <td><a href="https://pdfhost.io/v/3cS5kjUgO_Army_Cadet_Handbook.pdf">View Here</a></td>
+                                                <td><a href="https://pdfhost.io/v/3cS5kjUgO_Army_Cadet_Handbook.pdf" target="_blank">View Here</a></td>
                                             </tr>
                                             <tr>
                                                 <td>3</td>
