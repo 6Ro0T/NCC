@@ -128,7 +128,7 @@
                                 <?php } ?>
                                         <thead>
                                             <tr>
-                                                <th>#</th>
+                                                <th>Regimental Number</th>
                                                 <th>Name</th>
                                                 <th>Email</th>
                                                 <th>Cadet Rank</th>
@@ -149,7 +149,7 @@
                                         <tbody>
                                             <tr>
                                             
-                                                <td><?php echo $serial;?></td>
+                                                <td><?php echo $row['roll_number'];?></td>
                                                 <td><?php echo $row['name'];?></td>
                                                 <td><?php echo $row['email'];?></td>
                                                 <td><?php echo $row['Cadet_rank'];?></td>
