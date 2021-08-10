@@ -119,7 +119,7 @@
                     <div class="tab-pane active" >
                         <div class="card">
                             <div class="card-body">
-                            <form method="post" action="view_all.php">
+                            <form method="post" action="student.php">
                                 <table class="table  spacing5">
                                 <?php if($flag) {?>
                                 <div class="alert alert-success">
@@ -131,6 +131,7 @@
                                                 <th>#</th>
                                                 <th>Name</th>
                                                 <th>Email</th>
+                                                <th>Cadet Rank</th>
                                                 <th>DELETE</th>
                                                 <th>UPDATE</th>
                                             </tr>
@@ -151,6 +152,7 @@
                                                 <td><?php echo $serial;?></td>
                                                 <td><?php echo $row['name'];?></td>
                                                 <td><?php echo $row['email'];?></td>
+                                                <td><?php echo $row['Cadet_rank'];?></td>
                                                 <td>
                                                     <button type="submit"  class="btn btn-icon btn-sm" name='delete' value="<?php echo $row['email'];?>"><i class="fa fa-trash-o text-danger"></i></button>                                                 
                                                 </td>
