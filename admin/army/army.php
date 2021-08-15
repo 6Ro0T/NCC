@@ -141,14 +141,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="tab-content">
-                    <div class="tab-pane fade show active" id="admin-Dashboard" role="tabpanel">
-                        <div class="row clearfix"> 
-                        <div class="row clearfix row-deck">
-                            <div class="col-xl-6 col-lg-6 col-md-12">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h3 class="card-title">Exam Toppers</h3>
+        <div class="tab-content">
+            <div class="tab-pane fade show active" id="admin-Dashboard" role="tabpanel">
+                <div class="row clearfix"> 
+                    <div class="row clearfix row-deck">
+                        <div class="col-xl-6 col-lg-6 col-md-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3 class="card-title">Exam Toppers</h3>
                                         <div class="card-options">
                                             <a href="#" class="card-options-collapse" data-toggle="card-collapse"><i class="fe fe-chevron-up"></i></a>
                                             <div class="item-action dropdown ml-2">
@@ -273,12 +273,12 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                        </div>
                             <div class="col-xl-6 col-lg-6 col-md-12">
                                 <div class="card">
       
                                     <div class="card-header">
-                                        <h3 class="card-title">New Student List</h3>
+                                        <h3 class="card-title">Student List</h3>
                                         <div class="card-options">
                                             <a href="#" class="card-options-collapse" data-toggle="card-collapse"><i class="fe fe-chevron-up"></i></a>
                                             <a href="#" class="card-options-fullscreen" data-toggle="card-fullscreen"><i class="fe fe-maximize"></i></a>
@@ -316,13 +316,200 @@
                                         </div>  
                                     </div>
                                 </div>
-                                </div>
                             </div>
-							  
+                    </div>
+				</div>
+            </div>       
+        </div>
+		<div class="tab-pane active" id="TaskBoard-all">
+                        <div class="table-responsive">
+                            <table class="table table-hover table-vcenter mb-0 table_custom spacing8 text-nowrap">
+                                <thead>
+                                    <tr>
+                                        <th>SL No</th>
+                                        <th>Task</th>
+                                        <th class="w200"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>01</td>
+                                        <td>
+                                            <h6 class="mb-0">New code Update on github</h6>
+                                            <span>It is a long established fact that a reader will be distracted...</span>
+                                        </td>
+                                        <td>
+                                            <ul class="list-unstyled team-info mb-0 w150">
+                                                <li><img src="../assets/images/xs/avatar1.jpg" data-toggle="tooltip" data-placement="top" title="Avatar" alt="Avatar"></li>
+                                                <li><img src="../assets/images/xs/avatar2.jpg" data-toggle="tooltip" data-placement="top" title="Avatar" alt="Avatar"></li>
+                                                <li><img src="../assets/images/xs/avatar5.jpg" data-toggle="tooltip" data-placement="top" title="Avatar" alt="Avatar"></li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <div class="text-info">Start: 3 Jun 2019</div>
+                                            <div class="text-pink">End: 15 Jun 2019</div>
+                                        </td>
+                                        <td>
+                                            <span class="tag tag-blue">Planned</span>
+                                        </td>
+                                        <td>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>02</td>
+                                        <td>
+                                            <h6 class="mb-0">Design Events</h6>
+                                            <span>It is a long established fact that a reader will be distracted...</span>
+                                        </td>
+                                        <td>
+                                            <ul class="list-unstyled team-info mb-0 w150">
+                                                <li><img src="../assets/images/xs/avatar1.jpg" data-toggle="tooltip" data-placement="top" title="Avatar" alt="Avatar"></li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <div class="text-info">Start: 02 Jun 2019</div>
+                                            <div class="text-pink">End: 08 Jun 2019</div>
+                                        </td>
+                                        <td>
+                                            <span class="tag tag-green">Completed</span>
+                                        </td>
+                                        <td>
+                                            <div class="clearfix">
+                                                <div class="float-left"><strong>100%</strong></div>
+                                                <div class="float-right"><small class="text-muted">Progress</small></div>
+                                            </div>
+                                            <div class="progress progress-xs">
+                                                <div class="progress-bar bg-green" role="progressbar" style="width: 100%" aria-valuenow="42" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>03</td>
+                                        <td>
+                                            <h6 class="mb-0">Feed Details on Dribbble</h6>
+                                            <span>The point of using Lorem Ipsum is that...</span>
+                                        </td>
+                                        <td>
+                                            <ul class="list-unstyled team-info mb-0 w150">
+                                                <li><img src="../assets/images/xs/avatar1.jpg" data-toggle="tooltip" data-placement="top" title="Avatar" alt="Avatar"></li>
+                                                <li><img src="../assets/images/xs/avatar2.jpg" data-toggle="tooltip" data-placement="top" title="Avatar" alt="Avatar"></li>
+                                                <li><img src="../assets/images/xs/avatar5.jpg" data-toggle="tooltip" data-placement="top" title="Avatar" alt="Avatar"></li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <div class="text-info">Start: 3 Jun 2019</div>
+                                            <div class="text-pink">End: 15 Jun 2019</div>
+                                        </td>
+                                        <td>
+                                            <span class="tag tag-orange">In progress</span>
+                                        </td>
+                                        <td>
+                                            <div class="clearfix">
+                                                <div class="float-left"><strong>35%</strong></div>
+                                                <div class="float-right"><small class="text-muted">Progress</small></div>
+                                            </div>
+                                            <div class="progress progress-xs">
+                                                <div class="progress-bar bg-azure" role="progressbar" style="width: 35%" aria-valuenow="42" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>04</td>
+                                        <td>
+                                            <h6 class="mb-0">New code Update on github</h6>
+                                            <span>It is a long established fact that a reader will be distracted...</span>
+                                        </td>
+                                        <td>
+                                            <ul class="list-unstyled team-info mb-0 w150">
+                                                <li><img src="../assets/images/xs/avatar1.jpg" data-toggle="tooltip" data-placement="top" title="Avatar" alt="Avatar"></li>
+                                                <li><img src="../assets/images/xs/avatar2.jpg" data-toggle="tooltip" data-placement="top" title="Avatar" alt="Avatar"></li>
+                                                <li><img src="../assets/images/xs/avatar5.jpg" data-toggle="tooltip" data-placement="top" title="Avatar" alt="Avatar"></li>
+                                                <li><img src="../assets/images/xs/avatar3.jpg" data-toggle="tooltip" data-placement="top" title="Avatar" alt="Avatar"></li>
+                                                <li><img src="../assets/images/xs/avatar7.jpg" data-toggle="tooltip" data-placement="top" title="Avatar" alt="Avatar"></li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <div class="text-info">Start: 13 Jun 2019</div>
+                                            <div class="text-pink">End: 23 Jun 2019</div>
+                                        </td>
+                                        <td>
+                                            <span class="tag tag-orange">In progress</span>
+                                        </td>
+                                        <td>
+                                            <div class="clearfix">
+                                                <div class="float-left"><strong>75%</strong></div>
+                                                <div class="float-right"><small class="text-muted">Progress</small></div>
+                                            </div>
+                                            <div class="progress progress-xs">
+                                                <div class="progress-bar bg-green" role="progressbar" style="width: 75%" aria-valuenow="42" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>05</td>
+                                        <td>
+                                            <h6 class="mb-0">New code Update on github</h6>
+                                            <span>Contrary to popular belief, Lorem Ipsum is not simply random text.</span>
+                                        </td>
+                                        <td>
+                                            <ul class="list-unstyled team-info mb-0 w150">
+                                                <li><img src="../assets/images/xs/avatar4.jpg" data-toggle="tooltip" data-placement="top" title="Avatar" alt="Avatar"></li>
+                                                <li><img src="../assets/images/xs/avatar5.jpg" data-toggle="tooltip" data-placement="top" title="Avatar" alt="Avatar"></li>
+                                                <li><img src="../assets/images/xs/avatar6.jpg" data-toggle="tooltip" data-placement="top" title="Avatar" alt="Avatar"></li>
+                                                <li><img src="../assets/images/xs/avatar7.jpg" data-toggle="tooltip" data-placement="top" title="Avatar" alt="Avatar"></li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <div class="text-info">Start: 8 Jun 2019</div>
+                                            <div class="text-pink">End: 15 Jun 2019</div>
+                                        </td>
+                                        <td>
+                                            <span class="tag tag-orange">In progress</span>
+                                        </td>
+                                        <td>
+                                            <div class="clearfix">
+                                                <div class="float-left"><strong>35%</strong></div>
+                                                <div class="float-right"><small class="text-muted">Progress</small></div>
+                                            </div>
+                                            <div class="progress progress-xs">
+                                                <div class="progress-bar bg-azure" role="progressbar" style="width: 35%" aria-valuenow="42" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>06</td>
+                                        <td>
+                                            <h6 class="mb-0">Angular App Design bug</h6>
+                                            <span>There are many variations of passages of Lorem Ipsum available...</span>
+                                        </td>
+                                        <td>
+                                            <ul class="list-unstyled team-info mb-0 w150">
+                                                <li><img src="../assets/images/xs/avatar3.jpg" data-toggle="tooltip" data-placement="top" title="Avatar" alt="Avatar"></li>
+                                                <li><img src="../assets/images/xs/avatar4.jpg" data-toggle="tooltip" data-placement="top" title="Avatar" alt="Avatar"></li>
+                                                <li><img src="../assets/images/xs/avatar7.jpg" data-toggle="tooltip" data-placement="top" title="Avatar" alt="Avatar"></li>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <div class="text-info">Start: 3 Jun 2019</div>
+                                            <div class="text-pink">End: 15 Jun 2019</div>
+                                        </td>
+                                        <td>
+                                            <span class="tag tag-orange">Planned</span>
+                                        </td>
+                                        <td>
+                                            <div class="clearfix">
+                                                <div class="float-left"><strong>35%</strong></div>
+                                                <div class="float-right"><small class="text-muted">Progress</small></div>
+                                            </div>
+                                            <div class="progress progress-xs">
+                                                <div class="progress-bar bg-azure" role="progressbar" style="width: 35%" aria-valuenow="42" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
-                    
-        </div>
         <!-- Start main footer -->
         <div class="section-body">
             <footer class="footer">
