@@ -87,19 +87,101 @@ $(function() {
         selectable: true,
         events: [
             {
-                title  : 'Birthday Party',
-                start  : current + '01',
-                className: 'bg-info'
-            },{
-                title  : 'Conference',
-                start  : current + '05',
-                end    : '2018-08-07',
+                title  : 'Republic Day',
+                start  : '2021-01-26',
                 className: 'bg-warning'
             },{
-                title  : 'Meeting',
-                start  : current + '09T12:30:00',
-                allDay : true, // will make the time show
-                className: 'bg-success',
+                title  : 'Martyrs Day',
+                start  : '2021-01-31',
+                className: 'bg-warning'
+            },{
+                title  : 'Independence',
+                start  : '2021-08-15',
+                className: 'bg-warning'
+            },{
+                title  : 'Christmas',
+                start  : '2021-12-31',
+                className: 'bg-warning'
+            },{
+                title  : 'NCC Day',
+                start  : '2021-11-28',
+                className: 'bg-primary'
+            },{
+                title  : 'Gandhi Jayanthi',
+                start  : '2021-10-02',
+                className: 'bg-warning'
+            },{
+                title  : 'Good Friday',
+                start  : '2021-04-02',
+                className: 'bg-warning'
+            },{
+                title  : 'Ambedkar Jayanthi',
+                start  : '2021-04-14',
+                className: 'bg-warning'
+            },{
+                title  : 'Rama Navami',
+                start  : '2021-04-21',
+                className: 'bg-warning'
+            },{
+                title  : 'EID',
+                start  : '2021-05-14',
+                className: 'bg-warning'
+            },{
+                title  : 'Dussehra',
+                start  : '2021-10-15',
+                className: 'bg-warning'
+            },{
+                title  : 'Diwali',
+                start  : '2021-11-04',
+                className: 'bg-warning'
+            },{
+                title  : 'Republic Day',
+                start  : '2022-01-26',
+                className: 'bg-warning'
+            },{
+                title  : 'Martyrs Day',
+                start  : '2022-01-31',
+                className: 'bg-warning'
+            },{
+                title  : 'Independence',
+                start  : '2022-08-15',
+                className: 'bg-warning'
+            },{
+                title  : 'Christmas',
+                start  : '2022-12-31',
+                className: 'bg-warning'
+            },{
+                title  : 'NCC Day',
+                start  : '2022-11-27',
+                className: 'bg-warning'
+            },{
+                title  : 'Gandhi Jayanthi',
+                start  : '2022-10-02',
+                className: 'bg-warning'
+            },{
+                title  : 'Good Friday',
+                start  : '2022-04-02',
+                className: 'bg-warning'
+            },{
+                title  : 'Ambedkar Jayanthi',
+                start  : '2022-04-14',
+                className: 'bg-warning'
+            },{
+                title  : 'Rama Navami',
+                start  : '2022-04-21',
+                className: 'bg-warning'
+            },{
+                title  : 'EID',
+                start  : '2022-05-14',
+                className: 'bg-warning'
+            },{
+                title  : 'Dussehra',
+                start  : '2022-10-15',
+                className: 'bg-warning'
+            },{
+                title  : 'Diwali',
+                start  : '2022-11-04',
+                className: 'bg-warning'
             }
         ],
 
