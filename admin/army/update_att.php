@@ -134,10 +134,10 @@
                                 <table class="table table-sm table-hover table-striped table-vcenter mb-0 text-nowrap">
                                     <thead>
                                     <tr>
-                                        <th>Serial number</th>
-                                       <th>Roll Number</th>
-                                        <th>Name</th> 
-                                       <th>isPresent</th>
+                                        <th style="background-color:#e8e6e6" width="15%">Serial number</th>
+										<th style="background-color:#e8e6e6" width="15%">Roll Number</th>
+                                        <th style="background-color:#e8e6e6" width="40%">Name</th> 
+										<th style="background-color:#e8e6e6" width="30%">isPresent</th>
                                      </tr>
                                         <?php 
                                         include('conn.php');
