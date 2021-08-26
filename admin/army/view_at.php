@@ -101,10 +101,10 @@
                                 <table class="table table-sm table-hover table-striped table-vcenter mb-0 text-nowrap">
                                     <thead>
                                     <tr>
-                                        <th>Serial number</th>
-                                       <th>Date</th>
+                                        <th style="background-color:#e8e6e6" width="15%">Serial number</th>
+										<th style="background-color:#e8e6e6" width="70%">Date</th>
                                         
-                                       <th>status</th>
+                                       <th style="background-color:#e8e6e6">status</th>
                                      </tr>
                                         <?php 
                                         include('conn.php');
