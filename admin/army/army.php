@@ -141,7 +141,7 @@
                         </div>
                     </div>
                 </div>
-        <div class="tab-content">
+			<div class="tab-content">
             <div class="tab-pane fade show active" id="admin-Dashboard" role="tabpanel">
                 <div class="row clearfix"> 
                     <div class="row clearfix row-deck">
@@ -149,7 +149,7 @@
                                 <div class="card">
       
                                     <div class="card-header">
-                                        <h3 class="card-title">Student List</h3>
+                                        <h3 class="card-title">Best Performers of the Week</h3>
                                         <div class="card-options">
                                             <a href="#" class="card-options-collapse" data-toggle="card-collapse"><i class="fe fe-chevron-up"></i></a>
                                             <a href="#" class="card-options-fullscreen" data-toggle="card-fullscreen"><i class="fe fe-maximize"></i></a>
@@ -157,23 +157,33 @@
                                         </div>
                                     </div>
                                     <div class="card-body">
-                                        <div class="table-responsive">
-                                            <table class="table table-striped mb-0 text-nowrap">
+                                        <div class="table-responsive style=height: 310px;">
+                                            <table class="table table-striped mb-0 text-nowrap table-striped mb-0">
                                                 <thead>
                                                     <tr>
                     
+                                                        <th>Reg No</th>
                                                         <th>Name</th>
-                                                        <th>Email</th>
                 
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-													<thead>
 														<tr>
-															<th>Name</th>
-															<th>Email</th>
+															<td>10283</td>
+															<td>Druvant</td>
 														</tr>
-													</thead>
+														<tr>
+															<td>10292</td>
+															<td>Chitra K</td>
+														</tr>
+														<tr>
+															<td>10282</td>
+															<td>Rutu</td>
+														</tr>
+														<tr>
+															<td>10291</td>
+															<td>Chethan</td>
+														</tr>
                                                 </tbody>
                                             </table>
                                         </div>  
@@ -227,9 +237,9 @@
                     </div>
 				</div>
             </div>       
-        </div>
-		<div class="card">
-                                    <div class="table-responsive">
+        
+			<div class="card">
+                <div class="table-responsive">
                             <table class="table table-hover table-vcenter mb-0 table_custom spacing8 text-nowrap">
                                 <thead>
                                     <tr>
@@ -325,7 +335,8 @@
                                 </tbody>
                             </table>
                         </div>
-                                </div>
+                    </div>
+				</div>
         <!-- Start main footer -->
         <div class="section-body">
             <footer class="footer">
