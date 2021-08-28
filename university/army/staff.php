@@ -102,8 +102,8 @@
                                             <th>Number</th>
                                             <th>Designation</th>
                                             <th>Email</th>
-                                            <th>Joining Date</th>
-                                            <th></th>
+                                            
+                                            <th>Regiment</th>
                                             <th>Action</th>
                                         </tr>
                                     </thead>
@@ -112,17 +112,11 @@
                                             <td class="w60">
                                                 <img class="avatar" src="../../assets/images/xs/avatar3.jpg" alt="">
                                             </td>
-                                            <td><div class="font-15">Ken Smith</div></td>
-                                            <td><span>(417) 646-8377</span></td>
-                                            <td><span class="text-muted">Peon</span></td>
-                                            <td>ken@gmail.com</td>
-                                            <td><strong>04 Jan, 2019</strong></td>
-                                            <td><span class="tag tag-success">Full-time</span></td>
-                                            <td>
-                                                <button type="button" class="btn btn-icon btn-sm" title="View"><i class="fa fa-eye"></i></button>
-                                                <button type="button" class="btn btn-icon btn-sm" title="Edit"><i class="fa fa-edit"></i></button>
-                                                <button type="button" class="btn btn-icon btn-sm js-sweetalert" title="Delete" data-type="confirm"><i class="fa fa-trash-o text-danger"></i></button>
-                                            </td>
+                                            <td><div class="font-15">Sunil Kumar B N</div></td>
+                                            <td><span>Number</span></td>
+                                            <td><span class="text-muted">Brigader</span></td>
+                                            <td>Email</td>
+											<td>1 Kar Signal Regiment </td>
                                         </tr>
                                         <tr>
                                             <td class="w60">
