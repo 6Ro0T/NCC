@@ -10,10 +10,9 @@
    $row = mysqli_fetch_array($ses_sql,MYSQLI_ASSOC);
    
    $login_session = $row['username'];
-   echo $login_session;
    
    if(!isset($_SESSION['login_user'])){
-      header("location:index.php");
+      header("location:../index.php");
       die();
    }
 ?>
