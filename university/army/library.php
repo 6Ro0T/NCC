@@ -109,7 +109,7 @@
                                             <tr>
                                                 <td>1</td>
                                                 <td>SD_SW_Common Subjects Handbook</td>
-                                                <td>Common</td>
+                                                <td>Common Subject</td>
                                                 <td>All Year</td>
                                                 <td><a href="https://pdfhost.io/v/X.hMeTxfg_sdswcommonsubject.pdf" target="_blank">View Here</a></td>
                                             </tr>
