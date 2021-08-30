@@ -122,25 +122,25 @@
                                 <div class="form-group row">
                                     <label class="col-md-3 col-form-label">Cadet Name <span class="text-danger">*</span></label>
                                     <div class="col-md-7">
-                                        <input type="text" class="form-control" name='name' required>
+                                        <input type="text" class="form-control" name='name' placeholder='Name' required>
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label class="col-md-3 col-form-label">Regimental Number. <span class="text-danger">*</span></label>
                                     <div class="col-md-7">
-                                        <input type="number" class="form-control" name='roll_num' required>
+                                        <input type="number" class="form-control" name='roll_num' placeholder='Reg No' required>
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label class="col-md-3 col-form-label">Cadet Rank.<span class="text-danger">*</span></label>
                                     <div class="col-md-7">
-                                        <input type="text" class="form-control" name='rank' required>
+                                        <input type="text" class="form-control" name='rank' placeholder='Rank' required>
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label class="col-md-3 col-form-label">Year. <span class="text-danger">*</span></label>
                                     <div class="col-md-7">
-                                        <input type="number" class="form-control" name='year' required>
+                                        <input type="number" class="form-control" name='year' min='1' max='4' placeholder='year' required>
                                     </div>
                                 </div>
                                 <div class="form-group row">
@@ -152,7 +152,7 @@
                                 <div class="form-group row">
                                     <label class="col-md-3 col-form-label">Phone Number. <span class="text-danger">*</span></label>
                                     <div class="col-md-7">
-                                        <input type="tel" class="form-control" name='phone' required>
+                                        <input type="tel" class="form-control" name='phone' placeholder='<10 Digit number>' required>
                                     </div>
                                 </div>
                                 <div class="form-group row">
