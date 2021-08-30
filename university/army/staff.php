@@ -149,42 +149,83 @@
                                             <td class="w60">
                                                 <img class="avatar" src="../../assets/images/xs/avatar3.jpg" alt="">
                                             </td>
-                                            <td><div class="font-15">Lt. Gen Tarun Kumar Aich</div></td>
-                                            <td><span>8899007789</span></td>
-                                            <td><span class="text-muted">DG</span></td>
-                                            <td>tarunkumaraich@gmail.com</td>
-											<td></td>
+                                            <td><div class="font-15">Raghavendra Kumar</div></td>
+                                            <td><span>9089097890</span></td>
+                                            <td><span class="text-muted">Lieutenant Colonel</span></td>
+                                            <td>ragavendrakumar99@gmail.com</td>
+											<td>1 Kar Signal Regiment</td>
                                         </tr>
 										<tr>
                                             <td class="w60">
                                                 <img class="avatar" src="../../assets/images/xs/avatar3.jpg" alt="">
                                             </td>
-                                            <td><div class="font-15">Air Commodore L K Jain</div></td>
-                                            <td><span>9988990078</span></td>
-                                            <td><span class="text-muted">DDG</span></td>
-                                            <td>lalithkumarjain@gmail.com</td>
-											<td></td>
+                                            <td><div class="font-15">Mahendra K</div></td>
+                                            <td><span>7890678909</span></td>
+                                            <td><span class="text-muted">Major</span></td>
+                                            <td>kmahendra78@gmail.com</td>
+											<td>1 Kar Signal Regiment </td>
                                         </tr>
 										<tr>
                                             <td class="w60">
                                                 <img class="avatar" src="../../assets/images/xs/avatar3.jpg" alt="">
                                             </td>
-                                            <td><div class="font-15">Sunil Kumar B N</div></td>
-                                            <td><span>8907654567</span></td>
-                                            <td><span class="text-muted">Brigader</span></td>
-                                            <td>sunilkuma56@gmail.com</td>
+                                            <td><div class="font-15">Ramesh Kumar</div></td>
+                                            <td><span>8907899608</span></td>
+                                            <td><span class="text-muted">Captain</span></td>
+                                            <td>rameshkumar77@gmail.com</td>
 											<td>1 Kar Signal Regiment </td>
                                         </tr>
                                         <tr>
                                             <td class="w60">
                                                 <img class="avatar" src="../../assets/images/xs/avatar4.jpg" alt="">
                                             </td>
-                                            <td><div class="font-15">Idayat Sing</div></td>
-                                            <td><span>9807896789</span></td>
-                                            <td><span class="text-muted">Colonel</span></td>
-                                            <td>idayat90@gmail.com</td>
+                                            <td><div class="font-15">Ajeet Rana Singh</div></td>
+                                            <td><span>6363789900</span></td>
+                                            <td><span class="text-muted">Lieutenant </span></td>
+                                            <td>ajeetranasingh@gmail.com</td>
                                             <td>1 Kar Signal Regiment </td>
                                         </tr>
+										<tr>
+                                            <td class="w60">
+                                                <img class="avatar" src="../../assets/images/xs/avatar4.jpg" alt="">
+                                            </td>
+                                            <td><div class="font-15">Ajeet Rana Singh</div></td>
+                                            <td><span>6363789900</span></td>
+                                            <td><span class="text-muted">Lieutenant </span></td>
+                                            <td>ajeetranasingh@gmail.com</td>
+                                            <td>1 Kar Signal Regiment </td>
+                                        </tr>
+										<tr>
+                                            <td class="w60">
+                                                <img class="avatar" src="../../assets/images/xs/avatar4.jpg" alt="">
+                                            </td>
+                                            <td><div class="font-15">Ajeet Rana Singh</div></td>
+                                            <td><span>6363789900</span></td>
+                                            <td><span class="text-muted">Lieutenant </span></td>
+                                            <td>ajeetranasingh@gmail.com</td>
+                                            <td>1 Kar Signal Regiment </td>
+                                        </tr>
+										<tr>
+                                            <td class="w60">
+                                                <img class="avatar" src="../../assets/images/xs/avatar4.jpg" alt="">
+                                            </td>
+                                            <td><div class="font-15">Ajeet Rana Singh</div></td>
+                                            <td><span>6363789900</span></td>
+                                            <td><span class="text-muted">Lieutenant </span></td>
+                                            <td>ajeetranasingh@gmail.com</td>
+                                            <td>1 Kar Signal Regiment </td>
+                                        </tr>
+										<tr>
+                                            <td class="w60">
+                                                <img class="avatar" src="../../assets/images/xs/avatar4.jpg" alt="">
+                                            </td>
+                                            <td><div class="font-15">Ajeet Rana Singh</div></td>
+                                            <td><span>6363789900</span></td>
+                                            <td><span class="text-muted">Lieutenant </span></td>
+                                            <td>ajeetranasingh@gmail.com</td>
+                                            <td>1 Kar Signal Regiment </td>
+                                        </tr>
+										
                                     </tbody>
                                 </table>
                             </div>
