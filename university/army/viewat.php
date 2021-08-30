@@ -133,15 +133,9 @@
                             </div>
                         </div>
                     </div>
-
-                    
-                    
-                </div>
-                    
-                    
-                    </div>
-
+				</div>
             </div>
+		</div>
 		<!-- Start main footer -->
         <div class="section-body">
             <footer class="footer">
