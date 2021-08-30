@@ -94,7 +94,7 @@
                                         <img class="avatar avatar-md mr-3" src="../../assets/images/xs/avatar1.jpg" alt="">
                                         <div>
                                             <div>Admin</div>
-                                            <small class="d-block text-muted">12 days ago</small>
+                                            <small class="d-block text-muted">Group Photo</small>
                                         </div>
                                         <div class="ml-auto text-muted">
                                             <a href="javascript:void(0)" class="icon"><i class="fe fe-eye mr-1"></i> 112</a>
@@ -112,7 +112,7 @@
                                         <img class="avatar avatar-md mr-3" src="../../assets/images/xs/avatar2.jpg" alt="">
                                         <div>
                                             <div>Admin</div>
-                                            <small class="d-block text-muted">12 days ago</small>
+                                            <small class="d-block text-muted">Training</small>
                                         </div>
                                         <div class="ml-auto text-muted">
                                             <a href="javascript:void(0)" class="icon"><i class="fe fe-eye mr-1"></i> 70</a>
@@ -130,7 +130,7 @@
                                         <img class="avatar avatar-md mr-3" src="../../assets/images/xs/avatar3.jpg" alt="">
                                         <div>
                                             <div>Admin</div>
-                                            <small class="d-block text-muted">4 days ago</small>
+                                            <small class="d-block text-muted">Airforce Group photo</small>
                                         </div>
                                         <div class="ml-auto text-muted">
                                             <a href="javascript:void(0)" class="icon"><i class="fe fe-eye mr-1"></i> 166</a>
@@ -148,7 +148,7 @@
                                         <img class="avatar avatar-md mr-3" src="../../assets/images/xs/avatar4.jpg" alt="">
                                         <div>
                                             <div>Admin</div>
-                                            <small class="d-block text-muted">18 days ago</small>
+                                            <small class="d-block text-muted">Navy Group Photo</small>
                                         </div>
                                         <div class="ml-auto text-muted">
                                             <a href="javascript:void(0)" class="icon"><i class="fe fe-eye mr-1"></i> 76</a>
@@ -166,7 +166,7 @@
                                         <img class="avatar avatar-md mr-3" src="../../assets/images/xs/avatar5.jpg" alt="">
                                         <div>
                                             <div>Admin</div>
-                                            <small class="d-block text-muted">16 days ago</small>
+                                            <small class="d-block text-muted">Aeromodelling</small>
                                         </div>
                                         <div class="ml-auto text-muted">
                                             <a href="javascript:void(0)" class="icon"><i class="fe fe-eye mr-1"></i> 106</a>
@@ -184,7 +184,7 @@
                                         <img class="avatar avatar-md mr-3" src="../../assets/images/xs/avatar6.jpg" alt="">
                                         <div>
                                             <div>Admin</div>
-                                            <small class="d-block text-muted">4 days ago</small>
+                                            <small class="d-block text-muted">Camp</small>
                                         </div>
                                         <div class="ml-auto text-muted">
                                             <a href="javascript:void(0)" class="icon"><i class="fe fe-eye mr-1"></i> 77</a>
@@ -202,7 +202,7 @@
                                         <img class="avatar avatar-md mr-3" src="../../assets/images/xs/avatar7.jpg" alt="">
                                         <div>
                                             <div>Admin</div>
-                                            <small class="d-block text-muted">6 days ago</small>
+                                            <small class="d-block text-muted">Firing Session</small>
                                         </div>
                                         <div class="ml-auto text-muted">
                                             <a href="javascript:void(0)" class="icon"><i class="fe fe-eye mr-1"></i> 150</a>
@@ -220,7 +220,7 @@
                                         <img class="avatar avatar-md mr-3" src="../../assets/images/xs/avatar8.jpg" alt="">
                                         <div>
                                             <div>Admin</div>
-                                            <small class="d-block text-muted">17 days ago</small>
+                                            <small class="d-block text-muted">Blood Donation Camp</small>
                                         </div>
                                         <div class="ml-auto text-muted">
                                             <a href="javascript:void(0)" class="icon"><i class="fe fe-eye mr-1"></i> 153</a>
@@ -238,7 +238,7 @@
                                         <img class="avatar avatar-md mr-3" src="../../assets/images/xs/avatar1.jpg" alt="">
                                         <div>
                                             <div>Admin</div>
-                                            <small class="d-block text-muted">15 days ago</small>
+                                            <small class="d-block text-muted">Practice</small>
                                         </div>
                                         <div class="ml-auto text-muted">
                                             <a href="javascript:void(0)" class="icon"><i class="fe fe-eye mr-1"></i> 143</a>
@@ -256,7 +256,7 @@
                                         <img class="avatar avatar-md mr-3" src="../../assets/images/xs/avatar2.jpg" alt="">
                                         <div>
                                             <div>Admin</div>
-                                            <small class="d-block text-muted">11 days ago</small>
+                                            <small class="d-block text-muted">Group Photo</small>
                                         </div>
                                         <div class="ml-auto text-muted">
                                             <a href="javascript:void(0)" class="icon"><i class="fe fe-eye mr-1"></i> 149</a>
@@ -274,7 +274,7 @@
                                         <img class="avatar avatar-md mr-3" src="../../assets/images/xs/avatar3.jpg" alt="">
                                         <div>
                                             <div>Admin</div>
-                                            <small class="d-block text-muted">16 days ago</small>
+                                            <small class="d-block text-muted">Group Photo</small>
                                         </div>
                                         <div class="ml-auto text-muted">
                                             <a href="javascript:void(0)" class="icon"><i class="fe fe-eye mr-1"></i> 164</a>
@@ -292,7 +292,7 @@
                                         <img class="avatar avatar-md mr-3" src="../../assets/images/xs/avatar4.jpg" alt="">
                                         <div>
                                             <div>Admin</div>
-                                            <small class="d-block text-muted">6 days ago</small>
+                                            <small class="d-block text-muted">Winners of Competition</small>
                                         </div>
                                         <div class="ml-auto text-muted">
                                             <a href="javascript:void(0)" class="icon"><i class="fe fe-eye mr-1"></i> 160</a>
