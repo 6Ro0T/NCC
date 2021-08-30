@@ -149,122 +149,45 @@
                         <div class="row clearfix row-deck">
                             <div class="col-xl-6 col-lg-6 col-md-12">
                                 <div class="card">
-                                    <div class="table-responsive" style="height: 310px;">
-                                        <table class="table card-table table-vcenter text-nowrap table-striped mb-0">
-                                            <tbody>
-                                                <tr>
-                                                    <th>No.</th>                                                    
-                                                    <th>Name</th>
-                                                    <th></th>
-                                                    <th>Marks</th>
-                                                    <th>%AGE</th>
-                                                </tr>
-                                                <tr>
-                                                    <td>11</td>
-                                                    <td class="w40">
-                                                        <div class="avatar">
-                                                            <img class="avatar" src="../../assets/images/xs/avatar1.jpg" alt="avatar">
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div>Merri Diamond</div>
-                                                        <div class="text-muted">Science</div>
-                                                    </td>
-                                                    <td>199</td>
-                                                    <td>99.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>23</td>
-                                                    <td class="w40">
-                                                        <div class="avatar">
-                                                            <img class="avatar" src="../../assets/images/xs/avatar2.jpg" alt="avatar">
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div>Sara Hopkins</div>
-                                                        <div class="text-muted">Mechanical</div>
-                                                    </td>
-                                                    <td>197</td>
-                                                    <td>98.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>41</td>
-                                                    <td class="w40">
-                                                        <div class="avatar">
-                                                            <img class="avatar" src="../../assets/images/xs/avatar3.jpg" alt="avatar">
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div>Allen Collins</div>
-                                                        <div class="text-muted">M.C.A.</div>
-                                                    </td>
-                                                    <td>197</td>
-                                                    <td>98.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>17</td>
-                                                    <td class="w40">
-                                                        <div class="avatar">
-                                                            <img class="avatar" src="../../assets/images/xs/avatar4.jpg" alt="avatar">
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div>Erin Gonzales</div>
-                                                        <div class="text-muted">Arts</div>
-                                                    </td>
-                                                    <td>194</td>
-                                                    <td>97.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>57</td>
-                                                    <td class="w40">
-                                                        <div class="avatar">
-                                                            <img class="avatar" src="../../assets/images/xs/avatar5.jpg" alt="avatar">
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div>Claire Peters</div>
-                                                        <div class="text-muted">Science</div>
-                                                    </td>
-                                                    <td>192</td>
-                                                    <td>95.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>85</td>
-                                                    <td class="w40">
-                                                        <div class="avatar">
-                                                            <img class="avatar" src="../../assets/images/xs/avatar6.jpg" alt="avatar">
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div>Claire Peters</div>
-                                                        <div class="text-muted">Science</div>
-                                                    </td>
-                                                    <td>192</td>
-                                                    <td>95.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>9</td>
-                                                    <td class="w40">
-                                                        <div class="avatar">
-                                                            <img class="avatar" src="../../assets/images/xs/avatar7.jpg" alt="avatar">
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div>Claire Peters</div>
-                                                        <div class="text-muted">Science</div>
-                                                    </td>
-                                                    <td>191</td>
-                                                    <td>95.00</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <div class="card-footer d-flex justify-content-between">
-                                        <div class="font-14"><span>Measure How Fast You’re Growing Monthly Recurring Revenue. <a href="#">View All</a></span></div>
-                                        <div>
-                                            <button type="button" class="btn btn-primary">Export</button>
+      
+                                    <div class="card-header">
+                                        <h3 class="card-title">Student List</h3>
+                                        <div class="card-options">
+                                            <a href="#" class="card-options-collapse" data-toggle="card-collapse"><i class="fe fe-chevron-up"></i></a>
+                                            <a href="#" class="card-options-fullscreen" data-toggle="card-fullscreen"><i class="fe fe-maximize"></i></a>
+                                            <a href="#" class="card-options-remove" data-toggle="card-remove"><i class="fe fe-x"></i></a>
                                         </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="table-responsive">
+                                            <table class="table table-striped mb-0 text-nowrap">
+                                                <thead>
+                                                    <tr>
+                    
+                                                        <th>Reg No</th>
+                                                        <th>Cadet Name</th>
+														<th>Cadet Rank</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                <?php 
+                                                    include('conn.php');
+                                                    $a=1;
+                                                    $sql="SELECT * FROM student where division='army'";
+                                                    $stmt=mysqli_query($conn,$sql);
+                                                    
+                                                    while($row=mysqli_fetch_array($stmt)){
+                                                        echo "<tr>";
+                                                            echo "<td>".$row['roll_number']."</td>";
+                                                            echo "<td>".$row['name']."</td>";
+                                                            echo "<td>".$row['Cadet_rank']."</td>";
+															
+                                                        echo "</tr>";
+                                                    }
+                                                ?>
+                                                </tbody>
+                                            </table>
+                                        </div>  
                                     </div>
                                 </div>
                             </div>
@@ -279,109 +202,105 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h3 class="card-title">New Student List</h3>
-                                        <div class="card-options">
-                                            <a href="#" class="card-options-collapse" data-toggle="card-collapse"><i class="fe fe-chevron-up"></i></a>
-                                            <a href="#" class="card-options-fullscreen" data-toggle="card-fullscreen"><i class="fe fe-maximize"></i></a>
-                                            <a href="#" class="card-options-remove" data-toggle="card-remove"><i class="fe fe-x"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="table-responsive">
-                                            <table class="table table-striped mb-0 text-nowrap">
-                                                <thead>
-                                                    <tr>
-                                                        <th>No</th>
-                                                        <th>Name</th>
-                                                        <th>Assigned Professor</th>
-                                                        <th>Date Of Admit</th>
-                                                        <th>Fees</th>
-                                                        <th>Branch</th>
-                                                        <th>Edit</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>1</td>
-                                                        <td>Jens Brincker</td>
-                                                        <td>Kenny Josh</td>
-                                                        <td>27/05/2016</td>
-                                                        <td>
-                                                            <span class="tag tag-success">paid</span>
-                                                        </td>
-                                                        <td>Mechanical</td>
-                                                        <td>
-                                                            <a href="javascript:void(0)"><i class="fa fa-check"></i></a>
-                                                            <a href="javascript:void(0)"><i class="fa fa-trash"></i></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>2</td>
-                                                        <td>Mark Hay</td>
-                                                        <td> Mark</td>
-                                                        <td>26/05/2018</td>
-                                                        <td>
-                                                            <span class="tag tag-warning">unpaid</span>
-                                                        </td>
-                                                        <td>Science</td>
-                                                        <td>
-                                                            <a href="javascript:void(0)"><i class="fa fa-check"></i></a>
-                                                            <a href="javascript:void(0)"><i class="fa fa-trash"></i></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>3</td>
-                                                        <td>Anthony Davie</td>
-                                                        <td>Cinnabar</td>
-                                                        <td>21/05/2018</td>
-                                                        <td>
-                                                            <span class="tag tag-success ">paid</span>
-                                                        </td>
-                                                        <td>Commerce</td>
-                                                        <td>
-                                                            <a href="javascript:void(0)"><i class="fa fa-check"></i></a>
-                                                            <a href="javascript:void(0)"><i class="fa fa-trash"></i></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>4</td>
-                                                        <td>David Perry</td>
-                                                        <td>Felix </td>
-                                                        <td>20/04/2019</td>
-                                                        <td>
-                                                            <span class="tag tag-danger">unpaid</span>
-                                                        </td>
-                                                        <td>Mechanical</td>
-                                                        <td>
-                                                            <a href="javascript:void(0)"><i class="fa fa-check"></i></a>
-                                                            <a href="javascript:void(0)"><i class="fa fa-trash"></i></a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>5</td>
-                                                        <td>Anthony Davie</td>
-                                                        <td>Beryl</td>
-                                                        <td>24/05/2017</td>
-                                                        <td>
-                                                            <span class="tag tag-success ">paid</span>
-                                                        </td>
-                                                        <td>M.B.A.</td>
-                                                        <td>
-                                                            <a href="javascript:void(0)"><i class="fa fa-check"></i></a>
-                                                            <a href="javascript:void(0)"><i class="fa fa-trash"></i></a>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>  
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="card">
+                <div class="table-responsive">
+                            <table class="table table-hover table-vcenter mb-0 table_custom spacing8 text-nowrap">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>FACTS</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>01</td>
+                                        <td>
+                                            <h6 class="mb-0">THE KARGIL WAR</h6>
+                                            <span>The Kargil War, also known as the Kargil conflict, was an armed conflict fought between India and Pakistan from May to July 1999 in the Kargil district of <br>
+											Jammu and Kashmir and elsewhere along the Line of Control (LoC).The Kargil conflict of 1999 represents the most recent serious military exchange between two nuclear <br>
+											armed countries.In India, the conflict is also referred to as Operation Vijay.Which was the name of the Indian military operation to clear out the Kargil sector. <br>
+											The Indian Air Force's role in acting jointly with Indian Army ground troops during the war was aimed at flushing out regular and irregular troops of the Pakistan Army <br>
+											from vacated Indian positions along the LoC. This particular operation was given the codename Operation Safed Sagar.</span>
+                                        </td>
+                   
+                                    </tr>
+                                    <tr>
+                                        <td>02</td>
+                                        <td>
+                                            <h6 class="mb-0">THE INDIAN LINE OF CONTROL</h6>
+                                            <span>The Line of Control (LoC) is a military control line between the Indian and Pakistani controlled parts of the former princely state of Jammu and Kashmir —<br>
+											a line which does not  constitute a legally recognized international boundary, but serves as the de facto border. It was established as part of the Simla Agreement <br>
+											at the end of the Indo-Pakistani War of 1971, when the two nations agreed to rename the ceasefire line as "Line of Control" and pledged to respect it without prejudice <br>
+											to their respective positions.The line is roughly the same as the original cease-fire line of 1949 except for minor details. The part of the former princely state that is<br>
+											underIndian control is divided into the union territories of Jammu and Kashmir and Ladakh, while the Pakistani-controlled part is divided into Azad Kashmir and Gilgit– <br> Baltistan.</span>
+                                        </td>
+      
+                                    </tr>
+                                    <tr>
+                                        <td>03</td>
+                                        <td>
+                                            <h6 class="mb-0">STRIKES (SURGICAL STRIKE)</h6>
+                                            <span>On 29 September, 11 days after the Uri attack, the Indian Army conducted surgical strikes against suspected militants in Pakistani-administered Kashmir.  <br>
+											Lt Gen Ranbir Singh, Indian Director General of Military Operations (DGMO), said that it had received "very credible and specific information" about "terrorist teams''<br>
+											who were preparing to "carry out infiltration and conduct terrorist strikes inside Jammu and Kashmir and in various metros in other states". Columnist Ankit Panda  <br> 
+											thought the latter included Pakistani soldiers or the elements of Pakistani state.On 30 September, Indian minister for information and broadcasting Rajyavardhan Singh  <br>
+											Rathore said that there had been no aerial strikes and that the operation had been conducted "on the ground".</span>
+                                        </td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td>04</td>
+                                        <td>
+                                            <h6 class="mb-0">SIACHEN CONFLICT(1984-2003)</h6>
+                                            <span>The Siachen conflict, sometimes referred to as the Siachen War, was a military conflict between India and Pakistan over the disputed Siachen Glacierregion in Kashmir. <br>
+											A cease-fire went into effect in 2003.The contended area is nearly 1,000 square miles(2,600 km 2 ) of territory.The conflict was started in 1984 by India's successful capture <br>
+											of the Siachen Glacier as part of Operation Meghdoot, and subsequently continued with Operation Rajiv. India took control of the 70-kilometre-long (43 mi) Siachen Glacier <br> 
+											and its tributary glaciers, as well as all the main passes and heights of the Saltoro Ridge immediately west of the glacier, including Sia La, Bilafond La, and Gyong La. <br>
+											Pakistan controls the glacial valleys immediately west of the Saltoro Ridge.According to TIME magazine,India gained control of more than 2500 km 2 of territory because <br>
+											of its military operations in Siachen.</span>
+                                        </td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td>05</td>
+                                        <td>
+                                            <h6 class="mb-0">INDIA – PAKISTAN STANDOFF 2008 (MUMBAI ATTACK)</h6>
+                                            <span>After the 2008 Mumbai attacks,Pakistan and the ISI were believed by India to be directly responsible for the attacks, leading to strained relations between the two <br>
+											countries for a period of time. The standoff was significant because both the countries were nuclear nations, having first successfully tested nuclear weapons in 1974 <br> 
+											and 1998 respectively. The countries had already participated in 4 wars since their partition and independence in 1947, and relations between the two nations have <br>
+											been strained throughout their histories. The lone surviving terrorist of the Mumbai attacks confirmed that the terrorists came from Pakistan, and that they were <br>
+											trained by Lashkar-e-Taiba operatives. In 2011, he also confessed that the ISI had been supporting them throughout the attacks. </span>
+                                        </td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td>06</td>
+                                        <td>
+                                            <h6 class="mb-0">CONFLICTS BETWEEN INDIA AND CHINA</h6>
+                                            <span>The Sino-Indian War between China and India occurred in October–November 1962. A disputed Himalayan border was the main cause of the war. There had been a series <br>
+											of violent border skirmishes between the two countries after the 1959 Tibetan uprising, when India granted asylum to the Dalai Lama.India initiated a defensive Forward <br>
+											Policy from 1960 to hinder Chinese military patrols and logistics, in which it placed outposts along the border, including several north of the McMahon Line, the eastern <br>
+											portion of the Line of Actual Control proclaimed by Chinese Premier Zhou Enlai in 1959.</span>
+                                        </td>
+                                        
+                                    </tr>
+									<tr>
+                                        <td>07</td>
+                                        <td>
+                                            <h6 class="mb-0">CONFLICTS BETWEEN INDIA PAKISTAN</h6>
+                                            <span>The 1965 war between India and Pakistan was the second conflict between the two countries over the status of the state of Jammu and Kashmir. The clash did not resolve <br>
+											this dispute, but it did engage the United States and the Soviet Union in ways that would have important implications for subsequent superpower involvement in the region.<br>
+											Conflict resumed again in early 1965, when Pakistani and Indian forces clashed over disputed territory along the border between the two nations. Hostilities intensified that <br>
+											August when the Pakistani Army attempted to take Kashmir by force. The attempt to seize the state was unsuccessful, and the second India-Pakistan War reached a <br>
+											stalemate. This time, the international politics of the Cold War affected the nature of the conflict.</span>
+                                        </td>
+                                        
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
+                    </div>
+				</div>
                     </div>
                 </div>
             </div>
