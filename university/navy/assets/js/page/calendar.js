@@ -87,19 +87,81 @@ $(function() {
         selectable: true,
         events: [
             {
-                title  : 'Birthday Party',
-                start  : current + '01',
-                className: 'bg-info'
-            },{
-                title  : 'Conference',
-                start  : current + '05',
-                end    : '2018-08-07',
+                title  : 'Republic Day',
+                start  : '2021-01-26',
                 className: 'bg-warning'
             },{
-                title  : 'Meeting',
-                start  : current + '09T12:30:00',
-                allDay : true, // will make the time show
-                className: 'bg-success',
+                title  : 'Army Day',
+                start  : '2021-01-15',
+                className: 'bg-warning'
+            },{
+                title  : 'Independence',
+                start  : '2021-08-15',
+                className: 'bg-warning'
+            },{
+                title  : 'Navy Day',
+                start  : '2021-12-05',
+                className: 'bg-warning'
+            },{
+                title  : 'NCC Day',
+                start  : '2021-11-28',
+                className: 'bg-primary'
+            },{
+                title  : 'Gandhi Jayanthi',
+                start  : '2021-10-02',
+                className: 'bg-warning'
+            },{
+                title  : 'Airforce Day',
+                start  : '2021-10-08',
+                className: 'bg-warning'
+            },{
+                title  : 'World Environment Day',
+                start  : '2021-06-05',
+                className: 'bg-warning'
+            },{
+                title  : 'National Health Day',
+                start  : '2021-04-07',
+                className: 'bg-warning'
+            },{
+                title  : 'Kargil Vijay Divas',
+                start  : '2021-07-26',
+                className: 'bg-warning'
+            },{
+                title  : 'Pulwama Attack (Black Day)',
+                start  : '2021-02-14',
+                className: 'bg-warning'
+            },{
+                title  : 'Combined Annual Training Camp',
+                start  : '2021-07-15',
+                className: 'bg-primary'
+            },{
+                title  : 'Basic Leadership Camp',
+                start  : '2021-04-14',
+                className: 'bg-primary'
+            },{
+                title  : 'Tal Sainik Camp',
+                start  : '2021-08-17',
+                className: 'bg-primary'
+            },{
+                title  : 'Trekking Camp',
+                start  : '2021-06-20',
+                className: 'bg-primary'
+            },{
+                title  : 'Youth Exchange Program',
+                start  : '2021-10-24',
+                className: 'bg-info'
+            },{
+                title  : 'Advance Leadership Camp',
+                start  : '2021-05-18',
+                className: 'bg-primary'
+            },{
+                title  : 'Pre Republic Day Camp',
+                start  : '2021-10-15',
+                className: 'bg-primary'
+            },{
+                title  : 'Republic Day Camp',
+                start  : '2021-12-10',
+                className: 'bg-primary'
             }
         ],
 
