@@ -91,16 +91,16 @@ $(function() {
                 start  : '2021-01-26',
                 className: 'bg-warning'
             },{
-                title  : 'Martyrs Day',
-                start  : '2021-01-31',
+                title  : 'Army Day',
+                start  : '2021-01-15',
                 className: 'bg-warning'
             },{
                 title  : 'Independence',
                 start  : '2021-08-15',
                 className: 'bg-warning'
             },{
-                title  : 'Christmas',
-                start  : '2021-12-31',
+                title  : 'Navy Day',
+                start  : '2021-12-05',
                 className: 'bg-warning'
             },{
                 title  : 'NCC Day',
@@ -111,77 +111,57 @@ $(function() {
                 start  : '2021-10-02',
                 className: 'bg-warning'
             },{
-                title  : 'Good Friday',
-                start  : '2021-04-02',
+                title  : 'Airforce Day',
+                start  : '2021-10-08',
                 className: 'bg-warning'
             },{
-                title  : 'Ambedkar Jayanthi',
+                title  : 'World Environment Day',
+                start  : '2021-06-05',
+                className: 'bg-warning'
+            },{
+                title  : 'National Health Day',
+                start  : '2021-04-07',
+                className: 'bg-warning'
+            },{
+                title  : 'Kargil Vijay Divas',
+                start  : '2021-07-26',
+                className: 'bg-warning'
+            },{
+                title  : 'Pulwama Attack (Black Day)',
+                start  : '2021-02-14',
+                className: 'bg-warning'
+            },{
+                title  : 'Combined Annual Training Camp',
+                start  : '2021-07-15',
+                className: 'bg-primary'
+            },{
+                title  : 'Basic Leadership Camp',
                 start  : '2021-04-14',
-                className: 'bg-warning'
+                className: 'bg-primary'
             },{
-                title  : 'Rama Navami',
-                start  : '2021-04-21',
-                className: 'bg-warning'
+                title  : 'Tal Sainik Camp',
+                start  : '2021-08-17',
+                className: 'bg-primary'
             },{
-                title  : 'EID',
-                start  : '2021-05-14',
-                className: 'bg-warning'
+                title  : 'Trekking Camp',
+                start  : '2021-06-20',
+                className: 'bg-primary'
             },{
-                title  : 'Dussehra',
+                title  : 'Youth Exchange Program',
+                start  : '2021-10-24',
+                className: 'bg-info'
+            },{
+                title  : 'Advance Leadership Camp',
+                start  : '2021-05-18',
+                className: 'bg-primary'
+            },{
+                title  : 'Pre Republic Day Camp',
                 start  : '2021-10-15',
-                className: 'bg-warning'
+                className: 'bg-primary'
             },{
-                title  : 'Diwali',
-                start  : '2021-11-04',
-                className: 'bg-warning'
-            },{
-                title  : 'Republic Day',
-                start  : '2022-01-26',
-                className: 'bg-warning'
-            },{
-                title  : 'Martyrs Day',
-                start  : '2022-01-31',
-                className: 'bg-warning'
-            },{
-                title  : 'Independence',
-                start  : '2022-08-15',
-                className: 'bg-warning'
-            },{
-                title  : 'Christmas',
-                start  : '2022-12-31',
-                className: 'bg-warning'
-            },{
-                title  : 'NCC Day',
-                start  : '2022-11-27',
-                className: 'bg-warning'
-            },{
-                title  : 'Gandhi Jayanthi',
-                start  : '2022-10-02',
-                className: 'bg-warning'
-            },{
-                title  : 'Good Friday',
-                start  : '2022-04-02',
-                className: 'bg-warning'
-            },{
-                title  : 'Ambedkar Jayanthi',
-                start  : '2022-04-14',
-                className: 'bg-warning'
-            },{
-                title  : 'Rama Navami',
-                start  : '2022-04-21',
-                className: 'bg-warning'
-            },{
-                title  : 'EID',
-                start  : '2022-05-14',
-                className: 'bg-warning'
-            },{
-                title  : 'Dussehra',
-                start  : '2022-10-15',
-                className: 'bg-warning'
-            },{
-                title  : 'Diwali',
-                start  : '2022-11-04',
-                className: 'bg-warning'
+                title  : 'Republic Day Camp',
+                start  : '2021-12-10',
+                className: 'bg-primary'
             }
         ],
 
