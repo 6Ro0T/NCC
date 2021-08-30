@@ -118,11 +118,11 @@
                                     
                                         <tr>
                                         
-                                        <td><?php echo $serial;?></td>
-                                        <td><?php echo $row['name'];?></td>
-                                        <td><?php echo $row['roll_number']; ?></td>
-                                        <td><?php echo $row['status']; ?></td>
-                                        <td><?php echo $row['date']; ?></td>
+                                        <td width='15%'><?php echo $serial;?></td>
+                                        <td width='40%'><?php echo $row['name'];?></td>
+                                        <td width='20%'><?php echo $row['roll_number']; ?></td>
+                                        <td width='15%'><?php echo $row['status']; ?></td>
+                                        <td width='10%'><?php echo $row['date']; ?></td>
                                         
                                             
                                         <?php 
