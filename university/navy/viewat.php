@@ -105,7 +105,7 @@
                                         include('conn.php');
                                         
                                         $roll=$row['roll_number'];
-                                        $sql="select * from attendance where roll_number='$roll' and division='army'";
+                                        $sql="select * from attendance where roll_number='$roll' and division='navy'";
                                         $result=mysqli_query($conn,$sql);
                                         $serial=0;
                                         $counter=0;

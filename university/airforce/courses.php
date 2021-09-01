@@ -96,7 +96,7 @@
                                 <?php
                                     include('conn.php');
                                     $flag=0;
-                                    $sql="select * from course where division='army'";
+                                    $sql="select * from course where division='airforce'";
                                     $result=mysqli_query($conn,$sql);
                                     $check=mysqli_num_rows($result);
                                     if($check)
