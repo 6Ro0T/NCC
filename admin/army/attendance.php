@@ -9,14 +9,17 @@
    
    if(isset($_POST['submit']))
    {
-        $date=date("Y-m-d");
+        $sql = "SELECT date FROM attendance WHERE division='army'";
+        $check = mysqli_query($conn,$sql);
+        $count = mysqli_num_rows($check);
+        $da=mysqli_fetch_array($check);
+        $date=$da['date'];
+        echo $date;
         if($date>$curdate){
                 $dat=1;
         }
         else{
-             $sql = "SELECT date FROM attendance WHERE date='$date'";
-             $check = mysqli_query($conn,$sql);
-             $count = mysqli_num_rows($check);
+             
             foreach($_POST['status'] as $id=>$attendance)
             {
                 $stname=$_POST['sname'][$id];
@@ -158,7 +161,7 @@
                                      </tr>
                                         <?php 
                                         include('conn.php');
-                                        $sql="select * from student";
+                                        $sql="select * from student where division='army'";
                                         $result=mysqli_query($conn,$sql);
                                         $serial=0;
                                         $counter=0;

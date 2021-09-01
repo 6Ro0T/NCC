@@ -216,7 +216,7 @@
                                                 <?php 
                                                     include('conn.php');
                                                     $a=1;
-                                                    $sql="SELECT * FROM student where division='army'";
+                                                    $sql="SELECT * FROM student where division='navy'";
                                                     $stmt=mysqli_query($conn,$sql);
                                                     
                                                     while($row=mysqli_fetch_array($stmt)){

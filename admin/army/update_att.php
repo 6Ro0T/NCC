@@ -142,7 +142,7 @@
                                         <?php 
                                         include('conn.php');
 										
-                                        $sql="select * from attendance where date='$date'";
+                                        $sql="select * from attendance where date='$date' and division='army'";
                                         $result=mysqli_query($conn,$sql);
                                         $serial=0;
                                         $counter=0;

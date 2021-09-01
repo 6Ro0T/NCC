@@ -108,7 +108,7 @@
                                      </tr>
                                         <?php 
                                         include('conn.php');
-                                        $sql="select distinct date from attendance";
+                                        $sql="select distinct date from attendance where division='army'";
                                         $result=mysqli_query($conn,$sql);
                                         $serial=0;
                                         $counter=0;

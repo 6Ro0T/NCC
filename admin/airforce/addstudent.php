@@ -176,7 +176,7 @@
                                 
                                 <div class="form-group row">
                                     <div class="col-md-7">
-                                        <input type="hidden" class="form-control" name='division'value='army' required>
+                                        <input type="hidden" class="form-control" name='division'value='airforce' required>
                                     </div>
                                 </div>
                                   <div class="form-group row">
