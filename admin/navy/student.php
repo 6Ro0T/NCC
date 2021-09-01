@@ -5,7 +5,7 @@
    if(isset($_POST['delete'])){
         
         $mail=$_POST['delete'];
-        $sql="DELETE FROM `student` WHERE email='$mail'";
+        $sql="DELETE FROM `student` WHERE email='$mail' and division='navy'";
         $result=mysqli_query($conn,$sql);
         if($result)
             $flag=1;
@@ -137,7 +137,7 @@
                                             </tr>
                                             <?php 
                                         include('conn.php');
-                                        $sql="select * from student where division='army'";
+                                        $sql="select * from student where division='navy'";
                                         $result=mysqli_query($conn,$sql);
                                         $serial=0;
                                         $counter=0;

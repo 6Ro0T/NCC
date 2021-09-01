@@ -139,7 +139,7 @@
                                     <label class="col-md-3 col-form-label">Video Url <span class="text-danger">*</span></label>
                                     <div class="col-md-7">
                                         <input type="text" class="form-control" name="url", required>
-                                        <input type="hidden" class="form-control" name="division" value="army" >
+                                        <input type="hidden" class="form-control" name="division" value="navy" >
                                     </div>
                                 </div>
                                 <div class="form-group row">

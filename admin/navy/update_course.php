@@ -125,7 +125,7 @@
 								include('conn.php');
 								if(isset($_POST['update'])){
 								$id=$_POST['update'];
-								$sql="select * from course where id='$id'";
+								$sql="select * from course where id='$id' and division='navy'";
 								$result=mysqli_query($conn,$sql);
 								$row=mysqli_fetch_array($result);
 								
@@ -148,7 +148,7 @@
                                     <label class="col-md-3 col-form-label">Video URL </label>
                                     <div class="col-md-7">
                                         <input type="text" class="form-control" name="url" value="<?php echo $row['url'];?>">
-                                        <input type="hidden" class="form-control" name="division" value="army" >
+                                        <input type="hidden" class="form-control" name="division" value="navy" >
                                     </div>
                                 </div>
                                 <div class="form-group row">
