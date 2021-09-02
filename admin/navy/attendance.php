@@ -14,16 +14,17 @@
                 $dat=1;
         }
         else{
-             $sql = "SELECT date FROM attendance WHERE date='$date'";
+             $sql = "SELECT date FROM attendance WHERE date='$date' and division='navy'";
              $check = mysqli_query($conn,$sql);
              $count = mysqli_num_rows($check);
             foreach($_POST['status'] as $id=>$attendance)
             {
+                $mail=$_POST['email'][$id];
                 $stname=$_POST['sname'][$id];
                 $rollnumber=$_POST['roll_num'][$id];
                 $division=$_POST['division'];
                 if($count==0){
-                    $sql="INSERT INTO `attendance`(`name`, `roll_number`, `status`, `date`,`division`) VALUES ('$stname','$rollnumber','$attendance','$date','$division')";
+                    $sql="INSERT INTO `attendance`(`email`,`name`, `roll_number`, `status`, `date`,`division`) VALUES ('$mail','$stname','$rollnumber','$attendance','$date','$division')";
                     $result=mysqli_query($conn,$sql);
                     if($result)
                         $flag=1;
@@ -158,7 +159,7 @@
                                      </tr>
                                         <?php 
                                         include('conn.php');
-                                        $sql="select * from student";
+                                        $sql="select * from student where division='navy'";
                                         $result=mysqli_query($conn,$sql);
                                         $serial=0;
                                         $counter=0;
@@ -171,6 +172,7 @@
                                     <tr>
                                         <td><?php echo $serial;?></td>
                                         <td><?php echo $row['roll_number'];?></td>
+                                        <input type='hidden' value='<?php echo $row['email'];?>' name='email[]'>
                                         <input type='hidden' value='<?php echo $row['roll_number'];?>' name='roll_num[]'>
                                         <td><?php echo $row['name']; ?></td>
                                         <input type='hidden' value='<?php echo $row['name'];?>' name='sname[]'>
