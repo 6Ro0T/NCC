@@ -5,7 +5,8 @@
    $count=0;
    if(isset($_POST['submit']))
    {
-		$sql="UPDATE `student` SET `roll_number`='$_POST[roll_num]',`name`='$_POST[name]',`Cadet_rank`='$_POST[rank]',`year`='$_POST[year]',`dob`='$_POST[dob]',`phone`='$_POST[phone]',`email`='$_POST[email]',`password`='$_POST[password]',`division`='$_POST[division]',`role`='$_POST[role]' WHERE id='$_POST[submit]'";
+		$pass=hash('sha256',$_POST['password'])
+        $sql="UPDATE `student` SET `roll_number`='$_POST[roll_num]',`name`='$_POST[name]',`Cadet_rank`='$_POST[rank]',`year`='$_POST[year]',`dob`='$_POST[dob]',`phone`='$_POST[phone]',`email`='$_POST[email]',`password`='$pass',`division`='$_POST[division]',`role`='$_POST[role]' WHERE id='$_POST[submit]'";
 		$result=mysqli_query($conn,$sql);
 		if($result)
 			$flag=1;
