@@ -149,8 +149,8 @@
                                         <tbody>
                                             <tr>
                                             
-                                                <td><?php echo $row['roll_number'];?></td>
-                                                <td><?php echo $row['name'];?></td>
+                                                <td width="15%"><?php echo $row['roll_number'];?></td>
+                                                <td width="25%"><?php echo $row['name'];?></td>
                                                 <td><?php echo $row['email'];?></td>
                                                 <td><?php echo $row['Cadet_rank'];?></td>
                                                 <td>
