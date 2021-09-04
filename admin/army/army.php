@@ -87,7 +87,7 @@
                 </div>
             </div>
         </div>
-        <div class="section-body mt-4">
+    <div class="section-body mt-4">
             <div class="container-fluid">
                 <div class="row clearfix row-deck">
                     <div class="col-6 col-md-4 col-xl-2">
@@ -337,6 +337,7 @@
                         </div>
                     </div>
 				</div>
+				</div>
         <!-- Start main footer -->
         <div class="section-body">
             <footer class="footer">
@@ -351,6 +352,7 @@
         </div>
     </div>    
 </div>
+
 
 <!-- Start Main project js, jQuery, Bootstrap -->
 <script src="../../assets/bundles/lib.vendor.bundle.js"></script>
