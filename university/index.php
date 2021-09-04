@@ -94,7 +94,7 @@
              header("location: army/army.php");
          }
          elseif($value=='airforce'){
-             header("location: /airforce/airforce.php");
+             header("location: airforce/airforce.php");
          }
       }else {
            header("location:index.php?msg=failed");
