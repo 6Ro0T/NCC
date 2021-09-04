@@ -34,7 +34,7 @@
     <div id="header_top" class="header_top">
         <div class="container">
             <div class="hleft">
-                <a class="header-brand" href="army.php"><i class="fa fa-graduation-cap brand-logo"></i></a>
+                <a class="header-brand" href="airforce.php"><i class="fa fa-graduation-cap brand-logo"></i></a>
                 <div class="dropdown">
                     <a href="javascript:void(0)" class="nav-link icon menu_toggle"><i class="fe fe-align-center"></i></a>
                 </div>
@@ -54,7 +54,7 @@
             <div class="tab-pane fade show active" id="menu-uni" role="tabpanel">
                 <nav class="sidebar-nav">
                     <ul class="metismenu">
-                        <li><a href="army.php"><i class="fa fa-dashboard"></i><span>Dashboard</span></a></li>
+                        <li><a href="airforce.php"><i class="fa fa-dashboard"></i><span>Dashboard</span></a></li>
                         <li><a href="viewat.php"><i class="fa fa-black-tie"></i><span>Attendance</span></a></li>
 						<li class="active"><a href="staff.php"><i class="fa fa-users"></i><span>Staff</span></a></li>
                         <li><a href="courses.php"><i class="fa fa-graduation-cap"></i><span>Classes</span></a></li>                        
@@ -129,61 +129,61 @@
                                             <td class="w60">
                                                 <img class="avatar" src="../../assets/images/xs/avatar3.jpg" alt="">
                                             </td>
-                                            <td><div class="font-15">Sunil Kumar B N</div></td>
-                                            <td><span>8907654567</span></td>
-                                            <td><span class="text-muted">Brigader</span></td>
-                                            <td>sunilkuma56@gmail.com</td>
-											<td>1 Kar Signal Regiment </td>
+                                            <td><div class="font-15">Abhijeet Sing</div></td>
+                                            <td><span>9900889089</span></td>
+                                            <td><span class="text-muted">Air Commoder</span></td>
+                                            <td>abhijetsinghk78@gmail.com</td>
+											<td>1 Kar Air SQN</td>
                                         </tr>
                                         <tr>
                                             <td class="w60">
                                                 <img class="avatar" src="../../assets/images/xs/avatar4.jpg" alt="">
                                             </td>
-                                            <td><div class="font-15">Idayat Sing</div></td>
-                                            <td><span>9807896789</span></td>
-                                            <td><span class="text-muted">Colonel</span></td>
-                                            <td>idayat90@gmail.com</td>
-                                            <td>1 Kar Signal Regiment </td>
+                                            <td><div class="font-15">Chiragdeep </div></td>
+                                            <td><span>9989786789</span></td>
+                                            <td><span class="text-muted">Group Captain</span></td>
+                                            <td>chiragdeep99@gmail.com</td>
+                                            <td>1 Kar Air SQN</td>
                                         </tr>
 										<tr>
                                             <td class="w60">
                                                 <img class="avatar" src="../../assets/images/xs/avatar3.jpg" alt="">
                                             </td>
-                                            <td><div class="font-15">Raghavendra Kumar</div></td>
-                                            <td><span>9089097890</span></td>
-                                            <td><span class="text-muted">Lieutenant Colonel</span></td>
-                                            <td>ragavendrakumar99@gmail.com</td>
-											<td>1 Kar Signal Regiment</td>
+                                            <td><div class="font-15">Karanveer</div></td>
+                                            <td><span>8790678909</span></td>
+                                            <td><span class="text-muted">Wing Commander</span></td>
+                                            <td>karanveer89@gmail.com</td>
+											<td>1 Kar Air SQN</td>
                                         </tr>
 										<tr>
                                             <td class="w60">
                                                 <img class="avatar" src="../../assets/images/xs/avatar3.jpg" alt="">
                                             </td>
-                                            <td><div class="font-15">Mahendra K</div></td>
-                                            <td><span>7890678909</span></td>
-                                            <td><span class="text-muted">Major</span></td>
-                                            <td>kmahendra78@gmail.com</td>
-											<td>1 Kar Signal Regiment </td>
+                                            <td><div class="font-15">Ranbir Kumar</div></td>
+                                            <td><span>8909876780</span></td>
+                                            <td><span class="text-muted">Squardon Leader</span></td>
+                                            <td>ranbeerkumar@gmail.com</td>
+											<td>1 Kar Air SQN</td>
                                         </tr>
 										<tr>
                                             <td class="w60">
                                                 <img class="avatar" src="../../assets/images/xs/avatar3.jpg" alt="">
                                             </td>
-                                            <td><div class="font-15">Ramesh Kumar</div></td>
-                                            <td><span>8907899608</span></td>
-                                            <td><span class="text-muted">Captain</span></td>
-                                            <td>rameshkumar77@gmail.com</td>
-											<td>1 Kar Signal Regiment </td>
+                                            <td><div class="font-15">Yuvraj Singh</div></td>
+                                            <td><span>7890987890</span></td>
+                                            <td><span class="text-muted">Flight Lieutenant</span></td>
+                                            <td>yuvrajsingh@gmail.com</td>
+											<td>1 Kar Air SQN</td>
                                         </tr>
                                         <tr>
                                             <td class="w60">
                                                 <img class="avatar" src="../../assets/images/xs/avatar4.jpg" alt="">
                                             </td>
-                                            <td><div class="font-15">Ajeet Rana Singh</div></td>
-                                            <td><span>6363789900</span></td>
-                                            <td><span class="text-muted">Lieutenant </span></td>
-                                            <td>ajeetranasingh@gmail.com</td>
-                                            <td>1 Kar Signal Regiment </td>
+                                            <td><div class="font-15">Gulshandeep </div></td>
+                                            <td><span>8909789999</span></td>
+                                            <td><span class="text-muted">Flying Office</span></td>
+                                            <td>gulshandeepkumar78@gmail.com</td>
+                                            <td>1 Kar Air SQN</td>
                                         </tr>
 										
                                     </tbody>
