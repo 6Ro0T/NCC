@@ -303,8 +303,8 @@
 				</div>
                     </div>
                 </div>
-            </div>
-        </div>
+        
+
         <!-- Start main footer -->
         <div class="section-body">
             <footer class="footer">
@@ -317,8 +317,9 @@
                 </div>
             </footer>
         </div>
-    </div>    
-</div>
+    </div>
+    </div> 
+</div>	
 
 <!-- Start Main project js, jQuery, Bootstrap -->
 <script src="../../assets/bundles/lib.vendor.bundle.js"></script>
