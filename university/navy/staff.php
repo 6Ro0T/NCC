@@ -129,61 +129,71 @@
                                             <td class="w60">
                                                 <img class="avatar" src="../../assets/images/xs/avatar3.jpg" alt="">
                                             </td>
-                                            <td><div class="font-15">Sunil Kumar B N</div></td>
-                                            <td><span>8907654567</span></td>
-                                            <td><span class="text-muted">Brigader</span></td>
-                                            <td>sunilkuma56@gmail.com</td>
-											<td>1 Kar Signal Regiment </td>
+                                            <td><div class="font-15">Ravi Kumar</div></td>
+                                            <td><span>9078906789</span></td>
+                                            <td><span class="text-muted">Commander</span></td>
+                                            <td>ravikumar87@gmail.com</td>
+											<td>1 Kar Naval Unit</td>
                                         </tr>
                                         <tr>
                                             <td class="w60">
                                                 <img class="avatar" src="../../assets/images/xs/avatar4.jpg" alt="">
                                             </td>
-                                            <td><div class="font-15">Idayat Sing</div></td>
-                                            <td><span>9807896789</span></td>
-                                            <td><span class="text-muted">Colonel</span></td>
-                                            <td>idayat90@gmail.com</td>
-                                            <td>1 Kar Signal Regiment </td>
-                                        </tr>
-										<tr>
-                                            <td class="w60">
-                                                <img class="avatar" src="../../assets/images/xs/avatar3.jpg" alt="">
-                                            </td>
-                                            <td><div class="font-15">Raghavendra Kumar</div></td>
-                                            <td><span>9089097890</span></td>
-                                            <td><span class="text-muted">Lieutenant Colonel</span></td>
-                                            <td>ragavendrakumar99@gmail.com</td>
-											<td>1 Kar Signal Regiment</td>
-                                        </tr>
-										<tr>
-                                            <td class="w60">
-                                                <img class="avatar" src="../../assets/images/xs/avatar3.jpg" alt="">
-                                            </td>
-                                            <td><div class="font-15">Mahendra K</div></td>
-                                            <td><span>7890678909</span></td>
-                                            <td><span class="text-muted">Major</span></td>
-                                            <td>kmahendra78@gmail.com</td>
-											<td>1 Kar Signal Regiment </td>
+                                            <td><div class="font-15">Sachin</div></td>
+                                            <td><span>7890098778</span></td>
+                                            <td><span class="text-muted">Lt Commander</span></td>
+                                            <td>sachinranasingh@gmail.com</td>
+                                            <td>1 Kar Naval Unit</td>
                                         </tr>
 										<tr>
                                             <td class="w60">
                                                 <img class="avatar" src="../../assets/images/xs/avatar3.jpg" alt="">
                                             </td>
                                             <td><div class="font-15">Ramesh Kumar</div></td>
-                                            <td><span>8907899608</span></td>
-                                            <td><span class="text-muted">Captain</span></td>
-                                            <td>rameshkumar77@gmail.com</td>
-											<td>1 Kar Signal Regiment </td>
+                                            <td><span>9898098789</span></td>
+                                            <td><span class="text-muted">MCPO I</span></td>
+                                            <td>rameshkumar45@gmail.com</td>
+											<td>1 Kar Naval Unit</td>
+                                        </tr>
+										<tr>
+                                            <td class="w60">
+                                                <img class="avatar" src="../../assets/images/xs/avatar3.jpg" alt="">
+                                            </td>
+                                            <td><div class="font-15">Ashwani Singh</div></td>
+                                            <td><span>6789098769</span></td>
+                                            <td><span class="text-muted">MCPO II</span></td>
+                                            <td>ashwanisingh78@gmail.com</td>
+											<td>1 Kar Naval Unit</td>
+                                        </tr>
+										<tr>
+                                            <td class="w60">
+                                                <img class="avatar" src="../../assets/images/xs/avatar3.jpg" alt="">
+                                            </td>
+                                            <td><div class="font-15">Santosh Kumar</div></td>
+                                            <td><span>7890987456</span></td>
+                                            <td><span class="text-muted">Chief Petty Officer</span></td>
+                                            <td>kumarsantosh89@gmail.com</td>
+											<td>1 Kar Naval Unit</td>
                                         </tr>
                                         <tr>
                                             <td class="w60">
                                                 <img class="avatar" src="../../assets/images/xs/avatar4.jpg" alt="">
                                             </td>
-                                            <td><div class="font-15">Ajeet Rana Singh</div></td>
-                                            <td><span>6363789900</span></td>
-                                            <td><span class="text-muted">Lieutenant </span></td>
-                                            <td>ajeetranasingh@gmail.com</td>
-                                            <td>1 Kar Signal Regiment </td>
+                                            <td><div class="font-15">Vijay Singh</div></td>
+                                            <td><span>8909878900</span></td>
+                                            <td><span class="text-muted">Petty Officer</span></td>
+                                            <td>vijaysingh12@gmail.com</td>
+                                            <td>1 Kar Naval Unit</td>
+                                        </tr>
+										<tr>
+                                            <td class="w60">
+                                                <img class="avatar" src="../../assets/images/xs/avatar4.jpg" alt="">
+                                            </td>
+                                            <td><div class="font-15">Ran Vijay kumar</div></td>
+                                            <td><span>7899878900</span></td>
+                                            <td><span class="text-muted">Leading Seaman</span></td>
+                                            <td>ranvijaykumar89@gmail.com</td>
+                                            <td>1 Kar Naval Unit</td>
                                         </tr>
 										
                                     </tbody>
