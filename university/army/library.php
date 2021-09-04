@@ -120,13 +120,6 @@
                                                 <td>All Year</td>
                                                 <td><a href="https://pdfhost.io/v/3cS5kjUgO_Army_Cadet_Handbook.pdf" target="_blank">View Here</a></td>
                                             </tr>
-                                            <tr>
-                                                <td>3</td>
-                                                <td>SD_SW_Army Cadet Lab Manual</td>
-                                                <td>Army</td>
-                                                <td>All Year</td>
-                                                <td><a href="#">View Here</a></td>
-                                            </tr>
                                         </tbody>
                                     </table>
                                 </div>
