@@ -152,7 +152,17 @@
                                 <div class="form-group row">
                                     <label class="col-md-3 col-form-label">Phone Number. <span class="text-danger">*</span></label>
                                     <div class="col-md-7">
-                                        <input type="tel" class="form-control" name='phone' placeholder='<10 Digit number>' required>
+                                        <input type="phone" class="form-control" name='phone'  placeholder='<10 Digit number>' maxlength="10" class="phone" required>
+                                        <script type="text/javascript">
+                                        $('.phone').keypress(function(e) {
+                                        var arr = [];
+                                        var kk = e.which;
+                                        for (i = 48; i < 58; i++)
+                                        arr.push(i);
+                                        if (!(arr.indexOf(kk)>=0))
+                                        e.preventDefault();
+                                        });
+                                        </script>
                                     </div>
                                 </div>
                                 <div class="form-group row">
