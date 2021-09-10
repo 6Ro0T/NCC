@@ -191,16 +191,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-6 col-lg-6 col-md-12">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h3 class="card-title">Performance</h3>
-                                    </div>
-                                    <div class="card-body">
-                                        <div id="apex-radar-multiple-series"></div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                         <div class="card">
                 <div class="table-responsive">
