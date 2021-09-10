@@ -131,13 +131,25 @@
                                 <div class="form-group row">
                                     <label class="col-md-3 col-form-label">Regimental Number.  </label>
                                     <div class="col-md-7">
-                                        <input type="number" class="form-control" value='<?php echo $row['roll_number'];?>' name='roll_num' required>
+                                        
+                                        <input type="phone" class="form-control" value='<?php echo $row['roll_number'];?>' name='roll_num'  placeholder='Reg No' maxlength="5" class="phone1" required>
+                                        <script type="text/javascript">
+                                        $('.phone1').keypress(function(e) {
+                                        var arr = [];
+                                        var kk = e.which;
+                                        for (i = 48; i < 58; i++)
+                                        arr.push(i);
+                                        if (!(arr.indexOf(kk)>=0))
+                                        e.preventDefault();
+                                        });
+                                        </script>
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label class="col-md-3 col-form-label">Cadet Rank. </label>
                                     <div class="col-md-7">
                                         <input type="text" class="form-control" value='<?php echo $row['Cadet_rank'];?>'name='rank' required>
+                                        
                                     </div>
                                 </div>
                                 <div class="form-group row">
@@ -155,7 +167,18 @@
                                 <div class="form-group row">
                                     <label class="col-md-3 col-form-label">Phone Number.  </label>
                                     <div class="col-md-7">
-                                        <input type="text" class="form-control" value='<?php echo $row['phone'];?>' name='phone' required>
+                                        
+                                        <input type="phone" class="form-control" value='<?php echo $row['phone'];?>' name='phone'  placeholder='Reg No' maxlength="10" class="phone" required>
+                                        <script type="text/javascript">
+                                        $('.phone').keypress(function(e) {
+                                        var arr = [];
+                                        var kk = e.which;
+                                        for (i = 48; i < 58; i++)
+                                        arr.push(i);
+                                        if (!(arr.indexOf(kk)>=0))
+                                        e.preventDefault();
+                                        });
+                                        </script>
                                     </div>
                                 </div>
                                 <div class="form-group row">

@@ -128,7 +128,18 @@
                                 <div class="form-group row">
                                     <label class="col-md-3 col-form-label">Regimental Number. <span class="text-danger">*</span></label>
                                     <div class="col-md-7">
-                                        <input type="number" class="form-control" name='roll_num' placeholder='Reg No' required>
+                
+                                        <input type="phone" class="form-control" name='roll_num'  placeholder='Reg No' maxlength="5" class="phone1" required>
+                                        <script type="text/javascript">
+                                        $('.phone1').keypress(function(e) {
+                                        var arr = [];
+                                        var kk = e.which;
+                                        for (i = 48; i < 58; i++)
+                                        arr.push(i);
+                                        if (!(arr.indexOf(kk)>=0))
+                                        e.preventDefault();
+                                        });
+                                        </script>
                                     </div>
                                 </div>
                                 <div class="form-group row">
