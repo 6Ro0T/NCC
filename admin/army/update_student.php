@@ -182,7 +182,7 @@
                                         });
                                         </script>
                                     </div>
-                                </div>
+                                
                                 <div class="form-group row">
                                     <label class="col-md-3 col-form-label">E-mail  </label>
                                     <div class="col-md-7">
@@ -215,6 +215,7 @@
                                     </div>
                                 </div>
                             </form>
+							</div>
 						<?php } ?> 	
                         </div>
                     </div>
@@ -226,9 +227,6 @@
             <footer class="footer">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-md-6 col-sm-12">
-                            Copyright © 2021 | Phoenix Studios | <a href="https://kishannayak.000webhostapp.com/">Kishan Nayak</a>.
-                        </div>
                     </div>
                 </div>
             </footer>
