@@ -156,7 +156,7 @@
                                     <label class="col-md-3 col-form-label">Phone Number.  </label>
                                     <div class="col-md-7">
                                         <input type="text" class="form-control" value='<?php echo $row['phone'];?>' name='phone' required>
-                                    </div>
+									</div>
                                 </div>
                                 <div class="form-group row">
                                     <label class="col-md-3 col-form-label">E-mail  </label>
