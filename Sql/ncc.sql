@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.4
+-- version 5.0.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 10, 2021 at 07:16 AM
--- Server version: 10.4.17-MariaDB
--- PHP Version: 8.0.2
+-- Generation Time: Sep 25, 2021 at 03:59 PM
+-- Server version: 10.4.11-MariaDB
+-- PHP Version: 7.4.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -174,6 +175,25 @@ INSERT INTO `course` (`id`, `coursename`, `duration`, `professor`, `url`, `filen
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `quiz`
+--
+
+CREATE TABLE `quiz` (
+  `id` int(11) NOT NULL,
+  `quiz_link` varchar(255) NOT NULL,
+  `role` varchar(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `quiz`
+--
+
+INSERT INTO `quiz` (`id`, `quiz_link`, `role`) VALUES
+(1, 'https://docs.google.com/forms/d/e/1FAIpQLSeX5Z_fTQUwRTFg78wlCSXTDaaWXqFvKKv53E_OdgTXp2SCnQ/viewform?usp=sf_link', 'army');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `student`
 --
 
@@ -226,7 +246,9 @@ INSERT INTO `student` (`id`, `roll_number`, `name`, `Cadet_rank`, `year`, `dob`,
 (104, 30201, 'Sujay', 'Flight Cadet', 1, '2004-05-21', 9068765789, 'sujays@gmail.com', '8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92', 'airforce', 'student'),
 (105, 30202, 'Shrija', 'Flight Cadet', 1, '2004-03-31', 7890971234, 'shrija90@gmail.com', '8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92', 'airforce', 'student'),
 (106, 30203, 'Soumya K', 'Flight Cadet', 1, '2003-10-09', 9876543210, 'soumya09@gmail.com', '8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92', 'airforce', 'student'),
-(107, 30204, 'Harish H', 'Flight Cadet', 1, '2004-12-13', 7896548923, 'harish76@gmail.com', '8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92', 'airforce', 'student');
+(107, 30204, 'Harish H', 'Flight Cadet', 1, '2004-12-13', 7896548923, 'harish76@gmail.com', '8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92', 'airforce', 'student'),
+(110, 102, 'test user', 'airforce', 1, '2021-09-07', 1111111111, 'test@a.com', '8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92', 'airforce', 'student'),
+(111, 12345, 'T3am_Z3us', 'Army Cadet', 2, '2021-09-06', 1111111111, 'team@ncc.com', '8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92', 'army', 'student');
 
 --
 -- Indexes for dumped tables
@@ -248,6 +270,12 @@ ALTER TABLE `attendance`
 -- Indexes for table `course`
 --
 ALTER TABLE `course`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `quiz`
+--
+ALTER TABLE `quiz`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -279,10 +307,16 @@ ALTER TABLE `course`
   MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=79;
 
 --
+-- AUTO_INCREMENT for table `quiz`
+--
+ALTER TABLE `quiz`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT for table `student`
 --
 ALTER TABLE `student`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=110;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=112;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
