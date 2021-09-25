@@ -1,6 +1,17 @@
 <?php
    include('session.php');
    include('conn.php');
+   $flag=0;
+   
+   if(isset($_POST['submit'])){
+		$quizlink=$_POST['quiz'];
+		$role=$_POST['role'];
+		$sql="INSERT INTO `quiz`(`quiz_link`, `role`) VALUES ('$quizlink','$role')";
+		$result=mysqli_query($conn,$sql);
+		if($result)
+			$flag=1;
+		
+   }
 ?>
 <!doctype html>
 <html lang="en" dir="ltr">
@@ -41,7 +52,6 @@
             </div>
         </div>
     </div>
-    <!-- Start Theme panel do not add in project -->
     
     <!-- Start Main leftbar navigation -->
     <div id="left-sidebar" class="sidebar">
@@ -54,11 +64,11 @@
                 <nav class="sidebar-nav">
                     <ul class="metismenu">
 						<li><a href="army.php"><i class="fa fa-dashboard"></i><span>Dashboard</span></a></li>
-                        <li><a href="student.php"><i class="fa fa-graduation-cap"></></i><span>Students</span></a></li>
-                        <li><a href="add_course.php"><i class="fa fa-book"></i><span>Add Courses</span></a></li>
+                        <li><a href="student.php"><i class="fa fa-graduation-cap"></i><span>Students</span></a></li>
+                        <li class="active"><a href="add_course.php"><i class="fa fa-book"></i><span>Add Courses</span></a></li>
                         <li><a href="addstudent.php"><i class="fa fa-users"></i><span>Add Student</span></a></li>
-                        <li class="active"><a href="attendance.php"><i class="fa fa-calendar-check-o"></i><span>Attendance</span></a></li>
-                        <li><a href="quiz.php"><i class="fa fa-question-circle"></i><span>Add Quiz</span></a></li>
+                        <li><a href="attendance.php"><i class="fa fa-calendar-check-o"></i><span>Attendance</span></a></li>
+						<li><a href="quiz.php"><i class="fa fa-question-circle"></i><span>Add Quiz</span></a></li>
 						<li><a href="events.php"><i class="fa fa-bullhorn"></i><span>Events</span></a></li>
                     </ul>
                 </nav>
@@ -73,79 +83,45 @@
             <div class="container-fluid">
                 <div class="d-flex justify-content-between align-items-center ">
                     <div class="header-action">
-                        <h1 class="page-title">Attendance</h1>
+                        <h1 class="page-title">Add Courses</h1>
                         <ol class="breadcrumb page-breadcrumb">
                             <li class="breadcrumb-item"><a href="#">MyNCC</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Attendance</li>
+                            <li class="breadcrumb-item active" aria-current="page">Add Courses</li>
                         </ol>
                     </div>
-					<ul class="nav nav-tabs page-header-tab">
-                        <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#Fees-all">View Attendance</a></li>
-                    </ul>
-                </div>
-               <div class="text-md-center">
-                  </strong>Today: <?php echo date("Y-m-d");?></strong>
+                    <a href="view_all_courses.php" class="btn btn-info btn-sm">View All Courses</a>
                 </div>
             </div>
-            
         </div>
-        
         <div class="section-body mt-4">
-        
             <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12">
+                <div class="tab-pane" id="Courses-add-Boot">
                         <div class="card">
-                            
-                            <div class="table-responsive"> 
-                                                         
-                                <table class="table table-sm table-hover table-striped table-vcenter mb-0 text-nowrap">
-                                    <thead>
-                                    <tr>
-                                        <th style="background-color:#e8e6e6" width="15%">Serial number</th>
-										<th style="background-color:#e8e6e6" width="70%">Date</th>
+                        <?php if($flag) {?>
+                        <div class="alert alert-success">
+                        <Strong>Quiz Added Successfully..</strong>
+                        </div>
+                        <?php } ?>
+                            <form class="card-body" method="POST" action="quiz.php">
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Quiz Link <span class="text-danger">*</span></label>
+                                    <div class="col-md-7">
+                                        <input type="text" class="form-control"name="quiz" required>
+										<input type="hidden" value="army" name="role">
+                                    </div>
+                                </div>
+								<div class="form-group row">
+                                    <label class="col-md-3 col-form-label"></label>
+                                    <div class="col-md-7">
+                                        <button type="submit" class="btn btn-primary" name="submit">Submit</button>
                                         
-                                       <th style="background-color:#e8e6e6">status</th>
-                                     </tr>
-                                        <?php 
-                                        include('conn.php');
-                                        $sql="select distinct date from attendance where division='army'";
-                                        $result=mysqli_query($conn,$sql);
-                                        $serial=0;
-                                        $counter=0;
-                                        while($row=mysqli_fetch_array($result)){
-                                            $serial++;
-                                    
-                                        ?>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td><?php echo $serial;?></td>
-                                        <td><?php echo $row['date'];?></td>
-                                        
-                                        
-                                        <form method="POST" action="view_by_date.php">
-                                        <td>
-                                            <button type="submit" value="<?php echo $row['date']; ?>" class="btn btn-primary" name="submit">View</button>
-										</td>
-										</form>
-                                        <?php 
-                                            $counter++;    
-                                        } ?>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                                
-                            </div>
+                                    </div>
+                                </div>
+                        
+                            </form>
                         </div>
                     </div>
-                </div>
             </div>
-			<div class="text-center">
-				<a href="attendance.php"><button type="" class="btn btn-primary "  >BACK</button></a>
-			</div>
-			
-			
         </div>
         <!-- Start main footer -->
         <div class="section-body">
@@ -164,8 +140,6 @@
 
 <!-- Start Main project js, jQuery, Bootstrap -->
 <script src="../../assets/bundles/lib.vendor.bundle.js"></script>
-
-<!-- Start Plugin Js -->
 
 <!-- Start project main js  and page js -->
 <script src="../../assets/js/core.js"></script>
