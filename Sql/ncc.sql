@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 25, 2021 at 03:59 PM
+-- Generation Time: Sep 26, 2021 at 09:11 AM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.3
 
@@ -180,6 +180,7 @@ INSERT INTO `course` (`id`, `coursename`, `duration`, `professor`, `url`, `filen
 
 CREATE TABLE `quiz` (
   `id` int(11) NOT NULL,
+  `quiz_name` varchar(50) NOT NULL,
   `quiz_link` varchar(255) NOT NULL,
   `role` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -188,8 +189,11 @@ CREATE TABLE `quiz` (
 -- Dumping data for table `quiz`
 --
 
-INSERT INTO `quiz` (`id`, `quiz_link`, `role`) VALUES
-(1, 'https://docs.google.com/forms/d/e/1FAIpQLSeX5Z_fTQUwRTFg78wlCSXTDaaWXqFvKKv53E_OdgTXp2SCnQ/viewform?usp=sf_link', 'army');
+INSERT INTO `quiz` (`id`, `quiz_name`, `quiz_link`, `role`) VALUES
+(6, 'navy quiz', 'https://docs.google.com/forms/d/e/1FAIpQLSeX5Z_fTQUwRTFg78wlCSXTDaaWXqFvKKv53E_OdgTXp2SCnQ/viewform?usp=sf_link', 'navy'),
+(8, 'Army Quiz 1', 'https://docs.google.com/forms/d/e/1FAIpQLSeX5Z_fTQUwRTFg78wlCSXTDaaWXqFvKKv53E_OdgTXp2SCnQ/viewform?usp=sf_link', 'army'),
+(9, 'Airforce Quiz', 'https://docs.google.com/forms/d/e/1FAIpQLSeX5Z_fTQUwRTFg78wlCSXTDaaWXqFvKKv53E_OdgTXp2SCnQ/viewform?usp=sf_link', 'airforce'),
+(10, 'Army Quiz 1', 'https://docs.google.com/forms/d/e/1FAIpQLSeX5Z_fTQUwRTFg78wlCSXTDaaWXqFvKKv53E_OdgTXp2SCnQ/viewform?usp=sf_link', 'army');
 
 -- --------------------------------------------------------
 
@@ -216,7 +220,6 @@ CREATE TABLE `student` (
 --
 
 INSERT INTO `student` (`id`, `roll_number`, `name`, `Cadet_rank`, `year`, `dob`, `phone`, `email`, `password`, `division`, `role`) VALUES
-(71, 102, 'test user', 'Flight cadet', 2, '2021-09-09', 8254564984, 'test@ncc.com', 'a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3', 'airforce', 'student'),
 (78, 10281, 'Shilpa', 'Under Officer', 3, '2001-02-15', 7890654789, 'shilpa45@gmail.com', '8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92', 'army', 'student'),
 (79, 10282, 'Rutu', 'CQMS', 3, '2002-05-17', 6578902345, 'rutu78@gmail.com', '8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92', 'army', 'student'),
 (80, 10283, 'Druvant', 'Sergent', 3, '2002-10-10', 8790654732, 'druvant@gmail.com', '8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92', 'army', 'student'),
@@ -247,8 +250,7 @@ INSERT INTO `student` (`id`, `roll_number`, `name`, `Cadet_rank`, `year`, `dob`,
 (105, 30202, 'Shrija', 'Flight Cadet', 1, '2004-03-31', 7890971234, 'shrija90@gmail.com', '8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92', 'airforce', 'student'),
 (106, 30203, 'Soumya K', 'Flight Cadet', 1, '2003-10-09', 9876543210, 'soumya09@gmail.com', '8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92', 'airforce', 'student'),
 (107, 30204, 'Harish H', 'Flight Cadet', 1, '2004-12-13', 7896548923, 'harish76@gmail.com', '8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92', 'airforce', 'student'),
-(110, 102, 'test user', 'airforce', 1, '2021-09-07', 1111111111, 'test@a.com', '8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92', 'airforce', 'student'),
-(111, 12345, 'T3am_Z3us', 'Army Cadet', 2, '2021-09-06', 1111111111, 'team@ncc.com', '8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92', 'army', 'student');
+(110, 102, 'test user', 'airforce', 1, '2021-09-07', 1111111111, 'test@a.com', '8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92', 'airforce', 'student');
 
 --
 -- Indexes for dumped tables
@@ -310,7 +312,7 @@ ALTER TABLE `course`
 -- AUTO_INCREMENT for table `quiz`
 --
 ALTER TABLE `quiz`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `student`
