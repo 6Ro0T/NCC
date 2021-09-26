@@ -72,10 +72,10 @@
                     <ul class="metismenu">
 						<li><a href="army.php"><i class="fa fa-dashboard"></i><span>Dashboard</span></a></li>
                         <li><a href="student.php"><i class="fa fa-graduation-cap"></></i><span>Students</span></a></li>
-                        <li class="active"><a href="add_course.php"><i class="fa fa-book"></i><span>Add Courses</span></a></li>
+                        <li><a href="add_course.php"><i class="fa fa-book"></i><span>Add Courses</span></a></li>
                         <li><a href="addstudent.php"><i class="fa fa-users"></i><span>Add Student</span></a></li>
                         <li><a href="attendance.php"><i class="fa fa-calendar-check-o"></i><span>Attendance</span></a></li>
-                        <li><a href="quiz.php"><i class="fa fa-question-circle"></i><span>Add Quiz</span></a></li>
+                        <li class="active"><a href="quiz.php"><i class="fa fa-quora"></i><span>Add Quiz</span></a></li>
 						<li><a href="events.php"><i class="fa fa-bullhorn"></i><span>Events</span></a></li>
                     </ul>
                 </nav>
