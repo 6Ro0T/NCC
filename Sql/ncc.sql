@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.1
+-- version 5.0.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 26, 2021 at 09:11 AM
--- Server version: 10.4.11-MariaDB
--- PHP Version: 7.4.3
+-- Generation Time: Sep 26, 2021 at 10:54 PM
+-- Server version: 10.4.17-MariaDB
+-- PHP Version: 8.0.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -93,7 +92,7 @@ INSERT INTO `attendance` (`id`, `email`, `name`, `roll_number`, `status`, `date`
 (119, 'lavanya09@gmail.com', 'Lavanya L', '10201', 'Present', '2021-09-04', 'army'),
 (120, 'surya32@gmail.com', 'Surya', '10202', 'Present', '2021-09-04', 'army'),
 (121, 'priyajagdesh@gmail.com', 'Priya B ', '10203', 'Present', '2021-09-04', 'army'),
-(122, 'abc@ncc.com', 'abc', '12345', 'Present', '2021-09-04', 'navy'),
+(122, 'abc@ncc.com', 'abc', '12345', 'Absent', '2021-09-04', 'navy'),
 (123, 'nandhana12@gmail.com', 'Nandhana', '10281', 'Present', '2021-09-04', 'navy'),
 (124, 'nethravthi@gmail.com', 'Nethravathi S', '10282', 'Absent', '2021-09-04', 'navy'),
 (125, 'darshan872@gmail.com', 'Darshan', '10283', 'Present', '2021-09-04', 'navy'),
@@ -190,10 +189,18 @@ CREATE TABLE `quiz` (
 --
 
 INSERT INTO `quiz` (`id`, `quiz_name`, `quiz_link`, `role`) VALUES
-(6, 'navy quiz', 'https://docs.google.com/forms/d/e/1FAIpQLSeX5Z_fTQUwRTFg78wlCSXTDaaWXqFvKKv53E_OdgTXp2SCnQ/viewform?usp=sf_link', 'navy'),
-(8, 'Army Quiz 1', 'https://docs.google.com/forms/d/e/1FAIpQLSeX5Z_fTQUwRTFg78wlCSXTDaaWXqFvKKv53E_OdgTXp2SCnQ/viewform?usp=sf_link', 'army'),
-(9, 'Airforce Quiz', 'https://docs.google.com/forms/d/e/1FAIpQLSeX5Z_fTQUwRTFg78wlCSXTDaaWXqFvKKv53E_OdgTXp2SCnQ/viewform?usp=sf_link', 'airforce'),
-(10, 'Army Quiz 1', 'https://docs.google.com/forms/d/e/1FAIpQLSeX5Z_fTQUwRTFg78wlCSXTDaaWXqFvKKv53E_OdgTXp2SCnQ/viewform?usp=sf_link', 'army');
+(11, 'Common Quiz 1 ', 'https://docs.google.com/forms/d/e/1FAIpQLScWs7cpwUzH2v535KiApm4MOu-enk68UbwMfA98ZG_V4XSCwA/alreadyresponded', 'airforce'),
+(12, 'Common Quiz 2', 'https://docs.google.com/forms/d/e/1FAIpQLSdMMknemhSecBvOqnOuPswT_G-moMBN97-ShI-eEwJxyGlPUg/viewform', 'airforce'),
+(13, 'Quiz 3', 'https://docs.google.com/forms/d/e/1FAIpQLSeGTf5HonIBL3TuHEyKI7mA_dW5VM2oOKAH_M080jz3nJe5bQ/viewform', 'airforce'),
+(14, 'Quiz 4', 'https://docs.google.com/forms/d/e/1FAIpQLSfvMCkOnkLC_K4lVDlCbi2sRexrXPsYp8qSXNa9VJzlwcO9_g/viewform', 'airforce'),
+(15, 'Common Quiz 1 ', 'https://docs.google.com/forms/d/e/1FAIpQLScWs7cpwUzH2v535KiApm4MOu-enk68UbwMfA98ZG_V4XSCwA/alreadyresponded', 'navy'),
+(16, 'Common Quiz 2', 'https://docs.google.com/forms/d/e/1FAIpQLSdMMknemhSecBvOqnOuPswT_G-moMBN97-ShI-eEwJxyGlPUg/viewform', 'navy'),
+(17, 'Navy Quiz 1', 'https://docs.google.com/forms/d/e/1FAIpQLSckAGBzhPkwNuCySgMMHOITuDkDQ7QjG-ZHHAFnHXnseo6DTQ/viewform', 'navy'),
+(18, 'Navy Quiz 2', 'https://docs.google.com/forms/d/e/1FAIpQLSdFI2b6-88m9HkaiufdPsf6Bgp9-g-7h8ikNsTFACw4Pn--Yg/viewform', 'navy'),
+(19, 'Common Quiz 1 ', 'https://docs.google.com/forms/d/e/1FAIpQLScWs7cpwUzH2v535KiApm4MOu-enk68UbwMfA98ZG_V4XSCwA/alreadyresponded', 'army'),
+(20, 'Common Quiz 2', 'https://docs.google.com/forms/d/e/1FAIpQLSdMMknemhSecBvOqnOuPswT_G-moMBN97-ShI-eEwJxyGlPUg/viewform', 'army'),
+(21, 'Army Quiz 1', 'https://docs.google.com/forms/d/e/1FAIpQLSfrsFI1v0XDNC8kfJasg0E0Nzj4sHVxIzPT9CGXfEnJurHFmQ/viewform', 'army'),
+(22, 'Army Quiz 2', 'https://docs.google.com/forms/d/e/1FAIpQLSeX5Z_fTQUwRTFg78wlCSXTDaaWXqFvKKv53E_OdgTXp2SCnQ/viewform', 'army');
 
 -- --------------------------------------------------------
 
@@ -312,7 +319,7 @@ ALTER TABLE `course`
 -- AUTO_INCREMENT for table `quiz`
 --
 ALTER TABLE `quiz`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT for table `student`
