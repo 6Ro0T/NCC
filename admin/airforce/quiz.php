@@ -90,7 +90,7 @@
                             <li class="breadcrumb-item active" aria-current="page">Add Courses</li>
                         </ol>
                     </div>
-                    <a href="view_quiz.php" class="btn btn-info btn-sm">View All Quiz</a> 
+                   <a href="view_quiz.php" class="btn btn-info btn-sm">View All Quiz</a>  
                 </div>
             </div>
         </div>
@@ -114,7 +114,7 @@
                                     <label class="col-md-3 col-form-label">Quiz Link <span class="text-danger">*</span></label>
                                     <div class="col-md-7">
                                         <input type="text" class="form-control"name="quiz" required>
-										<input type="hidden" value="army" name="role">
+										<input type="hidden" value="airforce" name="role">
                                     </div>
                                 </div>
 								<div class="form-group row">

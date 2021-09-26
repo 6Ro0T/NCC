@@ -7,7 +7,7 @@
 		$quizlink=$_POST['quiz'];
 		$role=$_POST['role'];
         $qname=$_POST['qname'];
-		$sql="INSERT INTO `quiz`(`quiz_name`,`quiz_link`, `role`) VALUES ('$qname','$quizlink','$role')";
+		$sql="UPDATE `quiz` SET `quiz_name`='$qname',`quiz_link`='$quizlink',`role`='$role' WHERE id='$_POST[id]'";
 		$result=mysqli_query($conn,$sql);
 		if($result)
 			$flag=1;
@@ -87,10 +87,10 @@
                         <h1 class="page-title">Add Courses</h1>
                         <ol class="breadcrumb page-breadcrumb">
                             <li class="breadcrumb-item"><a href="#">MyNCC</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Add Courses</li>
+                            <li class="breadcrumb-item active" aria-current="page">Update Quiz</li>
                         </ol>
                     </div>
-                    <a href="view_quiz.php" class="btn btn-info btn-sm">View All Quiz</a> 
+                   <a href="view_quiz.php" class="btn btn-info btn-sm">Back</a>  
                 </div>
             </div>
         </div>
@@ -100,32 +100,44 @@
                         <div class="card">
                         <?php if($flag) {?>
                         <div class="alert alert-success">
-                        <Strong>Quiz Added Successfully..</strong>
+                        <Strong>Quiz Updated Successfully..</strong>
                         </div>
                         <?php } ?>
-                            <form class="card-body" method="POST" action="quiz.php">
+                            <form class="card-body" method="POST" action="update_quiz.php">
+							<?php 
+							include('conn.php');
+							if(isset($_POST['update'])){
+							$id=$_POST['update'];
+							$sql="select * from quiz where id='$id' and role='airforce'";
+							$result=mysqli_query($conn,$sql);
+							$row=mysqli_fetch_array($result);
+						
+						
+						?>
                             <div class="form-group row">
                             <label class="col-md-3 col-form-label">Quiz Name <span class="text-danger">*</span></label>
                             <div class="col-md-7">
-                            <input type="text" class="form-control"name="qname" required>
+                            <input type="text" class="form-control"name="qname" value="<?php echo $row['quiz_name']; ?>"required>
                             </div>
                                 </div>
                                 <div class="form-group row">
                                     <label class="col-md-3 col-form-label">Quiz Link <span class="text-danger">*</span></label>
                                     <div class="col-md-7">
-                                        <input type="text" class="form-control"name="quiz" required>
-										<input type="hidden" value="army" name="role">
+                                        <input type="text" class="form-control"name="quiz" value="<?php echo $row['quiz_link']; ?>"required>
+										<input type="hidden" value="airforce" name="role">
+										<input type="hidden" value="<?php echo $row['id']; ?>" name="id">
                                     </div>
                                 </div>
 								<div class="form-group row">
                                     <label class="col-md-3 col-form-label"></label>
                                     <div class="col-md-7">
-                                        <button type="submit" class="btn btn-primary" name="submit">Submit</button>
+                                        <button type="submit" class="btn btn-primary" name="submit">update</button>
                                         
                                     </div>
                                 </div>
                         
                             </form>
+							<?php } ?>
                         </div>
                     </div>
             </div>

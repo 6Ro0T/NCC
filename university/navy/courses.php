@@ -53,11 +53,12 @@
             <div class="tab-pane fade show active" id="menu-uni" role="tabpanel">
                 <nav class="sidebar-nav">
                     <ul class="metismenu">
-                        <li><a href="army.php"><i class="fa fa-dashboard"></i><span>Dashboard</span></a></li>
+                        <li><a href="navy.php"><i class="fa fa-dashboard"></i><span>Dashboard</span></a></li>
                         <li><a href="viewat.php"><i class="fa fa-black-tie"></i><span>View Attendance</span></a></li>
 						<li><a href="staff.php"><i class="fa fa-users"></i><span>Staff</span></a></li>
                         <li class="active"><a href="courses.php"><i class="fa fa-graduation-cap"></i><span>Classes</span></a></li>                        
                         <li><a href="library.php"><i class="fa fa-book"></i><span>Study Materials</span></a></li>
+                        <li><a href="quiz.php"><i class="fa fa-question-circle"></i><span>View Quiz</span></a></li>
                         <li><a href="holiday.php"><i class="fa fa-bullhorn"></i><span>Events</span></a></li>
 						<li><a href="gallery.php"><i class="fa fa-camera-retro"></i><span>Gallery</span></a></li>
         

@@ -4,8 +4,8 @@
    $flag=0;
    if(isset($_POST['delete'])){
         
-        $mail=$_POST['delete'];
-        $sql="DELETE FROM `student` WHERE email='$mail' and division='airforce'";
+        $id=$_POST['delete'];
+        $sql="DELETE FROM `quiz` WHERE id='$id' and role='navy'";
         $result=mysqli_query($conn,$sql);
         if($result)
             $flag=1;
@@ -46,7 +46,7 @@
     <div id="header_top" class="header_top">
         <div class="container">
             <div class="hleft">
-                <a class="header-brand" href="airforce.php"><i class="fa fa-graduation-cap brand-logo"></i></a>
+                <a class="header-brand" href="navy.php"><i class="fa fa-graduation-cap brand-logo"></i></a>
                 <div class="dropdown">
                     <a href="javascript:void(0)" class="nav-link icon menu_toggle"><i class="fe fe-align-center"></i></a>
                 </div>
@@ -56,11 +56,11 @@
             </div>
         </div>
     </div>
- 
+    <!-- Start Theme panel do not add in project -->
 
     <!-- Start Quick menu with more functio -->
     
-    <!-- Start Main leftbar navigation -->
+        <!-- Start Main leftbar navigation -->
     <div id="left-sidebar" class="sidebar">
         <h5 class="brand-name">MyNCC<a href="javascript:void(0)" class="menu_option float-right"><i class="icon-grid font-16" data-toggle="tooltip" data-placement="left" title="Grid & List Toggle"></i></a></h5>
         <ul class="nav nav-tabs">
@@ -70,9 +70,9 @@
             <div class="tab-pane fade show active" id="menu-uni" role="tabpanel">
                 <nav class="sidebar-nav">
                     <ul class="metismenu">
-						<li><a href="airforce.php"><i class="fa fa-dashboard"></i><span>Dashboard</span></a></li>
-                        <li class="active"><a href="student.php"><i class="fa fa-graduation-cap"></></i><span>Students</span></a></li>
-                        <li><a href="add_course.php"><i class="fa fa-book"></i><span>Add Courses</span></a></li>
+						<li><a href="navy.php"><i class="fa fa-dashboard"></i><span>Dashboard</span></a></li>
+                        <li><a href="student.php"><i class="fa fa-graduation-cap"></></i><span>Students</span></a></li>
+                        <li class="active"><a href="add_course.php"><i class="fa fa-book"></i><span>Add Courses</span></a></li>
                         <li><a href="addstudent.php"><i class="fa fa-users"></i><span>Add Student</span></a></li>
                         <li><a href="attendance.php"><i class="fa fa-calendar-check-o"></i><span>Attendance</span></a></li>
                         <li><a href="quiz.php"><i class="fa fa-question-circle"></i><span>Add Quiz</span></a></li>
@@ -86,31 +86,18 @@
      
     <!-- Start project content area -->
     <div class="page">
-        <!-- Start Page header -->
-         <div class="section-body">
-            <div class="container-fluid">
-                <div class="d-flex justify-content-between align-items-center ">
-                    <div class="header-action">
-                        <h1 class="page-title">View All Student</h1>
-                        <ol class="breadcrumb page-breadcrumb">
-                            <li class="breadcrumb-item"><a href="#">MyNCC</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">All Students</li>
-                        </ol>
-                    </div>
-                    <ul class="nav nav-tabs page-header-tab">
-                        <li class="nav-item"><a class="nav-link active" data-toggle="tab" >Students</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
         <!-- Start Page title and tab -->
         <div class="section-body">
             <div class="container-fluid">
                 <div class="d-flex justify-content-between align-items-center ">
                     <div class="header-action">
-                        <h1 class="page-title">Student List</h1>
-                        
+                        <h1 class="page-title">Courses list</h1>
+                        <ol class="breadcrumb page-breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">MyNCC</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">View Quiz</li>
+                        </ol>
                     </div>
+                    <a href="quiz.php" class="btn btn-info btn-sm">Back</a>
                 </div>
             </div>
         </div>
@@ -120,25 +107,23 @@
                     <div class="tab-pane active" >
                         <div class="card">
                             <div class="card-body">
-                            <form method="post" action="student.php">
+                            <form method="post" action="view_quiz.php">
                                 <table class="table  spacing5">
-                                <?php if($flag) {?>
+                                <?php if($flag) { ?>
                                 <div class="alert alert-success">
-                                <Strong>Student Deleted Successfully.</strong>
+                                <Strong>Quiz Deleted Successfully.</strong>
                                 </div>
                                 <?php } ?>
                                         <thead>
                                             <tr>
-                                                <th>Regimental Number</th>
-                                                <th>Name</th>
-                                                <th>Email</th>
-                                                <th>Cadet Rank</th>
-                                                <th>DELETE</th>
-                                                <th>UPDATE</th>
+                                                <th>#</th>
+                                                <th>Course Name</th>
+												<th>Delete</th>
+												<th>Update</th>
                                             </tr>
                                             <?php 
                                         include('conn.php');
-                                        $sql="select * from student where division='airforce'";
+                                        $sql="select * from quiz where role='navy'";
                                         $result=mysqli_query($conn,$sql);
                                         $serial=0;
                                         $counter=0;
@@ -150,29 +135,39 @@
                                         <tbody>
                                             <tr>
                                             
-                                                <td><?php echo $row['roll_number'];?></td>
-                                                <td><?php echo $row['name'];?></td>
-                                                <td><?php echo $row['email'];?></td>
-                                                <td><?php echo $row['Cadet_rank'];?></td>
+                                                <td><?php echo $serial;?></td>
+                                                <td><?php echo $row['quiz_name'];?></td>
+												
+                                                
+                                                
+                                                <div class="text-center">
                                                 <td>
-                                                    <button type="submit"  class="btn btn-icon btn-sm" name='delete' value="<?php echo $row['email'];?>"><i class="fa fa-trash-o text-danger"></i></button>                                                 
+													
+                                                    <button type="submit" class="btn btn-icon btn-sm" name='delete' value="<?php echo $row['id'];?>"><i class="fa fa-trash-o text-danger"></i></button>
+													</form>
+													
+													
+                                                   </form>
+												   
                                                 </td>
-                                                </form>
-                                                <form method="POST" action="update_student.php">
-                                               <td>
-                                               <button type="submit"  class="btn btn-icon btn-sm" name='update' value="<?php echo $row['email'];?>"><i class="fa fa-pencil-square-o"></i></button>
-                                               </td>
-                                               </form
+												<td>
+													<form action="update_quiz.php" method="POST"><button type="submit" class="btn btn-icon btn-sm" name='update' value="<?php echo $row['id'];?>"><i class="fa fa-pencil-square-o"></i></button></form>
+												</td>
+                                               </div>
                                             </tr>
                                           <?php
                                         }
                                         ?>
-                                        </tbody> 
+                                        </tbody>
+                                        
                                     </table>
                             </div>
                         </div>
                     </div>
-				</div>
+                   
+                    
+                    
+                </div>
             </div>
         </div>
         <!-- Start main footer -->
@@ -186,9 +181,8 @@
                     </div>
                 </div>
             </footer>
-        </div>	
-    </div> 
-
+        </div>
+    </div>    
 </div>
 
 <!-- Add New Event popup -->
@@ -216,3 +210,4 @@
 <script src="assets/js/page/calendar.js"></script>
 </body>
 </html>
+
